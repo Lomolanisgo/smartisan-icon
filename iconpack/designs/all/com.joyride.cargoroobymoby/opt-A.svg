@@ -8,6 +8,9 @@
     <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#FFE27A"/><stop offset="1" stop-color="#FFC21F"/>
     </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A3F46"/><stop offset="1" stop-color="#15171A"/>
+    </linearGradient>
     <filter id="noise" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="17"/>
       <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
@@ -33,25 +36,40 @@
     <use href="#t" stroke="#fff" stroke-opacity=".55" stroke-width="2" transform="translate(0 1)"/>
     <use href="#t" stroke="#D98A10" stroke-width="2"/>
   </g>
-  <!-- cargo bike -->
+  <!-- front-box cargo e-bike (Urban Arrow style): rider at the back, low box in front, front wheel far ahead -->
   <g filter="url(#emb)">
-    <g stroke="#2D2B4E" stroke-linecap="round" stroke-linejoin="round" fill="none">
-      <!-- wheels -->
-      <circle cx="62" cy="176" r="28" fill="#fff" stroke-width="9"/>
-      <circle cx="202" cy="176" r="28" fill="#fff" stroke-width="9"/>
-      <!-- frame -->
-      <path d="M62 176H100L84 112M100 176H178L202 176M176 102L202 176M88 134L104 130" stroke-width="8"/>
-      <path d="M170 120L186 124" stroke-width="7"/>
-      <!-- saddle + handlebar -->
-      <path d="M70 108H94" stroke-width="9"/>
-      <path d="M166 98H188" stroke-width="8"/>
+    <!-- wheels -->
+    <g stroke="#1B1D21" fill="#fff">
+      <circle cx="50" cy="180" r="24" stroke-width="7"/>
+      <circle cx="216" cy="186" r="19" stroke-width="6"/>
     </g>
-    <g fill="#2D2B4E"><circle cx="62" cy="176" r="6"/><circle cx="202" cy="176" r="6"/></g>
-    <!-- cargo box with Cargoroo face -->
-    <rect x="102" y="116" width="70" height="56" rx="8" fill="url(#box)" stroke="#2D2B4E" stroke-width="6"/>
+    <g stroke="#C9CDD2" stroke-width="1.2" opacity=".9">
+      <path d="M50 159V201M29 180H71M35 165L65 195M65 165L35 195"/>
+      <path d="M216 170V202M200 186H232M205 175L227 197M227 175L205 197"/>
+    </g>
+    <g stroke="#1B1D21" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- rear triangle -->
+      <path d="M50 180L96 194M50 180L80 140" stroke-width="5"/>
+      <!-- seat post + saddle -->
+      <path d="M96 192L78 122" stroke-width="6"/>
+      <path d="M64 118H88" stroke-width="7"/>
+      <!-- long low main beam to the front fork -->
+      <path d="M92 196H204L216 186" stroke-width="7"/>
+      <!-- steering column / handlebar stem behind the box -->
+      <path d="M118 194L112 90" stroke-width="7"/>
+      <path d="M98 88Q110 84 124 86" stroke-width="6"/>
+    </g>
+    <!-- battery / column panel -->
+    <path d="M110 128H128V196H112Z" fill="url(#frame)"/>
+    <!-- motor -->
+    <circle cx="96" cy="194" r="8" fill="url(#frame)"/>
+    <g fill="#1B1D21"><circle cx="50" cy="180" r="5"/><circle cx="216" cy="186" r="4.5"/></g>
+    <!-- low yellow cargo box with Cargoroo face -->
+    <path d="M128 132H206Q214 132 211 140L200 188Q199 192 194 192H128Z" fill="url(#box)" stroke="#1B1D21" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M131 136H204" stroke="#fff" stroke-opacity=".6" stroke-width="2"/>
     <g fill="none" stroke="#2D2B4E" stroke-width="4.5" stroke-linecap="round">
-      <circle cx="125" cy="136" r="6.5"/><circle cx="149" cy="136" r="6.5"/>
-      <path d="M121 153Q137 162 153 153"/>
+      <circle cx="157" cy="154" r="6.5"/><circle cx="181" cy="154" r="6.5"/>
+      <path d="M152 171Q169 180 186 171"/>
     </g>
   </g>
 </svg>

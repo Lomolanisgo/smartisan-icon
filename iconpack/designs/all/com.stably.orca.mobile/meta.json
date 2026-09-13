@@ -2,10 +2,30 @@
   "pkg": "com.stably.orca.mobile",
   "label": "Orca",
   "references": [
-    { "pkg": "com.dolphin.browser.xf", "why": "同为海洋哺乳动物形象，参考写实鲸豚的光泽处理" }
+    {
+      "pkg": "com.dolphin.browser.xf",
+      "why": "同为海洋哺乳动物形象，参考写实鲸豚的光泽处理"
+    }
   ],
   "options": [
-    { "id": "A", "name": "银色笔触标志", "shape": "square", "desc": "石墨黑拉丝方块上浮起银色金属的原品牌书法笔触标志（按原图描摹，非原始路径），带压印阴影；忠实品牌但抽象。" },
-    { "id": "B", "name": "跃出海面的虎鲸", "shape": "circle", "desc": "金属圆环内是夜色海面，一头黑白虎鲸跃出水面溅起浪花；直观呼应名字 Orca，但与原抽象标志关联较弱。" }
+    {
+      "id": "A",
+      "name": "银色笔触标志",
+      "shape": "square",
+      "desc": "石墨黑拉丝方块上浮起银色金属的原品牌书法笔触标志（按原图描摹，非原始路径），带压印阴影；忠实品牌但抽象。"
+    },
+    {
+      "id": "B",
+      "name": "跃出海面的虎鲸",
+      "shape": "circle",
+      "desc": "金属圆环内是夜色海面，一头黑白虎鲸跃出水面溅起浪花；直观呼应名字 Orca，但与原抽象标志关联较弱。"
+    },
+    {
+      "id": "C",
+      "name": "银色原标志·横矩形",
+      "shape": "landscape",
+      "desc": "延续 A 的方向（深色拉丝底板+凸起银色金属标志），按用户意见改用横矩形（bilibili 规范轮廓）；标志由原图标内嵌 PNG 精确描摹（tools/trace.js，已对比校验），等比缩放，不改形状和比例。",
+      "updated": true
+    }
   ]
 }

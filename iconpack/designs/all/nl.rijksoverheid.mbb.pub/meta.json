@@ -2,11 +2,34 @@
   "pkg": "nl.rijksoverheid.mbb.pub",
   "label": "Berichtenbox",
   "references": [
-    { "pkg": "com.tencent.androidqqmail", "why": "邮箱应用：彩色横板上放白色信封，直接参考其造型" },
-    { "pkg": "com.netease.mail", "why": "整只信封作为图标主体的做法（B 方案）" }
+    {
+      "pkg": "com.tencent.androidqqmail",
+      "why": "邮箱应用：彩色横板上放白色信封，直接参考其造型"
+    },
+    {
+      "pkg": "com.netease.mail",
+      "why": "整只信封作为图标主体的做法（B 方案）"
+    }
   ],
   "options": [
-    { "id": "A", "name": "橙底国徽飘带 + 白信封", "shape": "landscape", "desc": "橙色横矩形，顶部深蓝 Rijkslint 飘带 + 王冠徽章，下方白色纸质信封（QQ 邮箱式）。与另外两个政府应用 A 方案成套。" },
-    { "id": "B", "name": "橙色信封 + 国徽火漆", "shape": "free", "desc": "异形：整只橙色信封，封口处一枚深蓝火漆印，印王冠徽章，表示“政府来信”。辨识度高，家族联系靠深蓝徽章。" }
+    {
+      "id": "A",
+      "name": "橙底国徽飘带 + 白信封",
+      "shape": "landscape",
+      "desc": "橙色横矩形，顶部深蓝 Rijkslint 飘带 + 王冠徽章，下方白色纸质信封（QQ 邮箱式）。与另外两个政府应用 A 方案成套。"
+    },
+    {
+      "id": "B",
+      "name": "橙色信封 + 国徽火漆",
+      "shape": "free",
+      "desc": "异形：整只橙色信封，封口处深蓝火漆印，印官方 Rijksoverheid 国徽（从原图标矢量逐点复制，白色）。",
+      "updated": true
+    }
+  ],
+  "credits": [
+    {
+      "what": "Rijksoverheid 飘带（Rijkslint）与国徽",
+      "source": "iconpack/phone-icons/nl.belastingdienst.mkt.pub.svg —— 荷兰政府官方应用图标中自带的矢量路径，逐点复制，未改形"
+    }
   ]
 }

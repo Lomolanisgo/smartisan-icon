@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F2F2"/>
+    </linearGradient>
+    <linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/>
+      <stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/>
+    </linearGradient>
+    <path id="win" d="M28 44H150C159 44 162 47 162 56V200C162 209 159 212 150 212H28C19 212 16 209 16 200V56C16 47 19 44 28 44Z"/>
+    <clipPath id="winc"><use href="#win"/></clipPath>
+    <linearGradient id="winFill" x1="0" y1="44" x2="0" y2="212" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1C2863"/><stop offset="1" stop-color="#080C24"/>
+    </linearGradient>
+    <linearGradient id="srv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A5AA8"/><stop offset="1" stop-color="#27347A"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" y1="20" x2="0" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D3E0"/>
+    </linearGradient>
+    <filter id="d" x="-20%" y="-20%" width="140%" height="150%">
+      <feOffset in="SourceAlpha" dy="3"/><feGaussianBlur stdDeviation="2.8"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 .1  0 0 0 .4 0" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#tileFill)"/>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+  </g>
+  <!-- link: terminal -> remote server -->
+  <path d="M150 64C170 50 190 50 208 66" fill="none" stroke="#3E5BD8" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 10"/>
+  <path d="M200 58L210 68L197 71" fill="none" stroke="#3E5BD8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- remote server -->
+  <g filter="url(#d)">
+    <rect x="178" y="82" width="62" height="42" rx="7" fill="url(#srv)"/>
+    <rect x="178" y="132" width="62" height="42" rx="7" fill="url(#srv)"/>
+    <rect x="178" y="182" width="62" height="30" rx="7" fill="url(#srv)"/>
+  </g>
+  <g fill="#fff" opacity=".22"><rect x="180" y="83.5" width="58" height="2" rx="1"/><rect x="180" y="133.5" width="58" height="2" rx="1"/><rect x="180" y="183.5" width="58" height="2" rx="1"/></g>
+  <g stroke="#9FB0F0" stroke-width="5" stroke-linecap="round"><path d="M190 103H212M190 153H212M190 197H212"/></g>
+  <g fill="#5CF2B6" filter="url(#glow)"><circle cx="226" cy="103" r="5"/><circle cx="226" cy="153" r="5"/><circle cx="226" cy="197" r="5"/></g>
+  <!-- terminal window -->
+  <use href="#win" fill="url(#winFill)" filter="url(#d)"/>
+  <g clip-path="url(#winc)">
+    <rect x="16" y="44" width="146" height="36" fill="#34469A"/>
+    <rect x="16" y="80" width="146" height="2" fill="#050818"/>
+    <g transform="translate(40 62) scale(.4) translate(-54 -54)">
+      <path d="M72.8,78.73C84.09,78.93 93.43,69.92 93.63,58.63C93.73,53.02 91.43,47.51 87.41,43.6C87.51,32.72 78.79,23.76 67.89,23.57C64.73,23.51 61.63,24.2 58.82,25.58C55.21,22.05 50.4,20.02 45.28,19.94C34.62,19.75 25.74,28.04 25.11,38.57C18.58,42.07 14.38,48.85 14.25,56.34C14.05,67.68 23.12,77.06 34.46,77.26C35,77.27 35.54,77.25 36.08,77.22C39.75,83.66 46.61,87.78 54.11,87.91C61.29,88.04 67.96,84.55 71.97,78.7C72.25,78.72 72.52,78.73 72.8,78.73Z" fill="url(#cloud)"/>
+      <g transform="translate(53.6 53.6) scale(1.35) translate(-53.6 -53.6)"><path d="M64.85,61.1L64.9,61.08C65.61,60.79 65.86,60.53 65.88,59.8L65.89,58.88C65.91,58.07 65.45,57.54 64.69,57.53L64.65,57.53L64.5,57.56C62.79,58.13 61.11,58.4 59.51,58.37C57.92,58.34 56.36,58.02 54.87,57.4L54.82,57.38L54.65,57.35C53.89,57.34 53.42,57.85 53.4,58.66L53.39,59.58C53.38,60.27 53.63,60.58 54.23,60.86L54.3,60.89L54.36,60.91C55.99,61.65 57.71,62.03 59.45,62.06C61.19,62.09 63,61.77 64.85,61.1ZM41.56,53.14C41.57,52.4 41.96,52 42.48,51.9L47.47,50.68L42.51,49.29C42,49.14 41.63,48.73 41.65,48.02L41.67,46.45C41.68,45.77 42.1,45.48 42.57,45.49C42.72,45.49 42.88,45.53 43.04,45.59L51.85,48.61C52.52,48.85 52.88,49.39 52.87,50.13L52.84,51.41C52.83,52.15 52.45,52.69 51.77,52.9L42.84,55.62C42.69,55.66 42.56,55.68 42.43,55.68C41.87,55.67 41.52,55.26 41.53,54.68L41.56,53.14Z" fill="#1C2658" fill-rule="evenodd"/></g>
+    </g>
+    <g fill="#fff" opacity=".45"><circle cx="126" cy="62" r="4.5"/><circle cx="143" cy="62" r="4.5"/></g>
+    <!-- $ ssh █ (scaled from opt-C glyphs) -->
+    <g transform="translate(0 30) scale(.78) translate(4 0)">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" filter="url(#glow)">
+        <g stroke="#5CF2B6">
+          <path d="M50 88C46 82 34 82 33 90C32 97 50 96 50 105C50 113 36 114 31 107"/>
+          <path d="M41 77V118"/>
+        </g>
+        <g stroke="#F4F7FF" transform="translate(9 0)">
+          <path d="M84 96C81 91 68 91 67 98C66 104 84 103 84 109C84 116 70 117 65 111"/>
+          <path d="M112 96C109 91 96 91 95 98C94 104 112 103 112 109C112 116 98 117 93 111"/>
+          <path d="M125 78V114M125 99C125 89 144 88 144 99V114"/>
+        </g>
+      </g>
+      <rect x="165" y="84" width="18" height="32" rx="2" fill="#F4F7FF"/>
+    </g>
+    <g stroke-linecap="round" stroke-width="9">
+      <path d="M32 152H118" stroke="#8193D6" stroke-opacity=".75"/>
+      <path d="M32 176H90" stroke="#5CF2B6" stroke-opacity=".8"/>
+    </g>
+  </g>
+</svg>

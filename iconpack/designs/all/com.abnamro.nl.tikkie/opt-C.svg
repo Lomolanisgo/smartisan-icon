@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="card" x1="0" y1="14" x2="0" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C7CD6"/><stop offset="1" stop-color="#4E4EA2"/>
+    </linearGradient>
+    <linearGradient id="leather" x1="0" y1="40" x2="0" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55CFC3"/><stop offset="0.5" stop-color="#3AAEA6"/><stop offset="1" stop-color="#2A8D88"/>
+    </linearGradient>
+    <linearGradient id="tab" x1="0" y1="102" x2="0" y2="162" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4BC1B6"/><stop offset="1" stop-color="#2C8F89"/>
+    </linearGradient>
+    <radialGradient id="btn" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#E9FBF8"/><stop offset="0.5" stop-color="#8FD9D0"/><stop offset="1" stop-color="#3A9C95"/>
+    </radialGradient>
+    <linearGradient id="eur" x1="0" y1="80" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E6F6F4"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.2 0.62" result="a"/>
+      <feComposite in="a" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#0E4E4A" flood-opacity="0.45"/>
+    </filter>
+    <filter id="deb" x="-10%" y="-40%" width="120%" height="180%">
+      <feDropShadow dx="0" dy="-0.8" stdDeviation="0.2" flood-color="#2E2E70" flood-opacity="0.8"/>
+    </filter>
+    <clipPath id="body"><rect x="4" y="42" width="248" height="194" rx="26"/></clipPath>
+  </defs>
+
+  <!-- purple card peeking out of the wallet -->
+  <rect x="24" y="14" width="192" height="60" rx="10" fill="url(#card)"/>
+  <rect x="24.75" y="14.75" width="190.5" height="58.5" rx="9.3" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5"/>
+  <!-- "Tikkie" converted to paths (Segoe UI Bold) -->
+  <g transform="translate(120 29) scale(0.95) translate(-120 -30)" fill="#E9E9FF" fill-opacity="0.92" filter="url(#deb)">
+    <path d="M100.1 25.01L95.31 25.01L95.31 38.74L91.51 38.74L91.51 25.01L86.74 25.01L86.74 21.93L100.1 21.93ZM103.88 24.84C103.25 24.84 102.74 24.65 102.34 24.28C101.94 23.91 101.74 23.46 101.74 22.92C101.74 22.36 101.94 21.91 102.34 21.56C102.74 21.21 103.25 21.03 103.880 21.03C104.51 21.03 105.02 21.21 105.42 21.56C105.81 21.91 106.01 22.36 106.01 22.92C106.01 23.48 105.81 23.94 105.42 24.3C105.02 24.66 104.51 24.84 103.88 24.84ZM105.7 38.74L102 38.74L102 26.74L105.7 26.74ZM120.84 38.74L116.4 38.74L112.57 32.78L112.52 32.78L112.52 38.74L108.82 38.74L108.82 20.97L112.52 20.97L112.52 32.28L112.57 32.28L116.14 26.74L120.54 26.74L116.24 32.37ZM134.26 38.74L129.82 38.74L125.99 32.78L125.94 32.78L125.94 38.74L122.24 38.74L122.24 20.97L125.94 20.97L125.94 32.28L125.99 32.28L129.56 26.74L133.96 26.74L129.66 32.37ZM137.53 24.84C136.91 24.84 136.39 24.65 136 24.28C135.6 23.91 135.4 23.46 135.4 22.92C135.4 22.36 135.6 21.91 136 21.56C136.39 21.21 136.91 21.03 137.53 21.03C138.16 21.03 138.68 21.21 139.07 21.56C139.47 21.91 139.66 22.36 139.66 22.92C139.66 23.48 139.47 23.94 139.07 24.3C138.68 24.66 138.16 24.84 137.53 24.84ZM139.36 38.74L135.66 38.74L135.66 26.74L139.36 26.74ZM153.26 33.79L145.43 33.79C145.55 35.53 146.65 36.4 148.72 36.4C150.04 36.4 151.2 36.09 152.2 35.470L152.2 38.14C151.09 38.73 149.65 39.03 147.88 39.03C145.94 39.03 144.44 38.49 143.37 37.42C142.3 36.34 141.76 34.85 141.76 32.92C141.76 30.93 142.34 29.35 143.5 28.19C144.65 27.03 146.07 26.44 147.76 26.44C149.51 26.44 150.87 26.96 151.82 28C152.78 29.04 153.26 30.45 153.26 32.23ZM149.82 31.52C149.82 29.8 149.13 28.94 147.74 28.94C147.14 28.94 146.63 29.19 146.2 29.68C145.76 30.17 145.5 30.78 145.41 31.52Z"/>
+  </g>
+
+  <!-- teal leather wallet body -->
+  <g filter="url(#sh)">
+    <rect x="4" y="42" width="248" height="194" rx="26" fill="url(#leather)"/>
+  </g>
+  <g clip-path="url(#body)">
+    <rect x="4" y="42" width="248" height="194" fill="#000" filter="url(#grain)" opacity="0.10"/>
+    <rect x="4" y="42" width="248" height="40" fill="#FFFFFF" fill-opacity="0.10"/>
+    <rect x="4" y="42" width="248" height="194" rx="26" fill="none" stroke="#1F7571" stroke-width="3"/>
+    <rect x="4" y="44" width="248" height="194" rx="26" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+  </g>
+  <rect x="13" y="51" width="230" height="176" rx="18" fill="none" stroke="#1E6E6A" stroke-opacity="0.55" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="13" y="52.5" width="230" height="176" rx="18" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1" stroke-dasharray="5 4"/>
+
+  <!-- snap tab -->
+  <g filter="url(#sh)">
+    <path d="M252,102 H222 C207,102 196,113 196,128 V136 C196,151 207,162 222,162 H252 Z" fill="url(#tab)"/>
+  </g>
+  <path d="M252,102.8 H222 C207.5,102.8 197,113.5 197,128" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5"/>
+  <path d="M251,108 H223 C211,108 202,117 202,129 V135 C202,147 211,156 223,156 H251" fill="none" stroke="#1E6E6A" stroke-opacity="0.5" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <circle cx="224" cy="132" r="11" fill="url(#btn)" stroke="#256F6A" stroke-opacity="0.6"/>
+  <circle cx="224" cy="132" r="5" fill="none" stroke="#FFFFFF" stroke-opacity="0.5"/>
+
+  <!-- original Tikkie euro mark (exact path), uniform scale -->
+  <g filter="url(#sh)">
+    <path transform="translate(-104.3 -76.9) scale(4.05)" fill="url(#eur)" fill-rule="evenodd" d="M43.561,57.116C42.588,57.116 42.12,56.678 42.12,55.69C42.12,54.848 42.588,54.336 43.561,54.336H43.597V53.641C43.597,53.238 43.597,52.799 43.633,52.36H43.561C42.588,52.36 42.12,51.921 42.12,50.933C42.12,50.092 42.588,49.58 43.561,49.58H44.03C44.57,47.348 45.615,45.409 47.129,43.799C49.543,41.201 52.57,39.921 56.209,39.921C58.335,39.921 60.209,40.36 61.795,41.275C63.416,42.153 64.209,43.214 64.245,44.421C64.245,45.994 63.272,47.421 61.867,47.458C61.182,47.494 60.389,47.202 59.488,46.653C58.588,46.067 57.507,45.775 56.245,45.775C54.192,45.775 52.57,46.507 51.381,47.933C50.984,48.445 50.624,48.994 50.372,49.58H55.885C56.786,49.58 57.326,50.092 57.326,50.933C57.326,51.921 56.786,52.36 55.885,52.36H49.687C49.651,52.799 49.615,53.238 49.615,53.641V54.336H53.795C54.66,54.336 55.201,54.848 55.201,55.69C55.201,56.678 54.66,57.116 53.795,57.116H50.191C50.48,57.885 50.876,58.58 51.381,59.202C52.57,60.629 54.192,61.36 56.245,61.36C57.507,61.36 58.588,61.068 59.488,60.519C60.389,59.933 61.182,59.641 61.867,59.677C63.272,59.714 64.245,61.178 64.245,62.678C64.209,63.921 63.416,64.982 61.795,65.897C60.209,66.775 58.335,67.214 56.209,67.214C52.57,67.214 49.543,65.934 47.129,63.336C45.507,61.58 44.462,59.495 43.922,57.116H43.561Z"/>
+  </g>
+</svg>

@@ -7,6 +7,6 @@
   ],
   "options": [
     { "id": "A", "name": "白底品牌字+蓝色飘带", "shape": "square", "desc": "延续原图标：白色方形底板，粉色品牌字形凸起，底部蓝色玻璃飘带写“出境流量”；最接近原品牌。" },
-    { "id": "B", "name": "粉色 SIM 卡", "shape": "free", "desc": "切角粉色 SIM 卡，上方白色品牌字形，下方金色芯片；直接表达“出境流量卡”，无文字。" }
+    { "id": "B", "name": "粉色 SIM 卡", "shape": "free", "updated": true, "desc": "切角粉色 SIM 卡，上方是白色原版无忧行 logo（从原图标 PNG 精确描摹为矢量，对比图见 _logo-compare.png），下方金色芯片；直接表达“出境流量卡”，无文字。" }
   ]
 }

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34363A"/>
+      <stop offset="1" stop-color="#16171A"/>
+    </linearGradient>
+    <linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1C1D20"/><stop offset="0.2" stop-color="#18191C"/>
+      <stop offset="0.85" stop-color="#0E0F11"/><stop offset="1" stop-color="#0A0A0C"/>
+    </linearGradient>
+    <pattern id="brush" width="256" height="3" patternUnits="userSpaceOnUse">
+      <rect width="256" height="1" fill="#fff" opacity="0.03"/>
+      <rect y="2" width="256" height="1" fill="#000" opacity="0.06"/>
+    </pattern>
+    <linearGradient id="silver" x1="0" y1="-60" x2="0" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.45" stop-color="#D6D8DC"/>
+      <stop offset="0.55" stop-color="#A8ABB1"/>
+      <stop offset="1" stop-color="#E8E9EC"/>
+    </linearGradient>
+    <!-- exact Orca logo, traced from phone-icons embedded PNG (tools/trace.js), centred, height 122 units -->
+    <path id="logo" d="M19.36 -59.51L18.69 -59.01L18.18 -58.11L16.23 -52.67L2.40 -3.64L-1.21 8.33L-3.55 14.66L-5.98 17.60L-9.50 20.16L-13.03 22.17L-21.70 26.35L-29.26 28.74L-35.08 29.80L-41.17 30.09L-47.27 29.74L-53.38 28.65L-68.16 24.82L-72.14 24.50L-75.66 24.96L-78.01 25.68L-81.76 27.31L-83.70 28.51L-86.46 30.74L-89.74 33.94L-92.79 37.45L-93.61 38.83L-93.49 39.80L-92.79 40.28L-91.150 40.54L-81.06 40.85L-55.25 40.80L-32.73 40.17L-25.46 39.34L-20.53 38.46L-14.19 36.82L-7.39 35.43L-6.24 34.84L-5.66 33.90L-4.09 28.98L2.46 7.23L18.56 -48.68L20.53 -57.13L20.33 -59.01L19.86 -59.48ZM46.81 -48.69L40.71 -47.61L35.78 -45.42L34.14 -44.26L33.00 -42.82L32.57 -41.41L32.94 -40.24L34.23 -39.06L36.01 -38.36L38.13 -38.16L41.41 -38.34L50.56 -39.78L53.61 -40.70L56.66 -42.15L58.00 -43.29L58.51 -44.69L58.14 -45.87L56.89 -47.08L55.25 -47.87L52.67 -48.52ZM65.58 -35.31L58.07 -34.88L51.97 -33.67L48.21 -32.43L42.35 -29.52L37.19 -26.30L31.07 -21.23L25.11 -14.90L21.98 -10.91L16.31 -1.76L13.15 6.22L6.94 25.46L-1.81 54.08L-2.61 57.36L-2.58 58.30L-2.23 58.88L-1.52 58.83L-0.95 58.30L1.95 53.84L15.60 30.49L24.87 15.60L31.19 6.45L33.90 3.02L37.19 -0.49L40.00 -2.96L43.52 -5.14L62.99 -13.14L69.80 -16.23L80.59 -21.88L85.95 -25.22L89.27 -27.65L93.45 -31.56L93.86 -32.73L93.49 -33.58L92.56 -34.09L90.68 -34.47L80.83 -35.05Z"/>
+  </defs>
+  <use href="#tile" fill="url(#tileFill)"/>
+  <g clip-path="url(#tileClip)">
+    <rect width="256" height="256" fill="url(#brush)"/>
+    <ellipse cx="128" cy="30" rx="150" ry="60" fill="#fff" opacity="0.05"/>
+  </g>
+  <!-- raised silver logo: uniform scale 0.8 (152 x 98 px) -->
+  <g transform="translate(128 128) scale(0.8)">
+    <use href="#logo" fill="#000" opacity="0.6" transform="translate(0 3.5)"/>
+    <use href="#logo" fill="#fff" opacity="0.22" transform="translate(0 -1.2)"/>
+    <use href="#logo" fill="url(#silver)"/>
+  </g>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.2" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.25" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#5A5C62" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+  </g>
+</svg>

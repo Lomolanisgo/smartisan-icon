@@ -2,10 +2,24 @@
   "pkg": "nl.gall.app",
   "label": "Gall & Gall",
   "references": [
-    { "pkg": "com.jiuxianwang.jiukuaidao", "why": "同为酒类零售，参考其“酒器实物 + 品牌标签”的造型语言（B 方案）" }
+    {
+      "pkg": "com.jiuxianwang.jiukuaidao",
+      "why": "同为酒类零售，参考其“酒器实物 + 品牌标签”的造型语言（B 方案）"
+    }
   ],
   "options": [
-    { "id": "A", "name": "石板灰底板字标", "shape": "landscape", "desc": "横矩形深石板灰底板，白色 G&G 字标、橙色 &，浮雕阴影与顶部柔光。最接近原图标、识别度高；字体为 Arial Narrow Bold 转曲近似。" },
-    { "id": "B", "name": "葡萄酒瓶", "shape": "free", "desc": "异形深色玻璃酒瓶，橙色金属封帽，瓶身贴石板灰标签印 G&G。直接表达酒类商店，参考酒快到的酒坛做法；标签文字较小。" }
+    {
+      "id": "A",
+      "name": "石板灰底板原字标",
+      "shape": "landscape",
+      "desc": "横矩形按 tile-spec 规范，深石板灰底，G&G 字标由原图标 PNG 1:1 描摹为矢量（白色 G、橙色 &），等比放大并加浮雕阴影。",
+      "updated": true
+    },
+    {
+      "id": "B",
+      "name": "葡萄酒瓶",
+      "shape": "free",
+      "desc": "异形深色玻璃酒瓶，橙色金属封帽，瓶身贴石板灰标签印 G&G。直接表达酒类商店，参考酒快到的酒坛做法；标签文字较小。"
+    }
   ]
 }

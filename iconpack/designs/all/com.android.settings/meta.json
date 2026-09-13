@@ -1,14 +1,20 @@
 {
   "pkg": "com.android.settings",
   "label": "设置",
+  "credits": [
+    { "what": "锤子 T1 原厂“设置”图标（opt-E 提取、opt-F 矢量重建的来源）", "source": "https://guanmu.name/wp-content/uploads/2014/06/T1-launcher.jpg", "file": "_ref-T1-launcher.jpg" }
+  ],
   "references": [
     { "pkg": "com.sec.android.app.clockpackage", "why": "锤子系统类圆形白瓷盘底座，参考其外圈与盘面明暗" },
-    { "pkg": "com.smartisan.clock", "why": "锤子自家系统图标，圆盘+深色金属中心的做法" }
+    { "pkg": "com.smartisan.clock", "why": "锤子自家系统图标，圆盘+深色金属中心的做法" },
+    { "pkg": "(T1 截图)", "why": "锤子 T1 桌面截图中的原厂设置图标：银色金属齿轮、深色内盘、三根辐条与灰色小齿轮" }
   ],
   "options": [
     { "id": "A", "name": "白瓷盘·深灰齿轮", "shape": "circle", "desc": "白色瓷盘底座上放一枚深枪灰金属齿轮，中心为浅色轮毂和 X 形辐条（保留三星设置图标的内部结构）。与锤子时钟/三星时钟同系列，干净耐看。" },
     { "id": "B", "name": "镀铬立体齿轮", "shape": "free", "desc": "无底板，整枚镀铬齿轮做成带厚度的实物，中间凹槽里嵌深色轮毂。金属感更强、更接近三星原图的齿轮意象，但体积大、与白底图标对比强烈。" },
-    { "id": "C", "name": "白底方块·原版齿轮（深色金属）", "shape": "landscape", "updated": true, "desc": "锤子原厂没有“设置”系统图标可参考（已查 raw、png、downloader 清单与 web，均无 com.android.settings / smartisanos）。因此按锤子标准横矩形白色底板（与 bilibili 定稿同一轮廓），放入从三星设置原图标逐像素描出的齿轮（12 齿外轮廓、内圈、四窗口与中心孔均为原形，等比缩放），做成深枪灰金属材质。" },
-    { "id": "D", "name": "石墨方块·原版齿轮（银白）", "shape": "landscape", "updated": true, "desc": "同一横矩形轮廓，改为三星原图的深石墨色底板；描出的原版齿轮用银白色外圈 + 灰色内盘，四个窗口和中心孔透出底色，最接近三星原图配色，但在锤子的浅色图标群中比较显眼。" }
+    { "id": "C", "name": "白底方块·原版齿轮（深色金属）", "shape": "landscape", "updated": true, "desc": "当时未找到锤子原厂“设置”图标（仓库 raw、png、downloader 清单与 web 中均无）。按锤子标准横矩形白色底板（与 bilibili 定稿同一轮廓），放入从三星设置原图标逐像素描出的齿轮（等比缩放），深枪灰金属材质。" },
+    { "id": "D", "name": "石墨方块·原版齿轮（银白）", "shape": "landscape", "updated": true, "desc": "同一横矩形轮廓，改为三星原图的深石墨色底板；描出的原版齿轮用银白色外圈 + 灰色内盘，窗口和中心孔透出底色，最接近三星原图配色。" },
+    { "id": "E", "name": "锤子原厂设置图标（T1 截图提取·超分）", "shape": "free", "updated": true, "desc": "提取自锤子 T1 桌面截图（guanmu.name）：无损裁出原图 87px 的银色齿轮，先做保边去 JPEG 噪点，再在 Chrome 中多级高质量放大到 256、轻度 USM 锐化；按描出的齿轮轮廓抠掉壁纸（透明底），边缘向内收约 1px 去掉 JPEG 暗边，保留原图投影。最忠实原厂，但放大后仍略软、有少量压缩痕迹。对比见 _settings-compare.png。" },
+    { "id": "F", "name": "锤子原厂设置图标（矢量重建）", "shape": "free", "updated": true, "desc": "依据 T1 截图测量重建的干净矢量版：32 齿、齿顶/齿根半径、内盘半径、三根辐条角度（上、左下、右下）与轮毂尺寸均按原图测得，颜色取自原图（银色外圈、深色内盘）。内部灰色小齿轮为近似重绘（数量/位置参照原图，细节简化）。清晰锐利，适合大尺寸使用。" }
   ]
 }

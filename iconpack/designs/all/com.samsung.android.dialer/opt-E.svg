@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Vector rebuild of Smartisan T1 stock Phone icon (T1 launcher screenshot, guanmu.name); handset traced from the screenshot -->
+  <defs>
+    <linearGradient id="disc" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FAFAFA"/><stop offset="0.55" stop-color="#E9E9E8"/><stop offset="1" stop-color="#C6C8C3"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#96c74b"/><stop offset="1" stop-color="#75b12c"/>
+    </linearGradient>
+    <filter id="sh" x="-15%" y="-15%" width="130%" height="135%"><feDropShadow dx="0" dy="3" stdDeviation="3.2" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="inset" x="-20%" y="-20%" width="140%" height="140%"><feOffset dy="1.6"/><feGaussianBlur stdDeviation="1.4"/><feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix values="0 0 0 0 0.15  0 0 0 0 0.3  0 0 0 0 0  0 0 0 0.45 0"/><feComposite in2="SourceGraphic" operator="over"/></filter>
+    <clipPath id="c"><circle cx="128" cy="128" r="116"/></clipPath>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="url(#disc)" filter="url(#sh)"/>
+  <g clip-path="url(#c)" fill="none">
+    <circle cx="128" cy="128" r="116" stroke="#000" stroke-opacity="0.10" stroke-width="3"/>
+    <circle cx="128" cy="129.5" r="116" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="2"/>
+  </g>
+  <circle cx="128" cy="128" r="115.5" fill="none" stroke="#000" stroke-opacity="0.18" stroke-width="1"/>
+  <g transform="translate(-19.64 -18.44) scale(2.64)">
+    <path d="M41.88 37.31L42.31 37.21L42.81 37.19L43.31 37.27L43.81 37.44L44.31 37.70L44.94 38.11L45.56 38.61L46.19 39.18L46.69 39.71L47.27 40.44L48.60 42.31L49.81 44.24L50.17 44.94L50.55 45.81L50.74 46.44L50.79 46.94L50.73 47.44L50.56 47.90L50.32 48.31L49.94 48.83L48.19 50.69L47.61 51.44L47.32 51.94L47.12 52.44L47.00 52.94L46.96 53.44L46.98 53.94L47.10 54.56L47.26 55.06L47.51 55.56L47.94 56.19L49.31 57.84L50.48 59.44L51.94 60.85L53.19 62.22L53.86 62.81L55.31 63.82L57.19 65.02L57.94 65.41L58.69 65.64L59.31 65.70L59.81 65.65L60.31 65.52L60.81 65.29L61.31 64.98L61.94 64.50L64.44 62.38L65.06 62.01L65.69 61.81L66.06 61.76L66.56 61.78L67.06 61.87L67.56 62.02L68.56 62.43L70.19 63.31L70.98 63.81L71.69 64.33L72.53 65.06L73.15 65.69L73.56 66.19L73.96 66.81L74.26 67.44L74.47 68.06L74.57 68.69L74.57 69.19L74.47 69.69L74.28 70.19L73.98 70.69L73.60 71.19L73.03 71.81L72.44 72.38L71.94 72.77L71.31 73.17L69.69 73.97L68.81 74.33L68.06 74.58L67.44 74.74L66.69 74.88L65.94 74.95L65.06 74.99L63.44 74.92L61.69 74.63L59.56 74.11L58.44 73.75L55.56 72.58L53.69 71.67L51.81 70.53L50.79 69.81L47.94 67.56L45.47 65.06L44.47 63.81L43.36 62.56L42.71 61.69L41.28 59.56L39.88 56.94L39.36 55.81L38.81 54.36L38.19 52.94L37.97 52.31L37.55 50.69L37.13 48.31L37.01 46.56L37.01 45.31L37.06 44.44L37.14 43.81L37.28 43.19L37.69 42.06L38.10 41.19L38.51 40.44L39.10 39.56L39.69 38.83L40.19 38.33L40.69 37.92L41.31 37.54Z" fill="url(#green)" filter="url(#inset)"/>
+  </g>
+</svg>

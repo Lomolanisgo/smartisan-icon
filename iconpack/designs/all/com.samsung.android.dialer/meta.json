@@ -1,13 +1,19 @@
 {
   "pkg": "com.samsung.android.dialer",
   "label": "电话",
+  "credits": [
+    { "what": "锤子 T1 原厂“电话”图标（opt-D 提取、opt-E 矢量重建的来源）", "source": "https://guanmu.name/wp-content/uploads/2014/06/T1-launcher.jpg", "file": "../com.android.settings/_ref-T1-launcher.jpg" }
+  ],
   "references": [
     { "pkg": "com.google.android.dialer", "why": "锤子版谷歌电话：白色圆盘上放彩色听筒" },
-    { "pkg": "com.qihoo360.contacts", "why": "锤子里的绿色方块+白色听筒做法" }
+    { "pkg": "com.qihoo360.contacts", "why": "锤子里的绿色方块+白色听筒做法" },
+    { "pkg": "(T1 截图)", "why": "锤子 T1 桌面截图 Dock 栏中的原厂电话图标：白色圆盘 + 绿色斜向听筒" }
   ],
   "options": [
     { "id": "A", "name": "白瓷盘·绿听筒", "shape": "circle", "desc": "与锤子版谷歌电话同款的白色圆盘，中间一只带高光的三星绿色听筒。和系统圆形图标统一，品牌色保留在听筒上。" },
     { "id": "B", "name": "绿色方块·白听筒", "shape": "landscape", "desc": "横矩形整块三星绿渐变底板，白色到薄荷绿的立体听筒带投影。颜色辨识度最高，最接近三星原图。" },
-    { "id": "C", "name": "白瓷盘·三星原版听筒", "shape": "circle", "updated": true, "desc": "在已选的 A 基础上修改：听筒换成从三星原图标（phone-icons）逐像素描出的竖直听筒轮廓（等比缩放，无变形），保留白瓷圆盘与绿色高光材质，右侧略暗模拟原图的立体分面。锤子原厂没有“电话”系统图标可参考（已查 raw、png、downloader 清单与 web），因此以三星原标志为准。" }
+    { "id": "C", "name": "白瓷盘·三星原版听筒", "shape": "circle", "updated": true, "desc": "在已选的 A 基础上修改：听筒换成从三星原图标（phone-icons）逐像素描出的竖直听筒轮廓（等比缩放，无变形），保留白瓷圆盘与绿色高光材质，右侧略暗模拟原图的立体分面。" },
+    { "id": "D", "name": "锤子原厂电话图标（T1 截图提取·超分）", "shape": "circle", "updated": true, "desc": "提取自锤子 T1 桌面截图（guanmu.name），取左屏 Dock 栏最大的一枚（原图约 88px）：无损裁剪、保边去噪、Chrome 多级高质量放大到 256 并轻度锐化；圆盘外轮廓用拟合正圆抠图（透明底），边缘内收约 1px 去掉 JPEG 暗边，另加柔和投影。最忠实原厂，放大后略软。对比见 _phone-compare.png。" },
+    { "id": "E", "name": "锤子原厂电话图标（矢量重建）", "shape": "circle", "updated": true, "desc": "依据 T1 截图重建的矢量版：白色圆盘（上亮下暗的渐变与底部暗边按原图取色），绿色听筒轮廓从截图描出（等比缩放、平滑处理），颜色取自原图（#96C74B→#75B12C），带轻微内凹阴影。清晰锐利。" }
   ]
 }

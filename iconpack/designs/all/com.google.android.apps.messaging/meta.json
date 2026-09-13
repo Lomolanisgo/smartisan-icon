@@ -1,13 +1,19 @@
 {
   "pkg": "com.google.android.apps.messaging",
   "label": "Messages",
+  "credits": [
+    { "what": "锤子 T1 原厂“短信”图标（opt-D 提取、opt-E 矢量重建的来源）", "source": "https://guanmu.name/wp-content/uploads/2014/06/T1-launcher.jpg", "file": "../com.android.settings/_ref-T1-launcher.jpg" }
+  ],
   "references": [
     { "pkg": "com.htc.sense.mms", "why": "锤子版 HTC 短信：白色立体气泡+彩色文字行" },
-    { "pkg": "com.google.android.dialer", "why": "谷歌系应用在锤子包里的白色圆盘底座" }
+    { "pkg": "com.google.android.dialer", "why": "谷歌系应用在锤子包里的白色圆盘底座" },
+    { "pkg": "(T1 截图)", "why": "锤子 T1 桌面截图中的原厂短信图标：白色对话气泡 + 三个绿色圆点" }
   ],
   "options": [
     { "id": "A", "name": "白色气泡·蓝色文字", "shape": "free", "desc": "无底板白色立体对话气泡（尾巴在左下），里面三条谷歌蓝文字行。与 HTC 短信为兄弟造型，最具锤子味，但品牌双气泡标志弱化。" },
     { "id": "B", "name": "圆盘·双蓝气泡", "shape": "circle", "desc": "白瓷圆盘上叠放浅蓝、深蓝两枚带玻璃高光的气泡，还原 Google Messages 的双气泡标志。品牌识别更强。" },
-    { "id": "C", "name": "圆盘·原版双气泡", "shape": "circle", "updated": true, "desc": "在已选的 B 基础上修改：气泡换成从 Google Messages 原图标（phone-icons）逐像素描出的精确标志——浅蓝药丸、带尾巴的蓝气泡和深蓝重叠区三层（等比缩放，颜色取自原图），加玻璃高光，保留白瓷圆盘。锤子原厂没有“短信”系统图标可参考（已查 raw、png、downloader 清单与 web），因此以谷歌原标志为准。" }
+    { "id": "C", "name": "圆盘·原版双气泡", "shape": "circle", "updated": true, "desc": "在已选的 B 基础上修改：气泡换成从 Google Messages 原图标（phone-icons）逐像素描出的精确标志——浅蓝药丸、带尾巴的蓝气泡和深蓝重叠区三层（等比缩放，颜色取自原图），加玻璃高光，保留白瓷圆盘。" },
+    { "id": "D", "name": "锤子原厂短信图标（T1 截图提取·超分）", "shape": "free", "updated": true, "desc": "提取自锤子 T1 桌面截图（guanmu.name），左屏第 2 行第 1 列（原图约 87px）：无损裁剪、保边去噪、Chrome 多级高质量放大到 256 并轻度锐化；按描出并平滑的气泡轮廓抠图（透明底），边缘内收约 1px 去掉 JPEG 暗边，另加柔和投影。最忠实原厂，放大后略软。对比见 _messages-compare.png。" },
+    { "id": "E", "name": "锤子原厂短信图标（矢量重建）", "shape": "free", "updated": true, "desc": "依据 T1 截图重建的矢量版：气泡外形（含左下尾巴）从截图描出并平滑，白色上亮下暗渐变按原图取色；三个绿色圆点的位置和半径按截图测量（等距、同大），颜色取自原图（#8EC243→#7AB333），带轻微内凹阴影。清晰锐利。" }
   ]
 }

@@ -2,11 +2,28 @@
   "pkg": "nl.etos.mijnetos",
   "label": "Etos",
   "references": [
-    { "pkg": "com.manle.phone.android.yaodian", "why": "同为药妆/药店类应用，参考其暖色材质徽章与简洁主体的做法" },
-    { "pkg": "com.jiuxianwang.jiukuaidao", "why": "参考其“带标签的实物容器”隐喻，用于 B 方案的乳液瓶" }
+    {
+      "pkg": "com.manle.phone.android.yaodian",
+      "why": "同为药妆/药店类应用，参考其暖色材质徽章与简洁主体的做法"
+    },
+    {
+      "pkg": "com.jiuxianwang.jiukuaidao",
+      "why": "参考其“带标签的实物容器”隐喻，用于 B 方案的乳液瓶"
+    }
   ],
   "options": [
-    { "id": "A", "name": "黑色亮面底板", "shape": "landscape", "desc": "横矩形黑色钢琴漆底板，白色手写体 Etos 与下方弧形飘带，字形带浮雕阴影。忠实品牌黑白配色；手写字为 Segoe Script Bold 转曲近似，与原 Logo 字形略有差异。" },
-    { "id": "B", "name": "按压乳液瓶", "shape": "free", "desc": "异形白色塑料按压瓶，黑色泵头与黑底标签印 Etos 字标，突出药妆店属性；拟物感强，但标签文字在 48px 下较小。" }
+    {
+      "id": "A",
+      "name": "黑色亮面底板原 Logo",
+      "shape": "landscape",
+      "desc": "横矩形按 tile-spec 规范的黑色亮面底板；Etos 手写字标与飘带由原图标内嵌 PNG 1:1 描摹为矢量，等比放大，加浮雕阴影。",
+      "updated": true
+    },
+    {
+      "id": "B",
+      "name": "按压乳液瓶",
+      "shape": "free",
+      "desc": "异形白色塑料按压瓶，黑色泵头与黑底标签印 Etos 字标，突出药妆店属性；拟物感强，但标签文字在 48px 下较小。"
+    }
   ]
 }

@@ -1,55 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
   <defs>
-    <linearGradient id="top" x1="0" y1="36" x2="0" y2="132" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#E9C58F"/><stop offset="1" stop-color="#D6A968"/>
+    <path id="env" d="M20 52C20 47 23 44 28 44H228C233 44 236 47 236 52V210C236 215 233 218 228 218H28C23 218 20 215 20 210Z"/>
+    <clipPath id="ec"><use href="#env"/></clipPath>
+    <linearGradient id="paper" x1="0" y1="44" x2="0" y2="218" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD83A"/><stop offset="0.5" stop-color="#FFCC00"/><stop offset="1" stop-color="#F2B800"/>
     </linearGradient>
-    <linearGradient id="left" x1="24" y1="0" x2="128" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#C9925A"/><stop offset="1" stop-color="#B98249"/>
+    <linearGradient id="side" x1="20" y1="0" x2="236" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity="0.06"/><stop offset="0.15" stop-color="#000" stop-opacity="0"/>
+      <stop offset="0.85" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.08"/>
     </linearGradient>
-    <linearGradient id="right" x1="128" y1="0" x2="232" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#A26C3A"/><stop offset="1" stop-color="#8E5C2E"/>
+    <linearGradient id="flap" x1="0" y1="44" x2="0" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE266"/><stop offset="1" stop-color="#FFD21A"/>
     </linearGradient>
-    <linearGradient id="tape" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFD21F"/><stop offset="1" stop-color="#FFC000"/>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E0101E"/><stop offset="1" stop-color="#C4000F"/>
     </linearGradient>
-    <radialGradient id="shadow" cx="128" cy="236" r="110" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 0.13 0 205)">
-      <stop offset="0" stop-color="#000" stop-opacity="0.35"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    <radialGradient id="shadow" cx="128" cy="226" r="118" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 0.11 0 201)">
+      <stop offset="0" stop-color="#000" stop-opacity="0.4"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
     </radialGradient>
-    <filter id="paper" x="0" y="0" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="7" result="n"/>
-      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.12 0"/>
+    <filter id="fiber" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9 0.35" numOctaves="3" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.3  0 0 0 0 0  0 0 0 0.16 0"/>
       <feComposite in2="SourceGraphic" operator="in"/>
     </filter>
+    <filter id="ink" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="1.008" stdDeviation="0.504" flood-color="#7A5A00" flood-opacity="0.35"/>
+    </filter>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.2" flood-color="#6A4A00" flood-opacity="0.35"/>
+    </filter>
   </defs>
-  <ellipse cx="128" cy="236" rx="110" ry="14" fill="url(#shadow)"/>
-  <g id="box">
-    <path d="M128 36L228 80L128 124L28 80Z" fill="url(#top)"/>
-    <path d="M28 80L128 124V236L28 192Z" fill="url(#left)"/>
-    <path d="M128 124L228 80V192L128 236Z" fill="url(#right)"/>
+  <ellipse cx="128" cy="224" rx="118" ry="12" fill="url(#shadow)"/>
+  <use href="#env" fill="url(#paper)" filter="url(#soft)"/>
+  <g clip-path="url(#ec)">
+    <rect x="0" y="0" width="256" height="256" fill="#000" filter="url(#fiber)"/>
+    <rect x="20" y="44" width="216" height="174" fill="url(#side)"/>
+    <!-- top closing flap with tear strip -->
+    <path d="M20 44H236V74C236 76 235 77 233 77H23C21 77 20 76 20 74Z" fill="url(#flap)"/>
+    <path d="M20 77.5H236" stroke="#B88A00" stroke-opacity="0.55" stroke-width="1.5"/>
+    <path d="M20 79.5H236" stroke="#FFF1A8" stroke-opacity="0.8" stroke-width="1"/>
+    <path d="M28 62H228" stroke="#C99A00" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="5 3"/>
+    <path d="M206 44V77" stroke="#C99A00" stroke-opacity="0.35" stroke-width="1"/>
+    <!-- bottom seam -->
+    <path d="M20 206H236" stroke="#C99A00" stroke-opacity="0.35" stroke-width="1"/>
+    <!-- subtle paper wrinkle highlights -->
+    <path d="M40 150C90 140 150 158 220 146" fill="none" stroke="#FFF3B0" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
+    <path d="M40 158C90 148 150 166 220 154" fill="none" stroke="#B88A00" stroke-opacity="0.10" stroke-width="4" stroke-linecap="round"/>
   </g>
-  <path d="M28 36H228V236H28Z" fill="#000" filter="url(#paper)" clip-path="none" opacity="0" />
-  <!-- top flap seam -->
-  <path d="M78 58L178 102" stroke="#9C6A38" stroke-width="1.5" opacity="0.7"/>
-  <!-- tape across seam on top, wrapping down right face -->
-  <path d="M68 62L88 53L188 97L168 106Z" fill="url(#tape)" opacity="0.95" transform="translate(0 0)"/>
-  <path d="M168 106L188 97V144L168 153Z" fill="#E8A800" opacity="0.95"/>
-  <!-- edges -->
-  <path d="M28 80L128 124L228 80" fill="none" stroke="#F6DDB4" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M128 124V236" stroke="#7A4C22" stroke-opacity="0.5" stroke-width="1.5"/>
-  <!-- DHL label on left face: local (u,v) -> (28 + u, 80 + 0.44u + v) -->
-  <g transform="matrix(1 0.44 0 1 28 80)">
-    <rect x="14" y="30" width="72" height="48" rx="3" fill="#FFCC00"/>
-    <rect x="14" y="30" width="72" height="48" rx="3" fill="none" stroke="#C99A00" stroke-width="1"/>
-    <g fill="#D40511">
-      <path d="M17 49H27L26 51H16Z"/><path d="M16 53H26L25 55H15Z"/><path d="M15 57H25L24 59H14Z"/>
-      <path d="M74 49H84L83 51H73Z"/><path d="M73 53H83L82 55H72Z"/><path d="M72 57H82L81 59H71Z"/>
-      <text x="50" y="61" text-anchor="middle" font-family="Arial, Segoe UI" font-weight="900" font-style="italic" font-size="19" letter-spacing="-0.8">DHL</text>
+  <use href="#env" fill="none" stroke="#FFF4B8" stroke-opacity="0.8" stroke-width="1.5" transform="translate(0 1)" clip-path="url(#ec)"/>
+  <use href="#env" fill="none" stroke="#C99200" stroke-opacity="0.6" stroke-width="1"/>
+  <!-- original DHL logo (traced) -->
+  <path transform="translate(136 110) scale(0.5952380952380952) translate(-216 -215.5)" d="M159.83 173.08L159.17 173.39L158.39 174.17L157.61 175.83L155.39 178.17L154.82 179.50L153.39 181.17L152.61 182.83L150.39 185.17L149.61 186.83L147.39 189.17L146.82 190.50L145.39 192.17L144.61 193.83L142.39 196.17L141.56 198.17L141.56 198.50L141.83 198.80L143.83 199.00L248.17 199.08L248.95 199.50L249.56 200.50L247.82 204.50L246.39 206.17L245.61 207.83L243.39 210.17L242.61 211.83L241.39 213.17L240.61 214.83L239.39 216.17L238.61 217.83L237.17 219.56L237.02 220.50L237.25 221.50L239.83 222.92L281.83 223.00L283.35 222.83L283.76 222.50L284.39 221.17L285.61 219.83L286.39 218.17L288.61 215.83L289.18 214.50L290.61 212.83L291.39 211.17L293.61 208.83L294.39 207.17L295.61 205.83L297.81 201.50L298.17 199.56L298.92 198.17L298.97 194.17L298.81 193.50L298.08 192.17L297.83 189.56L295.82 185.50L294.39 183.83L293.50 182.04L290.83 179.39L289.17 178.61L287.50 177.18L286.50 176.82L281.50 174.19L278.83 173.92L277.17 173.08ZM90.83 208.09L90.25 208.50L90.03 209.17L90.08 217.17L90.39 217.83L91.17 218.61L91.83 218.92L92.83 219.00L149.17 218.92L150.17 218.32L152.61 215.83L153.39 214.17L154.61 212.83L155.39 211.17L157.24 209.17L157.43 208.50L156.83 208.09L155.50 208.00ZM169.83 208.08L169.04 208.50L167.50 210.04L166.61 211.83L164.39 214.17L163.82 215.50L162.39 217.17L161.61 218.83L159.39 221.17L158.82 222.50L157.39 224.17L156.61 225.83L154.39 228.17L153.82 229.50L152.39 231.17L151.61 232.83L149.39 235.17L148.61 236.83L146.39 239.17L145.82 240.50L144.39 242.17L143.61 243.83L141.39 246.17L140.82 247.50L139.39 249.17L138.61 250.83L136.39 253.17L135.61 254.83L134.20 256.50L134.26 257.50L134.83 257.91L233.17 257.92L234.83 257.08L238.17 256.92L239.83 256.08L242.17 255.92L243.56 255.17L245.50 254.81L246.56 254.17L248.44 253.83L258.50 248.82L260.17 247.39L261.83 246.61L265.17 243.39L266.50 242.82L267.17 242.32L274.50 234.96L275.44 232.83L275.44 232.50L275.10 232.17L273.83 232.00L208.83 231.92L208.17 231.61L206.83 230.29L206.52 229.83L206.50 229.17L207.39 227.17L209.61 224.83L210.18 223.50L211.61 221.83L212.39 220.17L214.61 217.83L215.39 216.17L216.61 214.83L217.39 213.17L218.82 211.50L219.56 209.50L219.26 208.83L218.50 208.19L216.83 208.00ZM305.83 208.08L305.04 208.50L303.39 210.17L302.82 211.50L301.39 213.17L300.61 214.83L298.52 217.17L298.53 217.83L298.83 218.23L299.50 218.56L300.83 218.08L301.83 218.00L337.50 218.00L339.17 218.08L340.50 218.56L341.50 217.95L341.92 217.17L341.97 209.17L341.75 208.50L341.17 208.09ZM90.83 228.09L90.25 228.50L90.03 229.17L90.03 236.83L90.50 237.75L91.83 238.00L135.83 237.97L136.76 237.50L137.39 236.17L139.61 233.83L140.39 232.17L141.82 230.50L142.44 228.83L142.44 228.50L142.10 228.17L140.83 228.00ZM290.83 228.09L290.24 228.50L289.61 229.83L288.39 231.17L287.61 232.83L285.18 235.50L284.56 237.17L284.56 237.50L285.17 237.92L340.17 238.00L341.50 237.75L341.97 236.83L341.97 229.17L341.75 228.50L340.83 228.03ZM91.83 247.08L90.69 247.83L90.08 248.83L90.03 255.83L90.19 256.50L91.04 257.50L91.56 257.83L92.50 257.99L121.17 257.92L121.96 257.50L123.61 255.83L124.39 254.17L126.61 251.83L127.18 250.50L128.60 248.83L128.88 248.17L128.83 247.71L128.50 247.25L127.50 247.01ZM277.83 247.08L277.04 247.50L275.39 249.17L274.61 250.83L272.39 253.17L271.61 254.83L270.40 256.17L270.12 256.83L270.17 257.29L270.50 257.75L271.17 257.97L339.50 257.99L340.44 257.83L340.96 257.50L341.81 256.50L341.97 255.83L341.92 248.83L341.61 248.17L340.96 247.50L339.83 247.03Z" fill="url(#red)" filter="url(#ink)"/>
+  <!-- white number + weight table, as on the real pack -->
+  <path d="M44 144L56 136H63V188H53V149L44 154Z" fill="#fff"/>
+  <g>
+    <rect x="80" y="152" width="84" height="9" fill="#D40511"/>
+    <g fill="#fff" fill-opacity="0.9">
+      <rect x="80" y="163" width="40" height="6"/><rect x="124" y="163" width="40" height="6"/>
+      <rect x="80" y="171" width="40" height="6"/><rect x="124" y="171" width="40" height="6"/>
+      <rect x="80" y="179" width="40" height="6"/><rect x="124" y="179" width="40" height="6"/>
     </g>
-    <path d="M28 52.4H72M27 56.4H71" stroke="#FFCC00" stroke-width="1"/>
   </g>
-  <!-- fragile/barcode hint on right face -->
-  <g transform="matrix(1 -0.44 0 1 128 124)" opacity="0.55">
-    <rect x="18" y="60" width="44" height="22" fill="#F4EBDD"/>
-    <path d="M22 64V78M25 64V78M29 64V78M31 64V78M35 64V78M39 64V78M41 64V78M45 64V78M48 64V78M52 64V78M55 64V78M58 64V78" stroke="#333" stroke-width="1.4"/>
-  </g>
+  <rect x="186" y="190" width="36" height="5" rx="1" fill="#D40511" fill-opacity="0.85"/>
 </svg>

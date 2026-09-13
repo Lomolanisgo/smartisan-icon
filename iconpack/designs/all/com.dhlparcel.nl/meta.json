@@ -2,11 +2,14 @@
   "pkg": "com.dhlparcel.nl",
   "label": "My DHL",
   "references": [
-    { "pkg": "com.dada.mobile.android", "why": "快递纸箱包裹的材质与光影，B 方案的纸箱造型参考它" },
-    { "pkg": "com.sf.activity", "why": "快递品牌色底板加标志的做法" }
+    { "pkg": "com.sf.activity", "why": "同为快递，参考顺丰图标的材质与光影做法（实物质感、柔和高光）" },
+    { "pkg": "com.dada.mobile.android", "why": "快递包裹类实物隐喻的材质与光影" }
+  ],
+  "credits": [
+    { "what": "DHL Express 快递文件袋产品照（B 方案参考）", "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI97f-Rr5mBDH95WME-XeXS9M3saOncvXtbk0hAG01NQ&s" }
   ],
   "options": [
     { "id": "A", "name": "黄色光面标志牌", "shape": "landscape", "desc": "DHL 黄色横矩形底板，红色斜体 DHL 字样与左右速度线；简洁、品牌识别强。字样为 Arial 字体近似，不是官方字形。" },
-    { "id": "B", "name": "快递纸箱", "shape": "free", "desc": "立体瓦楞纸箱，顶部黄色封箱胶带延伸到侧面，侧面贴 DHL 黄色面单和条码；隐喻直观，标志较小。" }
+    { "id": "B", "name": "DHL 快递文件袋", "shape": "free", "updated": true, "desc": "参考 DHL Express 文件袋照片：黄色纸质/Tyvek 文件袋，带纤维纹理、顶部封口翻盖与撕拉线、底部接缝和柔和投影；红色标志从原图描摹为矢量（等比例），并有白色“1”和重量表格细节。" }
   ]
 }

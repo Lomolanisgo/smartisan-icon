@@ -1,122 +1,603 @@
 {
-  "com.playstack.balatro.android": { "sel": ["E"] },
-  "com.ss.android.lark": { "sel": ["A"] },
-  "bitpit.launcher": { "sel": ["B"] },
-  "de.traderepublic.app": { "sel": ["A"] },
-  "com.sgd.nlo.prod": { "sel": ["B"] },
-  "com.microsoft.office.outlook": { "sel": ["A"] },
-  "com.tencent.weread": { "sel": ["D"] },
-  "nl.ns.android.activity": { "sel": ["A"] },
-  "com.trainnote.rn": { "sel": ["A"] },
-  "com.abnamro.nl.mobile.payments": { "sel": ["B"] },
-  "com.android.settings": { "sel": [], "note": "https://guanmu.name/wp-content/uploads/2014/06/T1-launcher.jpg 这里有锤子的设置图标，你直接提取然后超分辨率一下" },
-  "nl.nos.app": { "sel": ["B"] },
-  "ctrip.english": { "sel": ["B"] },
-  "com.stably.orca.mobile": { "sel": ["C"] },
-  "com.takeaway.android": { "sel": ["B"] },
-  "notion.id": { "sel": ["C"] },
-  "com.joybuy.jdi": { "sel": ["C"] },
-  "com.microsoft.todos": { "sel": ["A"] },
-  "com.whatsapp.w4b": { "sel": ["B"] },
-  "me.yoopu.app.songbook": { "sel": ["A"] },
-  "com.bunq.android": { "sel": ["A"] },
-  "com.samsung.android.themedesigner": { "sel": ["A"] },
-  "com.icemobile.albertheijn": { "sel": ["A"] },
-  "com.microsoft.office.excel": { "sel": ["A"] },
-  "com.samsung.android.calendar": { "sel": ["B"] },
-  "com.basicfit.trainingApp": { "sel": ["A"] },
-  "com.chinarailway.globalticketing": { "sel": ["A"] },
-  "nl.nshispeed": { "sel": ["B"] },
-  "org.localsend.localsend_app": { "sel": ["B"] },
-  "nl.rijksoverheid.digid.pub": { "sel": ["A"] },
-  "com.mcdonalds.mobileapp": { "sel": ["A"] },
-  "com.mutangtech.qianji": { "sel": ["B"] },
-  "com.samsung.android.dialer": { "sel": ["C"] },
-  "com.google.android.apps.messaging": { "sel": ["C"] },
-  "com.mubu.app": { "sel": ["C"] },
-  "com.server.auditor.ssh.client": { "sel": ["C"] },
-  "com.cmi.jegotrip": { "sel": ["B"] },
-  "ch.protonvpn.android": { "sel": ["A"] },
-  "com.gov.mfa": { "sel": ["C"] },
-  "com.samsung.android.app.routines": { "sel": ["A"] },
-  "com.deepseek.chat": { "sel": ["A"] },
-  "com.uniqlo.europe.catalogue": { "sel": [], "reuse": "com.yek.android.uniqlo" },
-  "com.uzero.baimiao": { "sel": ["B"] },
-  "com.cctv.yangshipin.app.androidp": { "sel": ["B"] },
-  "nl.simyo.mijnsimyo": { "sel": ["B"] },
-  "com.github.android": { "sel": ["A"] },
-  "com.ups.mobile.android": { "sel": ["B"] },
-  "com.samsung.android.app.notes": { "sel": ["A"] },
-  "nl.burgerking.app": { "sel": ["H"] },
-  "nl.rijksoverheid.mijngegevens.pub": { "sel": ["B"] },
-  "com.samsung.android.goodlock": { "sel": ["A"] },
-  "nl.etos.mijnetos": { "sel": ["A"], "note": "直接用原图的logo" },
-  "com.ticketmaster.mobile.android.na": { "sel": ["B"] },
-  "com.growatt.shinephones": { "sel": ["B"] },
-  "com.samsung.android.sidegesturepad": { "sel": ["A"] },
-  "nl.budgetthuis.app": { "sel": ["B"] },
-  "nl.rijksoverheid.mbb.pub": { "sel": ["B"] },
-  "com.samsung.android.app.reminder": { "sel": ["A"] },
-  "com.azure.authenticator": { "sel": ["A"] },
-  "nl.belastingdienst.mkt.pub": { "sel": ["A"] },
-  "com.app.tgtg": { "sel": ["B"] },
-  "nl.tpp.mobile.android": { "sel": ["A"] },
-  "com.alibaba.aliexpresshd": { "sel": ["A"] },
-  "nl.kpn.mijn": { "sel": ["A"] },
-  "com.abnamro.nl.tikkie": { "sel": ["C"] },
-  "com.supportware.Buienradar": { "sel": ["A"], "note": "深蓝色的圆要和外框圆共圆心" },
-  "com.kfc.nl.mobileapp": { "sel": [], "reuse": "com.yek.android.kfc.activitys" },
-  "de.danoeh.antennapod": { "sel": ["A"] },
-  "com.dhlparcel.nl": { "sel": ["B"], "note": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI97f-Rr5mBDH95WME-XeXS9M3saOncvXtbk0hAG01NQ&s 类似这个的DHL信封，灵感来源于SF" },
-  "com.lebara.wallet": { "sel": ["B"] },
-  "nl.tls.ovpay": { "sel": ["A"] },
-  "com.tailscale.ipn": { "sel": ["A"] },
-  "com.fujifilm.instaxWideEvo": { "sel": ["C", "B"], "note": "（Claude 跟进）C 去掉外投影，符合底板规格" },
-  "com.etoro.openbook": { "sel": ["B"] },
-  "com.pandaanalytics.cocoofficial": { "sel": ["B"] },
-  "com.nothing.smartcenter": { "sel": ["B"] },
-  "com.samsung.android.app.routineplus": { "sel": ["A"] },
-  "nl.gall.app": { "sel": ["A"] },
-  "com.samsung.android.spay": { "sel": ["A"] },
-  "co.benx.weverse": { "sel": ["A"], "note": "同样，文字用原图标的文字，这个样式不错" },
-  "com.dearu.bubble.jyp": { "sel": ["B"] },
-  "com.growatt.shinetools": { "sel": ["A"] },
-  "com.microsoft.office.officehubrow": { "sel": ["A"] },
-  "com.samsung.android.bixby.agent": { "sel": ["A"] },
-  "com.goyourfly.bigidea": { "sel": ["B"] },
-  "com.reddit.frontpage": { "sel": ["B"] },
-  "com.termux": { "sel": ["A"] },
-  "com.salt.music": { "sel": ["A"] },
-  "com.samsung.systemui.notilus": { "sel": ["A"] },
-  "com.flomo.app": { "sel": ["B"] },
-  "com.fobwifi.normal": { "sel": ["A"] },
-  "com.samsung.android.app.contacts": { "sel": ["A"] },
-  "com.fbto.fbtozorg": { "sel": ["A"] },
-  "com.nike.snkrs": { "sel": ["A", "B"] },
-  "com.instagram.barcelona": { "sel": ["B"] },
-  "com.tianyancha.skyeye": { "sel": ["D"] },
-  "com.locnall.KimGiSa": { "sel": ["A"] },
-  "com.samsung.android.displayassistant": { "sel": ["A"] },
-  "com.huawei.health": { "sel": ["B"] },
-  "fr.fan.wallet": { "sel": ["A"] },
-  "com.pavelkozemirov.guesstheartist": { "sel": ["C"] },
-  "com.joyride.cargoroobymoby": { "sel": ["A"] },
-  "kr.co.dalcomsoft.superstar.a": { "sel": ["A"] },
-  "com.fujifilm.instaxup": { "sel": ["A"] },
-  "com.nn.accelerator.box": { "sel": ["B"] },
-  "nl.airmiles.app": { "sel": ["B"] },
-  "com.samsung.android.oneconnect": { "sel": ["A"] },
-  "hello.litiaotiao.app": { "sel": ["A"] },
-  "com.samsung.knox.securefolder": { "sel": ["A"] },
-  "com.buuuk.globalblue": { "sel": ["B"] },
-  "de.flixbus.app": { "sel": ["B"] },
-  "com.samsung.android.app.tips": { "sel": ["A"] },
-  "com.sec.android.easyMover": { "sel": ["B"] },
-  "com.android.samsung.utilityapp": { "sel": ["A"] },
-  "com.google.android.apps.bard": { "sel": ["B"] },
-  "com.samsung.android.app.find": { "sel": ["B"] },
-  "com.samsung.android.app.sketchbook": { "sel": ["A"] },
-  "de.number26.android": { "sel": ["A"] },
-  "org.chromium.webapk.a12f1ab74643f3fa0_v2": { "sel": ["B"] },
-  "org.chromium.webapk.ae7d1a3af3add27a2_v2": { "sel": ["B"] }
+  "com.playstack.balatro.android": {
+    "sel": [
+      "E"
+    ]
+  },
+  "com.ss.android.lark": {
+    "sel": [
+      "A"
+    ]
+  },
+  "bitpit.launcher": {
+    "sel": [
+      "B"
+    ]
+  },
+  "de.traderepublic.app": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.sgd.nlo.prod": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.microsoft.office.outlook": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.tencent.weread": {
+    "sel": [
+      "D"
+    ]
+  },
+  "nl.ns.android.activity": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.trainnote.rn": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.abnamro.nl.mobile.payments": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.android.settings": {
+    "sel": [
+      "F"
+    ]
+  },
+  "nl.nos.app": {
+    "sel": [
+      "B"
+    ]
+  },
+  "ctrip.english": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.stably.orca.mobile": {
+    "sel": [
+      "C"
+    ]
+  },
+  "com.takeaway.android": {
+    "sel": [
+      "B"
+    ]
+  },
+  "notion.id": {
+    "sel": [
+      "C"
+    ]
+  },
+  "com.joybuy.jdi": {
+    "sel": [
+      "C"
+    ]
+  },
+  "com.microsoft.todos": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.whatsapp.w4b": {
+    "sel": [
+      "B"
+    ]
+  },
+  "me.yoopu.app.songbook": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.bunq.android": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.samsung.android.themedesigner": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.icemobile.albertheijn": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.microsoft.office.excel": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.samsung.android.calendar": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.basicfit.trainingApp": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.chinarailway.globalticketing": {
+    "sel": [
+      "A"
+    ]
+  },
+  "nl.nshispeed": {
+    "sel": [
+      "B"
+    ]
+  },
+  "org.localsend.localsend_app": {
+    "sel": [
+      "B"
+    ]
+  },
+  "nl.rijksoverheid.digid.pub": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.mcdonalds.mobileapp": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.mutangtech.qianji": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.dialer": {
+    "sel": [
+      "E"
+    ]
+  },
+  "com.google.android.apps.messaging": {
+    "sel": [
+      "E"
+    ]
+  },
+  "com.mubu.app": {
+    "sel": [
+      "C"
+    ]
+  },
+  "com.server.auditor.ssh.client": {
+    "sel": [
+      "C"
+    ]
+  },
+  "com.cmi.jegotrip": {
+    "sel": [
+      "B"
+    ]
+  },
+  "ch.protonvpn.android": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.gov.mfa": {
+    "sel": [
+      "C"
+    ]
+  },
+  "com.samsung.android.app.routines": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.deepseek.chat": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.uniqlo.europe.catalogue": {
+    "sel": [],
+    "reuse": "com.yek.android.uniqlo"
+  },
+  "com.uzero.baimiao": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.cctv.yangshipin.app.androidp": {
+    "sel": [
+      "B"
+    ]
+  },
+  "nl.simyo.mijnsimyo": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.github.android": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.ups.mobile.android": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.app.notes": {
+    "sel": [
+      "A"
+    ]
+  },
+  "nl.burgerking.app": {
+    "sel": [
+      "H"
+    ]
+  },
+  "nl.rijksoverheid.mijngegevens.pub": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.goodlock": {
+    "sel": [
+      "A"
+    ]
+  },
+  "nl.etos.mijnetos": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.ticketmaster.mobile.android.na": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.growatt.shinephones": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.sidegesturepad": {
+    "sel": [
+      "A"
+    ]
+  },
+  "nl.budgetthuis.app": {
+    "sel": [
+      "B"
+    ]
+  },
+  "nl.rijksoverheid.mbb.pub": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.app.reminder": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.azure.authenticator": {
+    "sel": [
+      "A"
+    ]
+  },
+  "nl.belastingdienst.mkt.pub": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.app.tgtg": {
+    "sel": [
+      "B"
+    ]
+  },
+  "nl.tpp.mobile.android": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.alibaba.aliexpresshd": {
+    "sel": [
+      "A"
+    ]
+  },
+  "nl.kpn.mijn": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.abnamro.nl.tikkie": {
+    "sel": [
+      "C"
+    ]
+  },
+  "com.supportware.Buienradar": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.kfc.nl.mobileapp": {
+    "sel": [],
+    "reuse": "com.yek.android.kfc.activitys"
+  },
+  "de.danoeh.antennapod": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.dhlparcel.nl": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.lebara.wallet": {
+    "sel": [
+      "B"
+    ]
+  },
+  "nl.tls.ovpay": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.tailscale.ipn": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.fujifilm.instaxWideEvo": {
+    "sel": [
+      "C",
+      "B"
+    ]
+  },
+  "com.etoro.openbook": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.pandaanalytics.cocoofficial": {
+    "sel": [
+      "C"
+    ]
+  },
+  "com.nothing.smartcenter": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.app.routineplus": {
+    "sel": [
+      "A"
+    ]
+  },
+  "nl.gall.app": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.samsung.android.spay": {
+    "sel": [
+      "A"
+    ]
+  },
+  "co.benx.weverse": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.dearu.bubble.jyp": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.growatt.shinetools": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.microsoft.office.officehubrow": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.samsung.android.bixby.agent": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.goyourfly.bigidea": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.reddit.frontpage": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.termux": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.salt.music": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.samsung.systemui.notilus": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.flomo.app": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.fobwifi.normal": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.samsung.android.app.contacts": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.fbto.fbtozorg": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.nike.snkrs": {
+    "sel": [
+      "A",
+      "B"
+    ]
+  },
+  "com.instagram.barcelona": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.tianyancha.skyeye": {
+    "sel": [
+      "D"
+    ]
+  },
+  "com.locnall.KimGiSa": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.samsung.android.displayassistant": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.huawei.health": {
+    "sel": [
+      "B"
+    ]
+  },
+  "fr.fan.wallet": {
+    "sel": [
+      "F"
+    ]
+  },
+  "com.pavelkozemirov.guesstheartist": {
+    "sel": [
+      "C"
+    ]
+  },
+  "com.joyride.cargoroobymoby": {
+    "sel": [
+      "A"
+    ]
+  },
+  "kr.co.dalcomsoft.superstar.a": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.fujifilm.instaxup": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.nn.accelerator.box": {
+    "sel": [
+      "B"
+    ]
+  },
+  "nl.airmiles.app": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.oneconnect": {
+    "sel": [
+      "A"
+    ]
+  },
+  "hello.litiaotiao.app": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.samsung.knox.securefolder": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.buuuk.globalblue": {
+    "sel": [
+      "B"
+    ]
+  },
+  "de.flixbus.app": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.app.tips": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.sec.android.easyMover": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.android.samsung.utilityapp": {
+    "sel": [
+      "A"
+    ]
+  },
+  "com.google.android.apps.bard": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.app.find": {
+    "sel": [
+      "B"
+    ]
+  },
+  "com.samsung.android.app.sketchbook": {
+    "sel": [
+      "A"
+    ]
+  },
+  "de.number26.android": {
+    "sel": [
+      "A",
+      "C"
+    ]
+  },
+  "org.chromium.webapk.a12f1ab74643f3fa0_v2": {
+    "sel": [
+      "B"
+    ]
+  },
+  "org.chromium.webapk.ae7d1a3af3add27a2_v2": {
+    "sel": [
+      "B"
+    ]
+  }
 }

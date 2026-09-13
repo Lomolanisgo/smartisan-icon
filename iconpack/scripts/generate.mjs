@@ -58,6 +58,8 @@ for (const [pkg, activities] of Object.entries(customComponents)) {
   for (const a of activities) addComponent(pkg, a)
 }
 const choices = await readJson(path.join(overridesDir, 'choices.json'), {})
+// 本身已是锤子风格图标、无需收录的应用（测试界面不再计入“没有锤子图标”）
+const skip = await readJson(path.join(overridesDir, 'skip.json'), [])
 
 // 同一包名有多张图时的默认优先级
 function pickIcon(pkg, files) {
@@ -176,7 +178,7 @@ await writeFile(path.join(appDir, 'res', 'xml', 'drawable.xml'), `<?xml version=
 ${drawableItems.join('\n')}
 </resources>
 `)
-await writeFile(path.join(pngDir, '_index.json'), JSON.stringify({ generatedAt: new Date().toISOString(), icons: index }))
+await writeFile(path.join(pngDir, '_index.json'), JSON.stringify({ generatedAt: new Date().toISOString(), skip, icons: index }))
 
 const overridden = index.filter(i => i.source !== 'raw').length
 console.log(`图标 ${drawableItems.length} 个（自定义 ${overridden} 个），含 Activity 映射 ${withActivity} 个，appfilter 条目 ${filterItems.length} 条`)

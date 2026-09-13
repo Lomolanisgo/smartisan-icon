@@ -263,7 +263,7 @@
 <script>
 const $ = s => document.querySelector(s)
 const state = {
-  icons: [], byPkg: new Map(), phone: null,
+  icons: [], byPkg: new Map(), skip: new Set(), phone: null,
   mode: 'pack', packFilter: 'all', phoneFilter: 'missing', phoneSort: 'time', modsFilter: 'all', q: '', version: Date.now(),
 }
 const SOURCE_LABEL = { raw: '锤子原图', choice: '已改用候选图', override: '自定义图标' }
@@ -310,6 +310,7 @@ function usageText(app) {
 
 // 手机应用与图标包的匹配状态（按当前索引实时计算）
 function phoneStatus(app) {
+  if (state.skip.has(app.pkg)) return 'native'
   const icon = state.byPkg.get(app.pkg)
   if (!icon) return 'missing'
   return app.activities.some(a => icon.activities.includes(a)) ? 'exact' : 'partial'
@@ -322,6 +323,7 @@ async function load() {
   ])
   state.icons = index.icons
   state.byPkg = new Map(index.icons.map(i => [i.pkg, i]))
+  state.skip = new Set(index.skip ?? [])
   state.phone = phone
   state.version = Date.now()
   const phoneBtn = $('#mode-phone')
@@ -406,10 +408,10 @@ function renderPhone() {
   fillGrid(list.map(app => {
     const s = phoneStatus(app)
     const current = img(app.iconFile && phoneUrl(app), `title="现在的图标"`)
-    const icons = s === 'missing'
+    const icons = s === 'missing' || s === 'native'
       ? current
       : `<div class="pair">${current}<span class="arrow">→</span>${img(packUrl(app.pkg), 'title="锤子图标"')}</div>`
-    const dot = { missing: 'miss', exact: 'act', partial: 'pkg' }[s]
+    const dot = { missing: 'miss', exact: 'act', partial: 'pkg', native: 'act' }[s]
     return makeCell(`${app.label ?? ''} ${app.pkg}`,
       `${icons}<span class="label">${escapeHtml(app.label ?? app.pkg)}</span>` +
       (app.usage ? `<span class="usage">${usageText(app)}</span>` : '') +
@@ -587,7 +589,7 @@ function openPhoneDetail(app) {
   const current = app.iconFile ? phoneUrl(app) : null
   const name = app.label ? `${app.label}（${app.pkg}）` : app.pkg
   const tags = [
-    s === 'missing' ? ['mod', '没有锤子图标'] : s === 'exact' ? ['act', '锤子图标 · 精确匹配'] : ['pkg', '锤子图标 · Activity 不一致'],
+    s === 'native' ? ['act', '本身就是锤子图标 · 无需更改'] : s === 'missing' ? ['mod', '没有锤子图标'] : s === 'exact' ? ['act', '锤子图标 · 精确匹配'] : ['pkg', '锤子图标 · Activity 不一致'],
     [app.userInstalled ? '' : 'pkg', app.userInstalled ? '用户安装' : '系统应用'],
   ]
   if (app.adaptive) tags.push(['', '自适应图标'])

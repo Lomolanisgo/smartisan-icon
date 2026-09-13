@@ -7,6 +7,7 @@
   ],
   "options": [
     { "id": "A", "name": "京东式红纸箱", "shape": "free", "desc": "沿用京东图标的打开红纸箱，箱体印白色 Joybuy 字样，箱口升起白色立体“笑脸弧”（取自 Logo 中 o 下方的微笑）。与京东图标一脉相承。" },
-    { "id": "B", "name": "红色方砖字标", "shape": "square", "desc": "红色超椭圆方砖加顶部光泽，白色立体 Joybuy 字标与 o 下的微笑弧。最接近原图标，文字清晰但依赖字体（Segoe UI Bold）。" }
+    { "id": "B", "name": "红色方砖字标", "shape": "square", "desc": "红色超椭圆方砖加顶部光泽，白色立体 Joybuy 字标与 o 下的微笑弧。最接近原图标，文字清晰但依赖字体（Segoe UI Bold）。" },
+    { "id": "C", "name": "天猫式购物袋", "shape": "free", "updated": true, "desc": "按锤子天猫图标的购物袋结构：红色纸袋、顶部折边与两侧三角折角、白色索环和垂在袋前的白色绳提手；天猫猫脸换成 Joybuy 原图标的白色字标（从 phone-icons 原图描摹成矢量路径，等比缩放，对比见 _logo-compare.png）。" }
   ]
 }

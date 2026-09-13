@@ -1,4 +1,4 @@
-.DS_Store
+﻿.DS_Store
 node_modules
 /dist
 
@@ -8,6 +8,7 @@ node_modules
 /iconpack/build
 /iconpack/failed.txt
 /iconpack/phone-apps.json
+/iconpack/phone-launchers.txt
 /iconpack/phone-icons
 /iconpack/release.jks
 /iconpack/app/res/drawable-nodpi

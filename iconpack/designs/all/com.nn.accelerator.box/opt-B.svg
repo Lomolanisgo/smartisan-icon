@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bezel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2F3F5"/>
+      <stop offset="0.5" stop-color="#9A9EA6"/>
+      <stop offset="1" stop-color="#4E5158"/>
+    </linearGradient>
+    <radialGradient id="face" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#2E3440"/>
+      <stop offset="1" stop-color="#0E1116"/>
+    </radialGradient>
+    <linearGradient id="ticks" x1="40" y1="0" x2="216" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE0A8"/>
+      <stop offset="0.6" stop-color="#FFA030"/>
+      <stop offset="1" stop-color="#FF4A10"/>
+    </linearGradient>
+    <linearGradient id="needle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFB050"/>
+      <stop offset="1" stop-color="#FF5A00"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFD27A"/>
+      <stop offset="0.4" stop-color="#FF9A1F"/>
+      <stop offset="1" stop-color="#D05000"/>
+    </radialGradient>
+    <clipPath id="hub"><circle cx="128" cy="140" r="30"/></clipPath>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="sh" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.6"/></filter>
+  </defs>
+  <circle cx="128" cy="130" r="116" fill="#000" opacity="0.15"/>
+  <circle cx="128" cy="128" r="116" fill="url(#bezel)"/>
+  <circle cx="128" cy="128" r="104" fill="url(#face)"/>
+  <circle cx="128" cy="128" r="104" fill="none" stroke="#000" stroke-opacity="0.6" stroke-width="3"/>
+  <!-- 270deg arc from 135deg to 405deg -->
+  <path d="M72.9 183.1 A78 78 0 1 1 183.1 183.1" fill="none" stroke="url(#ticks)" stroke-width="5" opacity="0.45"/>
+  <path d="M69.4 186.6 A83 83 0 1 1 186.6 186.6" fill="none" stroke="url(#ticks)" stroke-width="14" pathLength="270" stroke-dasharray="2 11.5"/>
+  <path d="M152 50 A83 83 0 0 1 186.6 186.6" fill="none" stroke="#FF6A10" stroke-width="14" opacity="0.5" filter="url(#glow)"/>
+  <!-- needle -->
+  <g filter="url(#sh)">
+    <path d="M124 146 L188 72 L132 152 Z" fill="url(#needle)"/>
+  </g>
+  <!-- Leigod hub ball -->
+  <circle cx="128" cy="140" r="30" fill="url(#ball)" filter="url(#sh)"/>
+  <g clip-path="url(#hub)">
+    <path d="M129 106 C124 122 120 138 118 172 C136 164 150 156 166 136" fill="none" stroke="#FFF8EE" stroke-width="8"/>
+    <circle cx="128" cy="140" r="30" fill="none" stroke="#7A2A00" stroke-opacity="0.35" stroke-width="10"/>
+  </g>
+  <ellipse cx="118" cy="126" rx="10" ry="6" transform="rotate(-30 118 126)" fill="#fff" opacity="0.55"/>
+  <path d="M26 118 C30 64 74 24 128 24 C182 24 226 64 230 118 C200 96 164 88 128 88 C92 88 56 96 26 118 Z" fill="url(#gloss)"/>
+</svg>

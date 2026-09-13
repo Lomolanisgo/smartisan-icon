@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="pin" d="M128 16C172 16 206 50 206 94C206 142 156 184 136 212Q128 224 120 212C100 184 50 142 50 94C50 50 84 16 128 16Z"/>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAFBFD"/><stop offset="0.5" stop-color="#B7BEC9"/><stop offset="1" stop-color="#E6E9EE"/></linearGradient>
+    <radialGradient id="screen" cx="0.5" cy="0.45" r="0.6"><stop offset="0" stop-color="#27A6FF"/><stop offset="1" stop-color="#0A45C8"/></radialGradient>
+    <linearGradient id="sweep" x1="128" y1="128" x2="200" y2="40" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#9BEBFF" stop-opacity="0.05"/><stop offset="1" stop-color="#9BEBFF" stop-opacity="0.55"/></linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="pinW" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE8F8"/></linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="150%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="sc"><circle cx="128" cy="126" r="101"/></clipPath>
+  </defs>
+  <g filter="url(#ds)"><circle cx="128" cy="126" r="116" fill="url(#metal)"/></g>
+  <circle cx="128" cy="126" r="115" fill="none" stroke="#8C94A0" stroke-opacity="0.5"/>
+  <circle cx="128" cy="126" r="104" fill="#3B4350"/>
+  <circle cx="128" cy="126" r="101" fill="url(#screen)"/>
+  <g clip-path="url(#sc)">
+    <g fill="none" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="1.5">
+      <circle cx="128" cy="126" r="76"/>
+      <circle cx="128" cy="126" r="50"/>
+      <circle cx="128" cy="126" r="24"/>
+      <path d="M27 126H229M128 25V227" stroke-opacity="0.18"/>
+    </g>
+    <path d="M128 126L128 25A101 101 0 0 1 222.9 91.5Z" fill="url(#sweep)"/>
+    <path d="M128 126L222.9 91.5" stroke="#C8F5FF" stroke-width="2" stroke-opacity="0.9"/>
+    <circle cx="176" cy="62" r="7" fill="#BFF3FF" opacity="0.8" filter="url(#blur)"/>
+    <circle cx="176" cy="62" r="3.5" fill="#FFFFFF"/>
+    <circle cx="80" cy="176" r="6" fill="#BFF3FF" opacity="0.6" filter="url(#blur)"/>
+    <circle cx="80" cy="176" r="2.8" fill="#FFFFFF" opacity="0.8"/>
+    <!-- pin -->
+    <ellipse cx="128" cy="138" rx="18" ry="5" fill="#032A80" opacity="0.5" filter="url(#blur)"/>
+    <g transform="translate(128 138) scale(0.44) translate(-128 -220)">
+      <use href="#pin" fill="url(#pinW)"/>
+      <circle cx="128" cy="94" r="30" fill="#1177F5"/>
+    </g>
+  </g>
+  <path d="M34 112A95 95 0 0 1 222 112C200 84 168 68 128 68C88 68 56 84 34 112Z" fill="url(#gloss)"/>
+</svg>

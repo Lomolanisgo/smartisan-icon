@@ -1,0 +1,12 @@
+{
+  "pkg": "nl.simyo.mijnsimyo",
+  "label": "Mijn Simyo",
+  "references": [
+    { "pkg": "com.greenpoint.android.mc10086.activity", "why": "运营商应用，A 方案沿用其白色陶瓷圆盘外圈" },
+    { "pkg": "com.sinovatech.unicom.ui", "why": "中国联通：高光饱满的彩色立体质感" }
+  ],
+  "options": [
+    { "id": "A", "name": "白瓷圈橙色 S 徽章", "shape": "circle", "desc": "白色陶瓷外圈 + 橙色亮面内盘，白色粗体 S（按原标志重绘为路径），与 10086 同一造型语言。" },
+    { "id": "B", "name": "橙色 SIM 卡", "shape": "free", "desc": "异形：竖版橙色 SIM 卡实物，右上切角，上方白色 S，下方金色触点芯片。运营商隐喻直观，但比圆形徽章更“物件化”。" }
+  ]
+}

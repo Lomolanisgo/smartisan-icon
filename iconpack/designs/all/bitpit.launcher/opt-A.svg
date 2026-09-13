@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bezel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9EBF2"/>
+      <stop offset="0.5" stop-color="#A9ADBD"/>
+      <stop offset="1" stop-color="#6E7284"/>
+    </linearGradient>
+    <radialGradient id="face" cx="0.5" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#1A1790"/>
+      <stop offset="0.7" stop-color="#07045A"/>
+      <stop offset="1" stop-color="#020036"/>
+    </radialGradient>
+    <linearGradient id="c1" x1="0" y1="36" x2="0" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C8F3FF"/>
+      <stop offset="1" stop-color="#6FD2F5"/>
+    </linearGradient>
+    <linearGradient id="c2" x1="0" y1="29" x2="0" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5BC0FF"/>
+      <stop offset="1" stop-color="#0A7FE0"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="1.5" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="130" r="116" fill="#000" opacity="0.12"/>
+  <circle cx="128" cy="128" r="116" fill="url(#bezel)"/>
+  <circle cx="128" cy="128" r="106" fill="url(#face)"/>
+  <circle cx="128" cy="128" r="106" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="2"/>
+  <g transform="translate(128 130) scale(3.1) translate(-52.5 -53.5)" filter="url(#glow)">
+    <path d="M42.7,36.9c-0.8,-0.5 -1.7,0.3 -1.4,1.1c1,2.7 1.5,5.6 1.5,8.6c0,8.3 -3.9,15.7 -10.1,20.4c-0.4,0.3 -0.5,0.9 -0.2,1.3c2.8,4.2 6.8,7.5 11.6,9.4c0.3,0.1 0.7,0.1 1,-0.1c5.7,-4.6 9.4,-11.6 9.4,-19.5C54.4,49.2 49.8,41.4 42.7,36.9z" fill="url(#c1)"/>
+    <path d="M72.1,35.7c-3.2,-3.2 -7.3,-5.6 -11.9,-6.8c-0.3,-0.1 -0.7,0 -1,0.3c-3,3.3 -5.1,7.4 -6,11.9c-0.1,0.3 0,0.5 0.2,0.7c3.2,4.6 5,10.2 5,16.2c0,1.2 -0.1,2.5 -0.2,3.7c0,0.3 0,0.5 0.2,0.7c2.3,2.9 5.3,5.3 8.7,7c0.9,0.4 1.7,-0.5 1.2,-1.4c-2.3,-3.8 -3.6,-8.3 -3.6,-13.1c0,-7 2.8,-13.3 7.3,-18C72.4,36.7 72.5,36.1 72.1,35.7z" fill="url(#c2)"/>
+  </g>
+  <!-- glass dome highlight -->
+  <path d="M40 112 C44 60 84 30 128 30 C172 30 212 60 216 112 C190 94 160 88 128 88 C96 88 66 94 40 112 Z" fill="url(#gloss)"/>
+</svg>

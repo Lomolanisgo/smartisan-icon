@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2A302F"/>
+      <stop offset="1" stop-color="#101312"/>
+    </linearGradient>
+    <path id="body" d="M20 172 C34 162 50 150 66 132 C86 106 120 78 160 76 C200 76 226 108 226 146 C226 176 210 198 190 206 C200 214 216 212 226 200 C230 222 204 236 178 226 C164 220 154 212 146 206 C130 204 118 196 108 186 C96 176 84 176 72 178 C54 180 36 178 20 172 Z"/>
+    <clipPath id="bc"><use href="#body"/></clipPath>
+    <linearGradient id="light" x1="0" y1="60" x2="0" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.55"/></filter>
+    <filter id="edge" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="-1.5" dy="1.5" stdDeviation="1.2" flood-color="#00261C" flood-opacity="0.6"/></filter>
+  </defs>
+  <use href="#tile" fill="url(#bg)"/>
+  <g clip-path="url(#tileClip)">
+    <ellipse cx="128" cy="40" rx="150" ry="70" fill="#5FF0CF" opacity="0.06"/>
+    <use href="#tile" fill="none" stroke="#000" stroke-opacity="0.3" stroke-width="5"/>
+    <use href="#tile" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+  <g filter="url(#sh)">
+    <use href="#body" fill="#62F0CF"/>
+    <g clip-path="url(#bc)" filter="url(#edge)">
+      <path d="M72 40 L84 58 L72 76 L84 94 L72 112 L84 130 L72 148 L84 166 L72 184 L84 202 L72 220 L72 240 L260 240 L260 40 Z" fill="#4ED9B8"/>
+      <path d="M102 40 L116 58 L102 76 L116 94 L102 112 L116 130 L102 148 L116 166 L102 184 L116 202 L102 220 L102 240 L260 240 L260 40 Z" fill="#3DC3A2"/>
+      <path d="M134 40 L148 58 L134 76 L148 94 L134 112 L148 130 L134 148 L148 166 L134 184 L148 202 L134 220 L134 240 L260 240 L260 40 Z" fill="#2FAC8C"/>
+      <path d="M164 40 L178 58 L164 76 L178 94 L164 112 L178 130 L164 148 L178 166 L164 184 L178 202 L164 220 L164 240 L260 240 L260 40 Z" fill="#229477"/>
+      <path d="M194 40 L206 58 L194 76 L206 94 L194 112 L206 130 L194 148 L206 166 L194 184 L206 202 L194 220 L194 240 L260 240 L260 40 Z" fill="#177C62"/>
+      <path d="M150 196 C170 210 196 214 224 200 L260 240 L130 240 Z" fill="#0F5F4A"/>
+      <use href="#body" fill="url(#light)"/>
+    </g>
+    <!-- foot -->
+    <path d="M84 176 C92 186 94 198 88 208 L72 210 C76 204 80 200 80 194 C80 186 78 180 76 178 Z" fill="#3DC3A2"/>
+    <path d="M132 198 C140 206 142 214 138 220 L122 220 C126 214 128 210 126 200 Z" fill="#229477"/>
+    <circle cx="60" cy="158" r="5" fill="#0C1A16"/>
+    <circle cx="58.5" cy="156.5" r="1.6" fill="#fff" opacity="0.8"/>
+  </g>
+</svg>

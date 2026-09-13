@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="c1" x1="0" y1="30" x2="0" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#46D1BC"/><stop offset="1" stop-color="#138A7C"/>
+    </linearGradient>
+    <linearGradient id="c2" x1="0" y1="30" x2="0" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C597FF"/><stop offset="1" stop-color="#7C40E0"/>
+    </linearGradient>
+    <linearGradient id="c3" x1="0" y1="30" x2="0" y2="226" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFBE9C"/><stop offset="0.55" stop-color="#FF9C72"/><stop offset="1" stop-color="#F07A4C"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="34" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <filter id="sh2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#8A3A18" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- fanned theme cards -->
+  <g filter="url(#sh)">
+    <g transform="rotate(-16 128 236)">
+      <rect x="60" y="30" width="136" height="186" rx="18" fill="url(#c1)"/>
+      <rect x="60.5" y="30.5" width="135" height="185" rx="17.5" fill="none" stroke="#0B5E55" stroke-opacity="0.5"/>
+    </g>
+    <g transform="rotate(14 128 236)">
+      <rect x="60" y="30" width="136" height="186" rx="18" fill="url(#c2)"/>
+      <rect x="60.5" y="30.5" width="135" height="185" rx="17.5" fill="none" stroke="#5320A8" stroke-opacity="0.5"/>
+    </g>
+    <g>
+      <rect x="58" y="34" width="140" height="192" rx="18" fill="url(#c3)"/>
+      <rect x="58.5" y="34.5" width="139" height="191" rx="17.5" fill="none" stroke="#C85A30" stroke-opacity="0.6"/>
+      <rect x="60" y="36" width="136" height="90" rx="16" fill="url(#gloss)"/>
+    </g>
+  </g>
+  <!-- ferris wheel emblem on top card -->
+  <g filter="url(#sh2)">
+    <circle cx="128" cy="118" r="44" fill="none" stroke="#FFFFFF" stroke-width="11"/>
+    <g stroke="#FFFFFF" stroke-width="7" stroke-linecap="round">
+      <line x1="128" y1="118" x2="128" y2="76"/>
+      <line x1="128" y1="118" x2="92" y2="139"/>
+      <line x1="128" y1="118" x2="164" y2="139"/>
+    </g>
+    <circle cx="128" cy="118" r="10" fill="#FFFFFF"/>
+    <path d="M128 118L102 196H154Z" fill="#FFFFFF" opacity="0"/>
+    <path d="M58 190C78 170 96 172 112 184C126 194 142 176 160 176C176 176 186 186 198 192V208C198 220 192 226 180 226H76C64 226 58 220 58 208Z" fill="#11776E"/>
+    <path d="M58 190C78 170 96 172 112 184C126 194 142 176 160 176C176 176 186 186 198 192" fill="none" stroke="#3FD0B8" stroke-width="2"/>
+  </g>
+  <rect x="150" y="62" width="30" height="30" rx="8" fill="#9B5CF0" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="160" cy="77" r="3.5" fill="#FFFFFF"/><circle cx="170" cy="77" r="3.5" fill="#FFFFFF"/>
+  <rect x="78" y="138" width="30" height="30" rx="8" fill="#2DD888" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="88" cy="153" r="3.5" fill="#FFFFFF"/><circle cx="98" cy="153" r="3.5" fill="#FFFFFF"/>
+</svg>

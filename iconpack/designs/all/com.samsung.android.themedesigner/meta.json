@@ -1,0 +1,11 @@
+{
+  "pkg": "com.samsung.android.themedesigner",
+  "label": "主题公园 Theme Park",
+  "references": [
+    { "pkg": "com.lovebizhi.wallpaper", "why": "同为主题/壁纸类，参考其多色卡片叠放的造型" }
+  ],
+  "options": [
+    { "id": "A", "name": "摩天轮风景", "shape": "landscape", "desc": "横矩形珊瑚色底板，保留原图标的摩天轮、山丘与两个小方块角色，加入玻璃质感和投影。忠于原品牌，但细节较多。" },
+    { "id": "B", "name": "扇形主题卡片", "shape": "free", "desc": "参考爱壁纸，青、紫、珊瑚三张卡片呈扇形叠放，顶部卡片上印摩天轮徽记，表达“切换主题”。更像锤子的物件风格，小尺寸下更清晰。" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "pkg": "com.etoro.openbook",
+  "label": "eToro",
+  "references": [
+    { "pkg": "com.eastmoney.android.berlin", "why": "同为投资应用，参考其亮面圆形徽章" },
+    { "pkg": "com.hexin.plat.android", "why": "炒股应用，参考其横矩形底板 + 行情图隐喻" }
+  ],
+  "options": [
+    { "id": "A", "name": "绿色亮面圆章", "shape": "circle", "desc": "品牌绿色亮面圆形徽章，白色牛角 + e 标志（牛角为手绘路径，e 用 Segoe UI Bold），顶部玻璃高光。醒目、48px 清晰。" },
+    { "id": "B", "name": "白板上涨走势", "shape": "landscape", "desc": "白色横矩形底板，底部是绿色上涨折线和面积图，上方绿色牛角 e 标志。行情隐喻明确；绿色面积偏少，辨识度不如 A。" }
+  ]
+}

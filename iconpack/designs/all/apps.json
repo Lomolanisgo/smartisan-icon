@@ -1,0 +1,842 @@
+[
+  {
+    "pkg": "com.playstack.balatro.android",
+    "label": "Balatro",
+    "iconFile": "com.playstack.balatro.android.svg",
+    "userInstalled": true,
+    "secs": 52679
+  },
+  {
+    "pkg": "com.ss.android.lark",
+    "label": "飞书",
+    "iconFile": "com.ss.android.lark.svg",
+    "userInstalled": true,
+    "secs": 50845
+  },
+  {
+    "pkg": "bitpit.launcher",
+    "label": "Niagara Launcher",
+    "iconFile": "bitpit.launcher.svg",
+    "userInstalled": true,
+    "secs": 28824
+  },
+  {
+    "pkg": "de.traderepublic.app",
+    "label": "Trade Republic",
+    "iconFile": "de.traderepublic.app.svg",
+    "userInstalled": true,
+    "secs": 28809
+  },
+  {
+    "pkg": "com.sgd.nlo.prod",
+    "label": "Toto Sport",
+    "iconFile": "com.sgd.nlo.prod.svg",
+    "userInstalled": true,
+    "secs": 23707
+  },
+  {
+    "pkg": "com.microsoft.office.outlook",
+    "label": "Outlook",
+    "iconFile": "com.microsoft.office.outlook.svg",
+    "userInstalled": true,
+    "secs": 19827
+  },
+  {
+    "pkg": "com.tencent.weread",
+    "label": "微信读书",
+    "iconFile": "com.tencent.weread.svg",
+    "userInstalled": true,
+    "secs": 17861
+  },
+  {
+    "pkg": "nl.ns.android.activity",
+    "label": "NS",
+    "iconFile": "nl.ns.android.activity.svg",
+    "userInstalled": true,
+    "secs": 17067
+  },
+  {
+    "pkg": "com.trainnote.rn",
+    "label": "训记",
+    "iconFile": "com.trainnote.rn.svg",
+    "userInstalled": true,
+    "secs": 13724
+  },
+  {
+    "pkg": "com.abnamro.nl.mobile.payments",
+    "label": "ABN AMRO",
+    "iconFile": "com.abnamro.nl.mobile.payments.svg",
+    "userInstalled": true,
+    "secs": 13090
+  },
+  {
+    "pkg": "com.android.settings",
+    "label": "设置",
+    "iconFile": "com.android.settings.svg",
+    "userInstalled": false,
+    "secs": 10134
+  },
+  {
+    "pkg": "nl.nos.app",
+    "label": "NOS",
+    "iconFile": "nl.nos.app.svg",
+    "userInstalled": true,
+    "secs": 8796
+  },
+  {
+    "pkg": "ctrip.english",
+    "label": "Trip.com",
+    "iconFile": "ctrip.english.svg",
+    "userInstalled": true,
+    "secs": 8126
+  },
+  {
+    "pkg": "com.stably.orca.mobile",
+    "label": "Orca",
+    "iconFile": "com.stably.orca.mobile.svg",
+    "userInstalled": true,
+    "secs": 7322
+  },
+  {
+    "pkg": "com.takeaway.android",
+    "label": "Thuisbezorgd",
+    "iconFile": "com.takeaway.android.svg",
+    "userInstalled": true,
+    "secs": 6231
+  },
+  {
+    "pkg": "notion.id",
+    "label": "Notion",
+    "iconFile": "notion.id.svg",
+    "userInstalled": true,
+    "secs": 5487
+  },
+  {
+    "pkg": "com.joybuy.jdi",
+    "label": "Joybuy",
+    "iconFile": "com.joybuy.jdi.svg",
+    "userInstalled": true,
+    "secs": 3769
+  },
+  {
+    "pkg": "com.microsoft.todos",
+    "label": "To Do",
+    "iconFile": "com.microsoft.todos.svg",
+    "userInstalled": true,
+    "secs": 3637
+  },
+  {
+    "pkg": "com.whatsapp.w4b",
+    "label": "WhatsApp Business",
+    "iconFile": "com.whatsapp.w4b.svg",
+    "userInstalled": true,
+    "secs": 3249
+  },
+  {
+    "pkg": "me.yoopu.app.songbook",
+    "label": "有谱么",
+    "iconFile": "me.yoopu.app.songbook.svg",
+    "userInstalled": true,
+    "secs": 3246
+  },
+  {
+    "pkg": "com.bunq.android",
+    "label": "bunq",
+    "iconFile": "com.bunq.android.svg",
+    "userInstalled": true,
+    "secs": 3074
+  },
+  {
+    "pkg": "com.samsung.android.themedesigner",
+    "label": "主题公园",
+    "iconFile": "com.samsung.android.themedesigner.svg",
+    "userInstalled": true,
+    "secs": 3026
+  },
+  {
+    "pkg": "com.icemobile.albertheijn",
+    "label": "Albert Heijn",
+    "iconFile": "com.icemobile.albertheijn.svg",
+    "userInstalled": true,
+    "secs": 2932
+  },
+  {
+    "pkg": "com.microsoft.office.excel",
+    "label": "Excel",
+    "iconFile": "com.microsoft.office.excel.svg",
+    "userInstalled": true,
+    "secs": 2898
+  },
+  {
+    "pkg": "com.samsung.android.calendar",
+    "label": "日历",
+    "iconFile": "com.samsung.android.calendar.svg",
+    "userInstalled": true,
+    "secs": 2892
+  },
+  {
+    "pkg": "com.basicfit.trainingApp",
+    "label": "Basic-Fit",
+    "iconFile": "com.basicfit.trainingApp.svg",
+    "userInstalled": true,
+    "secs": 2641
+  },
+  {
+    "pkg": "com.chinarailway.globalticketing",
+    "label": "铁路12306",
+    "iconFile": "com.chinarailway.globalticketing.svg",
+    "userInstalled": true,
+    "secs": 2610
+  },
+  {
+    "pkg": "nl.nshispeed",
+    "label": "NS International",
+    "iconFile": "nl.nshispeed.svg",
+    "userInstalled": true,
+    "secs": 2557
+  },
+  {
+    "pkg": "org.localsend.localsend_app",
+    "label": "LocalSend",
+    "iconFile": "org.localsend.localsend_app.svg",
+    "userInstalled": true,
+    "secs": 2398
+  },
+  {
+    "pkg": "nl.rijksoverheid.digid.pub",
+    "label": "DigiD",
+    "iconFile": "nl.rijksoverheid.digid.pub.svg",
+    "userInstalled": true,
+    "secs": 2312
+  },
+  {
+    "pkg": "com.mcdonalds.mobileapp",
+    "label": "McDonald",
+    "iconFile": "com.mcdonalds.mobileapp.svg",
+    "userInstalled": true,
+    "secs": 2022
+  },
+  {
+    "pkg": "com.mutangtech.qianji",
+    "label": "钱迹",
+    "iconFile": "com.mutangtech.qianji.svg",
+    "userInstalled": true,
+    "secs": 2022
+  },
+  {
+    "pkg": "com.samsung.android.dialer",
+    "label": "电话",
+    "iconFile": "com.samsung.android.dialer.svg",
+    "userInstalled": false,
+    "secs": 1954
+  },
+  {
+    "pkg": "com.google.android.apps.messaging",
+    "label": "Messages",
+    "iconFile": "com.google.android.apps.messaging.svg",
+    "userInstalled": false,
+    "secs": 1896
+  },
+  {
+    "pkg": "com.mubu.app",
+    "label": "幕布",
+    "iconFile": "com.mubu.app.svg",
+    "userInstalled": true,
+    "secs": 1822
+  },
+  {
+    "pkg": "com.server.auditor.ssh.client",
+    "label": "Termius",
+    "iconFile": "com.server.auditor.ssh.client.svg",
+    "userInstalled": true,
+    "secs": 1776
+  },
+  {
+    "pkg": "com.cmi.jegotrip",
+    "label": "无忧行",
+    "iconFile": "com.cmi.jegotrip.svg",
+    "userInstalled": true,
+    "secs": 1682
+  },
+  {
+    "pkg": "ch.protonvpn.android",
+    "label": "Proton VPN",
+    "iconFile": "ch.protonvpn.android.svg",
+    "userInstalled": true,
+    "secs": 1435
+  },
+  {
+    "pkg": "com.gov.mfa",
+    "label": "中国领事",
+    "iconFile": "com.gov.mfa.svg",
+    "userInstalled": true,
+    "secs": 1242
+  },
+  {
+    "pkg": "com.samsung.android.app.routines",
+    "label": "模式和日常程序",
+    "iconFile": "com.samsung.android.app.routines.svg",
+    "userInstalled": false,
+    "secs": 1162
+  },
+  {
+    "pkg": "com.deepseek.chat",
+    "label": "DeepSeek",
+    "iconFile": "com.deepseek.chat.svg",
+    "userInstalled": true,
+    "secs": 1158
+  },
+  {
+    "pkg": "com.uniqlo.europe.catalogue",
+    "label": "UNIQLO",
+    "iconFile": "com.uniqlo.europe.catalogue.svg",
+    "userInstalled": true,
+    "secs": 1152
+  },
+  {
+    "pkg": "com.uzero.baimiao",
+    "label": "白描",
+    "iconFile": "com.uzero.baimiao.svg",
+    "userInstalled": true,
+    "secs": 1126
+  },
+  {
+    "pkg": "com.cctv.yangshipin.app.androidp",
+    "label": "央视频",
+    "iconFile": "com.cctv.yangshipin.app.androidp.svg",
+    "userInstalled": true,
+    "secs": 1059
+  },
+  {
+    "pkg": "nl.simyo.mijnsimyo",
+    "label": "Mijn Simyo",
+    "iconFile": "nl.simyo.mijnsimyo.svg",
+    "userInstalled": true,
+    "secs": 1035
+  },
+  {
+    "pkg": "com.github.android",
+    "label": "GitHub",
+    "iconFile": "com.github.android.svg",
+    "userInstalled": true,
+    "secs": 949
+  },
+  {
+    "pkg": "com.ups.mobile.android",
+    "label": "UPS",
+    "iconFile": "com.ups.mobile.android.svg",
+    "userInstalled": true,
+    "secs": 942
+  },
+  {
+    "pkg": "com.samsung.android.app.notes",
+    "label": "三星笔记",
+    "iconFile": "com.samsung.android.app.notes.svg",
+    "userInstalled": true,
+    "secs": 856
+  },
+  {
+    "pkg": "nl.burgerking.app",
+    "label": "Burger King NL",
+    "iconFile": "nl.burgerking.app.svg",
+    "userInstalled": true,
+    "secs": 844
+  },
+  {
+    "pkg": "nl.rijksoverheid.mijngegevens.pub",
+    "label": "MijnGegevens",
+    "iconFile": "nl.rijksoverheid.mijngegevens.pub.svg",
+    "userInstalled": true,
+    "secs": 764
+  },
+  {
+    "pkg": "com.samsung.android.goodlock",
+    "label": "Good Lock",
+    "iconFile": "com.samsung.android.goodlock.svg",
+    "userInstalled": true,
+    "secs": 699
+  },
+  {
+    "pkg": "nl.etos.mijnetos",
+    "label": "Etos",
+    "iconFile": "nl.etos.mijnetos.svg",
+    "userInstalled": true,
+    "secs": 686
+  },
+  {
+    "pkg": "com.ticketmaster.mobile.android.na",
+    "label": "Ticketmaster",
+    "iconFile": "com.ticketmaster.mobile.android.na.svg",
+    "userInstalled": true,
+    "secs": 625
+  },
+  {
+    "pkg": "com.growatt.shinephones",
+    "label": "ShinePhone",
+    "iconFile": "com.growatt.shinephones.svg",
+    "userInstalled": true,
+    "secs": 614
+  },
+  {
+    "pkg": "com.samsung.android.sidegesturepad",
+    "label": "One Hand Operation +",
+    "iconFile": "com.samsung.android.sidegesturepad.svg",
+    "userInstalled": true,
+    "secs": 573
+  },
+  {
+    "pkg": "nl.budgetthuis.app",
+    "label": "Budget Thuis",
+    "iconFile": "nl.budgetthuis.app.svg",
+    "userInstalled": true,
+    "secs": 573
+  },
+  {
+    "pkg": "nl.rijksoverheid.mbb.pub",
+    "label": "Berichtenbox",
+    "iconFile": "nl.rijksoverheid.mbb.pub.svg",
+    "userInstalled": true,
+    "secs": 534
+  },
+  {
+    "pkg": "com.samsung.android.app.reminder",
+    "label": "提醒",
+    "iconFile": "com.samsung.android.app.reminder.svg",
+    "userInstalled": true,
+    "secs": 454
+  },
+  {
+    "pkg": "com.azure.authenticator",
+    "label": "Authenticator",
+    "iconFile": "com.azure.authenticator.svg",
+    "userInstalled": true,
+    "secs": 449
+  },
+  {
+    "pkg": "nl.belastingdienst.mkt.pub",
+    "label": "Toeslagen",
+    "iconFile": "nl.belastingdienst.mkt.pub.svg",
+    "userInstalled": true,
+    "secs": 434
+  },
+  {
+    "pkg": "com.app.tgtg",
+    "label": "Too Good To Go",
+    "iconFile": "com.app.tgtg.svg",
+    "userInstalled": true,
+    "secs": 413
+  },
+  {
+    "pkg": "nl.tpp.mobile.android",
+    "label": "PostNL",
+    "iconFile": "nl.tpp.mobile.android.svg",
+    "userInstalled": true,
+    "secs": 396
+  },
+  {
+    "pkg": "com.alibaba.aliexpresshd",
+    "label": "AliExpress",
+    "iconFile": "com.alibaba.aliexpresshd.svg",
+    "userInstalled": true,
+    "secs": 389
+  },
+  {
+    "pkg": "nl.kpn.mijn",
+    "label": "MijnKPN",
+    "iconFile": "nl.kpn.mijn.svg",
+    "userInstalled": true,
+    "secs": 387
+  },
+  {
+    "pkg": "com.abnamro.nl.tikkie",
+    "label": "Tikkie",
+    "iconFile": "com.abnamro.nl.tikkie.svg",
+    "userInstalled": true,
+    "secs": 385
+  },
+  {
+    "pkg": "com.supportware.Buienradar",
+    "label": "Buienradar",
+    "iconFile": "com.supportware.Buienradar.svg",
+    "userInstalled": true,
+    "secs": 360
+  },
+  {
+    "pkg": "com.kfc.nl.mobileapp",
+    "label": "KFC",
+    "iconFile": "com.kfc.nl.mobileapp.svg",
+    "userInstalled": true,
+    "secs": 347
+  },
+  {
+    "pkg": "de.danoeh.antennapod",
+    "label": "AntennaPod",
+    "iconFile": "de.danoeh.antennapod.svg",
+    "userInstalled": true,
+    "secs": 333
+  },
+  {
+    "pkg": "com.dhlparcel.nl",
+    "label": "My DHL",
+    "iconFile": "com.dhlparcel.nl.svg",
+    "userInstalled": true,
+    "secs": 327
+  },
+  {
+    "pkg": "com.lebara.wallet",
+    "label": "MyLebara",
+    "iconFile": "com.lebara.wallet.svg",
+    "userInstalled": true,
+    "secs": 327
+  },
+  {
+    "pkg": "nl.tls.ovpay",
+    "label": "OVpay",
+    "iconFile": "nl.tls.ovpay.svg",
+    "userInstalled": true,
+    "secs": 303
+  },
+  {
+    "pkg": "com.tailscale.ipn",
+    "label": "Tailscale",
+    "iconFile": "com.tailscale.ipn.svg",
+    "userInstalled": true,
+    "secs": 277
+  },
+  {
+    "pkg": "com.fujifilm.instaxWideEvo",
+    "label": "WIDE Evo",
+    "iconFile": "com.fujifilm.instaxWideEvo.svg",
+    "userInstalled": true,
+    "secs": 272
+  },
+  {
+    "pkg": "com.etoro.openbook",
+    "label": "eToro",
+    "iconFile": "com.etoro.openbook.svg",
+    "userInstalled": true,
+    "secs": 243
+  },
+  {
+    "pkg": "com.pandaanalytics.cocoofficial",
+    "label": "CoCo Tea NL",
+    "iconFile": "com.pandaanalytics.cocoofficial.svg",
+    "userInstalled": true,
+    "secs": 240
+  },
+  {
+    "pkg": "com.nothing.smartcenter",
+    "label": "Nothing X",
+    "iconFile": "com.nothing.smartcenter.svg",
+    "userInstalled": true,
+    "secs": 231
+  },
+  {
+    "pkg": "com.samsung.android.app.routineplus",
+    "label": "日常程序+",
+    "iconFile": "com.samsung.android.app.routineplus.svg",
+    "userInstalled": true,
+    "secs": 231
+  },
+  {
+    "pkg": "nl.gall.app",
+    "label": "Gall & Gall",
+    "iconFile": "nl.gall.app.svg",
+    "userInstalled": true,
+    "secs": 229
+  },
+  {
+    "pkg": "com.samsung.android.spay",
+    "label": "三星钱包",
+    "iconFile": "com.samsung.android.spay.svg",
+    "userInstalled": true,
+    "secs": 228
+  },
+  {
+    "pkg": "co.benx.weverse",
+    "label": "Weverse",
+    "iconFile": "co.benx.weverse.svg",
+    "userInstalled": true,
+    "secs": 224
+  },
+  {
+    "pkg": "com.dearu.bubble.jyp",
+    "label": "JYP bubble",
+    "iconFile": "com.dearu.bubble.jyp.svg",
+    "userInstalled": true,
+    "secs": 208
+  },
+  {
+    "pkg": "com.growatt.shinetools",
+    "label": "ShineTools",
+    "iconFile": "com.growatt.shinetools.svg",
+    "userInstalled": true,
+    "secs": 207
+  },
+  {
+    "pkg": "com.microsoft.office.officehubrow",
+    "label": "Copilot",
+    "iconFile": "com.microsoft.office.officehubrow.svg",
+    "userInstalled": true,
+    "secs": 207
+  },
+  {
+    "pkg": "com.samsung.android.bixby.agent",
+    "label": "Bixby",
+    "iconFile": "com.samsung.android.bixby.agent.svg",
+    "userInstalled": false,
+    "secs": 202
+  },
+  {
+    "pkg": "com.goyourfly.bigidea",
+    "label": "Idea Note",
+    "iconFile": "com.goyourfly.bigidea.svg",
+    "userInstalled": true,
+    "secs": 199
+  },
+  {
+    "pkg": "com.reddit.frontpage",
+    "label": "Reddit",
+    "iconFile": "com.reddit.frontpage.svg",
+    "userInstalled": true,
+    "secs": 197
+  },
+  {
+    "pkg": "com.termux",
+    "label": "Termux",
+    "iconFile": "com.termux.svg",
+    "userInstalled": true,
+    "secs": 194
+  },
+  {
+    "pkg": "com.salt.music",
+    "label": "Salt Player",
+    "iconFile": "com.salt.music.svg",
+    "userInstalled": true,
+    "secs": 179
+  },
+  {
+    "pkg": "com.samsung.systemui.notilus",
+    "label": "NotiStar",
+    "iconFile": "com.samsung.systemui.notilus.svg",
+    "userInstalled": true,
+    "secs": 174
+  },
+  {
+    "pkg": "com.flomo.app",
+    "label": "flomo浮墨笔记",
+    "iconFile": "com.flomo.app.svg",
+    "userInstalled": true,
+    "secs": 169
+  },
+  {
+    "pkg": "com.fobwifi.normal",
+    "label": "穿梭",
+    "iconFile": "com.fobwifi.normal.svg",
+    "userInstalled": true,
+    "secs": 161
+  },
+  {
+    "pkg": "com.samsung.android.app.contacts",
+    "label": "联系人",
+    "iconFile": "com.samsung.android.app.contacts.svg",
+    "userInstalled": false,
+    "secs": 160
+  },
+  {
+    "pkg": "com.fbto.fbtozorg",
+    "label": "FBTO Zorg app",
+    "iconFile": "com.fbto.fbtozorg.svg",
+    "userInstalled": true,
+    "secs": 149
+  },
+  {
+    "pkg": "com.nike.snkrs",
+    "label": "SNKRS",
+    "iconFile": "com.nike.snkrs.svg",
+    "userInstalled": true,
+    "secs": 145
+  },
+  {
+    "pkg": "com.instagram.barcelona",
+    "label": "Threads",
+    "iconFile": "com.instagram.barcelona.svg",
+    "userInstalled": true,
+    "secs": 139
+  },
+  {
+    "pkg": "com.tianyancha.skyeye",
+    "label": "天眼查",
+    "iconFile": "com.tianyancha.skyeye.svg",
+    "userInstalled": true,
+    "secs": 124
+  },
+  {
+    "pkg": "com.locnall.KimGiSa",
+    "label": "LiveBridge",
+    "iconFile": "com.locnall.KimGiSa.svg",
+    "userInstalled": true,
+    "secs": 101
+  },
+  {
+    "pkg": "com.samsung.android.displayassistant",
+    "label": "Display Assistant",
+    "iconFile": "com.samsung.android.displayassistant.svg",
+    "userInstalled": true,
+    "secs": 97
+  },
+  {
+    "pkg": "com.huawei.health",
+    "label": "华为运动健康",
+    "iconFile": "com.huawei.health.svg",
+    "userInstalled": true,
+    "secs": 88
+  },
+  {
+    "pkg": "fr.fan.wallet",
+    "label": "Fan Wallet",
+    "iconFile": "fr.fan.wallet.svg",
+    "userInstalled": true,
+    "secs": 82
+  },
+  {
+    "pkg": "com.pavelkozemirov.guesstheartist",
+    "label": "Artly",
+    "iconFile": "com.pavelkozemirov.guesstheartist.svg",
+    "userInstalled": true,
+    "secs": 80
+  },
+  {
+    "pkg": "com.joyride.cargoroobymoby",
+    "label": "Cargoroo by MOBY",
+    "iconFile": "com.joyride.cargoroobymoby.svg",
+    "userInstalled": true,
+    "secs": 76
+  },
+  {
+    "pkg": "kr.co.dalcomsoft.superstar.a",
+    "label": "SUPERSTAR SM",
+    "iconFile": "kr.co.dalcomsoft.superstar.a.svg",
+    "userInstalled": true,
+    "secs": 76
+  },
+  {
+    "pkg": "com.fujifilm.instaxup",
+    "label": "instax UP!",
+    "iconFile": "com.fujifilm.instaxup.svg",
+    "userInstalled": true,
+    "secs": 74
+  },
+  {
+    "pkg": "com.nn.accelerator.box",
+    "label": "雷神加速器",
+    "iconFile": "com.nn.accelerator.box.svg",
+    "userInstalled": true,
+    "secs": 64
+  },
+  {
+    "pkg": "nl.airmiles.app",
+    "label": "Air Miles",
+    "iconFile": "nl.airmiles.app.svg",
+    "userInstalled": true,
+    "secs": 63
+  },
+  {
+    "pkg": "com.samsung.android.oneconnect",
+    "label": "SmartThings",
+    "iconFile": "com.samsung.android.oneconnect.svg",
+    "userInstalled": true,
+    "secs": 51
+  },
+  {
+    "pkg": "hello.litiaotiao.app",
+    "label": "李跳跳",
+    "iconFile": "hello.litiaotiao.app.svg",
+    "userInstalled": true,
+    "secs": 47
+  },
+  {
+    "pkg": "com.samsung.knox.securefolder",
+    "label": "安全文件夹",
+    "iconFile": "com.samsung.knox.securefolder.svg",
+    "userInstalled": false,
+    "secs": 45
+  },
+  {
+    "pkg": "com.buuuk.globalblue",
+    "label": "Global Blue",
+    "iconFile": "com.buuuk.globalblue.svg",
+    "userInstalled": true,
+    "secs": 40
+  },
+  {
+    "pkg": "de.flixbus.app",
+    "label": "FlixBus",
+    "iconFile": "de.flixbus.app.svg",
+    "userInstalled": true,
+    "secs": 38
+  },
+  {
+    "pkg": "com.samsung.android.app.tips",
+    "label": "玩机助手",
+    "iconFile": "com.samsung.android.app.tips.svg",
+    "userInstalled": true,
+    "secs": 24
+  },
+  {
+    "pkg": "com.sec.android.easyMover",
+    "label": "S 换机助手",
+    "iconFile": "com.sec.android.easyMover.svg",
+    "userInstalled": false,
+    "secs": 20
+  },
+  {
+    "pkg": "com.android.samsung.utilityapp",
+    "label": "Good Guardians",
+    "iconFile": "com.android.samsung.utilityapp.svg",
+    "userInstalled": true,
+    "secs": 4
+  },
+  {
+    "pkg": "com.google.android.apps.bard",
+    "label": "Gemini",
+    "iconFile": "com.google.android.apps.bard.svg",
+    "userInstalled": false,
+    "secs": 0
+  },
+  {
+    "pkg": "com.samsung.android.app.find",
+    "label": "三星查找",
+    "iconFile": "com.samsung.android.app.find.svg",
+    "userInstalled": true,
+    "secs": 0
+  },
+  {
+    "pkg": "com.samsung.android.app.sketchbook",
+    "label": "创意工作室",
+    "iconFile": "com.samsung.android.app.sketchbook.svg",
+    "userInstalled": false,
+    "secs": 0
+  },
+  {
+    "pkg": "de.number26.android",
+    "label": "N26",
+    "iconFile": "de.number26.android.svg",
+    "userInstalled": true,
+    "secs": 0
+  },
+  {
+    "pkg": "org.chromium.webapk.a12f1ab74643f3fa0_v2",
+    "label": "MuntCapture",
+    "iconFile": "org.chromium.webapk.a12f1ab74643f3fa0_v2.svg",
+    "userInstalled": true,
+    "secs": 0
+  },
+  {
+    "pkg": "org.chromium.webapk.ae7d1a3af3add27a2_v2",
+    "label": "WoordCapture",
+    "iconFile": "org.chromium.webapk.ae7d1a3af3add27a2_v2.svg",
+    "userInstalled": true,
+    "secs": 0
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "pkg": "com.dhlparcel.nl",
+  "label": "My DHL",
+  "references": [
+    { "pkg": "com.dada.mobile.android", "why": "快递纸箱包裹的材质与光影，B 方案的纸箱造型参考它" },
+    { "pkg": "com.sf.activity", "why": "快递品牌色底板加标志的做法" }
+  ],
+  "options": [
+    { "id": "A", "name": "黄色光面标志牌", "shape": "landscape", "desc": "DHL 黄色横矩形底板，红色斜体 DHL 字样与左右速度线；简洁、品牌识别强。字样为 Arial 字体近似，不是官方字形。" },
+    { "id": "B", "name": "快递纸箱", "shape": "free", "desc": "立体瓦楞纸箱，顶部黄色封箱胶带延伸到侧面，侧面贴 DHL 黄色面单和条码；隐喻直观，标志较小。" }
+  ]
+}

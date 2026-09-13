@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="t" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="c"><use href="#t"/></clipPath>
+    <linearGradient id="body" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A3A3C"/><stop offset="1" stop-color="#121213"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2F2F2"/><stop offset=".5" stop-color="#B9B9BB"/><stop offset="1" stop-color="#7C7C80"/>
+    </linearGradient>
+    <radialGradient id="ring" cx=".5" cy=".35" r=".7">
+      <stop offset="0" stop-color="#E6E6E8"/><stop offset=".7" stop-color="#8C8C90"/><stop offset="1" stop-color="#4C4C50"/>
+    </radialGradient>
+    <radialGradient id="glass" cx=".4" cy=".35" r=".75">
+      <stop offset="0" stop-color="#4A5A78"/><stop offset=".4" stop-color="#1A2030"/><stop offset="1" stop-color="#050608"/>
+    </radialGradient>
+    <pattern id="tex" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 18L9 0L18 18M4.5 9H13.5" fill="none" stroke="#fff" stroke-opacity=".07" stroke-width="2"/>
+    </pattern>
+    <filter id="ls" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity=".6"/></filter>
+  </defs>
+  <use href="#t" fill="url(#body)"/>
+  <g clip-path="url(#c)">
+    <rect x="0" y="60" width="256" height="180" fill="url(#tex)"/>
+    <rect x="0" y="20" width="256" height="40" fill="url(#silver)"/>
+    <rect x="0" y="59" width="256" height="2" fill="#000" opacity=".5"/>
+    <rect x="22" y="33" width="34" height="16" rx="3" fill="#1A1A1A"/>
+    <rect x="25" y="36" width="15" height="10" rx="1.5" fill="#F4F4F4"/>
+    <rect x="41" y="36" width="12" height="10" rx="1.5" fill="#E0201A"/>
+    <circle cx="206" cy="41" r="7" fill="#2A2A2A"/><circle cx="206" cy="41" r="4" fill="#444"/>
+    <circle cx="226" cy="41" r="7" fill="#2A2A2A"/><circle cx="226" cy="41" r="4" fill="#444"/>
+  </g>
+  <g filter="url(#ls)">
+    <circle cx="128" cy="143" r="70" fill="url(#ring)"/>
+  </g>
+  <circle cx="128" cy="143" r="60" fill="#1E1E20"/>
+  <circle cx="128" cy="143" r="60" fill="none" stroke="#fff" stroke-opacity=".15" stroke-width="1"/>
+  <circle cx="128" cy="143" r="50" fill="#9A9AA0"/>
+  <circle cx="128" cy="143" r="46" fill="url(#glass)"/>
+  <circle cx="128" cy="143" r="30" fill="none" stroke="#3E4C68" stroke-width="2"/>
+  <circle cx="128" cy="143" r="16" fill="#0A0C12" stroke="#2C3650" stroke-width="2"/>
+  <ellipse cx="112" cy="124" rx="16" ry="9" fill="#fff" opacity=".35" transform="rotate(-35 112 124)"/>
+  <circle cx="148" cy="164" r="4" fill="#8FA8FF" opacity=".35"/>
+  <g clip-path="url(#c)" fill="none">
+    <use href="#t" stroke="#000" stroke-opacity=".2" stroke-width="5"/>
+    <use href="#t" stroke="#fff" stroke-opacity=".6" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#t" stroke="#0A0A0A" stroke-width="2"/>
+  </g>
+</svg>

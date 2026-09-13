@@ -1,0 +1,11 @@
+{
+  "pkg": "com.mcdonalds.mobileapp",
+  "label": "McDonald's",
+  "references": [
+    { "pkg": "cn.com.mcdonalds.m4d", "why": "锤子已有的麦当劳中国版图标：红色横矩形 + 金色 M，直接作为兄弟款参考" }
+  ],
+  "options": [
+    { "id": "A", "name": "红砖金拱门", "shape": "landscape", "desc": "与锤子麦当劳中国版同款语言：红色横矩形瓷砖、立体挤出的金色 M（路径取自原图标），去掉速度线更简洁。与中国版并排时风格统一。" },
+    { "id": "B", "name": "薯条盒", "shape": "free", "desc": "异形：经典红色薯条盒插满金黄薯条，盒身印金色 M。隐喻强、辨识度高，与 A 的轮廓和隐喻完全不同。" }
+  ]
+}

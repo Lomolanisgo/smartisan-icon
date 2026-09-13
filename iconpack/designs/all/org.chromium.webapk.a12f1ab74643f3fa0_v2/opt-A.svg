@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="t" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="c"><use href="#t"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22B07E"/><stop offset="1" stop-color="#0A8058"/>
+    </linearGradient>
+    <radialGradient id="gold" cx=".4" cy=".35" r=".75">
+      <stop offset="0" stop-color="#FFF1B8"/><stop offset=".45" stop-color="#E7B94A"/><stop offset="1" stop-color="#A8741A"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE9A0"/><stop offset=".5" stop-color="#B8821E"/><stop offset="1" stop-color="#7A4E0A"/>
+    </linearGradient>
+    <filter id="ds" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#003A24" flood-opacity=".5"/></filter>
+    <filter id="emb" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="-1" dy="-1" stdDeviation=".6" flood-color="#FFF6D0" flood-opacity=".9"/>
+      <feDropShadow dx="1.5" dy="2" stdDeviation=".8" flood-color="#6A4200" flood-opacity=".7"/>
+    </filter>
+  </defs>
+  <use href="#t" fill="url(#bg)"/>
+  <g clip-path="url(#c)"><ellipse cx="128" cy="0" rx="170" ry="90" fill="#fff" opacity=".12"/></g>
+  <g fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".92">
+    <path d="M40 76V40H76M216 76V40H180M40 180V216H76M216 180V216H180"/>
+  </g>
+  <g filter="url(#ds)">
+    <circle cx="128" cy="128" r="64" fill="url(#edge)"/>
+    <circle cx="128" cy="128" r="58" fill="url(#gold)"/>
+  </g>
+  <circle cx="128" cy="128" r="50" fill="none" stroke="#9A6A14" stroke-opacity=".55" stroke-width="1.5"/>
+  <circle cx="128" cy="128" r="48" fill="none" stroke="#FFF2C0" stroke-opacity=".5" stroke-width="1"/>
+  <text x="128" y="152" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="70" fill="#D9A83A" filter="url(#emb)">M</text>
+  <g clip-path="url(#c)" fill="none">
+    <use href="#t" stroke="#000" stroke-opacity=".06" stroke-width="5"/>
+    <use href="#t" stroke="#000" stroke-opacity=".1" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#t" stroke="#fff" stroke-opacity=".5" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#t" stroke="#067048" stroke-width="2"/>
+  </g>
+</svg>

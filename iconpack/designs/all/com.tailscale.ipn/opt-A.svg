@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="sq" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="sqc"><use href="#sq"/></clipPath>
+    <linearGradient id="fill" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A3838"/><stop offset="1" stop-color="#1B1A1A"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="2" seed="2"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .05 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <radialGradient id="pearl" cx=".38" cy=".3" r=".75">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#F1F1F1"/><stop offset="1" stop-color="#BDBDBD"/>
+    </radialGradient>
+    <radialGradient id="sock" cx=".5" cy=".3" r=".7">
+      <stop offset="0" stop-color="#121111"/><stop offset="1" stop-color="#2A2929"/>
+    </radialGradient>
+    <radialGradient id="dim" cx=".4" cy=".3" r=".7">
+      <stop offset="0" stop-color="#6E6C6C"/><stop offset="1" stop-color="#474545"/>
+    </radialGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .35 0" result="g"/>
+      <feOffset in="SourceAlpha" dy="2.5"/><feGaussianBlur stdDeviation="1.5"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .8 0" result="d"/>
+      <feMerge><feMergeNode in="g"/><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <g id="hole">
+      <circle r="19" fill="#fff" fill-opacity=".09" cy="1.2"/>
+      <circle r="19" fill="url(#sock)"/>
+    </g>
+    <g id="on"><use href="#hole"/><circle r="15.5" fill="url(#pearl)" filter="url(#glow)"/></g>
+    <g id="off"><use href="#hole"/><circle r="14" cy="1.5" fill="url(#dim)"/></g>
+  </defs>
+  <use href="#sq" fill="url(#fill)"/>
+  <use href="#sq" fill="#fff" filter="url(#grain)"/>
+  <g clip-path="url(#sqc)" fill="none">
+    <use href="#sq" stroke="#000" stroke-opacity=".25" stroke-width="5"/>
+    <use href="#sq" stroke="#fff" stroke-opacity=".2" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#sq" stroke="#0E0D0D" stroke-width="2"/>
+  </g>
+  <use href="#off" x="76" y="76"/><use href="#off" x="128" y="76"/><use href="#off" x="180" y="76"/>
+  <use href="#on" x="76" y="128"/><use href="#on" x="128" y="128"/><use href="#on" x="180" y="128"/>
+  <use href="#off" x="76" y="180"/><use href="#on" x="128" y="180"/><use href="#off" x="180" y="180"/>
+</svg>

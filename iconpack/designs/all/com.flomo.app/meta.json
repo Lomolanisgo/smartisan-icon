@@ -1,0 +1,28 @@
+{
+  "pkg": "com.flomo.app",
+  "label": "flomo浮墨笔记",
+  "references": [
+    {
+      "pkg": "com.smartisan.notes",
+      "why": "锤子便签：带横线的纸张，B 方案的纸质隐喻来源"
+    },
+    {
+      "pkg": "com.meizu.notepaper",
+      "why": "竖版横线便签纸造型"
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "name": "白底板绿色釉标",
+      "shape": "landscape",
+      "desc": "白色横矩形底板上放 flomo 的绿色 f 形标志，做成绿色釉面立体件，顶部高光。最接近原图标，干净易认。"
+    },
+    {
+      "id": "B",
+      "name": "横线便签纸 + 书签",
+      "shape": "portrait",
+      "desc": "竖版米色横线便签纸（参考锤子便签），右上角绿色书签丝带，中央印绿色 flomo 标志。笔记隐喻更强，但纸纹让标志在小尺寸下略弱。"
+    }
+  ]
+}

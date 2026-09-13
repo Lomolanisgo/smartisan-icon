@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9C0C9"/><stop offset=".18" stop-color="#EEF1F4"/>
+      <stop offset=".5" stop-color="#FFFFFF"/><stop offset=".82" stop-color="#EEF1F4"/><stop offset="1" stop-color="#B9C0C9"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2B3444"/><stop offset=".6" stop-color="#111722"/><stop offset="1" stop-color="#070A10"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3C7BF0"/><stop offset="1" stop-color="#153FA8"/>
+    </linearGradient>
+    <linearGradient id="skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9AA2AC"/><stop offset="1" stop-color="#5D646D"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="-62" x2="0" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A45"/><stop offset=".6" stop-color="#E8261C"/><stop offset="1" stop-color="#B8130F"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx=".5" cy=".45" r=".6">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#EAF4FF"/><stop offset="1" stop-color="#9FB6CF"/>
+    </radialGradient>
+    <radialGradient id="nose" cx=".5" cy=".3" r=".5">
+      <stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="esh" x="-20%" y="-20%" width="140%" height="150%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5"/><feOffset dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <g id="emblem">
+      <path d="M-39.6 39.6A56 56 0 1 1 39.6 39.6" fill="none" stroke="url(#red)" stroke-width="14"/>
+      <path fill="url(#red)" fill-rule="evenodd" d="M-22 -30Q-22 -38 -14 -38H14Q22 -38 22 -30V4Q22 10 16 10H7V30Q7 40 18 44H30V58H-30V44H-18Q-7 40 -7 30V10H-16Q-22 10 -22 4ZM-10 -26H10V-2H-10Z"/>
+    </g>
+  </defs>
+  <g filter="url(#sh)">
+    <path d="M128 12C188 12 214 30 218 70L226 202C228 234 200 244 128 244C56 244 28 234 30 202L38 70C42 30 68 12 128 12Z" fill="url(#body)"/>
+    <path d="M128 13C187 13 213 31 217 70L225 202C227 233 199 243 128 243C57 243 29 233 31 202L39 70C43 31 69 13 128 13Z" fill="none" stroke="#8C949E" stroke-width="2" opacity=".6"/>
+  </g>
+  <!-- windshield -->
+  <path d="M60 42C90 32 166 32 196 42C206 46 210 54 210 64L212 104C180 118 76 118 44 104L46 64C46 54 50 46 60 42Z" fill="url(#glass)"/>
+  <path d="M60 42C90 32 166 32 196 42C206 46 210 54 210 64L210 70C160 56 100 70 54 108L45 104L46 64C46 54 50 46 60 42Z" fill="#fff" opacity=".15"/>
+  <!-- blue livery stripe -->
+  <path d="M34 118C80 136 176 136 222 118L223 132C176 152 80 152 33 132Z" fill="url(#blue)"/>
+  <path d="M32 140C80 160 176 160 224 140L224.5 146C176 168 80 168 31.5 146Z" fill="#2B66D9" opacity=".8"/>
+  <!-- headlights -->
+  <rect x="42" y="168" width="36" height="14" rx="7" fill="#2A2F37"/>
+  <rect x="178" y="168" width="36" height="14" rx="7" fill="#2A2F37"/>
+  <rect x="46" y="171" width="20" height="8" rx="4" fill="url(#lamp)"/>
+  <rect x="190" y="171" width="20" height="8" rx="4" fill="url(#lamp)"/>
+  <!-- nose highlight -->
+  <ellipse cx="128" cy="182" rx="60" ry="30" fill="url(#nose)" opacity=".7"/>
+  <!-- emblem -->
+  <g filter="url(#esh)"><use href="#emblem" transform="translate(128 188) scale(.4)"/></g>
+  <!-- skirt -->
+  <path d="M31 214C80 226 176 226 225 214L226 206C228 234 200 244 128 244C56 244 28 234 30 206Z" fill="url(#skirt)"/>
+  <rect x="108" y="226" width="40" height="8" rx="4" fill="#3E444C"/>
+</svg>

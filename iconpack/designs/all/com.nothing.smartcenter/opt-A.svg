@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F2F2"/></linearGradient>
+    <linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/><stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/></linearGradient>
+    <path id="grey" d="M287.28,204.75L204.75,287.28A42.64,42.64 90,0 1,144.45 287.28L144.45,287.28A42.64,42.64 0,0 1,144.45 226.97L226.97,144.45A42.64,42.64 0,0 1,287.28 144.45L287.28,144.45A42.64,42.64 0,0 1,287.28 204.75z"/>
+    <path id="black" d="M204.2,143.9L286.73,226.42A42.64,42.64 90,0 1,286.73 286.73L286.73,286.73A42.64,42.64 0,0 1,226.42 286.73L143.9,204.2A42.64,42.64 0,0 1,143.9 143.9L143.9,143.9A42.64,42.64 90,0 1,204.2 143.9z"/>
+    <linearGradient id="gF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E9E9"/><stop offset="1" stop-color="#C4C4C4"/></linearGradient>
+    <linearGradient id="bF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#43474C"/><stop offset="0.5" stop-color="#1D1F22"/><stop offset="1" stop-color="#0B0C0D"/></linearGradient>
+    <radialGradient id="rF" cx="0.38" cy="0.32" r="0.72"><stop offset="0" stop-color="#FF6A6E"/><stop offset="0.55" stop-color="#D71921"/><stop offset="1" stop-color="#8E0B12"/></radialGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+    <clipPath id="bc"><use href="#black"/></clipPath>
+  </defs>
+  <use href="#tile" fill="url(#tileFill)"/>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+  </g>
+  <g transform="translate(128 128) scale(0.95) translate(-215.6 -215.6)">
+    <!-- grey capsule -->
+    <use href="#grey" fill="#000" opacity="0.18" filter="url(#blur)" transform="translate(0 6)"/>
+    <use href="#grey" fill="url(#gF)"/>
+    <use href="#grey" fill="none" stroke="#A9A9A9" stroke-width="1.2"/>
+    <use href="#grey" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="1.5" transform="translate(0 1.5)" clip-path="url(#bc)" opacity="0"/>
+    <!-- black capsule -->
+    <use href="#black" fill="#000" opacity="0.35" filter="url(#blur)" transform="translate(0 8)"/>
+    <use href="#black" fill="url(#bF)"/>
+    <g clip-path="url(#bc)">
+      <use href="#black" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="3" transform="translate(0 2)"/>
+      <path d="M150 150L200 150L260 210L230 225Z" fill="#FFFFFF" opacity="0.08"/>
+    </g>
+    <!-- red dot -->
+    <circle cx="257.12" cy="262" r="31.42" fill="#5A0005" opacity="0.4" filter="url(#blur)"/>
+    <circle cx="257.12" cy="257.12" r="31.42" fill="url(#rF)"/>
+    <ellipse cx="249" cy="243" rx="13" ry="8" fill="#FFFFFF" opacity="0.55" transform="rotate(-30 249 243)"/>
+  </g>
+</svg>

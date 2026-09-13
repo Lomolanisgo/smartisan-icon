@@ -1,0 +1,12 @@
+{
+  "pkg": "com.samsung.android.app.tips",
+  "label": "玩机助手 Tips",
+  "references": [
+    { "pkg": "com.meizu.voiceassistant", "why": "参考其圆形实心品牌色徽章 + 白色图形的做法（B 方案）" },
+    { "pkg": "com.huawei.KoBackup", "why": "参考锤子风格里金属件（螺纹、合页）的写实光影，用于灯泡螺口" }
+  ],
+  "options": [
+    { "id": "A", "name": "发光灯泡", "shape": "free", "desc": "无底板的写实玻璃灯泡，内部暖橙色发光、钨丝和支架可见，下接银色螺口，外围一圈橙色光晕呼应品牌橙。拟物感强，但透明底上光晕在浅色壁纸上会显得略淡。" },
+    { "id": "B", "name": "橙色圆徽章", "shape": "circle", "desc": "品牌橙圆盘，中间白色浮雕灯泡加五道光芒，保留原图标“橙底白灯泡”的识别。简洁清晰，小尺寸下更好认。" }
+  ]
+}

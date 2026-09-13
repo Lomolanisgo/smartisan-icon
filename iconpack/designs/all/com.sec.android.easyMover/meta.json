@@ -1,0 +1,12 @@
+{
+  "pkg": "com.sec.android.easyMover",
+  "label": "S 换机助手",
+  "references": [
+    { "pkg": "com.smartisan.mover", "why": "锤子自家换机/迁移工具，参考其蓝色圆形同步徽章与白色箭头" },
+    { "pkg": "com.huawei.KoBackup", "why": "同为备份迁移类应用" }
+  ],
+  "options": [
+    { "id": "A", "name": "S 形箭头徽章", "shape": "circle", "desc": "蓝到紫的品牌渐变圆盘，中间是有厚度的白色 S 形双向箭头，忠实还原 Smart Switch 标志，与锤子换机图标的圆形同步徽章同一语言。" },
+    { "id": "B", "name": "新旧手机", "shape": "free", "desc": "无底板：左边一台倾斜的银色旧手机，右边一台黑色新手机（品牌渐变屏幕上显示下载箭头和进度条），上方一道蓝紫弧形箭头从旧机指向新机。含义直白，但不是原标志，细节较多。" }
+  ]
+}

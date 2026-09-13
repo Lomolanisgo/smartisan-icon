@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="outer" cx="128" cy="90" r="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF6FC8"/>
+      <stop offset="1" stop-color="#C8007A"/>
+    </radialGradient>
+    <radialGradient id="mid" cx="128" cy="128" r="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0.7" stop-color="#3A0A55"/>
+      <stop offset="1" stop-color="#6A1F96"/>
+    </radialGradient>
+    <radialGradient id="inner" cx="128" cy="100" r="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D86BFF"/>
+      <stop offset="1" stop-color="#7B20C8"/>
+    </radialGradient>
+    <linearGradient id="star" x1="0" y1="60" x2="0" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.6" stop-color="#FFE3F6"/>
+      <stop offset="1" stop-color="#F7A8DE"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="10" x2="0" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#2A0040" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="118" fill="url(#outer)"/>
+  <circle cx="128" cy="128" r="118" fill="none" stroke="#8A0055" stroke-opacity="0.5" stroke-width="1.5"/>
+  <circle cx="128" cy="128" r="100" fill="url(#mid)"/>
+  <g fill="none" stroke="#FF8AD8" stroke-opacity="0.35" stroke-width="1.2">
+    <circle cx="128" cy="128" r="94"/><circle cx="128" cy="128" r="88"/>
+  </g>
+  <circle cx="128" cy="128" r="80" fill="url(#inner)"/>
+  <circle cx="128" cy="128" r="80" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+  <!-- tap-note ring segments -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.9">
+    <path d="M60 60 A96 96 0 0 1 90 40"/>
+    <path d="M196 196 A96 96 0 0 1 166 216"/>
+  </g>
+  <path filter="url(#sh)" fill="url(#star)" stroke="#FFF0FA" stroke-width="8" stroke-linejoin="round"
+    d="M128 70 L143.3 110 L187 111.8 L152.7 139 L164.4 181.2 L128 157 L91.6 181.2 L103.3 139 L69 111.8 L112.7 110 Z"/>
+  <path d="M128 78 L140 110 L112 110 Z" fill="#FFFFFF" opacity="0.6"/>
+  <path d="M20 118 C24 60 70 14 128 14 C186 14 232 60 236 118 C200 96 166 88 128 88 C90 88 56 96 20 118 Z" fill="url(#gloss)"/>
+</svg>

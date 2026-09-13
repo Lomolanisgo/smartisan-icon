@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0F2F1"/>
+    </linearGradient>
+    <linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/><stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="80" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#13C636" stop-opacity="0.35"/><stop offset="1" stop-color="#13C636" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="40" x2="0" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3EDC66"/><stop offset="1" stop-color="#0FA83A"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0B5E22" flood-opacity="0.35"/>
+    </filter>
+    <path id="horn" d="M52,112 C44,86 58,62 88,48 C76,70 78,92 100,110 C84,120 62,122 52,112 Z"/>
+  </defs>
+  <use href="#tile" fill="url(#tileFill)"/>
+  <g clip-path="url(#tileClip)">
+    <g stroke="#000" stroke-opacity="0.06" stroke-width="1">
+      <path d="M3 75H253M3 128H253M3 181H253"/>
+    </g>
+    <path d="M3,210 L40,196 L70,202 L104,176 L136,184 L170,150 L204,158 L253,112 V233 H3Z" fill="url(#area)"/>
+    <path d="M3,210 L40,196 L70,202 L104,176 L136,184 L170,150 L204,158 L253,112" fill="none" stroke="#13C636" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.75"/>
+  </g>
+  <g fill="url(#green)" filter="url(#sh)" transform="translate(128 118) scale(0.72) translate(-128 -128)">
+    <use href="#horn"/>
+    <use href="#horn" transform="translate(256 0) scale(-1 1)"/>
+    <text x="128" y="196" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="150">e</text>
+  </g>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+  </g>
+</svg>

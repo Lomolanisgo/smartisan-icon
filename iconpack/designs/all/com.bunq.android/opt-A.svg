@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="shade" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/><stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.04"/><stop offset="1" stop-color="#000000" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000" stop-opacity="0.07"/><stop offset="0.3" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="2.5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#tileClip)">
+    <rect x="0" y="0" width="58.59" height="256" fill="#178347"/>
+    <rect x="58.59" y="0" width="13.88" height="256" fill="#339933"/>
+    <rect x="72.47" y="0" width="13.88" height="256" fill="#2BA34E"/>
+    <rect x="86.35" y="0" width="13.89" height="256" fill="#8DC560"/>
+    <rect x="100.24" y="0" width="13.88" height="256" fill="#0EB8AF"/>
+    <rect x="114.12" y="0" width="13.88" height="256" fill="#0094D4"/>
+    <rect x="128" y="0" width="13.88" height="256" fill="#0173BA"/>
+    <rect x="141.88" y="0" width="13.88" height="256" fill="#006699"/>
+    <rect x="155.76" y="0" width="13.89" height="256" fill="#993333"/>
+    <rect x="169.65" y="0" width="13.88" height="256" fill="#FF3333"/>
+    <rect x="183.53" y="0" width="13.88" height="256" fill="#FF9933"/>
+    <rect x="197.41" y="0" width="58.59" height="256" fill="#FFCC33"/>
+    <g fill="url(#fold)">
+      <rect x="58.59" y="0" width="13.88" height="256"/><rect x="72.47" y="0" width="13.88" height="256"/>
+      <rect x="86.35" y="0" width="13.89" height="256"/><rect x="100.24" y="0" width="13.88" height="256"/>
+      <rect x="114.12" y="0" width="13.88" height="256"/><rect x="128" y="0" width="13.88" height="256"/>
+      <rect x="141.88" y="0" width="13.88" height="256"/><rect x="155.76" y="0" width="13.89" height="256"/>
+      <rect x="169.65" y="0" width="13.88" height="256"/><rect x="183.53" y="0" width="13.88" height="256"/>
+      <rect x="197.41" y="0" width="13.88" height="256"/>
+    </g>
+    <rect x="0" y="0" width="256" height="256" fill="url(#shade)"/>
+  </g>
+  <g transform="translate(3.8 3.8) scale(2.3)" fill="#FFFFFF" filter="url(#sh)">
+    <path d="m49.037,46.083 l3.311,0 0,8.752c0,4.135 -3.343,7.5 -7.451,7.5 -4.114,0 -7.451,-3.365 -7.451,-7.5l0,-8.752 3.311,0 0,8.752c0,2.53 1.858,4.585 4.14,4.585 2.282,0 4.14,-2.054 4.14,-4.585l0,-8.752z"/>
+    <path d="m67.243,61.917 l3.311,0 0,-8.752c0,-4.135 -3.336,-7.5 -7.451,-7.5 -4.108,0 -7.451,3.365 -7.451,7.5l0,8.752 3.311,0 0,-8.752c0,-2.530 1.858,-4.585 4.14,-4.585 2.282,0 4.14,2.054 4.14,4.585l0,8.752z"/>
+    <path d="m20.899,61.917 l-2.899,0 0,-7.5 0.013,0C18.006,54.28 18,54.137 18,54L18,39l3.311,0 0,8.335c1.382,-1.05 3.105,-1.67 4.963,-1.67 4.571,0 8.28,3.737 8.28,8.335 0,4.598 -3.709,8.335 -8.28,8.335 -1.974,0 -3.793,-0.704 -5.22,-1.872l-0.154,1.454zM26.068,48.58c-2.854,0 -5.169,2.433 -5.169,5.420 0,2.987 2.314,5.42 5.169,5.42 2.854,0 5.175,-2.433 5.175,-5.42 0,-2.987 -2.321,-5.42 -5.175,-5.42z"/>
+    <path d="m87.101,46.083 l2.899,0 0,7.5 -0.013,0C89.994,53.72 90,53.863 90,54L90,69l-3.311,0 0,-8.335c-1.382,1.05 -3.105,1.67 -4.963,1.67 -4.571,0 -8.28,-3.737 -8.28,-8.335 0,-4.598 3.709,-8.335 8.28,-8.335 1.974,0 3.793,0.704 5.22,1.872l0.154,-1.454zM81.932,59.42c2.854,0 5.169,-2.433 5.169,-5.42 0,-2.987 -2.314,-5.42 -5.169,-5.42 -2.854,0 -5.175,2.433 -5.175,5.42 0,2.987 2.321,5.42 5.175,5.42z"/>
+  </g>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.12" stroke-width="5"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.28" stroke-width="2"/>
+  </g>
+</svg>

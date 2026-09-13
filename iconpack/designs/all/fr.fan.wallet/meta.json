@@ -1,0 +1,12 @@
+{
+  "pkg": "fr.fan.wallet",
+  "label": "Fan Wallet",
+  "references": [
+    { "pkg": "com.mipay.wallet", "why": "小米钱包：白色方形底板上叠放卡片，参考其“白底 + 彩色卡片”构图（A 方案）" },
+    { "pkg": "com.google.android.apps.walletnfcrel", "why": "Google 钱包，钱包类图标的立体色带参考" }
+  ],
+  "options": [
+    { "id": "A", "name": "白底倾斜蓝票", "shape": "square", "desc": "白色超椭圆方块，上面放立体倾斜的蓝色票券（原 Logo 路径）并印白色 t，带投影和高光。忠实原图标。" },
+    { "id": "B", "name": "皮夹插票", "shape": "free", "desc": "异形棕色皮夹，缝线口袋里插着一张蓝色 t 票券，体现“票夹/钱包”。拟物感强，但品牌蓝占比较少。" }
+  ]
+}

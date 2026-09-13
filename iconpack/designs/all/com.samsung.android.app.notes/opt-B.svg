@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <linearGradient id="fill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5B3F"/><stop offset="1" stop-color="#D6231B"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E0392B"/><stop offset="1" stop-color="#A5170F"/>
+    </linearGradient>
+    <linearGradient id="pad" x1="0" y1="48" x2="0" y2="208" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1ECE8"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="190" y1="166" x2="160" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E2D6CF"/><stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="coil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D9D2CC"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#5A0A05" flood-opacity="0.45"/></filter>
+  </defs>
+  <use href="#tile" fill="url(#fill)"/>
+  <g clip-path="url(#clip)" fill="none">
+    <ellipse cx="128" cy="23" rx="170" ry="80" fill="#FFFFFF" fill-opacity="0.08"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.08" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+  <g filter="url(#sh)">
+    <path d="M94 50H178C186 50 190 54 190 62V166L158 206H94C86 206 82 202 82 194V62C82 54 86 50 94 50Z" fill="url(#pad)"/>
+  </g>
+  <path d="M190 166L158 206L160 178C160 172 163 168 169 168Z" fill="url(#fold)" stroke="#C9BDB5" stroke-width="1"/>
+  <g stroke="#F0C9C1" stroke-width="3" stroke-linecap="round">
+    <line x1="104" y1="92" x2="172" y2="92"/><line x1="104" y1="116" x2="172" y2="116"/><line x1="104" y1="140" x2="160" y2="140"/>
+  </g>
+  <g fill="url(#coil)" stroke="#A5170F" stroke-opacity="0.35" stroke-width="1">
+    <rect x="68" y="66" width="30" height="12" rx="6"/><rect x="68" y="100" width="30" height="12" rx="6"/>
+    <rect x="68" y="134" width="30" height="12" rx="6"/><rect x="68" y="168" width="30" height="12" rx="6"/>
+  </g>
+</svg>

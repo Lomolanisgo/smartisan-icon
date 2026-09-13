@@ -1,0 +1,12 @@
+{
+  "pkg": "com.huawei.health",
+  "label": "华为运动健康",
+  "references": [
+    { "pkg": "com.google.android.apps.fitness", "why": "同为健康应用、同为心形标志，B 方案参考其白色圆盘+彩色心形的造型" },
+    { "pkg": "com.xiaomi.hm.health", "why": "同类健康应用，参考其橙色饱满底色与高光处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "橙色方块·白心", "shape": "square", "desc": "华为运动健康的橙色超椭圆方块底板，上方高光，中间是按原标志几何重建的白色条带心形（左瓣+回形针式环带），带轻微投影。最忠实原图标。" },
+    { "id": "B", "name": "白瓷圆盘·橙心", "shape": "circle", "desc": "参考锤子 Google Fit 图标：白色瓷质圆盘，心形条带改为橙色渐变并带立体投影与顶部高光。和 Google Fit 是一个家族，风格更拟物。" }
+  ]
+}

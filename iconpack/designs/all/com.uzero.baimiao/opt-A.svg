@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <path id="sq" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="clip"><use href="#sq"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#72C681"/><stop offset="1" stop-color="#3A9450"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="15" x2="0" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.3"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="w" x1="0" y1="40" x2="0" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E4F1E6"/>
+    </linearGradient>
+    <linearGradient id="laser" x1="15" y1="0" x2="241" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D6FFE0" stop-opacity="0"/><stop offset="0.5" stop-color="#F4FFF6"/><stop offset="1" stop-color="#D6FFE0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="96" x2="0" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8FFEC" stop-opacity="0"/><stop offset="1" stop-color="#E8FFEC" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="3.5" flood-color="#14502A" flood-opacity="0.45"/></filter>
+    <filter id="blur"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <use href="#sq" fill="url(#bg)"/>
+  <g clip-path="url(#clip)">
+    <path d="M15 15H241V110C190 96 160 92 128 92S66 96 15 110Z" fill="url(#gloss)"/>
+    <use href="#sq" fill="none" stroke="#0A3A18" stroke-opacity="0.25" stroke-width="5"/>
+    <use href="#sq" fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="2" transform="translate(0 1)"/>
+  </g>
+  <!-- ghost tail (pale secondary shape of logo) -->
+  <path d="M150 118C188 118 206 146 196 176C186 206 150 214 126 206C156 196 176 180 172 156C170 140 160 128 150 118Z" fill="#fff" fill-opacity="0.28"/>
+  <!-- cat/brush glyph -->
+  <g filter="url(#sh)">
+    <path d="M136 44L152 76C174 90 180 116 164 136C150 154 118 156 104 176C94 192 104 212 132 212C104 222 72 208 72 178C72 146 110 136 124 118C134 104 130 90 120 82C126 72 132 58 136 44Z" fill="url(#w)"/>
+  </g>
+  <!-- scan line -->
+  <rect x="15" y="96" width="226" height="54" fill="url(#beam)" clip-path="url(#clip)"/>
+  <rect x="24" y="148" width="208" height="3" rx="1.5" fill="url(#laser)"/>
+  <rect x="24" y="146" width="208" height="7" rx="3.5" fill="url(#laser)" opacity="0.5" filter="url(#blur)"/>
+</svg>

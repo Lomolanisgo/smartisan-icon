@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="rim" x1="0" y1="10" x2="0" y2="246" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DDE6E0"/>
+    </linearGradient>
+    <radialGradient id="g" cx="134" cy="60" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43C993"/>
+      <stop offset="0.5" stop-color="#14977A"/>
+      <stop offset="1" stop-color="#065C4A"/>
+    </radialGradient>
+    <linearGradient id="hl" x1="0" y1="30" x2="0" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bf" x1="0" y1="68" x2="0" y2="172" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DDEFE7"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <filter id="bs" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#00362A" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  <!-- white rim bubble -->
+  <g filter="url(#sh)" fill="url(#rim)">
+    <circle cx="134" cy="118" r="106"/>
+    <path d="M52 166 L22 242 L108 214 Z"/>
+  </g>
+  <!-- green face -->
+  <g fill="url(#g)">
+    <circle cx="134" cy="118" r="90"/>
+    <path d="M64 176 L44 222 L102 200 Z"/>
+  </g>
+  <circle cx="134" cy="118" r="90" fill="none" stroke="#04382C" stroke-opacity="0.25" stroke-width="2"/>
+  <ellipse cx="134" cy="76" rx="70" ry="42" fill="url(#hl)"/>
+  <!-- B -->
+  <path filter="url(#bs)" fill="url(#bf)" fill-rule="evenodd" transform="translate(-1 -6)"
+    d="M100 72 H138 C158 72 168 84 168 100 C168 110 163 117 154 121 C165 125 172 133 172 146 C172 164 159 176 138 176 H100 Z
+       M119 89 V115 H135 C144 115 149 110 149 102 C149 94 144 89 135 89 Z
+       M119 131 V159 H137 C147 159 153 154 153 145 C153 136 147 131 137 131 Z"/>
+</svg>

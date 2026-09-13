@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="front" x1="0" y1="120" x2="0" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EE2A31"/><stop offset="1" stop-color="#C8101A"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="104" x2="0" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B00E17"/><stop offset="1" stop-color="#8E0911"/>
+    </linearGradient>
+    <linearGradient id="flapB" x1="0" y1="60" x2="0" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E4252D"/><stop offset="1" stop-color="#B51019"/>
+    </linearGradient>
+    <linearGradient id="flapL" x1="10" y1="0" x2="66" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F2434A"/><stop offset="1" stop-color="#D01A22"/>
+    </linearGradient>
+    <linearGradient id="smile" x1="0" y1="46" x2="0" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E4E4E4"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#400000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="tsh" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#5A0005" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <!-- back flap + interior -->
+  <path d="M66 104L80 58H214L226 104Z" fill="url(#flapB)"/>
+  <path d="M80 58H214" stroke="#FF6A70" stroke-width="1.5"/>
+  <path d="M40 120L66 104H226L200 120Z" fill="#5E050B"/>
+  <!-- smile rising from the box -->
+  <g filter="url(#sh)">
+    <path d="M78 30C98 86 162 86 182 30C189 30 195 34 194 41C180 104 80 104 66 41C65 34 71 30 78 30Z" fill="url(#smile)"/>
+    <path d="M70 36C72 34 76 33 78 36" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- interior front lip to hide smile bottom -->
+  <path d="M40 120L66 104H226L200 120Z" fill="#5E050B" fill-opacity="0"/>
+  <!-- right side -->
+  <path d="M200 120L226 104V218L200 236Z" fill="url(#side)"/>
+  <!-- right flap -->
+  <path d="M200 120L226 104L252 128L228 146Z" fill="#D31C24"/>
+  <path d="M226 104L252 128" stroke="#FF7A80" stroke-width="1.2"/>
+  <!-- front -->
+  <path d="M40 120H200V236H40Z" fill="url(#front)"/>
+  <path d="M40.5 120.8H199.5" stroke="#FF8086" stroke-width="1.5"/>
+  <!-- left flap -->
+  <path d="M40 120L66 104L38 72L8 92Z" fill="url(#flapL)"/>
+  <path d="M8 92L38 72" stroke="#FF8A90" stroke-width="1.2"/>
+  <text x="120" y="194" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="700" font-size="46" textLength="136" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF" filter="url(#tsh)">Joybuy</text>
+</svg>

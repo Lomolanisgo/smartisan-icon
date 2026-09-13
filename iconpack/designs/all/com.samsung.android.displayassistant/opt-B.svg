@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="base" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A3C4D3"/><stop offset="1" stop-color="#5F889C"/>
+    </linearGradient>
+    <linearGradient id="knob" x1="60" y1="56" x2="196" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7F9FA"/><stop offset="0.45" stop-color="#C5CCD1"/><stop offset="1" stop-color="#8A949B"/>
+    </linearGradient>
+    <linearGradient id="knobRim" x1="0" y1="56" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#6D777E"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="40" y1="200" x2="216" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB503"/><stop offset="1" stop-color="#FF6F93"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#1D3A48" flood-opacity="0.5"/>
+    </filter>
+    <filter id="ish" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="url(#base)"/>
+  <circle cx="128" cy="128" r="115.5" fill="none" stroke="#436A7C" stroke-opacity="0.7"/>
+  <path d="M22 118A106 106 0 0 1 234 118C200 104 56 104 22 118Z" fill="#FFFFFF" opacity="0.18"/>
+  <!-- tick scale -->
+  <circle cx="128" cy="128" r="98" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="8" stroke-dasharray="2 13.39" transform="rotate(135 128 128)" />
+  <!-- value arc: 270deg sweep from lower-left -->
+  <path d="M68.6 187.4A84 84 0 1 1 207 101" fill="none" stroke="#2E4E5D" stroke-opacity="0.35" stroke-width="12" stroke-linecap="round"/>
+  <path d="M68.6 187.4A84 84 0 1 1 207 101" fill="none" stroke="url(#arc)" stroke-width="10" stroke-linecap="round"/>
+  <!-- metal knob -->
+  <g filter="url(#sh)">
+    <circle cx="128" cy="128" r="62" fill="url(#knobRim)"/>
+    <circle cx="128" cy="128" r="59" fill="url(#knob)"/>
+  </g>
+  <circle cx="128" cy="128" r="46" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/>
+  <circle cx="128" cy="128" r="40" fill="none" stroke="#000" stroke-opacity="0.07" stroke-width="1.5"/>
+  <!-- indicator pointing to arc end -->
+  <line x1="158" y1="115" x2="176" y2="108" stroke="#FF6F93" stroke-width="7" stroke-linecap="round" filter="url(#ish)"/>
+  <!-- phone glyph -->
+  <g filter="url(#ish)">
+    <rect x="113" y="102" width="30" height="52" rx="7" fill="#2B2B2B"/>
+    <rect x="117" y="107" width="22" height="42" rx="3" fill="#60BAFF"/>
+  </g>
+</svg>

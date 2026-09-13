@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs>
+<linearGradient id="ring" x1="0" y1="10" x2="0" y2="246" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#E4E4E4"/><stop offset="1" stop-color="#CACACA"/></linearGradient>
+<linearGradient id="disk" x1="0" y1="27" x2="0" y2="229" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#46A9F4"/><stop offset="1" stop-color="#1747B3"/></linearGradient>
+<linearGradient id="gloss" x1="0" y1="27" x2="0" y2="135" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<clipPath id="diskClip"><circle cx="128" cy="128" r="101"/></clipPath>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="3.2" flood-color="#000" flood-opacity="0.24"/></filter>
+<filter id="shs" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#000" flood-opacity="0.28"/></filter>
+</defs>
+<circle cx="128" cy="128" r="118" fill="url(#ring)" stroke="#B5B5B5" stroke-width="1.5"/>
+<circle cx="128" cy="128" r="116" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="1.5"/>
+<circle cx="128" cy="129.5" r="103.5" fill="#000" fill-opacity="0.16"/>
+<circle cx="128" cy="128" r="101" fill="url(#disk)"/>
+<g clip-path="url(#diskClip)">
+<circle cx="128" cy="128" r="101" fill="none" stroke="#000" stroke-opacity="0.12" stroke-width="5"/>
+<ellipse cx="128" cy="62" rx="118" ry="78" fill="url(#gloss)"/>
+</g>
+<circle cx="128" cy="128" r="101" fill="none" stroke="#133F9C" stroke-width="1.5"/><g filter="url(#sh)">
+<path d="M73.5 131.5L94.7 110.3Q99 106 103.2 110.3L127.3 134.3L106 155.6Q101.8 159.8 97.6 155.6Z" fill="#CFE3FA"/>
+<path d="M97.6 155.6Q93.4 151.4 97.6 147.2L163.6 81.2Q167.8 77 172 81.2L185.4 94.6Q189.6 98.8 185.4 103L119.4 169Q115.2 173.2 111 169Z" fill="#FFFFFF"/>
+</g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs>
+<path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+<clipPath id="tileClip"><use href="#tile"/></clipPath>
+<linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F2F2"/></linearGradient>
+<linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/><stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/></linearGradient>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="3.2" flood-color="#000" flood-opacity="0.24"/></filter>
+<filter id="shs" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#000" flood-opacity="0.28"/></filter>
+</defs>
+<use href="#tile" fill="url(#tileFill)"/>
+<g clip-path="url(#tileClip)" fill="none">
+<use href="#tile" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+<use href="#tile" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+<use href="#tile" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+<use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+</g><defs>
+<linearGradient id="sheet" x1="0" y1="44" x2="0" y2="214" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDF1F6"/></linearGradient>
+<linearGradient id="dot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FB0F5"/><stop offset="1" stop-color="#1D63CC"/></linearGradient>
+</defs>
+<g filter="url(#sh)"><rect x="86" y="44" width="136" height="170" rx="8" fill="url(#sheet)"/></g>
+<rect x="86.75" y="44.75" width="134.5" height="168.5" rx="7.25" fill="none" stroke="#000" stroke-opacity="0.1" stroke-width="1.5"/>
+<rect x="104" y="58" width="60" height="9" rx="4.5" fill="#2564CF"/>
+<circle cx="115" cy="92" r="9" fill="url(#dot)"/><path d="M110.5 92.5L114 96L119.5 88.5" fill="none" stroke="#FFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="132" y="89.5" width="72" height="5" rx="2.5" fill="#B9C6D6"/><rect x="132" y="91" width="72" height="2" fill="#8193A8"/>
+<circle cx="115" cy="122" r="9" fill="url(#dot)"/><path d="M110.5 122.5L114 126L119.5 118.5" fill="none" stroke="#FFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="132" y="119.5" width="60" height="5" rx="2.5" fill="#B9C6D6"/><rect x="132" y="121" width="60" height="2" fill="#8193A8"/>
+<circle cx="115" cy="152" r="8" fill="none" stroke="#8FA6C2" stroke-width="2.2"/>
+<rect x="132" y="149.5" width="72" height="5" rx="2.5" fill="#B9C6D6"/>
+<circle cx="115" cy="182" r="8" fill="none" stroke="#8FA6C2" stroke-width="2.2"/>
+<rect x="132" y="179.5" width="50" height="5" rx="2.5" fill="#B9C6D6"/><defs><linearGradient id="pl" x1="0" y1="102" x2="0" y2="188" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3C9AF2"/><stop offset="1" stop-color="#1646B0"/></linearGradient>
+<linearGradient id="plg" x1="0" y1="102" x2="0" y2="149.3" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient></defs>
+<g filter="url(#sh)"><rect x="34" y="102" width="86" height="86" rx="16" fill="url(#pl)"/></g>
+<rect x="34" y="102" width="86" height="43" rx="16" fill="url(#plg)"/>
+<rect x="34.75" y="102.75" width="84.5" height="84.5" rx="15.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5"/>
+<g filter="url(#shs)"><path d="M55 147L71 163L100 131" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

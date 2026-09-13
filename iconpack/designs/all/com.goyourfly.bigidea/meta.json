@@ -1,0 +1,12 @@
+{
+  "pkg": "com.goyourfly.bigidea",
+  "label": "Idea Note",
+  "references": [
+    { "pkg": "com.bugkr.beautyidea", "why": "同为灯泡“点子”隐喻，参考发光灯泡造型" },
+    { "pkg": "com.miui.notes", "why": "同为笔记应用，参考便签纸的顶部装订条与横线纸材质" }
+  ],
+  "options": [
+    { "id": "A", "name": "发光玻璃灯泡", "shape": "free", "desc": "无底板，暖黄玻璃灯泡带灯丝、高光和光晕，紫色金属螺口，周围保留品牌的七色光线；忠实原图标，拟物感强。" },
+    { "id": "B", "name": "便签本上的灯泡", "shape": "portrait", "desc": "竖矩形便签本，紫色装订条+横线纸，纸上用马克笔画灯泡、彩铅画光线；更突出“笔记”属性。" }
+  ]
+}

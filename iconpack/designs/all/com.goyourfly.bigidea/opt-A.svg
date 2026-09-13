@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="glass" cx="0.42" cy="0.38" r="0.7">
+      <stop offset="0" stop-color="#FFFBE0"/>
+      <stop offset="0.35" stop-color="#FFE27A"/>
+      <stop offset="0.8" stop-color="#FDBB2F"/>
+      <stop offset="1" stop-color="#E89A10"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFE27A" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFE27A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6B557E"/>
+      <stop offset="0.3" stop-color="#B59CC8"/>
+      <stop offset="0.55" stop-color="#8C72A2"/>
+      <stop offset="1" stop-color="#5A456C"/>
+    </linearGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6A4A00" flood-opacity="0.35"/></filter>
+    <filter id="rs" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.2" flood-opacity="0.3"/></filter>
+  </defs>
+  <circle cx="128" cy="104" r="100" fill="url(#halo)"/>
+  <!-- rays -->
+  <g stroke-linecap="round" stroke-width="13" filter="url(#rs)">
+    <line x1="128" y1="10" x2="128" y2="28" stroke="#9C78C8"/>
+    <line x1="194" y1="38" x2="206" y2="26" stroke="#C0609E"/>
+    <line x1="222" y1="104" x2="240" y2="104" stroke="#E0607A"/>
+    <line x1="196" y1="170" x2="210" y2="184" stroke="#E0506A"/>
+    <line x1="62" y1="38" x2="50" y2="26" stroke="#7470D8"/>
+    <line x1="34" y1="104" x2="16" y2="104" stroke="#5A82E6"/>
+    <line x1="60" y1="170" x2="46" y2="184" stroke="#4C86EE"/>
+  </g>
+  <!-- base -->
+  <g filter="url(#sh)">
+    <rect x="94" y="178" width="68" height="14" rx="7" fill="url(#metal)"/>
+    <rect x="96" y="194" width="64" height="13" rx="6.5" fill="url(#metal)"/>
+    <rect x="98" y="209" width="60" height="12" rx="6" fill="url(#metal)"/>
+    <path d="M108 222 H148 C146 234 138 240 128 240 C118 240 110 234 108 222 Z" fill="#4E3C5E"/>
+    <rect x="100" y="180" width="56" height="3" rx="1.5" fill="#fff" opacity="0.35"/>
+    <rect x="102" y="196" width="52" height="3" rx="1.5" fill="#fff" opacity="0.3"/>
+    <rect x="104" y="211" width="48" height="3" rx="1.5" fill="#fff" opacity="0.25"/>
+  </g>
+  <!-- bulb -->
+  <g filter="url(#sh)">
+    <path d="M128 38 C166 38 194 66 194 104 C194 130 180 144 168 160 C162 168 160 172 160 178 H96 C96 172 94 168 88 160 C76 144 62 130 62 104 C62 66 90 38 128 38 Z" fill="url(#glass)"/>
+  </g>
+  <path d="M128 38 C166 38 194 66 194 104 C194 130 180 144 168 160 C162 168 160 172 160 178 H96 C96 172 94 168 88 160 C76 144 62 130 62 104 C62 66 90 38 128 38 Z" fill="none" stroke="#D08A00" stroke-opacity="0.5" stroke-width="1.5"/>
+  <!-- filament -->
+  <path d="M112 176 L112 132 M144 176 L144 132 M112 132 C112 118 120 116 122 126 C124 136 132 136 134 126 C136 116 144 118 144 132" fill="none" stroke="#C07A00" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+  <!-- gloss -->
+  <path d="M84 96 C84 74 100 58 120 54" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="86" cy="116" r="5" fill="#fff" opacity="0.85"/>
+</svg>

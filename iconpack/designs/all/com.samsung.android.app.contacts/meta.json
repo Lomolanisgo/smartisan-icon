@@ -1,0 +1,13 @@
+{
+  "pkg": "com.samsung.android.app.contacts",
+  "label": "联系人",
+  "references": [
+    { "pkg": "com.sonyericsson.android.socialphonebook", "why": "锤子版索尼通讯录：皮质电话本+压印人像+搭扣" },
+    { "pkg": "com.htc.contacts", "why": "锤子版 HTC 联系人：名片卡片+头像+文字行" },
+    { "pkg": "com.google.android.contacts", "why": "人像剪影造型" }
+  ],
+  "options": [
+    { "id": "A", "name": "红色皮质通讯录", "shape": "free", "desc": "三星珊瑚红皮面电话本，缝线、书脊、搭扣金属扣，封面压印人像。与索尼通讯录是“兄弟”，拟物感最强。" },
+    { "id": "B", "name": "联系人名片", "shape": "landscape", "desc": "横矩形白色名片，顶部红色页眉，左侧红底白人像头像（三星原图标志），右侧姓名与信息文字行。更简洁，偏 HTC 风格。" }
+  ]
+}

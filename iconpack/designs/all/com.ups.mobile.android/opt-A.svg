@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="shield" d="M40 42C98 20 158 20 216 42V140C216 192 176 220 128 244C80 220 40 192 40 140Z"/>
+    <path id="inner" d="M54 52C104 34 152 34 202 52V138C202 182 168 206 128 227C88 206 54 182 54 138Z"/>
+    <linearGradient id="gold" x1="0" y1="20" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE08A"/><stop offset="0.3" stop-color="#FFB500"/><stop offset="0.7" stop-color="#D98E00"/><stop offset="1" stop-color="#FFC940"/>
+    </linearGradient>
+    <linearGradient id="brown" x1="0" y1="34" x2="0" y2="227" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5C3A26"/><stop offset="0.5" stop-color="#3E2217"/><stop offset="1" stop-color="#2A150E"/>
+    </linearGradient>
+    <linearGradient id="bow" x1="0" y1="34" x2="0" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD35A"/><stop offset="1" stop-color="#E89A00"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="100" x2="0" y2="175" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE38F"/><stop offset="0.5" stop-color="#FFB500"/><stop offset="1" stop-color="#E09000"/>
+    </linearGradient>
+    <clipPath id="ic"><use href="#inner"/></clipPath>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="tx" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <g filter="url(#ds)">
+    <use href="#shield" fill="url(#gold)"/>
+  </g>
+  <use href="#shield" fill="none" stroke="#8A5A00" stroke-opacity="0.5" stroke-width="1.5"/>
+  <use href="#inner" fill="url(#brown)"/>
+  <g clip-path="url(#ic)">
+    <!-- the UPS bow at top -->
+    <path d="M40 34H216V74C160 58 96 60 40 88Z" fill="url(#bow)"/>
+    <path d="M40 88C96 60 160 58 216 74V78C160 64 96 66 40 94Z" fill="#000" opacity="0.25"/>
+    <path d="M60 50C110 38 150 38 196 50" fill="none" stroke="#fff" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="128" cy="150" rx="110" ry="60" fill="#fff" opacity="0.04"/>
+  </g>
+  <use href="#inner" fill="none" stroke="#1A0B05" stroke-opacity="0.6" stroke-width="2"/>
+  <text x="128" y="170" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="700" font-size="84" letter-spacing="-4" fill="url(#txt)" filter="url(#tx)">ups</text>
+  <path d="M46 46C98 27 158 27 210 46" fill="none" stroke="#FFF6D0" stroke-width="2" stroke-opacity="0.8" stroke-linecap="round"/>
+</svg>

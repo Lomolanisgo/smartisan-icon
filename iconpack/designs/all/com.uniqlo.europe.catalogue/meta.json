@@ -1,0 +1,12 @@
+{
+  "pkg": "com.uniqlo.europe.catalogue",
+  "label": "UNIQLO",
+  "references": [
+    { "pkg": "com.yek.android.uniqlo", "why": "锤子原有的优衣库图标（白色购物袋 + 红色 Logo 方块），参考其红底白字 Logo 的处理" },
+    { "pkg": "com.uniqlo.wakeup", "why": "优衣库另一款应用的锤子图标，参考其字标排布" }
+  ],
+  "options": [
+    { "id": "A", "name": "红色方块压印", "shape": "square", "desc": "超椭圆红色方块，白色 UNIQLO 字标带压印阴影，底面有极淡的布纹横线。与品牌方块 Logo 一致，简洁醒目；和锤子原购物袋图标可形成区分。" },
+    { "id": "B", "name": "服装吊牌", "shape": "free", "desc": "倾斜的红色卡纸吊牌，金属气眼穿棉线，印 UNIQLO 字标。以“衣服吊牌”隐喻服装零售，造型更拟物、更有趣。" }
+  ]
+}

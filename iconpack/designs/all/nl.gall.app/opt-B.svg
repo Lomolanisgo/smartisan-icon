@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="glass" x1="84" y1="0" x2="172" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E1A14"/><stop offset="0.25" stop-color="#2E4A3A"/><stop offset="0.55" stop-color="#1A2C22"/><stop offset="1" stop-color="#07100B"/>
+    </linearGradient>
+    <linearGradient id="foil" x1="110" y1="0" x2="146" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C9480A"/><stop offset="0.35" stop-color="#FF9A55"/><stop offset="0.7" stop-color="#F26A1B"/><stop offset="1" stop-color="#A83A06"/>
+    </linearGradient>
+    <linearGradient id="label" x1="0" y1="142" x2="0" y2="216" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A4854"/><stop offset="1" stop-color="#1F2830"/>
+    </linearGradient>
+    <linearGradient id="lbshade" x1="90" y1="0" x2="166" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity="0.35"/><stop offset="0.25" stop-color="#000" stop-opacity="0"/>
+      <stop offset="0.75" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+    <path id="G" d="M46.88-26.32L33.30-26.32L33.30-38.38L58.84-38.38L58.84-9.86Q54.98-5.32 47.90-2.05Q40.82 1.22 33.69 1.22Q25 1.22 18.36-3.05Q11.72-7.32 7.84-15.84Q3.96-24.37 3.96-35.89Q3.96-47.71 7.89-56.10Q11.82-64.50 18.09-68.65Q24.37-72.80 33.11-72.80Q43.60-72.80 49.93-67.46Q56.25-62.11 58.06-51.76L46.34-49.07Q45.02-54.59 41.50-57.52Q37.99-60.45 33.11-60.45Q25.54-60.45 20.85-54.57Q16.16-48.68 16.16-36.62Q16.16-23.680 21.24-16.94Q25.59-11.13 33.01-11.13Q36.47-11.13 40.21-12.77Q43.95-14.40 46.88-17.24"/>
+    <path id="amp" d="M57.91-8.74L51.07 1.86Q46.09-1.07 41.46-6.35Q37.79-2.29 33.76-0.51Q29.74 1.27 24.41 1.27Q13.82 1.27 8.72-5.18Q3.61-11.62 3.61-19.63Q3.61-33.45 16.99-41.55Q10.99-50.15 10.99-57.28Q10.99-64.16 15.48-68.48Q19.97-72.80 27.39-72.80Q34.57-72.80 39.09-68.29Q43.60-63.77 43.60-56.54Q43.60-51.90 41.33-48.02Q39.06-44.14 32.91-39.40L41.06-26.27Q42.43-29.30 43.55-34.42L53.71-31.59Q51.37-21.14 48.63-16.85Q50.49-14.75 53.49-12.16Q56.49-9.57 57.91-8.74M24.51-51.56L27.29-47.66L30.32-50.49Q33.69-53.66 33.69-56.74Q33.69-59.57 31.98-61.35Q30.27-63.13 27.69-63.13Q25.15-63.13 23.56-61.57Q21.97-60.01 21.97-57.76Q21.97-55.18 24.51-51.56M34.33-15.53L22.85-32.76Q19.09-30.42 17.11-27.08Q15.14-23.73 15.14-20.07Q15.14-15.48 17.60-12.77Q20.070-10.06 23.93-10.06Q28.96-10.06 34.33-15.53"/>
+  </defs>
+  <ellipse cx="128" cy="240" rx="50" ry="5" fill="#000" fill-opacity="0.4" filter="url(#sh)"/>
+  <!-- bottle -->
+  <path d="M114 58V84C114 102 84 108 84 132V226Q84 238 96 238H160Q172 238 172 226V132C172 108 142 102 142 84V58Z" fill="url(#glass)"/>
+  <!-- glass highlights -->
+  <path d="M94 132C94 116 108 110 116 104" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="4" stroke-linecap="round"/>
+  <rect x="92" y="140" width="6" height="88" rx="3" fill="#FFFFFF" fill-opacity="0.22"/>
+  <rect x="160" y="140" width="3" height="88" rx="1.5" fill="#FFFFFF" fill-opacity="0.12"/>
+  <!-- foil capsule -->
+  <path d="M110 22Q110 14 118 14H138Q146 14 146 22V68Q146 72 142 72H114Q110 72 110 68Z" fill="url(#foil)"/>
+  <rect x="110" y="60" width="36" height="3" fill="#7A2A04" fill-opacity="0.35"/>
+  <rect x="110" y="20" width="36" height="2" fill="#FFFFFF" fill-opacity="0.35"/>
+  <!-- label -->
+  <rect x="86" y="144" width="84" height="72" fill="url(#label)"/>
+  <rect x="86" y="144" width="84" height="72" fill="url(#lbshade)"/>
+  <rect x="86" y="148" width="84" height="1.5" fill="#F26A1B"/>
+  <rect x="86" y="210.5" width="84" height="1.5" fill="#F26A1B"/>
+  <g transform="translate(128 180) scale(0.43) translate(-81.1 35.8)">
+    <use href="#G" fill="#FFFFFF"/><use href="#G" fill="#FFFFFF" transform="translate(99.44 0)"/>
+    <use href="#amp" fill="#FF7A2A" transform="translate(62.6 0) scale(0.6)"/>
+  </g>
+</svg>

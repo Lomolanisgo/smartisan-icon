@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bun" x1="0" y1="36" x2="0" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB255"/><stop offset="0.6" stop-color="#FF8A30"/><stop offset="1" stop-color="#E86A14"/>
+    </linearGradient>
+    <linearGradient id="bun2" x1="0" y1="172" x2="0" y2="224" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF9A40"/><stop offset="1" stop-color="#DE6010"/>
+    </linearGradient>
+    <radialGradient id="hl" cx="100" cy="58" r="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="red" x1="0" y1="112" x2="0" y2="206" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EE3A12"/><stop offset="1" stop-color="#C51E00"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#6A2500" flood-opacity="0.35"/>
+    </filter>
+    <filter id="tsh" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="0.8" flood-color="#5A1000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <g filter="url(#sh)">
+    <!-- top bun -->
+    <path d="M30 108C30 58 76 34 128 34C180 34 226 58 226 108C226 120 218 124 206 124H50C38 124 30 120 30 108Z" fill="url(#bun)"/>
+    <path d="M30 108C30 58 76 34 128 34C180 34 226 58 226 108C226 120 218 124 206 124H50C38 124 30 120 30 108Z" fill="url(#hl)"/>
+    <path d="M40 116Q128 128 216 116" fill="none" stroke="#C85A0C" stroke-opacity="0.35" stroke-width="2"/>
+    <!-- bottom bun -->
+    <path d="M42 178H214C224 178 228 184 226 194C222 214 204 224 182 224H74C52 224 34 214 30 194C28 184 32 178 42 178Z" fill="url(#bun2)"/>
+    <path d="M44 181H212" stroke="#FFC98A" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8"/>
+  </g>
+  <g filter="url(#tsh)" fill="url(#red)" font-family="Segoe UI Black, Segoe UI, Microsoft YaHei, sans-serif" font-weight="900" text-anchor="middle">
+    <text x="128" y="152" font-size="50" textLength="184" lengthAdjust="spacingAndGlyphs">BURGER</text>
+    <text x="128" y="204" font-size="54" textLength="138" lengthAdjust="spacingAndGlyphs">KING</text>
+  </g>
+</svg>

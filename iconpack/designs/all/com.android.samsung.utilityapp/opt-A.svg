@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="sq" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="clip"><use href="#sq"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0F0F2"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C6C6C6"/><stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="80" x2="0" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FE6EA"/><stop offset="1" stop-color="#2FB3C4"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="118" y1="0" x2="214" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7C65A"/><stop offset="0.3" stop-color="#EE6F74"/><stop offset="0.65" stop-color="#A56BE8"/><stop offset="1" stop-color="#7D6CF2"/>
+    </linearGradient>
+    <linearGradient id="hl" x1="0" y1="80" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.8"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#3A3A60" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <use href="#sq" fill="url(#bg)"/>
+  <g filter="url(#sh)" fill="none" stroke-width="28">
+    <path d="M122.9 101.1A38 38 0 1 0 134 128" stroke="url(#teal)"/>
+    <path d="M133.1 154.9A38 38 0 1 0 122 128" stroke="url(#warm)"/>
+  </g>
+  <!-- specular highlights -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-width="4" opacity="0.7">
+    <path d="M62 116A30 30 0 0 1 90 94"/>
+    <path d="M190 100A30 30 0 0 1 204 122"/>
+  </g>
+  <g clip-path="url(#clip)" fill="none">
+    <use href="#sq" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+    <use href="#sq" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#sq" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#sq" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+</svg>

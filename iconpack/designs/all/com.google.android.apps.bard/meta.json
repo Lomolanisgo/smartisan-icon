@@ -1,0 +1,12 @@
+{
+  "pkg": "com.google.android.apps.bard",
+  "label": "Gemini",
+  "references": [
+    { "pkg": "com.openai.chatgpt", "why": "用户已认可的 AI 应用定稿：标志做成独立立体物件，A 方案沿用" },
+    { "pkg": "com.bilibili.app.in", "why": "白色横矩形底板规范，B 方案采用" }
+  ],
+  "options": [
+    { "id": "A", "name": "四色玻璃星钻", "shape": "free", "desc": "Gemini 四角星做成有厚度的玻璃宝石：红黄绿蓝四色渐变，四个切面按顶光分明暗，带棱线高光与接触阴影。辨识度高；四角尖在 48px 下显得较细。" },
+    { "id": "B", "name": "白瓷底板彩釉星", "shape": "landscape", "desc": "标准白色横矩形底板，四角星以彩色釉面嵌入下凹槽中，边缘有内阴影和白色唇线。与 Claude 定稿同属“底板+压印”语言，整齐统一；立体感较弱。" }
+  ]
+}

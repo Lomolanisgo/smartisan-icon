@@ -1,0 +1,9 @@
+{
+  "pkg": "com.app.tgtg",
+  "label": "Too Good To Go",
+  "references": [],
+  "options": [
+    { "id": "A", "name": "墨绿圆形徽章", "shape": "circle", "desc": "圆形墨绿徽章，顶部柔光，白色叶片/袋子线形 Logo 带浮雕阴影。未找到食物救援类锤子图标，采用圆形轮廓；简洁、忠实品牌。" },
+    { "id": "B", "name": "牛皮纸惊喜袋", "shape": "free", "desc": "异形牛皮纸打包袋，锯齿封口、侧褶，中间贴墨绿圆形 Logo 贴纸。对应应用里的“惊喜袋”，更拟物、更有故事性。" }
+  ]
+}

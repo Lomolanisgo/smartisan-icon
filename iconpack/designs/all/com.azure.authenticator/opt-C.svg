@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs><filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="3.2" flood-color="#000" flood-opacity="0.24"/></filter>
+<filter id="shs" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#000" flood-opacity="0.28"/></filter></defs><defs>
+<path id="auB" d="M86.8265,41.8807A16.6471,16.6471 0,0 0,72.5616 25.4059c-0.4018,-0.1005 -0.7032,-0.1005 -1.105,-0.201a174.6749,174.6749 0,0 0,-46.9132 0c-0.4018,0.1005 -0.8037,0.1005 -1.1051,0.201A16.5712,16.5712 0,0 0,9.1735 41.8807c0.1,14.2649 4.621,36.0639 28.2283,50.7306a19.9654,19.9654 0,0 0,21.0959 0C82.306,78.0451 86.8265,56.246 86.8265,41.8807Z"/><path id="auS" d="M24.5068,25.7267c0.381,-0.1 0.6667,-0.1 1.0478,-0.2 2.19,-0.2994 4.3808,-0.5989 6.5713,-0.7985a16.6314,16.6314 0,0 1,16 -13.2747,16.6313 16.6313,0 0,1 16,13.2747c2.1905,0.2 4.3809,0.4991 6.5715,0.7985 0.381,0.1 0.7618,0.1 1.0476,0.2a21.7169,21.7169 0,0 1,3.4285 0.8983c-1,-15.649 -12.7619,-26.25 -27.0476,-26.25S22.1735,10.976 21.1735,26.625A18.3046,18.3046 0,0 1,24.5068 25.7267Z"/>
+<clipPath id="auClip"><use href="#auB"/></clipPath>
+<linearGradient id="auG" gradientUnits="userSpaceOnUse" x1="0" y1="23" x2="0" y2="60"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<linearGradient id="steel" gradientUnits="userSpaceOnUse" x1="9" y1="23" x2="87" y2="96"><stop offset="0" stop-color="#F7F8F9"/><stop offset="0.35" stop-color="#C9CED4"/><stop offset="0.6" stop-color="#EEF0F2"/><stop offset="1" stop-color="#9AA2AB"/></linearGradient>
+<linearGradient id="metal" gradientUnits="userSpaceOnUse" x1="21" y1="0" x2="75" y2="0"><stop offset="0" stop-color="#7E8893"/><stop offset="0.3" stop-color="#F4F6F8"/><stop offset="0.55" stop-color="#AEB5BD"/><stop offset="0.8" stop-color="#EEF1F4"/><stop offset="1" stop-color="#737D88"/></linearGradient>
+<linearGradient id="enamel" gradientUnits="userSpaceOnUse" x1="0" y1="30" x2="0" y2="95"><stop offset="0" stop-color="#3BB2F8"/><stop offset="1" stop-color="#0A4FAE"/></linearGradient>
+<radialGradient id="rivet" cx="0.4" cy="0.35" r="0.7"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#8C959F"/></radialGradient>
+</defs>
+<g transform="translate(128 129) scale(2.3) translate(-48 -48)">
+<g filter="url(#sh)"><use href="#auS" fill="url(#metal)"/><use href="#auB" fill="url(#steel)"/></g>
+<g clip-path="url(#auClip)">
+<g filter="url(#shs)"><path d="M16 42.5A10 10 0 0 1 24.5 32.6Q48 29 71.5 32.6A10 10 0 0 1 80 42.5C79.9 55 76 73 55.5 86.2A13 13 0 0 1 41.2 86.2C20 73 16.1 55 16 42.5Z" fill="#9AA2AB" fill-opacity="0.55"/>
+<path d="M16.8 43A10 10 0 0 1 25 33.4Q48 30 71 33.4A10 10 0 0 1 79.2 43C79 55 75.2 72.5 55 85.5A12.4 12.4 0 0 1 41.7 85.5C21 72.5 17 55 16.8 43Z" fill="url(#enamel)"/>
+<circle cx="48.35" cy="46" r="10.8" fill="#FFFFFF"/><path d="M29.5 80A19 19 0 0 1 67.2 80Q62 84 55 86A12.4 12.4 0 0 1 41.7 86Q35 84 29.5 80Z" fill="#FFFFFF"/>
+<circle cx="15" cy="31.5" r="1.7" fill="url(#rivet)"/><circle cx="81.7" cy="31.5" r="1.7" fill="url(#rivet)"/><circle cx="48.35" cy="91.5" r="1.7" fill="url(#rivet)"/></g>
+<rect x="0" y="23" width="96" height="30" fill="url(#auG)"/>
+<use href="#auB" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="1" transform="translate(0 0.6)"/>
+<use href="#auB" fill="none" stroke="#5E6770" stroke-opacity="0.6" stroke-width="2"/>
+</g>
+<use href="#auS" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="0.5"/>
+</g>
+</svg>

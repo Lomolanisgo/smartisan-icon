@@ -1,0 +1,12 @@
+{
+  "pkg": "de.flixbus.app",
+  "label": "FlixBus",
+  "references": [
+    { "pkg": "com.sdu.didi.psnger", "why": "锤子的巴士车头造型，参考正面车头+后视镜+标志面板" },
+    { "pkg": "com.mobike.mobikeapp", "why": "出行类横版底板，参考底部色带的处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "绿色大巴车头", "shape": "free", "desc": "FlixBus 绿色长途大巴正面：两侧后视镜、橙色 LED 路牌、深色风挡、橙色腰线，车头印白色 FLIX BUS 标志（原路径）；拟物感强，辨识度高。" },
+    { "id": "B", "name": "绿底立体字标", "shape": "landscape", "desc": "绿色横版底板，白色 FLIX BUS 字标凸起，底部橙色路面色带带白色虚线；简洁，字标大，48px 下更清楚。" }
+  ]
+}

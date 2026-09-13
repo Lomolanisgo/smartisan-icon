@@ -1,0 +1,11 @@
+{
+  "pkg": "com.android.samsung.utilityapp",
+  "label": "Good Guardians",
+  "references": [
+    { "pkg": "com.meizu.safe", "why": "同为手机管家/守护类，参考其立体盾牌造型" }
+  ],
+  "options": [
+    { "id": "A", "name": "白瓷底 GG 环", "shape": "square", "desc": "方形白色瓷质底板，把原标志中青色和黄紫渐变的两个“G”环做成有厚度的光亮缎带，带高光和投影。最忠实于品牌。" },
+    { "id": "B", "name": "渐变守护盾", "shape": "free", "desc": "参考魅族安全中心：白色包边盾牌，盾面是青到紫的渐变，中央是白色和浅金色的 GG 环，突出“守护”。" }
+  ]
+}

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="t" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tc"><use href="#t"/></clipPath>
+    <linearGradient id="tf" x1="0" y1="23" x2="256" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFCF2E"/><stop offset="1" stop-color="#F6A01E"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE27A"/><stop offset="1" stop-color="#FFC21F"/>
+    </linearGradient>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="17"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+      <feComposite in2="SourceAlpha" operator="in"/>
+    </filter>
+    <filter id="emb" x="-10%" y="-10%" width="120%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="b"/>
+      <feOffset in="b" dy="3" result="o"/>
+      <feFlood flood-color="#7A3D00" flood-opacity=".35"/><feComposite in2="o" operator="in" result="sh"/>
+      <feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <use href="#t" fill="url(#tf)"/>
+  <use href="#t" filter="url(#noise)"/>
+  <g clip-path="url(#tc)">
+    <rect x="0" y="206" width="256" height="30" fill="#2D2B4E" opacity=".9"/>
+    <rect x="0" y="206" width="256" height="1.5" fill="#fff" opacity=".3"/>
+  </g>
+  <path d="M3 23H253V110C180 94 76 94 3 110Z" fill="#fff" opacity=".12" clip-path="url(#tc)"/>
+  <g clip-path="url(#tc)" fill="none">
+    <use href="#t" stroke="#7A3D00" stroke-opacity=".10" stroke-width="5"/>
+    <use href="#t" stroke="#7A3D00" stroke-opacity=".14" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#t" stroke="#fff" stroke-opacity=".55" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#t" stroke="#D98A10" stroke-width="2"/>
+  </g>
+  <!-- cargo bike -->
+  <g filter="url(#emb)">
+    <g stroke="#2D2B4E" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- wheels -->
+      <circle cx="62" cy="176" r="28" fill="#fff" stroke-width="9"/>
+      <circle cx="202" cy="176" r="28" fill="#fff" stroke-width="9"/>
+      <!-- frame -->
+      <path d="M62 176H100L84 112M100 176H178L202 176M176 102L202 176M88 134L104 130" stroke-width="8"/>
+      <path d="M170 120L186 124" stroke-width="7"/>
+      <!-- saddle + handlebar -->
+      <path d="M70 108H94" stroke-width="9"/>
+      <path d="M166 98H188" stroke-width="8"/>
+    </g>
+    <g fill="#2D2B4E"><circle cx="62" cy="176" r="6"/><circle cx="202" cy="176" r="6"/></g>
+    <!-- cargo box with Cargoroo face -->
+    <rect x="102" y="116" width="70" height="56" rx="8" fill="url(#box)" stroke="#2D2B4E" stroke-width="6"/>
+    <g fill="none" stroke="#2D2B4E" stroke-width="4.5" stroke-linecap="round">
+      <circle cx="125" cy="136" r="6.5"/><circle cx="149" cy="136" r="6.5"/>
+      <path d="M121 153Q137 162 153 153"/>
+    </g>
+  </g>
+</svg>

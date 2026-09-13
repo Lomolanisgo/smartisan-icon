@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <linearGradient id="leather" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7A5236"/><stop offset="0.5" stop-color="#5A3824"/><stop offset="1" stop-color="#452818"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.22 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="shieldG" x1="0" y1="62" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A2014"/><stop offset="1" stop-color="#24120A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="60" x2="0" y2="205" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE59A"/><stop offset="0.45" stop-color="#F2AE10"/><stop offset="1" stop-color="#B87800"/>
+    </linearGradient>
+    <filter id="deboss" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="0.6" flood-color="#C99A6E" flood-opacity="0.6"/>
+    </filter>
+    <filter id="tx" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="0.8" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#leather)"/>
+  <rect x="15" y="15" width="226" height="226" fill="#000" filter="url(#grain)" clip-path="url(#clip)"/>
+  <g clip-path="url(#clip)" fill="none">
+    <ellipse cx="128" cy="20" rx="160" ry="80" fill="#fff" opacity="0.08"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.25" stroke-width="5"/>
+    <use href="#tile" stroke="#fff" stroke-opacity="0.18" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#2E1A0E" stroke-width="2"/>
+  </g>
+  <!-- stitching -->
+  <path d="M43 29H213C224 29 227 32 227 43V213C227 224 224 227 213 227H43C32 227 29 224 29 213V43C29 32 32 29 43 29Z" fill="none" stroke="#1E0F06" stroke-opacity="0.5" stroke-width="3" stroke-dasharray="7 5" transform="translate(0 1)"/>
+  <path d="M43 29H213C224 29 227 32 227 43V213C227 224 224 227 213 227H43C32 227 29 224 29 213V43C29 32 32 29 43 29Z" fill="none" stroke="#E8C9A0" stroke-width="2.2" stroke-dasharray="7 5"/>
+  <!-- metal shield plate -->
+  <g filter="url(#deboss)">
+    <path d="M70 70C108 55 148 55 186 70V140C186 175 160 194 128 210C96 194 70 175 70 140Z" fill="url(#gold)"/>
+    <path d="M78 76C112 63 144 63 178 76V139C178 169 156 186 128 200C100 186 78 169 78 139Z" fill="url(#shieldG)"/>
+    <path d="M78 76C112 63 144 63 178 76V96C142 86 110 88 78 104Z" fill="url(#gold)" opacity="0.95"/>
+    <text x="128" y="160" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="700" font-size="54" letter-spacing="-2.5" fill="url(#gold)" filter="url(#tx)">ups</text>
+  </g>
+  <path d="M74 70C108 57 148 57 182 70" fill="none" stroke="#FFF6D0" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

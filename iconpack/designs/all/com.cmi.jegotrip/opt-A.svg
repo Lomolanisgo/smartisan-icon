@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="t" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="tc"><use href="#t"/></clipPath>
+    <linearGradient id="tf" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1F1F1"/>
+    </linearGradient>
+    <linearGradient id="tr" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C6C6C6"/><stop offset=".2" stop-color="#CFCFCF"/><stop offset=".85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="36" x2="0" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF4D95"/><stop offset="1" stop-color="#E0156A"/>
+    </linearGradient>
+    <linearGradient id="rib" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6BFF"/><stop offset=".6" stop-color="#3E8BFF"/><stop offset="1" stop-color="#7CCBFF"/>
+    </linearGradient>
+    <linearGradient id="ribGloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="emb" x="-15%" y="-15%" width="130%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="b"/>
+      <feOffset in="b" dy="3" result="o"/>
+      <feFlood flood-color="#8A0038" flood-opacity=".3"/><feComposite in2="o" operator="in" result="sh"/>
+      <feOffset in="SourceAlpha" dy="2" result="so"/>
+      <feComposite in="SourceAlpha" in2="so" operator="out" result="edge"/>
+      <feFlood flood-color="#fff" flood-opacity=".5"/><feComposite in2="edge" operator="in" result="hl"/>
+      <feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/><feMergeNode in="hl"/></feMerge>
+    </filter>
+  </defs>
+  <use href="#t" fill="url(#tf)"/>
+  <g filter="url(#emb)" transform="translate(-2 14)">
+    <path d="M70 50H108M108 50V104Q108 126 84 124M146 50H190M168 50V118" fill="none" stroke="url(#pink)" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g clip-path="url(#tc)">
+    <path d="M10 180Q128 150 246 170V246H10Z" fill="url(#rib)"/>
+    <path d="M10 180Q128 150 246 170V186Q128 168 10 196Z" fill="url(#ribGloss)"/>
+    <path d="M10 180Q128 150 246 170" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="1.5"/>
+  </g>
+  <text x="128" y="218" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-weight="700" font-size="28" fill="#fff" letter-spacing="2">出境流量</text>
+  <g clip-path="url(#tc)" fill="none">
+    <use href="#t" stroke="#000" stroke-opacity=".05" stroke-width="5"/>
+    <use href="#t" stroke="#000" stroke-opacity=".07" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#t" stroke="#fff" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#t" stroke="url(#tr)" stroke-width="2"/>
+  </g>
+</svg>

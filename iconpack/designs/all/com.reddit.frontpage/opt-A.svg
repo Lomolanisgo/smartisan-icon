@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="cer" cx="110" cy="120" r="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.65" stop-color="#F1F3F5"/>
+      <stop offset="1" stop-color="#C9D0D6"/>
+    </radialGradient>
+    <radialGradient id="ear" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C3CBD2"/>
+    </radialGradient>
+    <radialGradient id="eye" cx="0.45" cy="0.4" r="0.65">
+      <stop offset="0" stop-color="#FF7A2E"/>
+      <stop offset="1" stop-color="#D92E00"/>
+    </radialGradient>
+    <linearGradient id="mouth" x1="0" y1="180" x2="0" y2="214" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A2A26"/>
+      <stop offset="1" stop-color="#140D0B"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5A2A10" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <ellipse cx="128" cy="236" rx="84" ry="7" fill="#000" opacity="0.28" filter="url(#blur)"/>
+  <g filter="url(#sh)">
+    <!-- antenna -->
+    <path d="M128 98 C126 74 136 52 164 48" fill="none" stroke="#2B2B2B" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="184" cy="46" r="21" fill="url(#ear)" stroke="#AEB7BF" stroke-width="1.5"/>
+    <!-- ears -->
+    <circle cx="46" cy="120" r="27" fill="url(#ear)" stroke="#AEB7BF" stroke-width="1.5"/>
+    <circle cx="210" cy="120" r="27" fill="url(#ear)" stroke="#AEB7BF" stroke-width="1.5"/>
+    <!-- head -->
+    <ellipse cx="128" cy="160" rx="98" ry="68" fill="url(#cer)" stroke="#AEB7BF" stroke-width="1.5"/>
+  </g>
+  <ellipse cx="110" cy="116" rx="54" ry="18" fill="#FFFFFF" opacity="0.9"/>
+  <!-- eyes -->
+  <ellipse cx="92" cy="150" rx="18" ry="21" fill="url(#eye)"/>
+  <ellipse cx="164" cy="150" rx="18" ry="21" fill="url(#eye)"/>
+  <ellipse cx="92" cy="150" rx="18" ry="21" fill="none" stroke="#9E2400" stroke-opacity="0.35" stroke-width="2"/>
+  <ellipse cx="164" cy="150" rx="18" ry="21" fill="none" stroke="#9E2400" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="98" cy="142" r="5.5" fill="#FFE2CF"/>
+  <circle cx="170" cy="142" r="5.5" fill="#FFE2CF"/>
+  <!-- smile -->
+  <path d="M92 182 C108 190 148 190 164 182 C156 208 140 216 128 216 C116 216 100 208 92 182 Z" fill="url(#mouth)"/>
+  <path d="M104 204 C112 196 144 196 152 204 C144 212 136 215 128 215 C120 215 112 212 104 204 Z" fill="#E4572E" opacity="0.55"/>
+</svg>

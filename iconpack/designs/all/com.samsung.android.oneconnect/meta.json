@@ -1,0 +1,12 @@
+{
+  "pkg": "com.samsung.android.oneconnect",
+  "label": "SmartThings",
+  "references": [
+    { "pkg": "com.xiaomi.smarthome", "why": "同为智能家居中枢应用，参考其用品牌色做实心底、白色标志浮起的做法" },
+    { "pkg": "com.google.android.apps.chromecast.app", "why": "设备控制类应用，参考其把“设备”画成实物的思路" }
+  ],
+  "options": [
+    { "id": "A", "name": "陶瓷节点", "shape": "landscape", "desc": "锤子横矩形蓝色渐变底板，中间是白色陶瓷质感的 SmartThings 五节点网络，带厚度和投影。保留原标志与品牌蓝，辨识度最高。" },
+    { "id": "B", "name": "智能中枢", "shape": "circle", "desc": "把应用画成一个圆形智能中枢设备：金属外圈、深色玻璃面板，面板里的节点网络发出蓝色光。更有“设备”感，但颜色从品牌亮蓝变成深色，桌面上辨识度略低。" }
+  ]
+}

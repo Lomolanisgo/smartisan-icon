@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="silver" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.45" stop-color="#E4E8EE"/><stop offset="0.8" stop-color="#C2C9D3"/><stop offset="1" stop-color="#DDE2E8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="40" x2="0" y2="216" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFEFA8"/><stop offset="0.4" stop-color="#E2B642"/><stop offset="1" stop-color="#A97A12"/>
+    </linearGradient>
+    <radialGradient id="enamel" cx="118" cy="96" r="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F63C4"/><stop offset="0.6" stop-color="#153E95"/><stop offset="1" stop-color="#0A2466"/>
+    </radialGradient>
+    <linearGradient id="gloss" x1="0" y1="50" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <path id="arc" d="M42.5 159.1A91 91 0 1 1 213.5 159.1"/>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="emb" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="0.8" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <clipPath id="ec"><circle cx="128" cy="128" r="68"/></clipPath>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="url(#silver)" filter="url(#ds)"/>
+  <circle cx="128" cy="128" r="115" fill="none" stroke="#9AA3AE" stroke-width="1.5"/>
+  <circle cx="128" cy="128" r="106" fill="none" stroke="#1B3F8F" stroke-width="2.5"/>
+  <text font-family="Times New Roman, Georgia, serif" font-size="18" font-weight="700" fill="#1B3F8F" letter-spacing="1.6" text-anchor="middle">
+    <textPath href="#arc" startOffset="50%">CHINA · CONSULAR · AFFAIRS</textPath>
+  </text>
+  <!-- stars -->
+  <g fill="#1B3F8F">
+    <path id="st" d="M0-6L1.4-1.9H5.7L2.2 0.7L3.5 4.9L0 2.3L-3.5 4.9L-2.2 0.7L-5.7-1.9H-1.4Z" transform="translate(128 222) scale(1.2)"/>
+    <use href="#st" transform="rotate(22 128 128)"/><use href="#st" transform="rotate(-22 128 128)"/>
+    <use href="#st" transform="rotate(44 128 128)"/><use href="#st" transform="rotate(-44 128 128)"/>
+  </g>
+  <!-- gold bezel + enamel -->
+  <circle cx="128" cy="128" r="76" fill="url(#gold)" filter="url(#emb)"/>
+  <circle cx="128" cy="128" r="68" fill="url(#enamel)"/>
+  <circle cx="128" cy="128" r="68" fill="none" stroke="#6B4A00" stroke-opacity="0.6" stroke-width="1.5"/>
+  <text x="128" y="148" text-anchor="middle" font-family="KaiTi, SimKai, STKaiti, serif" font-size="56" fill="url(#gold)" filter="url(#emb)" letter-spacing="-2">领事</text>
+  <g clip-path="url(#ec)">
+    <ellipse cx="128" cy="70" rx="80" ry="46" fill="url(#gloss)"/>
+  </g>
+</svg>

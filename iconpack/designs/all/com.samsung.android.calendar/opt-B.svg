@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="90" x2="0" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0F0F0"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="34" x2="0" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#42D6C5"/><stop offset="1" stop-color="#0D9E90"/>
+    </linearGradient>
+    <linearGradient id="ringm" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#7F868D"/><stop offset="0.45" stop-color="#F6F7F8"/><stop offset="1" stop-color="#6F767D"/>
+    </linearGradient>
+    <linearGradient id="cell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D6D6D6"/><stop offset="1" stop-color="#C4C4C4"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2FCFBD"/><stop offset="1" stop-color="#0B9A8C"/>
+    </linearGradient>
+    <clipPath id="pc"><rect x="26" y="34" width="204" height="196" rx="16"/></clipPath>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-opacity="0.3"/></filter>
+    <g id="c"><rect width="20" height="18" rx="4"/></g>
+  </defs>
+  <!-- stacked pages -->
+  <g filter="url(#sh)">
+    <rect x="30" y="46" width="196" height="196" rx="16" fill="#D9D9D9"/>
+    <rect x="28" y="40" width="200" height="196" rx="16" fill="#E9E9E9"/>
+    <rect x="26" y="34" width="204" height="196" rx="16" fill="url(#paper)"/>
+  </g>
+  <g clip-path="url(#pc)">
+    <rect x="26" y="34" width="204" height="62" fill="url(#band)"/>
+    <rect x="26" y="95" width="204" height="2" fill="#000" fill-opacity="0.12"/>
+    <rect x="26" y="35" width="204" height="1.5" fill="#FFFFFF" fill-opacity="0.5"/>
+  </g>
+  <rect x="26" y="34" width="204" height="196" rx="16" fill="none" stroke="#000" stroke-opacity="0.12"/>
+  <!-- spiral -->
+  <g>
+    <g fill="#07675D">
+      <circle cx="52" cy="54" r="5"/><circle cx="82" cy="54" r="5"/><circle cx="112" cy="54" r="5"/>
+      <circle cx="144" cy="54" r="5"/><circle cx="174" cy="54" r="5"/><circle cx="204" cy="54" r="5"/>
+    </g>
+    <g fill="url(#ringm)" stroke="#5A6168" stroke-width="0.8">
+      <rect x="48" y="14" width="8" height="42" rx="4"/><rect x="78" y="14" width="8" height="42" rx="4"/>
+      <rect x="108" y="14" width="8" height="42" rx="4"/><rect x="140" y="14" width="8" height="42" rx="4"/>
+      <rect x="170" y="14" width="8" height="42" rx="4"/><rect x="200" y="14" width="8" height="42" rx="4"/>
+    </g>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.9">
+    <rect x="44" y="74" width="60" height="9" rx="4.5"/>
+  </g>
+  <!-- day grid 7x4 -->
+  <g fill="url(#cell)">
+    <use href="#c" x="42" y="112"/><use href="#c" x="66" y="112"/><use href="#c" x="90" y="112"/><use href="#c" x="114" y="112"/><use href="#c" x="138" y="112"/><use href="#c" x="162" y="112"/><use href="#c" x="186" y="112"/>
+    <use href="#c" x="42" y="140"/><use href="#c" x="66" y="140"/><use href="#c" x="90" y="140"/><use href="#c" x="114" y="140"/><use href="#c" x="162" y="140"/><use href="#c" x="186" y="140"/>
+    <use href="#c" x="42" y="168"/><use href="#c" x="66" y="168"/><use href="#c" x="90" y="168"/><use href="#c" x="114" y="168"/><use href="#c" x="138" y="168"/><use href="#c" x="162" y="168"/><use href="#c" x="186" y="168"/>
+    <use href="#c" x="42" y="196"/><use href="#c" x="66" y="196"/><use href="#c" x="90" y="196"/>
+  </g>
+  <use href="#c" x="138" y="140" fill="url(#hot)"/>
+  <g fill="#FFFFFF" fill-opacity="0.35"><rect x="138" y="140" width="20" height="6" rx="3"/></g>
+</svg>

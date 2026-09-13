@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="bezel" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A4A4C"/><stop offset=".08" stop-color="#2F2F31"/><stop offset="1" stop-color="#151516"/>
+    </linearGradient>
+    <path id="scr" d="M36 40H220C229 40 232 43 232 52V204C232 213 229 216 220 216H36C27 216 24 213 24 204V52C24 43 27 40 36 40Z"/>
+    <clipPath id="scrc"><use href="#scr"/></clipPath>
+    <radialGradient id="crt" cx="128" cy="128" r="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1C1F1D"/><stop offset=".7" stop-color="#0B0C0B"/><stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#fff" opacity=".035"/>
+    </pattern>
+    <linearGradient id="refl" x1="24" y1="40" x2="150" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".5" stop-color="#fff" stop-opacity=".04"/><stop offset=".51" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feColorMatrix in="b" values="0 0 0 0 .85  0 0 0 0 1  0 0 0 0 .9  0 0 0 1 0" result="c"/>
+      <feMerge><feMergeNode in="c"/><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#bezel)"/>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity=".3" stroke-width="5"/>
+    <use href="#tile" stroke="#fff" stroke-opacity=".3" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#0B0B0C" stroke-width="2"/>
+  </g>
+  <!-- screen recess -->
+  <use href="#scr" fill="#fff" fill-opacity=".14" transform="translate(0 1.5)"/>
+  <use href="#scr" fill="#000" transform="translate(0 -1)"/>
+  <use href="#scr" fill="url(#crt)"/>
+  <g clip-path="url(#scrc)">
+    <rect x="0" y="0" width="256" height="256" fill="url(#scan)"/>
+    <use href="#scr" fill="none" stroke="#000" stroke-width="10" stroke-opacity=".6" transform="translate(0 2)"/>
+    <g transform="translate(128 128) scale(3.1) translate(-54 -54)" fill="#F4FFF8" filter="url(#glow)">
+      <path d="M34,38h6l12,16l-12,16h-6l12,-16z"/>
+      <path d="M56,66h18v4h-18z"/>
+    </g>
+    <path d="M24 40H232V112C180 90 110 100 24 150Z" fill="url(#refl)"/>
+  </g>
+</svg>

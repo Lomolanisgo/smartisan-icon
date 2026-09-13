@@ -1,0 +1,12 @@
+{
+  "pkg": "org.localsend.localsend_app",
+  "label": "LocalSend",
+  "references": [
+    { "pkg": "com.lenovo.anyshare", "why": "同为局域网传文件应用，A 方案参考其光泽圆盘 + 白色立体图形 + 外圈弧形高光" },
+    { "pkg": "com.qq.wifi_transfer", "why": "同为无线传输工具，B 方案的雷达波纹参考它" }
+  ],
+  "options": [
+    { "id": "A", "name": "青色光泽圆盘", "shape": "circle", "desc": "LocalSend 青绿色光泽圆盘，白色 8 段虚线环和中心白色圆珠微微凸起，带快牙/茄子快传式的弧形高光。与锤子传输类图标同族，48px 清晰。" },
+    { "id": "B", "name": "白底配对按钮", "shape": "landscape", "desc": "白色横矩形底板，虚线环以青色珐琅嵌入，中心是凹槽里一颗凸起的青色玻璃按钮，外围淡淡的雷达波纹。像一枚“点一下就配对”的实体按键；色块少，远看较素。" }
+  ]
+}

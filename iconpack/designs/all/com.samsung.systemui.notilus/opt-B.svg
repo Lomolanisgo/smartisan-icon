@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="disc" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF8F97"/><stop offset="1" stop-color="#E8424F"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="14" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bell" x1="0" y1="50" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1E3E4"/>
+    </linearGradient>
+    <linearGradient id="star" x1="0" y1="36" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE27A"/><stop offset="1" stop-color="#F5A900"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7A0B16" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="url(#disc)"/>
+  <circle cx="128" cy="128" r="115.5" fill="none" stroke="#B82E3A" stroke-opacity="0.6"/>
+  <path d="M22 118A106 106 0 0 1 234 118C200 104 56 104 22 118Z" fill="url(#gloss)"/>
+  <circle cx="128" cy="128" r="104" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+  <!-- bell -->
+  <g filter="url(#sh)">
+    <path d="M128 52C136 52 140 57 140 63C164 70 176 92 176 118V150L192 170V178H64V170L80 150V118C80 92 92 70 116 63C116 57 120 52 128 52Z" fill="url(#bell)"/>
+    <path d="M108 186H148C148 198 139 208 128 208C117 208 108 198 108 186Z" fill="url(#bell)"/>
+  </g>
+  <path d="M92 118C92 96 102 80 120 74" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <rect x="68" y="170" width="120" height="3" fill="#D9C4C6"/>
+  <!-- star badge -->
+  <g filter="url(#sh)" transform="translate(180 76)">
+    <path d="M0 -38L10.6 -14.6L36.1 -11.7L17.1 5.6L22.3 30.8L0 18L-22.3 30.8L-17.1 5.6L-36.1 -11.7L-10.6 -14.6Z" fill="url(#star)" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M0 -30L8 -12L-4 -8L-22 -9L-10 -12Z" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+</svg>

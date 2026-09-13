@@ -1,0 +1,12 @@
+{
+  "pkg": "com.playstack.balatro.android",
+  "label": "Balatro",
+  "references": [
+    { "pkg": "com.qqgame.hlddz", "why": "同为扑克牌游戏，参考其纸牌的纸质材质与投影" },
+    { "pkg": "com.pokercity.ddz", "why": "扑克类游戏，参考卡牌造型" }
+  ],
+  "options": [
+    { "id": "A", "name": "双牌叠放", "shape": "free", "desc": "无底板，两张写实纸牌（像素风红心 A + 小丑 Joker）交错叠放，带投影；延续原图标构图，识别度高。" },
+    { "id": "B", "name": "红蓝漩涡牌桌", "shape": "landscape", "desc": "横矩形底板为 Balatro 标志性的红→蓝迷幻漩涡加 CRT 扫描线，中间立一张小丑牌；品牌氛围更强，但小丑细节在 48px 下略小。" }
+  ]
+}

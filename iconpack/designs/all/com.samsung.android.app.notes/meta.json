@@ -1,0 +1,13 @@
+{
+  "pkg": "com.samsung.android.app.notes",
+  "label": "三星笔记",
+  "references": [
+    { "pkg": "com.smartisan.notes", "why": "锤子便签：写字的纸+斜放的红色铅笔" },
+    { "pkg": "com.samsung.android.app.memo", "why": "锤子版三星备忘录：螺旋装订横线纸" },
+    { "pkg": "com.miui.notes", "why": "横线纸张质感" }
+  ],
+  "options": [
+    { "id": "A", "name": "螺旋本+S Pen", "shape": "portrait", "desc": "竖矩形横线笔记本，红橙色封皮条和金属螺旋圈，右下角折角，上面斜放一支橙红色 S Pen 与手写笔迹。参考锤子便签的“纸+笔”，拟物感强。" },
+    { "id": "B", "name": "红底白色记事本", "shape": "landscape", "desc": "横矩形三星红橙渐变底板，中间是立体白色记事本：左侧线圈、右下折角、浅红横线。忠实三星原图标志，小尺寸辨识度高。" }
+  ]
+}

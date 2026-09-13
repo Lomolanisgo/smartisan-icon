@@ -1,0 +1,12 @@
+{
+  "pkg": "com.supportware.Buienradar",
+  "label": "Buienradar",
+  "references": [
+    { "pkg": "com.htc.Weather", "why": "圆形天气徽章造型" },
+    { "pkg": "sina.mobile.tianqitong", "why": "无底板的立体云朵天气图标" }
+  ],
+  "options": [
+    { "id": "A", "name": "雷达圆形徽章", "shape": "circle", "desc": "银色外圈加深蓝玻璃圆盘，保留品牌的浅蓝彗星斜线和白色细线，底部淡淡的雷达环；忠实品牌标志。" },
+    { "id": "B", "name": "立体云朵雨滴", "shape": "free", "desc": "白色立体云叠在品牌深蓝云上，下方三道彗星形浅蓝雨滴呼应标志斜线；“雨量雷达”含义直观，品牌感弱一些。" }
+  ]
+}

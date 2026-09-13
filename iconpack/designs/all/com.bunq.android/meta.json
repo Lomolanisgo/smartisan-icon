@@ -1,0 +1,12 @@
+{
+  "pkg": "com.bunq.android",
+  "label": "bunq",
+  "references": [
+    { "pkg": "com.mipay.wallet", "why": "支付/钱包应用，参考其多彩色块 + 柔和阴影的造型语言" },
+    { "pkg": "com.xueqiu.android", "why": "参考其白色圆形徽章的瓷质中心" }
+  ],
+  "options": [
+    { "id": "A", "name": "彩虹条横板", "shape": "landscape", "desc": "保留原图标的 12 色竖条，做成横矩形并加顶部光泽和底部压暗，白色 bunq 字标带投影。最接近原品牌形象。" },
+    { "id": "B", "name": "色环瓷心徽章", "shape": "circle", "desc": "12 种品牌色排成一圈色环，中间是凸起的白瓷圆盘，深色 bunq 字标。更有物件感、48px 下也清晰；与原图标差别较大。" }
+  ]
+}

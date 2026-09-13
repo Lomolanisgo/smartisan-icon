@@ -1,0 +1,11 @@
+{
+  "pkg": "com.buuuk.globalblue",
+  "label": "Global Blue",
+  "references": [
+    { "pkg": "cn.gov.tax.its", "why": "个人所得税应用，蓝色 + 白色面板的税务类造型，参考其配色与稳重感" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色底板字标", "shape": "landscape", "desc": "横矩形品牌深蓝底板，凸起的白色胶囊内写 Shop，下方白色 Tax Free，均带浮雕阴影。忠实原图标；文字为 Segoe UI 转曲。" },
+    { "id": "B", "name": "退税小票盖章", "shape": "free", "desc": "竖向锯齿边购物小票，蓝色票头带 Shop 胶囊，下方印章“Tax Free”带墨迹纹理。直观表达购物退税，拟物化更强。" }
+  ]
+}

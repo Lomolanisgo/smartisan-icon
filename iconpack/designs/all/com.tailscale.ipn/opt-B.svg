@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDFDFD"/><stop offset="1" stop-color="#A9A9A9"/>
+    </linearGradient>
+    <radialGradient id="plate" cx="128" cy="60" r="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F5F5F5"/><stop offset=".7" stop-color="#DADADA"/><stop offset="1" stop-color="#C4C4C4"/>
+    </radialGradient>
+    <filter id="brush" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9 .006" numOctaves="2" seed="5"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 -.2"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <radialGradient id="dome" cx=".36" cy=".28" r=".8">
+      <stop offset="0" stop-color="#6A6868"/><stop offset=".35" stop-color="#2E2D2D"/><stop offset="1" stop-color="#121111"/>
+    </radialGradient>
+    <radialGradient id="dimple" cx=".5" cy=".25" r=".8">
+      <stop offset="0" stop-color="#B7B7B7"/><stop offset="1" stop-color="#E9E9E9"/>
+    </radialGradient>
+    <filter id="d" x="-80%" y="-80%" width="260%" height="260%">
+      <feOffset in="SourceAlpha" dy="3"/><feGaussianBlur stdDeviation="2.2"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <g id="on"><circle r="17" fill="url(#dome)" filter="url(#d)"/><ellipse cx="-5" cy="-8" rx="6" ry="3.5" fill="#fff" opacity=".55"/></g>
+    <g id="off"><circle r="14" cy="1" fill="#fff"/><circle r="14" fill="url(#dimple)"/></g>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="#9A9A9A"/>
+  <circle cx="128" cy="128" r="115" fill="url(#edge)"/>
+  <circle cx="128" cy="128" r="106" fill="#B5B5B5"/>
+  <circle cx="128" cy="129" r="105" fill="#fff"/>
+  <circle cx="128" cy="128" r="105" fill="url(#plate)"/>
+  <circle cx="128" cy="128" r="105" fill="#fff" filter="url(#brush)"/>
+  <use href="#off" x="76" y="76"/><use href="#off" x="128" y="76"/><use href="#off" x="180" y="76"/>
+  <use href="#on" x="76" y="128"/><use href="#on" x="128" y="128"/><use href="#on" x="180" y="128"/>
+  <use href="#off" x="76" y="180"/><use href="#on" x="128" y="180"/><use href="#off" x="180" y="180"/>
+</svg>

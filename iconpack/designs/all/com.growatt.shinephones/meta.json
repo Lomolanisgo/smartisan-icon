@@ -1,0 +1,11 @@
+{
+  "pkg": "com.growatt.shinephones",
+  "label": "ShinePhone",
+  "references": [
+    { "pkg": "com.dianxinos.powermanager", "why": "电源/能源管理类，参考其金属边框+蓝色玻璃面板的材质" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色底板·月叶标志", "shape": "landscape", "desc": "古瑞瓦特品牌蓝横矩形底板，白色重绘月牙+叶片+星芒标志，叶片与月牙之间留出缝隙。与 ShineTools 的 A 方案同底板成对。" },
+    { "id": "B", "name": "太阳能板·发光标志", "shape": "square", "desc": "铝合金边框的光伏电池板（深蓝电池片网格+玻璃斜向反光），标志以微微发光的白色印在板面上，直观表达太阳能逆变器监控。与 ShineTools 的 B 方案共用同一块电池板。" }
+  ]
+}

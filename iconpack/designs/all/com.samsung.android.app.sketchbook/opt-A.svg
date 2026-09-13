@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="wood" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#8A5A30"/><stop offset="0.4" stop-color="#D49A5E"/><stop offset="1" stop-color="#7A4C26"/>
+    </linearGradient>
+    <linearGradient id="woodh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DDA66A"/><stop offset="1" stop-color="#8E5C31"/>
+    </linearGradient>
+    <linearGradient id="canvas" x1="0" y1="28" x2="0" y2="182" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEFF6"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="60" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B7CFF"/><stop offset="1" stop-color="#8A3CF0"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.35"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.8" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0.2  0 0 0 0 0.1  0 0 0 0 0  0 0 0 0.35 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <!-- back leg -->
+  <path d="M123 40H133L136 250H120Z" fill="#6B421F"/>
+  <!-- front legs -->
+  <g filter="url(#sh)">
+    <path d="M76 90L88 92L56 250L40 248Z" fill="url(#wood)"/>
+    <path d="M168 92L180 90L216 248L200 250Z" fill="url(#wood)"/>
+  </g>
+  <!-- canvas -->
+  <g filter="url(#sh)">
+    <rect x="30" y="26" width="196" height="148" rx="6" fill="#CFD3DC"/>
+    <rect x="30" y="22" width="196" height="148" rx="6" fill="url(#canvas)"/>
+  </g>
+  <rect x="30" y="22" width="196" height="148" rx="6" fill="none" stroke="#000" stroke-opacity="0.1"/>
+  <!-- top clamp -->
+  <rect x="112" y="10" width="32" height="20" rx="4" fill="url(#woodh)" filter="url(#sh)"/>
+  <!-- strokes -->
+  <path d="M58 132C74 92 92 70 106 80S96 132 116 128S146 64 160 76S150 130 172 118S196 92 204 96" fill="none" stroke="url(#purple)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80 150C110 140 150 152 196 136" fill="none" stroke="#2FD3C0" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="190" cy="54" r="12" fill="#FFB547"/>
+  <!-- ledge -->
+  <g filter="url(#sh)">
+    <rect x="20" y="168" width="216" height="18" rx="4" fill="url(#woodh)"/>
+  </g>
+  <rect x="20" y="168" width="216" height="18" rx="4" fill="#000" filter="url(#grain)"/>
+  <rect x="22" y="169" width="212" height="2" rx="1" fill="#FFFFFF" fill-opacity="0.35"/>
+</svg>

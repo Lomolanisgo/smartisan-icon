@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs><filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="3.2" flood-color="#000" flood-opacity="0.24"/></filter>
+<filter id="shs" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#000" flood-opacity="0.28"/></filter>
+<linearGradient id="face" x1="0" y1="70" x2="0" y2="222" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#ECEAE6"/></linearGradient>
+<linearGradient id="top" x1="30" y1="30" x2="220" y2="80" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4A4A4A"/><stop offset="1" stop-color="#1E1E1E"/></linearGradient>
+<linearGradient id="side" x1="0" y1="50" x2="0" y2="232" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2A2A2A"/><stop offset="1" stop-color="#050505"/></linearGradient>
+<linearGradient id="frame" x1="0" y1="54" x2="0" y2="238" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#262626"/><stop offset="1" stop-color="#0A0A0A"/></linearGradient>
+<filter id="blur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<ellipse cx="124" cy="240" rx="92" ry="7" fill="#000" fill-opacity="0.22" filter="url(#blur)"/>
+<path d="M52 60L26 34H198L224 60Z" fill="url(#top)"/>
+<path d="M30 35.5H197" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+<path d="M52 60L26 34V208L52 234Z" fill="url(#side)"/>
+<path d="M27.5 36V207" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.5"/>
+<rect x="50" y="58" width="174" height="176" rx="3" fill="url(#frame)"/>
+<rect x="50" y="58" width="174" height="176" rx="3" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1.5"/>
+<rect x="66" y="74" width="142" height="144" rx="2" fill="url(#face)"/>
+<rect x="66" y="74" width="142" height="4" fill="#000" fill-opacity="0.12"/>
+<g filter="url(#shs)"><g transform="translate(137 146) scale(1.2) translate(-229 -229)"><path d="M273.5,187c0.7,3.2 0,6.3 -3.2,6.7l-5.3,1L265,272a27.3,27.3 0,0 1,-12.2 3.9c-5.6,0 -7,-1.8 -11.2,-7l-34.4,-54L207.2,267l10.9,2.5s0,6.3 -8.8,6.3l-24.2,1.4c-0.7,-1.4 0,-5 2.5,-5.6l6.3,-1.8v-69l-8.8,-0.7c-0.7,-3.2 1,-7.7 6,-8l26,-1.8 35.7,54.6v-48.3l-9.1,-1c-0.7,-4 2,-6.7 5.6,-7l24.2,-1.5Z" fill="#111"/></g></g>
+</svg>

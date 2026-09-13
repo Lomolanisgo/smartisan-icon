@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F2F2"/>
+    </linearGradient>
+    <linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/>
+      <stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/>
+    </linearGradient>
+    <linearGradient id="front" x1="64" y1="0" x2="180" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18B9EC"/><stop offset="0.6" stop-color="#00A8E2"/><stop offset="1" stop-color="#0094CC"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="80" x2="0" y2="216" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0079AA"/><stop offset="1" stop-color="#006590"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="92" x2="0" y2="216" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.18"/><stop offset="0.3" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#003B55" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+    <filter id="emb" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0.8" stdDeviation="0.6" flood-color="#00415F" flood-opacity="0.45"/>
+    </filter>
+    <path id="g" fill-rule="evenodd" d="M108.46,82.71C108.46,82.71 108.43,98.02 108.45,97.99L109.17,96.95C112.15,92.64 115.05,88.67 120.14,88.67C126.23,88.66 129.52,93.76 129.54,98.05L129.54,99.95C129.54,106.17 129.52,125.51 129.52,125.51L122.68,125.51L122.65,99.52C122.65,95.95 119.79,95.96 119.75,95.96C117.43,95.96 113.18,101.75 108.45,108.19L108.45,125.52L101.54,125.53L101.53,117.51C101.53,117.51 96.96,125.53 90.12,125.54C82.36,125.54 79.73,120.2 79.71,107.41C79.7,95.22 81.42,88.7 89.74,88.69C96.07,88.69 101.51,97.91 101.51,97.91L101.51,92.07L108.46,82.71ZM89.84,95.940C86.66,95.94 86.39,99.3 86.4,107.4C86.41,115.5 86.85,118.66 89.83,118.66C93.89,118.65 100.29,108.32 100.29,108.32C100.29,108.32 93.95,95.94 89.84,95.94Z"/>
+  </defs>
+  <use href="#tile" fill="url(#tileFill)"/>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+  </g>
+  <!-- paper shopping bag -->
+  <g filter="url(#sh)">
+    <!-- back handle -->
+    <path d="M112 90C112 50 170 50 170 88" fill="none" stroke="#006E9A" stroke-width="6" stroke-linecap="round"/>
+    <!-- gusset -->
+    <path d="M178 94L198 84L204 206L184 216Z" fill="url(#side)"/>
+    <path d="M178 94L198 84L194 102L184 216" fill="none" stroke="#00597F" stroke-width="1" stroke-opacity="0.6"/>
+    <!-- front -->
+    <path d="M62 94H178L184 216H56Z" fill="url(#front)"/>
+    <path d="M62 94H178L184 216H56Z" fill="url(#paper)"/>
+    <path d="M62 94H178L179 108H61.3Z" fill="#FFFFFF" fill-opacity="0.16"/>
+    <path d="M61.3 108H179" stroke="#00709E" stroke-opacity="0.5" stroke-width="1"/>
+    <path d="M62.5 95H177.5" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1"/>
+    <!-- front handle -->
+    <circle cx="94" cy="101" r="3" fill="#005F85"/>
+    <circle cx="146" cy="101" r="3" fill="#005F85"/>
+    <path d="M94 101C94 52 146 52 146 101" fill="none" stroke="#0086BA" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M94 99C94.5 60 145.5 60 146 99" fill="none" stroke="#6ED6F7" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8"/>
+  </g>
+  <g transform="translate(120 162) scale(1.45) translate(-104.6 -104.1)">
+    <use href="#g" fill="#FFFFFF" filter="url(#emb)"/>
+  </g>
+</svg>

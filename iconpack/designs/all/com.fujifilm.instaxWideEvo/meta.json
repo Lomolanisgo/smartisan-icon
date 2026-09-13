@@ -1,0 +1,12 @@
+{
+  "pkg": "com.fujifilm.instaxWideEvo",
+  "label": "WIDE Evo",
+  "references": [
+    { "pkg": "com.meizu.media.camera", "why": "相机类，参考其写实镜头的层次与玻璃反光" },
+    { "pkg": "com.google.android.apps.photos", "why": "照片类，参考锤子对照片/相纸的明亮处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "黑色相机正面", "shape": "landscape", "desc": "横矩形即相机机身：黑色压纹皮面、银色顶条、红白指示窗和两个按钮，中间是大号金属镜头与深蓝镀膜玻璃。对应原图标的 instax 相机形象。与 instax UP! A（相片扇形）同为品牌主视觉层级。" },
+    { "id": "B", "name": "宽幅拍立得相纸", "shape": "free", "desc": "横版 instax WIDE 宽幅相纸（白色相纸边框、下边更宽），画面为海边日落，后面叠一张略斜的相纸，右下角淡灰 instax 字样。与 instax UP! B（竖版 mini 相纸）成对。" }
+  ]
+}

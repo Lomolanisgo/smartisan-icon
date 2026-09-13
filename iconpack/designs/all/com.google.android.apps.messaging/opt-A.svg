@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="b" d="M54 30H202C224 30 242 48 242 70V158C242 180 224 198 202 198H112L60 238C62 224 64 210 64 198H54C32 198 14 180 14 158V70C14 48 32 30 54 30Z"/>
+    <linearGradient id="fill" x1="0" y1="30" x2="0" y2="238" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E6E8EB"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A8DF8"/><stop offset="1" stop-color="#0B57D0"/>
+    </linearGradient>
+    <linearGradient id="lblue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9C8FB"/><stop offset="1" stop-color="#6D9EF2"/>
+    </linearGradient>
+    <clipPath id="bc"><use href="#b"/></clipPath>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.3"/></filter>
+  </defs>
+  <use href="#b" fill="url(#fill)" filter="url(#sh)"/>
+  <g clip-path="url(#bc)" fill="none">
+    <use href="#b" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use href="#b" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+  </g>
+  <use href="#b" fill="none" stroke="#C4C7CC" stroke-width="1.2"/>
+  <rect x="48" y="70" width="160" height="20" rx="10" fill="url(#blue)"/>
+  <rect x="48" y="104" width="160" height="20" rx="10" fill="url(#blue)"/>
+  <rect x="48" y="138" width="104" height="20" rx="10" fill="url(#lblue)"/>
+  <g fill="#FFFFFF" fill-opacity="0.35">
+    <rect x="56" y="72" width="144" height="5" rx="2.5"/><rect x="56" y="106" width="144" height="5" rx="2.5"/><rect x="56" y="140" width="88" height="5" rx="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "pkg": "com.whatsapp.w4b",
+  "label": "WhatsApp Business",
+  "references": [
+    { "pkg": "com.whatsapp", "why": "同品牌个人版，沿用其白边圆形气泡+尾巴的造型，保证两者一眼是兄弟" },
+    { "pkg": "com.tencent.mm", "why": "已认可的聊天气泡定稿，参考其玻璃高光与质感" }
+  ],
+  "options": [
+    { "id": "A", "name": "商务 B 气泡", "shape": "free", "desc": "完全沿用锤子 WhatsApp 的白边气泡造型，内部换成更深的商务墨绿并以立体白色“B”替代电话听筒；与个人版并排时靠颜色深浅和字母区分，识别度最高。" },
+    { "id": "B", "name": "绿色公文包", "shape": "free", "desc": "绿皮革公文包（缝线、提手、黄铜扣），锁扣位置是带“B”的 WhatsApp 小气泡徽章；“商务”隐喻更直观，但气泡较小，48px 下品牌感弱于 A。" }
+  ]
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <path id="body" d="M36 80A92 16 0 0 0 220 80L192 230A64 10 0 0 1 64 230Z"/>
+    <clipPath id="bc"><use href="#body"/></clipPath>
+    <linearGradient id="shade" x1="36" y1="0" x2="220" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000000" stop-opacity="0.28"/>
+      <stop offset="0.3" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.32"/>
+    </linearGradient>
+    <radialGradient id="crispy" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#F6C46A"/><stop offset="0.6" stop-color="#D98A32"/><stop offset="1" stop-color="#A55A18"/>
+    </radialGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#3A0000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.25" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+  </defs>
+  <g filter="url(#sh)">
+    <!-- opening -->
+    <ellipse cx="128" cy="80" rx="92" ry="16" fill="#5A1208"/>
+    <!-- fried chicken -->
+    <g filter="url(#rough)" fill="url(#crispy)">
+      <circle cx="80" cy="70" r="24"/>
+      <circle cx="116" cy="54" r="30"/>
+      <circle cx="154" cy="58" r="28"/>
+      <circle cx="186" cy="72" r="22"/>
+      <circle cx="100" cy="84" r="20"/>
+      <circle cx="166" cy="84" r="20"/>
+    </g>
+    <g fill="#8A4410" fill-opacity="0.35">
+      <circle cx="108" cy="46" r="3"/><circle cx="126" cy="60" r="2.5"/><circle cx="150" cy="50" r="3"/>
+      <circle cx="164" cy="64" r="2.5"/><circle cx="80" cy="64" r="2.5"/><circle cx="188" cy="68" r="2.5"/>
+    </g>
+    <!-- bucket body -->
+    <use href="#body" fill="#FFFFFF"/>
+    <g clip-path="url(#bc)">
+      <g fill="#E4002B">
+        <path d="M36 60H56.4L78.2 240H64Z"/>
+        <path d="M77.3 60H97.8L105.6 240H91.8Z"/>
+        <path d="M118.2 60H137.8L133.1 240H122.9Z"/>
+        <path d="M158.2 60H178.7L164.2 240H150.4Z"/>
+        <path d="M199.6 60H220L192 240H177.8Z"/>
+      </g>
+      <use href="#body" fill="url(#shade)"/>
+      <!-- label -->
+      <rect x="86" y="128" width="84" height="46" rx="10" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1.5"/>
+      <text x="128" y="164" text-anchor="middle" font-family="Segoe UI Black, Segoe UI, sans-serif" font-weight="900" font-style="italic" font-size="34" textLength="66" lengthAdjust="spacingAndGlyphs" fill="#E4002B">KFC</text>
+    </g>
+    <!-- rim -->
+    <path d="M36 80A92 16 0 0 0 220 80" fill="none" stroke="#F4F4F4" stroke-width="7"/>
+    <path d="M36 83A92 16 0 0 0 220 83" fill="none" stroke="#BDBDBD" stroke-width="1.5"/>
+    <path d="M64 230A64 10 0 0 0 192 230" fill="none" stroke="#9E001E" stroke-width="2" stroke-opacity="0.6"/>
+  </g>
+</svg>

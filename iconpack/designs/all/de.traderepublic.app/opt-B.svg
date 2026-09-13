@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="porc" cx="128" cy="60" r="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.6" stop-color="#F1F2F4"/><stop offset="1" stop-color="#C9CDD3"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D5D8DC"/><stop offset="1" stop-color="#A9AEB5"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A4B4E"/><stop offset="0.5" stop-color="#141415"/><stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="14" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <path id="logo" fill-rule="evenodd" d="M61.07,34.97C61.48,34.87 61.76,34.51 61.76,34.08V34.08V24.91C61.76,24.84 61.75,24.77 61.73,24.7C61.62,24.21 61.14,23.91 60.66,24.03L47.9,27.15C47.5,27.25 47.09,27.23 46.71,27.11L40.95,25.17C40.57,25.04 40.15,25.02 39.76,25.12L26.68,28.35C26.28,28.45 26,28.82 26,29.24V38.41C26,38.48 26.01,38.55 26.02,38.62C26.14,39.11 26.62,39.41 27.1,39.29L39.76,36.17C40.15,36.07 40.57,36.09 40.95,36.22L46.71,38.15C47.1,38.28 47.51,38.29 47.9,38.2L61.07,34.97ZM61.07,48.65C61.48,48.55 61.76,48.19 61.76,47.76L61.76,47.76V38.59C61.76,38.52 61.75,38.45 61.74,38.38C61.62,37.89 61.14,37.59 60.66,37.71L47.9,40.83C47.5,40.93 47.09,40.91 46.71,40.79L40.95,38.85C40.57,38.72 40.15,38.7 39.76,38.8L26.68,42.03C26.28,42.13 26,42.5 26,42.92V52.09C26,52.16 26.01,52.23 26.02,52.3C26.14,52.79 26.62,53.09 27.1,52.97L39.76,49.85C40.15,49.75 40.57,49.77 40.95,49.9L46.71,51.83C47.1,51.96 47.51,51.97 47.9,51.88L61.07,48.65Z"/>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="114.5" fill="url(#porc)"/>
+  <circle cx="128" cy="128" r="113" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.9"/>
+  <g transform="translate(-12.4 6.8) scale(3.2)" filter="url(#sh)">
+    <use href="#logo" fill="url(#ink)"/>
+  </g>
+  <ellipse cx="128" cy="68" rx="92" ry="52" fill="url(#gloss)" opacity="0.35"/>
+</svg>

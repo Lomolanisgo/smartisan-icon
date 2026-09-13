@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tc"><use href="#tile"/></clipPath>
+    <linearGradient id="f" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E86F2"/><stop offset="1" stop-color="#0258C6"/>
+    </linearGradient>
+    <radialGradient id="gl" cx="128" cy="-30" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.25"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lt" x1="0" y1="160" x2="0" y2="346" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E3EEFA"/>
+    </linearGradient>
+    <path id="t" d="M217.18,203.79H243.47L249.82,174.78L288.8,162.08L279.73,203.79H312.37L306.93,230.07H274.29L260.7,290.81C259.79,294.44 258.88,298.97 258.88,304.41C258.88,312.57 264.32,318.01 272.48,318.01C278.83,318.01 285.17,316.2 290.61,314.38L284.27,342.49C277.92,343.39 270.67,346.11 264.32,346.11C239.84,346.11 221.71,336.14 221.71,308.95C221.71,298.07 223.53,287.19 226.25,276.31L236.22,229.17H209.93L217.18,203.79Z"/>
+  </defs>
+  <use href="#tile" fill="url(#f)"/>
+  <!-- faint perforated ticket edges -->
+  <g clip-path="url(#tc)" fill="#003F94" fill-opacity="0.18">
+    <circle cx="3" cy="128" r="16"/><circle cx="253" cy="128" r="16"/>
+  </g>
+  <use href="#tile" fill="url(#gl)"/>
+  <g clip-path="url(#tc)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.10" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.14" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#7DBBFF" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#0145A0" stroke-width="2"/>
+  </g>
+  <g transform="translate(-89 -85) scale(0.84)">
+    <use href="#t" fill="#002E70" fill-opacity="0.45" transform="translate(0 5)"/>
+    <use href="#t" fill="url(#lt)"/>
+  </g>
+</svg>

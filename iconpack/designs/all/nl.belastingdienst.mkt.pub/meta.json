@@ -1,0 +1,11 @@
+{
+  "pkg": "nl.belastingdienst.mkt.pub",
+  "label": "Toeslagen",
+  "references": [
+    { "pkg": "cn.gov.tax.its", "why": "个人所得税（税务局）应用，同为税务政务，B 方案沿用其盾牌造型" }
+  ],
+  "options": [
+    { "id": "A", "name": "黄底国徽飘带 + 钱袋托手", "shape": "landscape", "desc": "黄色横矩形，顶部深蓝 Rijkslint 飘带 + 王冠徽章，下方手托着印有 € 的钱袋，还原原图标隐喻。与另外两个政府应用 A 方案成套。" },
+    { "id": "B", "name": "黄色盾牌 + 欧元金币", "shape": "free", "desc": "异形：参考锤子“个人所得税”的盾牌，改为黄色边框，内嵌深蓝飘带徽章与金色 € 硬币。质感更强，但“补贴”含义弱于钱袋。" }
+  ]
+}

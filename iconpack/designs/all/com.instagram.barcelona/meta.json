@@ -1,0 +1,12 @@
+{
+  "pkg": "com.instagram.barcelona",
+  "label": "Threads",
+  "references": [
+    { "pkg": "com.instagram.android", "why": "同属 Instagram 家族，参考其写实物件化的做法" },
+    { "pkg": "com.twitter.android", "why": "同类短文本社交，参考其简洁单一标志的处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "黑漆横板", "shape": "landscape", "desc": "锤子横矩形轮廓，黑色漆面带顶部微光，白色凸起的 Threads “@”标志；最忠实于原品牌，干净克制。" },
+    { "id": "B", "name": "木线轴", "shape": "circle", "desc": "“Threads=线”的双关：木质线轴端面，外圈缠满黑线，中间用一根黑线盘成 @ 标志，线头连到外圈；更有趣也更拟物，但 @ 形状比 A 略松散。" }
+  ]
+}

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="leather" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EE6259"/><stop offset="1" stop-color="#B02824"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="30" x2="60" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8E1D1A"/><stop offset="1" stop-color="#C23A34"/>
+    </linearGradient>
+    <linearGradient id="strap" x1="0" y1="108" x2="0" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C73A33"/><stop offset="1" stop-color="#8E1F1B"/>
+    </linearGradient>
+    <linearGradient id="snap" x1="0" y1="118" x2="0" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FAFAFA"/><stop offset="1" stop-color="#8D9399"/>
+    </linearGradient>
+    <linearGradient id="pages" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF8"/><stop offset="1" stop-color="#E6DFD2"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.35"/></filter>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.10 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <clipPath id="bc"><rect x="30" y="12" width="186" height="232" rx="18"/></clipPath>
+  </defs>
+  <g filter="url(#sh)">
+    <rect x="40" y="18" width="182" height="226" rx="14" fill="url(#pages)"/>
+    <rect x="30" y="12" width="186" height="232" rx="18" fill="url(#leather)"/>
+  </g>
+  <rect x="30" y="12" width="186" height="232" rx="18" fill="#000" filter="url(#noise)"/>
+  <g clip-path="url(#bc)">
+    <rect x="30" y="12" width="26" height="232" fill="url(#spine)"/>
+    <rect x="56" y="12" width="2" height="232" fill="#FFFFFF" fill-opacity="0.18"/>
+    <rect x="30" y="13" width="186" height="2" fill="#FFFFFF" fill-opacity="0.25"/>
+  </g>
+  <rect x="68" y="24" width="138" height="208" rx="10" fill="none" stroke="#FFC7BF" stroke-opacity="0.6" stroke-width="2" stroke-dasharray="6 5"/>
+  <!-- debossed person -->
+  <g transform="translate(0 2)" fill="#FFFFFF" fill-opacity="0.22">
+    <circle cx="136" cy="98" r="30"/>
+    <path d="M84 188C84 150 108 138 136 138C164 138 188 150 188 188Z"/>
+  </g>
+  <g fill="#7E1512" fill-opacity="0.6">
+    <circle cx="136" cy="98" r="30"/>
+    <path d="M84 188C84 150 108 138 136 138C164 138 188 150 188 188Z"/>
+  </g>
+  <!-- strap -->
+  <g filter="url(#sh)">
+    <rect x="186" y="108" width="54" height="42" rx="10" fill="url(#strap)"/>
+  </g>
+  <rect x="192" y="113" width="42" height="32" rx="7" fill="none" stroke="#FFC7BF" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="220" cy="129" r="9" fill="url(#snap)" stroke="#5E646A" stroke-width="1"/>
+  <circle cx="220" cy="129" r="3.5" fill="#6F757B"/>
+</svg>

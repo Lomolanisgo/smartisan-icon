@@ -1,0 +1,12 @@
+{
+  "pkg": "com.abnamro.nl.tikkie",
+  "label": "Tikkie",
+  "references": [
+    { "pkg": "com.tencent.mm", "why": "已定稿的微信气泡造型，参考气泡的光泽和尾巴处理" },
+    { "pkg": "com.eg.android.AlipayGphone", "why": "同为收付款应用，参考其亮面材质与居中符号" }
+  ],
+  "options": [
+    { "id": "A", "name": "紫板青气泡", "shape": "landscape", "desc": "品牌紫色横矩形底板上放一个青绿色亮面对话气泡，气泡里是白色欧元符号（Segoe UI 字体）。忠实于原图标，层次清楚。" },
+    { "id": "B", "name": "气泡金币", "shape": "free", "desc": "无底板，大号青绿玻璃气泡本身作为轮廓（尾巴伸出），中间嵌一枚金币，币面是紫色压印欧元符号。更有“付款请求”的隐喻；紫色品牌色只剩符号。" }
+  ]
+}

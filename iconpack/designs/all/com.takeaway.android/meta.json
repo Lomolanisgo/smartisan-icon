@@ -1,0 +1,13 @@
+{
+  "pkg": "com.takeaway.android",
+  "label": "Thuisbezorgd",
+  "references": [
+    { "pkg": "cn.com.mcdonalds.m4d", "why": "餐饮类橙红色横矩形瓷砖，参考其品牌色底板 + 立体白色标志的做法" },
+    { "pkg": "com.sankuai.meituan.takeoutnew", "why": "同为外卖应用，参考其白色圆形瓷盘边框 + 彩色主体的造型" },
+    { "pkg": "me.ele", "why": "同为外卖应用，圆形徽章轮廓" }
+  ],
+  "options": [
+    { "id": "A", "name": "橙色瓷砖白房子", "shape": "landscape", "desc": "品牌橙横矩形瓷砖，顶部柔光高光，中间是带刀叉镂空的白色房子标志（路径取自原图标），带柔和投影。最忠实品牌，识别度高。" },
+    { "id": "B", "name": "白瓷餐盘", "shape": "circle", "desc": "白色瓷盘隐喻“送餐到家”，盘沿一圈橙色釉线，盘心为橙色房子标志。参考美团外卖的白色圆框，更有质感，但橙色面积小于 A。" }
+  ]
+}

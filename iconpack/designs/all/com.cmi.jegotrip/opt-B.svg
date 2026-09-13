@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="card" d="M62 14H166L218 66V224Q218 242 200 242H62Q44 242 44 224V32Q44 14 62 14Z"/>
+    <clipPath id="cc"><use href="#card"/></clipPath>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF5CA0"/><stop offset=".6" stop-color="#F0287A"/><stop offset="1" stop-color="#C9105C"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0B8"/><stop offset=".45" stop-color="#E7BE5C"/><stop offset="1" stop-color="#B8862C"/>
+    </linearGradient>
+    <linearGradient id="wh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFE3EF"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="emb" x="-15%" y="-15%" width="130%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.6" result="b"/>
+      <feOffset in="b" dy="2.5" result="o"/>
+      <feFlood flood-color="#6A0030" flood-opacity=".45"/><feComposite in2="o" operator="in" result="sh"/>
+      <feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#sh)"><use href="#card" fill="url(#pink)"/></g>
+  <path d="M44 14H166L218 66V96Q130 70 44 130Z" fill="#fff" opacity=".12" clip-path="url(#cc)"/>
+  <use href="#card" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" transform="translate(0 1)" clip-path="url(#cc)"/>
+  <use href="#card" fill="none" stroke="#A30C4B" stroke-opacity=".6" stroke-width="2" clip-path="url(#cc)"/>
+  <!-- glyph -->
+  <g filter="url(#emb)" transform="translate(36 22) scale(.7)">
+    <path d="M70 50H108M108 50V104Q108 126 84 124M146 50H190M168 50V118" fill="none" stroke="url(#wh)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- SIM chip -->
+  <g transform="translate(78 138)">
+    <rect width="100" height="80" rx="14" fill="url(#gold)" stroke="#9C7224" stroke-width="1.5"/>
+    <path d="M0 27H34V53H0M100 27H66V53H100M34 0V80M66 0V80M34 40H66M50 0V27M50 53V80" fill="none" stroke="#9C7224" stroke-width="2" opacity=".75"/>
+    <rect x="2" y="2" width="96" height="30" rx="12" fill="#fff" opacity=".22"/>
+  </g>
+</svg>

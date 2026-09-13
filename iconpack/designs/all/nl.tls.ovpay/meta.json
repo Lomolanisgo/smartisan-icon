@@ -1,0 +1,12 @@
+{
+  "pkg": "nl.tls.ovpay",
+  "label": "OVpay",
+  "references": [
+    { "pkg": "cn.com.bmac.nfc", "why": "锤子的交通一卡通图标，参考其卡片造型" },
+    { "pkg": "com.netease.cloudmusic", "why": "圆形徽章类图标，参考圆形轮廓与高光" }
+  ],
+  "options": [
+    { "id": "A", "name": "粉色交通卡", "shape": "portrait", "desc": "竖版粉色卡片，左上角金色芯片，白色 OV pay 标志（原路径）浮雕；呼应“刷银行卡乘车”，品牌色保留完整。" },
+    { "id": "B", "name": "进出站刷卡器", "shape": "circle", "desc": "荷兰车站的圆形刷卡器：银色金属外圈 + 粉色玻璃圆顶，中间白色 OV pay 标志，顶部玻璃高光；更具场景感。" }
+  ]
+}

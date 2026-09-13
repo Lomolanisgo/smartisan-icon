@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <radialGradient id="org" cx="128" cy="80" r="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFAA48"/><stop offset="1" stop-color="#EE7600"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E4E0DA"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="24" x2="0" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="white" x1="0" y1="-66" x2="0" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEDED"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7A3A00" flood-opacity="0.45"/>
+    </filter>
+    <filter id="tsh" x="-10%" y="-30%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#7A3A00" flood-opacity="0.5"/>
+    </filter>
+    <path id="mas" d="M-10 -48C-40 -48 -54 -22 -54 6C-54 36 -30 56 0 56C32 56 54 34 54 4C54 -14 46 -28 34 -38L44 -66L14 -48C6 -49 0 -48 -10 -48Z"/>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="url(#ring)" stroke="#CFC8BE" stroke-width="1.5"/>
+  <circle cx="128" cy="128" r="104" fill="url(#org)"/>
+  <circle cx="128" cy="128" r="104" fill="none" stroke="#B85800" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M28 118A100 100 0 0 1 228 118C200 104 160 98 128 98C96 98 56 104 28 118Z" fill="url(#gloss)"/>
+  <g transform="translate(128 112) scale(0.98)" filter="url(#sh)">
+    <use href="#mas" fill="url(#white)" stroke="#6B6B6B" stroke-width="10" stroke-linejoin="round"/>
+    <circle cx="-18" cy="4" r="13" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="6.5"/>
+    <circle cx="16" cy="4" r="13" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="6.5"/>
+    <circle cx="-13" cy="4" r="6.5" fill="#444444"/>
+    <circle cx="21" cy="4" r="6.5" fill="#444444"/>
+    <circle cx="-11" cy="1.5" r="2" fill="#FFFFFF"/>
+    <circle cx="23" cy="1.5" r="2" fill="#FFFFFF"/>
+  </g>
+  <text x="128" y="212" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="700" font-size="34" textLength="92" lengthAdjust="spacingAndGlyphs" fill="#FFFFFF" filter="url(#tsh)">CoCo</text>
+</svg>

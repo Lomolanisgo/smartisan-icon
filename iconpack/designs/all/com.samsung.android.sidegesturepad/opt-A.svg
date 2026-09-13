@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="sq" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="clip"><use href="#sq"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4FD8DE"/><stop offset="1" stop-color="#14A2AB"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#23A9B0"/><stop offset="1" stop-color="#0B7C84"/>
+    </linearGradient>
+    <linearGradient id="bodyg" x1="0" y1="50" x2="0" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DDE3E6"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="80" y1="60" x2="170" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8FD0FF"/><stop offset="1" stop-color="#3E9CF0"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="140" x2="0" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE6DF"/><stop offset="1" stop-color="#F2C2B3"/>
+    </linearGradient>
+    <linearGradient id="sleeve" x1="0" y1="200" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B3E6FF"/><stop offset="1" stop-color="#78C6EE"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#04464B" flood-opacity="0.4"/>
+    </filter>
+    <filter id="sh2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-1" dy="2" stdDeviation="2" flood-color="#6B3C2E" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <use href="#sq" fill="url(#bg)"/>
+  <path d="M39 16H217C234 16 240 21 240 39V90C180 112 76 112 16 90V39C16 21 22 16 39 16Z" fill="#FFFFFF" opacity="0.14"/>
+  <g clip-path="url(#clip)">
+    <g transform="translate(-64 -60) scale(0.8889)">
+      <!-- fingers behind phone -->
+      <path d="M248.01,269.34V184.77H258.27C266.52,184.77 274.5,187.71 280.78,193.06C287.05,198.42 291.22,205.83 292.52,213.98L301.35,269.34V314.69H250.1L248.01,269.34Z" fill="url(#skin)"/>
+      <g filter="url(#sh)">
+        <path d="M258.67,133.32H173.32C163.01,133.32 154.65,141.68 154.65,151.99V280.01C154.65,290.32 163.01,298.68 173.32,298.68H258.67C268.99,298.68 277.35,290.32 277.35,280.01V151.99C277.35,141.68 268.99,133.32 258.67,133.32Z" fill="url(#bodyg)"/>
+      </g>
+      <path d="M258.67,134.32H173.32C163.5,134.32 155.65,142.18 155.65,151.99" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+      <path d="M250.99,149.32H181.01C175.29,149.32 170.66,153.95 170.66,159.67V272.33C170.66,278.05 175.29,282.68 181.01,282.68H250.99C256.71,282.68 261.34,278.05 261.34,272.33V159.67C261.34,153.95 256.71,149.32 250.99,149.32Z" fill="url(#screen)"/>
+      <path d="M181.01,149.32H250.99C256.71,149.32 261.34,153.95 261.34,159.67V190L170.66,240V159.67C170.66,153.95 175.29,149.32 181.01,149.32Z" fill="url(#gloss)"/>
+      <!-- edge swipe arc -->
+      <circle cx="248.01" cy="215.51" r="5.3" fill="#FFFFFF" fill-opacity="0.45"/>
+      <circle cx="232" cy="215.51" r="5.3" fill="#FFFFFF" fill-opacity="0.7"/>
+      <circle cx="216" cy="215.51" r="5.3" fill="#FFFFFF"/>
+      <g filter="url(#sh2)">
+        <path d="M213.02,246.04C212.52,244.94 212.28,243.73 212.33,242.51C212.39,241.29 212.73,240.11 213.33,239.05C213.93,237.99 214.78,237.1 215.8,236.43C216.82,235.76 217.98,235.35 219.19,235.22L220.16,235.12C223.14,234.8 226.15,235.21 228.94,236.31C231.73,237.4 234.21,239.15 236.18,241.4L247.87,254.77C251.21,260.12 255.9,264.5 261.46,267.49C267.02,270.47 273.26,271.95 279.57,271.79C301.25,271.05 300.15,290.47 300.15,290.47L309.2,362.4L249.85,368.61L248.33,307.97L240.03,300.36C237.66,298.2 235.76,295.58 234.42,292.67L213.02,246.04Z" fill="url(#skin)"/>
+        <path d="M248.52,325.36H304.53L309.09,360.03H248.85L248.52,325.36Z" fill="url(#sleeve)"/>
+      </g>
+    </g>
+  </g>
+  <g clip-path="url(#clip)" fill="none">
+    <use href="#sq" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use href="#sq" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#sq" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+</svg>

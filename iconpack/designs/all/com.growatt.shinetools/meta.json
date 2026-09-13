@@ -1,0 +1,12 @@
+{
+  "pkg": "com.growatt.shinetools",
+  "label": "ShineTools",
+  "references": [
+    { "pkg": "com.meizu.flyme.toolbox", "why": "工具箱类，参考其单一工具物件居中、底板简洁的做法" },
+    { "pkg": "com.dianxinos.powermanager", "why": "能源类，参考金属边框+蓝色面板材质" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色底板·镐头", "shape": "landscape", "desc": "忠实原图标：蓝色横矩形底板，发光圆环内有蓝图网格，中间是银白金属质感的镐头。与 ShinePhone A 同为蓝色横板，成对。" },
+    { "id": "B", "name": "太阳能板·工具镐", "shape": "square", "desc": "与 ShinePhone B 同一块光伏电池板，板面上斜放一把钢制镐头（橙色握柄），带明显投影，表达“现场安装调试工具”。成对感强，工具色彩更醒目。" }
+  ]
+}

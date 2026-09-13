@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <linearGradient id="fill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A3A3A"/><stop offset="0.5" stop-color="#1A1A1A"/><stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.16"/><stop offset="1" stop-color="#fff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="54" x2="0" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFA75E"/><stop offset="1" stop-color="#EE7A24"/>
+    </linearGradient>
+    <linearGradient id="white" x1="0" y1="54" x2="0" y2="77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DADADA"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="1.5" flood-color="#000" flood-opacity="0.8"/>
+    </filter>
+    <g id="dW">
+      <path d="M28.67,71.42V55.72H33.16C38.47,55.72 41.42,58.38 41.42,63.12C41.42,68.8 38.2,71.43 33.06,71.43H28.67V71.42ZM31.54,69.05H33.2C36.35,69.05 38.42,67.35 38.42,63.26C38.42,59.87 36.36,58.1 32.98,58.1H31.54V69.06V69.05Z"/>
+      <path d="M45.3,54.67C46.33,54.67 46.9,55.31 46.9,56.22C46.9,57.06 46.32,57.75 45.3,57.75C44.28,57.75 43.72,57.13 43.72,56.22C43.72,55.38 44.26,54.67 45.3,54.67ZM46.66,71.42H43.96V59.65L46.66,59.53V71.42Z"/>
+      <path d="M53.22,69.13H56.05C58.59,69.13 59.66,70.14 59.66,72.05C59.66,74.3 57.8,76.11 53.48,76.11C50.11,76.11 48.56,74.92 48.56,73.07C48.56,71.95 49.18,71.01 50.35,70.5V70.44C49.8,70.15 49.42,69.55 49.42,68.86C49.42,68.12 49.87,67.42 50.74,67.09V67.02C49.66,66.42 49.030,65.42 49.03,63.89C49.03,61.01 50.97,59.46 53.96,59.46C54.61,59.46 55.19,59.53 55.78,59.7H59.6V61.49H57.78V61.56C58.28,61.94 58.72,62.75 58.72,63.78C58.72,66.39 56.94,67.76 53.69,67.76C53.16,67.76 52.65,67.69 52.2,67.56C51.89,67.73 51.7,68.02 51.7,68.3C51.7,68.82 52.11,69.12 53.21,69.12L53.22,69.13ZM53.72,74.11C56.31,74.11 57.24,73.47 57.24,72.54C57.24,71.84 56.81,71.46 55.64,71.43L51.71,71.31C51.26,71.62 51.06,72 51.06,72.56C51.06,73.49 51.88,74.11 53.72,74.11ZM56.21,63.58C56.21,62.14 55.41,61.38 53.910,61.38C52.57,61.38 51.62,62.14 51.62,63.75C51.62,65.36 52.48,65.93 53.87,65.93C55.36,65.93 56.22,65.24 56.22,63.58H56.21Z"/>
+    </g>
+    <g id="dO">
+      <path d="M62.8,54.67C63.84,54.67 64.4,55.31 64.4,56.22C64.4,57.06 63.82,57.75 62.8,57.75C61.78,57.75 61.22,57.13 61.22,56.22C61.22,55.38 61.77,54.67 62.8,54.67ZM64.16,71.42H61.46V59.65L64.16,59.53V71.42Z"/>
+      <path d="M67.59,71.42V55.72H72.09C77.4,55.72 80.35,58.38 80.35,63.12C80.35,68.8 77.14,71.43 72,71.43H67.59V71.42ZM70.47,69.05H72.12C75.28,69.05 77.34,67.35 77.34,63.26C77.34,59.87 75.29,58.1 71.91,58.1H70.48V69.06L70.47,69.05Z"/>
+    </g>
+  </defs>
+  <use href="#tile" fill="url(#fill)"/>
+  <g clip-path="url(#clip)">
+    <path d="M3 23 H253 V112 C190 128 70 128 3 112Z" fill="url(#gloss)"/>
+    <g transform="translate(128 131) scale(3.25) translate(-54.51 -65.39)" filter="url(#sh)">
+      <use href="#dW" fill="url(#white)"/>
+      <use href="#dO" fill="url(#orange)"/>
+    </g>
+  </g>
+  <g clip-path="url(#clip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.35" stroke-width="5"/>
+    <use href="#tile" stroke="#fff" stroke-opacity="0.22" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

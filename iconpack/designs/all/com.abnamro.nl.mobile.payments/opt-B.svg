@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="36" y1="30" x2="72" y2="82">
+      <stop offset="0" stop-color="#FFF1B8"/><stop offset="0.3" stop-color="#D9A93A"/><stop offset="0.55" stop-color="#FFE38A"/><stop offset="0.8" stop-color="#B98320"/><stop offset="1" stop-color="#F2CF6B"/>
+    </linearGradient>
+    <linearGradient id="g0" gradientUnits="userSpaceOnUse" x1="64.98" y1="45.16" x2="60.02" y2="72">
+      <stop offset="0" stop-color="#FFDC5C"/><stop offset="1" stop-color="#F7A800"/>
+    </linearGradient>
+    <linearGradient id="g1" gradientUnits="userSpaceOnUse" x1="70" y1="30" x2="42" y2="70">
+      <stop offset="0" stop-color="#16D3C9"/><stop offset="1" stop-color="#007A70"/>
+    </linearGradient>
+    <linearGradient id="gloss" gradientUnits="userSpaceOnUse" x1="0" y1="32" x2="0" y2="56">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="shield"><path d="M36,32h36v30l-18,18l-18,-18z"/></clipPath>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0.8" stdDeviation="0.7" flood-color="#3A2600" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g transform="translate(-102.6 -106) scale(4.27)">
+    <!-- gold bezel -->
+    <path d="M36,32h36v30l-18,18l-18,-18z" fill="url(#gold)" stroke="url(#gold)" stroke-width="5.4" stroke-linejoin="round"/>
+    <path d="M36,32h36v30l-18,18l-18,-18z" fill="none" stroke="#7A5510" stroke-opacity="0.5" stroke-width="5.4" stroke-linejoin="round" transform="translate(0 0.25)" style="mix-blend-mode:multiply" opacity="0.35"/>
+    <path d="M36,32h36v30l-18,18l-18,-18z" fill="none" stroke="#FFF6D0" stroke-width="0.35" stroke-linejoin="round" transform="translate(0 -2.5) scale(1 1)" opacity="0"/>
+    <!-- enamel -->
+    <g filter="url(#sh)">
+      <path d="M36,32h36v30.006l-18,-17.994v35.988l-18,-17.994z" fill="url(#g1)"/>
+      <path d="M54,80v-36l18,18z" fill="url(#g0)"/>
+    </g>
+    <g clip-path="url(#shield)">
+      <path d="M30,26h48v14c-16,6 -32,6 -48,0z" fill="url(#gloss)"/>
+      <path d="M36,32h36v30l-18,18l-18,-18z" fill="none" stroke="#000" stroke-opacity="0.25" stroke-width="0.8"/>
+    </g>
+  </g>
+</svg>

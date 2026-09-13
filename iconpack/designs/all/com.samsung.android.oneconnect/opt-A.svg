@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#36BBFF"/><stop offset="1" stop-color="#1250F0"/></linearGradient>
+    <linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1C86D8"/><stop offset="1" stop-color="#0B36B0"/></linearGradient>
+    <radialGradient id="cer" cx="128" cy="90" r="150" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DDE6F7"/></radialGradient>
+    <mask id="net" maskUnits="userSpaceOnUse" x="0" y="0" width="256" height="256">
+      <g stroke="#FFFFFF" stroke-width="12" stroke-linecap="round">
+        <line x1="128" y1="132" x2="128" y2="60"/>
+        <line x1="128" y1="132" x2="196.5" y2="109.8"/>
+        <line x1="128" y1="132" x2="170.3" y2="190.2"/>
+        <line x1="128" y1="132" x2="85.7" y2="190.2"/>
+        <line x1="128" y1="132" x2="59.5" y2="109.8"/>
+      </g>
+      <g fill="#FFFFFF">
+        <circle cx="128" cy="132" r="33"/>
+        <circle cx="128" cy="60" r="22"/>
+        <circle cx="196.5" cy="109.8" r="22"/>
+        <circle cx="170.3" cy="190.2" r="22"/>
+        <circle cx="85.7" cy="190.2" r="22"/>
+        <circle cx="59.5" cy="109.8" r="22"/>
+      </g>
+      <g fill="#000000">
+        <circle cx="128" cy="132" r="18"/>
+        <circle cx="128" cy="60" r="10.5"/>
+        <circle cx="196.5" cy="109.8" r="10.5"/>
+        <circle cx="170.3" cy="190.2" r="10.5"/>
+        <circle cx="85.7" cy="190.2" r="10.5"/>
+        <circle cx="59.5" cy="109.8" r="10.5"/>
+      </g>
+    </mask>
+    <filter id="blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <use href="#tile" fill="url(#tileFill)"/>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.1" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+    <ellipse cx="128" cy="30" rx="150" ry="60" fill="#FFFFFF" opacity="0.1"/>
+  </g>
+  <g filter="url(#blur)" opacity="0.4"><g transform="translate(0 7)"><rect width="256" height="256" fill="#062A8A" mask="url(#net)"/></g></g>
+  <g transform="translate(0 3.5)"><rect width="256" height="256" fill="#A9BCE4" mask="url(#net)"/></g>
+  <rect width="256" height="256" fill="url(#cer)" mask="url(#net)"/>
+</svg>

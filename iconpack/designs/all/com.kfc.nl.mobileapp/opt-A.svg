@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <path id="tile" d="M47 3.06H208.93C227.73 3.06 232.93 8.26 232.93 27.06V228.94C232.93 247.74 227.73 252.94 208.93 252.94H47C28.2 252.94 23 247.74 23 228.94V27.06C23 8.26 28.2 3.06 47 3.06Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="fill" x1="0" y1="3" x2="0" y2="253" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0263A"/><stop offset="1" stop-color="#C8081E"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="40" x2="0" y2="226" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#ECECEC"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="3" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.25"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#500008" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#fill)"/>
+  <g clip-path="url(#tileClip)">
+    <rect x="0" y="0" width="256" height="256" fill="url(#gloss)"/>
+    <g fill="none">
+      <use href="#tile" stroke="#4A0000" stroke-opacity="0.15" stroke-width="5"/>
+      <use href="#tile" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2" transform="translate(0 1)"/>
+      <use href="#tile" stroke="#9A0614" stroke-width="2"/>
+    </g>
+  </g>
+  <!-- bucket badge -->
+  <path d="M48 40H208L191 218Q190 228 180 228H76Q66 228 65 218Z" fill="url(#badge)" filter="url(#sh)"/>
+  <path d="M60 52H84V160H70Z" fill="#E4002B"/>
+  <path d="M196 52H172V160H186Z" fill="#E4002B"/>
+  <!-- Colonel -->
+  <g stroke="#111111" stroke-linejoin="round" stroke-linecap="round">
+    <!-- collar / shirt -->
+    <path d="M100 162L128 176L156 162" fill="none" stroke-width="3.5"/>
+    <!-- hair puffs -->
+    <path d="M100 92C98 80 104 72 110 68C114 60 122 57 128 57C134 57 142 60 146 68C152 72 158 80 156 92C150 84 142 80 128 80C114 80 106 84 100 92Z" fill="#FFFFFF" stroke-width="3.5"/>
+    <!-- face -->
+    <path d="M104 86C104 74 114 70 128 70C142 70 152 74 152 86V112C152 128 142 138 128 138C114 138 104 128 104 112Z" fill="#FFFFFF" stroke-width="3.5"/>
+    <!-- brows -->
+    <path d="M110 86Q116 82 123 85M133 85Q140 82 146 86" fill="none" stroke-width="3"/>
+    <!-- glasses -->
+    <rect x="107.5" y="90" width="18" height="13" rx="4" fill="none" stroke-width="3.2"/>
+    <rect x="130.5" y="90" width="18" height="13" rx="4" fill="none" stroke-width="3.2"/>
+    <path d="M125.5 95H130.5" stroke-width="2.5"/>
+    <circle cx="117" cy="97" r="2.2" fill="#111111" stroke="none"/>
+    <circle cx="139" cy="97" r="2.2" fill="#111111" stroke="none"/>
+    <!-- nose -->
+    <path d="M128 102V110" fill="none" stroke-width="2.4"/>
+    <!-- moustache + goatee -->
+    <path d="M106 120C114 110 124 112 128 115C132 112 142 110 150 120C144 126 138 126 135 125C136 134 133 142 128 148C123 142 120 134 121 125C118 126 112 126 106 120Z" fill="#FFFFFF" stroke-width="3"/>
+    <path d="M123 124Q128 128 133 124" fill="none" stroke-width="2.2"/>
+  </g>
+  <!-- bow tie -->
+  <path d="M128 168L110 159V179Z M128 168L146 159V179Z" fill="#111111"/>
+  <rect x="123" y="163" width="10" height="10" rx="2" fill="#111111"/>
+  <text x="128" y="214" text-anchor="middle" font-family="Segoe UI Black, Segoe UI, sans-serif" font-weight="900" font-style="italic" font-size="36" textLength="84" lengthAdjust="spacingAndGlyphs" fill="#111111">KFC</text>
+</svg>

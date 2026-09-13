@@ -1,0 +1,12 @@
+{
+  "pkg": "com.joybuy.jdi",
+  "label": "Joybuy",
+  "references": [
+    { "pkg": "com.jingdong.app.mall", "why": "Joybuy 是京东的海外电商，参考京东图标的红色打开纸箱造型，做成“兄弟款”" },
+    { "pkg": "com.tmall.wireless", "why": "同为红色电商图标，参考其红色光泽质感" }
+  ],
+  "options": [
+    { "id": "A", "name": "京东式红纸箱", "shape": "free", "desc": "沿用京东图标的打开红纸箱，箱体印白色 Joybuy 字样，箱口升起白色立体“笑脸弧”（取自 Logo 中 o 下方的微笑）。与京东图标一脉相承。" },
+    { "id": "B", "name": "红色方砖字标", "shape": "square", "desc": "红色超椭圆方砖加顶部光泽，白色立体 Joybuy 字标与 o 下的微笑弧。最接近原图标，文字清晰但依赖字体（Segoe UI Bold）。" }
+  ]
+}

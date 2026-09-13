@@ -1,0 +1,36 @@
+{
+  "pkg": "com.microsoft.office.outlook",
+  "label": "Outlook",
+  "references": [
+    {
+      "pkg": "com.google.android.email",
+      "why": "锤子的邮件图标：拆开的信封 + 露出的信纸，沿用其信封拟物造型"
+    },
+    {
+      "pkg": "com.tencent.androidqqmail",
+      "why": "信封放在底板上的构图"
+    },
+    {
+      "pkg": "com.microsoft.office.officehub",
+      "why": "锤子版 Office：品牌色圆盘 + 白色标志，作为微软系 B 方案的统一语言"
+    },
+    {
+      "pkg": "com.microsoft.emmx",
+      "why": "已定稿的 Edge：银色外圈 + 蓝色圆盘，微软家族一致"
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "name": "信封 + O 字铭牌",
+      "shape": "landscape",
+      "desc": "白色横矩形底板上放一只拆开的蓝色信封，露出信纸；左下角叠一块蓝色 O 字铭牌（经典 Office 做法）。与 Excel/To Do 的 A 方案同一套“物件 + 铭牌”家族语言。"
+    },
+    {
+      "id": "B",
+      "name": "银圈蓝盘白信封",
+      "shape": "circle",
+      "desc": "参照已定稿 Edge 与锤子 Office：银色外圈、蓝色釉面圆盘、白色立体信封。48px 下最干净，但丢掉了 O 字。"
+    }
+  ]
+}

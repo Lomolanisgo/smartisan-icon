@@ -1,0 +1,12 @@
+{
+  "pkg": "com.sgd.nlo.prod",
+  "label": "Toto Sport",
+  "references": [
+    { "pkg": "com.netease.caipiao", "why": "彩票应用，参考其彩色横矩形底板 + 大号白字的做法" },
+    { "pkg": "com.pingan.caipiao", "why": "彩票应用，参考其票据/彩票券造型" }
+  ],
+  "options": [
+    { "id": "A", "name": "绿板字标", "shape": "landscape", "desc": "品牌绿横矩形底板，白色粗体 TOTO + SPORT 字样（Segoe UI Black/Bold），第二个 T 上方橙色梯形标记，带投影。忠实原图标，文字较多。" },
+    { "id": "B", "name": "投注彩票券", "shape": "portrait", "desc": "竖矩形投注券：上半绿色印有 TOTO SPORT，两侧半圆缺口与虚线撕口，下半白色存根上是 1 / X / 2 投注格。体育投注隐喻明确；小尺寸下 1X2 细节会变弱。" }
+  ]
+}

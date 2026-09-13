@@ -1,0 +1,12 @@
+{
+  "pkg": "de.traderepublic.app",
+  "label": "Trade Republic",
+  "references": [
+    { "pkg": "com.hexin.plat.android", "why": "同为炒股应用，参考其横矩形底板与淡网格线的行情隐喻" },
+    { "pkg": "com.xueqiu.android", "why": "同为投资应用，参考其白色陶瓷圆形徽章 + 光泽标志的做法" }
+  ],
+  "options": [
+    { "id": "A", "name": "黑色亮面横板", "shape": "landscape", "desc": "品牌黑色做成深色玻璃横矩形，隐约的行情网格线，双波浪标志做成银色金属浮雕。沉稳、辨识度高；深色底在一屏浅色图标中较抢眼。" },
+    { "id": "B", "name": "白瓷圆徽章", "shape": "circle", "desc": "参考雪球的白色陶瓷圆形徽章，中间是黑色亮漆双波浪标志，顶部柔光。清爽耐看，但黑白配色略显素。" }
+  ]
+}

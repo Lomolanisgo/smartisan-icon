@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="orb" cx="116" cy="80" r="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F2FFFD"/>
+      <stop offset="0.45" stop-color="#8FF0E6"/>
+      <stop offset="0.85" stop-color="#2FB9C9"/>
+      <stop offset="1" stop-color="#1C5F9A"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="128" cy="92" r="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0.6" stop-color="#5FF2E4" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#5FF2E4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="handle" x1="104" y1="0" x2="152" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0C1030"/>
+      <stop offset="0.4" stop-color="#2C356E"/>
+      <stop offset="1" stop-color="#0A0D28"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="96" y1="0" x2="160" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8C9099"/>
+      <stop offset="0.45" stop-color="#F4F5F7"/>
+      <stop offset="1" stop-color="#7A7E86"/>
+    </linearGradient>
+    <path id="glyph" d="M52 108 C58 94 76 94 80 110 L94 160 C98 174 110 174 114 160 L126 114 L140 160 C144 174 156 174 160 160 L176 108 C180 94 194 94 198 106 C202 118 200 130 212 136"/>
+  </defs>
+  <circle cx="128" cy="92" r="104" fill="url(#halo)"/>
+  <!-- handle -->
+  <rect x="106" y="160" width="44" height="90" rx="18" fill="url(#handle)"/>
+  <rect x="120" y="186" width="16" height="22" rx="8" fill="#3CE0D2" opacity="0.85"/>
+  <rect x="96" y="160" width="64" height="18" rx="8" fill="url(#ring)"/>
+  <!-- glass orb -->
+  <circle cx="128" cy="90" r="80" fill="url(#orb)"/>
+  <circle cx="128" cy="90" r="80" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2"/>
+  <g transform="translate(128 96) scale(0.52) translate(-132 -134)">
+    <use href="#glyph" fill="none" stroke="#0F1440" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M72 64 C84 36 112 22 140 24" fill="none" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="64" cy="84" r="4" fill="#FFFFFF" opacity="0.85"/>
+</svg>

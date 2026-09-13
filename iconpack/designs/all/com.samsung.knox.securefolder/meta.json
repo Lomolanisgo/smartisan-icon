@@ -1,0 +1,13 @@
+{
+  "pkg": "com.samsung.knox.securefolder",
+  "label": "安全文件夹",
+  "references": [
+    { "pkg": "com.meizu.filemanager", "why": "文件夹类图标，参考其前后两层、带标签页的立体文件夹造型" },
+    { "pkg": "com.sec.android.app.myfiles", "why": "三星自家文件管理，文件夹里夹着白纸的层次" },
+    { "pkg": "com.huawei.KoBackup", "why": "保险箱隐喻，参考其金属柜门、合页和中央圆形转盘" }
+  ],
+  "options": [
+    { "id": "A", "name": "带锁文件夹", "shape": "free", "desc": "无底板的蓝色立体文件夹，里面夹着白纸，正面嵌一块银色金属锁牌和深蓝钥匙孔，直接对应原标志“文件夹 + 钥匙孔”。易懂、忠实原标志。" },
+    { "id": "B", "name": "蓝色保险箱", "shape": "square", "desc": "方形蓝紫金属保险箱柜门，右侧银色合页，中央银色密码转盘里放白色带钥匙孔的文件夹。隐喻更强、质感更重，但比 A 略复杂。" }
+  ]
+}

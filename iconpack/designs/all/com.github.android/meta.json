@@ -1,0 +1,12 @@
+{
+  "pkg": "com.github.android",
+  "label": "GitHub",
+  "references": [
+    { "pkg": "com.evernote", "why": "锤子里的皮面笔记本质感，A 方案的深色皮革+缝线参考它" },
+    { "pkg": "com.microsoft.emmx", "why": "用户已认可的圆形金属边框徽章，B 方案参考其外圈做法" }
+  ],
+  "options": [
+    { "id": "A", "name": "深色皮革缝线章", "shape": "landscape", "desc": "GitHub 深灰横矩形底板做成皮革质感，四周一圈缝线，Octocat 标志为银白色浮雕。开发者气质、48px 清晰；缝线在小尺寸下会弱化。" },
+    { "id": "B", "name": "拉丝金属徽章", "shape": "circle", "desc": "圆形拉丝铝徽章，外圈抛光金属边，Octocat 以深色珐琅嵌入金属面。像一枚纪念币，风格更精致；整体偏浅，与深色品牌印象略有差距。" }
+  ]
+}

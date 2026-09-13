@@ -1,0 +1,12 @@
+{
+  "pkg": "com.salt.music",
+  "label": "Salt Player",
+  "references": [
+    { "pkg": "com.apple.android.music", "why": "用户已认可的定稿：银色圆环+扬声器孔网+彩色音符，A 方案沿用" },
+    { "pkg": "com.tencent.qqmusic", "why": "锤子圆形音乐播放器徽章参考" }
+  ],
+  "options": [
+    { "id": "A", "name": "扬声器网罩", "shape": "circle", "desc": "沿用 Apple Music 定稿的银色外圈+冲孔金属网，中央是克莱因蓝的 Salt 音符标志（带光泽与投影）；与已选定的音乐图标风格统一。" },
+    { "id": "B", "name": "克莱因蓝横板", "shape": "landscape", "desc": "锤子横矩形轮廓，克莱因蓝渐变底，白色凸起的 Salt 标志；颜色反转后更醒目、极简，但材质感较少。" }
+  ]
+}

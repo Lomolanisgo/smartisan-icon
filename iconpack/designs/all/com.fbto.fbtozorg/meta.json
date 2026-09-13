@@ -1,0 +1,12 @@
+{
+  "pkg": "com.fbto.fbtozorg",
+  "label": "FBTO Zorg app",
+  "references": [
+    { "pkg": "com.pingan.lifeinsurance", "why": "平安人寿（保险）：品牌色整块底板 + 白色主图形的做法" },
+    { "pkg": "com.pingan.papd", "why": "平安好医生：医疗十字元素" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝底 FBTO 标签 + 急救箱", "shape": "landscape", "desc": "蓝色渐变横矩形，上方白色胶囊标签印 FBTO（FBT 用 Segoe UI Black，O 为四色圆环），下方白色立体急救箱 + 蓝十字，保留原图标布局。" },
+    { "id": "B", "name": "急救箱实物", "shape": "free", "desc": "异形：写实急救箱，深灰提手、蓝色箱盖与金属扣，箱盖上贴 FBTO 小标签，正面大蓝十字。物件感强，但品牌字较小。" }
+  ]
+}

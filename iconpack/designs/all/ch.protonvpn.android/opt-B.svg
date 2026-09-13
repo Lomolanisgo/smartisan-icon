@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="sh" d="M128 8C162 26 198 32 232 32C232 128 212 200 128 248C44 200 24 128 24 32C58 32 94 26 128 8Z"/>
+    <linearGradient id="rim" x1="0" y1="8" x2="0" y2="248" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#E4E4EC"/><stop offset="1" stop-color="#BEBECB"/>
+    </linearGradient>
+    <linearGradient id="in" x1="0" y1="20" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8A6CFF"/><stop offset=".6" stop-color="#6D4AFF"/><stop offset="1" stop-color="#4A2BD6"/>
+    </linearGradient>
+    <linearGradient id="half" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset=".5" stop-color="#fff" stop-opacity=".12"/>
+      <stop offset=".5" stop-color="#000" stop-opacity=".06"/><stop offset="1" stop-color="#000" stop-opacity=".06"/>
+    </linearGradient>
+    <linearGradient id="tri" x1="330" y1="450" x2="120" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C6FFF3"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1EDFF"/>
+    </linearGradient>
+    <filter id="d" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset in="SourceAlpha" dy="3"/><feGaussianBlur stdDeviation="2.5"/>
+      <feColorMatrix values="0 0 0 0 .1  0 0 0 0 0  0 0 0 0 .4  0 0 0 .6 0" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ins" x="-10%" y="-10%" width="120%" height="120%">
+      <feFlood flood-color="#200E80" flood-opacity=".6"/>
+      <feComposite in2="SourceAlpha" operator="out"/>
+      <feOffset dy="3"/><feGaussianBlur stdDeviation="3"/>
+      <feComposite in2="SourceAlpha" operator="in" result="s"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="s"/></feMerge>
+    </filter>
+  </defs>
+  <use href="#sh" fill="#A5A5B5"/>
+  <use href="#sh" fill="url(#rim)" transform="translate(128 128.6) scale(.992) translate(-128 -128)"/>
+  <g transform="translate(128 130) scale(.86) translate(-128 -128)">
+    <use href="#sh" fill="#fff" transform="translate(0 2)"/>
+    <use href="#sh" fill="url(#in)" filter="url(#ins)"/>
+    <use href="#sh" fill="url(#half)"/>
+  </g>
+  <g transform="translate(128 118) scale(.3) translate(-276 -281)" filter="url(#d)">
+    <path d="M243.637,419.72C256.738,443.455 290.38,444.741 305.254,422.075L443.94,210.727C458.647,188.314 444.575,158.264 417.942,155.21L145.351,123.952C116.289,120.62 95.596,151.503 109.732,177.114L243.637,419.72Z" fill="url(#tri)"/>
+    <path d="M263.756,379.083L251.447,397.584C246.46,405.081 235.301,404.619 230.95,396.736L243.637,419.722C245.899,423.821 248.774,427.25 252.059,430.002L252.06,430C267.797,443.184 292.949,440.825 305.254,422.073L443.94,210.726C458.647,188.313 444.575,158.264 417.942,155.21L145.351,123.951C116.289,120.619 95.596,151.503 109.732,177.113L110.808,179.063L342.83,205.909C357.619,207.62 365.421,224.313 357.247,236.756L263.756,379.083Z" fill="#6D4AFF" opacity=".18"/>
+  </g>
+</svg>

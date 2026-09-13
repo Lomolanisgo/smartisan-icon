@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tri" d="M243.637,419.72C256.738,443.455 290.38,444.741 305.254,422.075L443.94,210.727C458.647,188.314 444.575,158.264 417.942,155.21L145.351,123.952C116.289,120.62 95.596,151.503 109.732,177.114L243.637,419.72Z"/>
+    <path id="front" d="M263.756,379.083L251.447,397.584C246.46,405.081 235.301,404.619 230.95,396.736L243.637,419.722C245.899,423.821 248.774,427.25 252.059,430.002L252.06,430C267.797,443.184 292.949,440.825 305.254,422.073L443.94,210.726C458.647,188.313 444.575,158.264 417.942,155.21L145.351,123.951C116.289,120.619 95.596,151.503 109.732,177.113L110.808,179.063L342.83,205.909C357.619,207.62 365.421,224.313 357.247,236.756L263.756,379.083Z"/>
+    <clipPath id="tc"><use href="#tri"/></clipPath>
+    <linearGradient id="deep" x1="200" y1="130" x2="280" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7B5CFF"/><stop offset=".55" stop-color="#5A3FE8"/><stop offset="1" stop-color="#1FD8B8"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="330" y1="450" x2="120" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B8FFF1"/><stop offset=".45" stop-color="#D6D4FF"/><stop offset="1" stop-color="#8E73FF"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="120" x2="0" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A22B0"/><stop offset="1" stop-color="#159C8A"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="bev" x="-5%" y="-5%" width="110%" height="110%">
+      <feFlood flood-color="#fff" flood-opacity=".85"/>
+      <feComposite in2="SourceAlpha" operator="out"/>
+      <feOffset dy="5"/><feGaussianBlur stdDeviation="3"/>
+      <feComposite in2="SourceAlpha" operator="in" result="hi"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="hi"/></feMerge>
+    </filter>
+    <linearGradient id="spec" x1="100" y1="120" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(128 126) scale(.62) translate(-276 -281)">
+    <use href="#tri" fill="#2A1680" opacity=".45" filter="url(#blur)" transform="translate(0 30)"/>
+    <use href="#tri" fill="url(#side)" transform="translate(0 16)"/>
+    <use href="#tri" fill="url(#side)" transform="translate(0 10)"/>
+    <use href="#tri" fill="url(#side)" transform="translate(0 5)"/>
+    <use href="#tri" fill="url(#deep)" filter="url(#bev)"/>
+    <!-- front glass sheet with its own depth -->
+    <use href="#front" fill="#4B2FD0" opacity=".45" transform="translate(0 8)"/>
+    <use href="#front" fill="url(#glass)" opacity=".96" filter="url(#bev)"/>
+    <g clip-path="url(#tc)">
+      <path d="M90 110L460 150L330 250L150 230Z" fill="url(#spec)"/>
+    </g>
+    <use href="#tri" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="3"/>
+  </g>
+</svg>

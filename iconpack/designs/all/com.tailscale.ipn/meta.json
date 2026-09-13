@@ -1,0 +1,11 @@
+{
+  "pkg": "com.tailscale.ipn",
+  "label": "Tailscale",
+  "references": [
+    { "pkg": "com.duokan.phone.remotecontroller", "why": "锤子里金属圆盘+圆点的遥控器图标，B 方案的金属圆盘和圆点做法参考它" }
+  ],
+  "options": [
+    { "id": "A", "name": "深色面板指示灯", "shape": "square", "desc": "深灰磨砂方形面板上 9 个圆孔，组成 T 形的 4 个是发光的白色珠子，其余是暗色凹孔。忠实还原品牌 3×3 点阵，像设备状态灯。" },
+    { "id": "B", "name": "拉丝铝盘黑色铆钉", "shape": "circle", "desc": "反色处理：圆形拉丝铝盘上，T 形 4 点为凸起的亮黑色圆顶，其余 5 点为浅浅的凹坑。质感精致；浅色为主，与品牌深色印象相反。" }
+  ]
+}

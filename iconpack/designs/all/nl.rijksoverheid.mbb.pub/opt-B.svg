@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="body" x1="0" y1="54" x2="0" y2="206" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F79230"/><stop offset="1" stop-color="#D65F00"/>
+    </linearGradient>
+    <linearGradient id="flap" x1="0" y1="54" x2="0" y2="146" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFA548"/><stop offset="1" stop-color="#EE7A12"/>
+    </linearGradient>
+    <linearGradient id="low" x1="0" y1="120" x2="0" y2="206" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F28422"/><stop offset="1" stop-color="#DB6602"/>
+    </linearGradient>
+    <radialGradient id="seal" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#2C64A6"/><stop offset="0.7" stop-color="#18467C"/><stop offset="1" stop-color="#0E2F55"/>
+    </radialGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <filter id="sh2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#4A1C00" flood-opacity="0.5"/>
+    </filter>
+    <g id="wapen">
+      <circle cx="0" cy="51" r="1.6" fill="#F3CF73"/>
+      <path d="M-7 63 L-8.5 55 L-4 58.5 L0 53 L4 58.5 L8.5 55 L7 63Z" fill="#F3CF73"/>
+      <path d="M-6.5 66 H6.5 V74 C6.5 79 3.5 82 0 84 C-3.5 82 -6.5 79 -6.5 74Z" fill="#fff"/>
+      <path d="M-2.5 70 H2.5 V74 C2.5 76 1.2 77.5 0 78 C-1.2 77.5 -2.5 76 -2.5 74Z" fill="#18467C"/>
+      <path d="M-9 67 C-13.5 70 -13.5 79 -10 83 L-8 81.5 C-10 77 -9.8 72 -8 68.5Z" fill="#fff"/>
+      <path d="M9 67 C13.5 70 13.5 79 10 83 L8 81.5 C10 77 9.8 72 8 68.5Z" fill="#fff"/>
+      <rect x="-12" y="86" width="24" height="2.6" rx="1.3" fill="#fff"/>
+    </g>
+  </defs>
+  <g filter="url(#sh)">
+    <rect x="18" y="54" width="220" height="152" rx="14" fill="url(#body)"/>
+  </g>
+  <!-- lower folds -->
+  <path d="M20 200 L106 128 C118 118 138 118 150 128 L236 200 C234 204 231 206 226 206 H30 C25 206 22 204 20 200Z" fill="url(#low)"/>
+  <path d="M22 200 L106 130 C118 120 138 120 150 130 L234 200" stroke="#FFB067" stroke-opacity="0.55" stroke-width="1.5" fill="none"/>
+  <!-- top flap -->
+  <g filter="url(#sh2)">
+    <path d="M18 66 C18 59 23 54 32 54 H224 C233 54 238 59 238 66 L144 142 C135 149 121 149 112 142Z" fill="url(#flap)"/>
+  </g>
+  <path d="M26 56 H230" stroke="#FFD2A0" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <!-- wax seal with crown -->
+  <g filter="url(#sh2)">
+    <circle cx="128" cy="140" r="30" fill="url(#seal)"/>
+  </g>
+  <circle cx="128" cy="140" r="25" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1.5"/>
+  <use href="#wapen" transform="translate(128 140) scale(1.15) translate(0 -69)"/>
+</svg>

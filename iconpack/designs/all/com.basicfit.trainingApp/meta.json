@@ -1,0 +1,12 @@
+{
+  "pkg": "com.basicfit.trainingApp",
+  "label": "Basic-Fit",
+  "references": [
+    { "pkg": "com.gotokeep.keep", "why": "同为健身应用，参考其横矩形底板与简洁主体符号的做法" },
+    { "pkg": "com.codoon.gps", "why": "运动类，参考其人形剪影的动感表达" }
+  ],
+  "options": [
+    { "id": "A", "name": "橙色底板·哑铃", "shape": "landscape", "desc": "品牌橙色横矩形底板，上方写实黑色橡胶哑铃（镀铬滚花握把、橙色标记），下方白色斜体 BASIC-FIT / GO FOR IT 字标。品牌识别最强，但含文字，小尺寸下标语较细。" },
+    { "id": "B", "name": "铸铁壶铃", "shape": "free", "desc": "无底板的黑色铸铁壶铃实物，正面嵌橙色圆徽，徽上是 Basic-Fit 标志中高举双臂的人形。无文字，48px 下轮廓清晰，橙黑配色保留品牌感。" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "pkg": "com.reddit.frontpage",
+  "label": "Reddit",
+  "references": [
+    { "pkg": "com.sina.weibo", "why": "锤子把微博吉祥物做成无底板的立体物件，A 方案沿用此思路" },
+    { "pkg": "au.com.shiftyjelly.pocketcasts", "why": "圆形彩色徽章造型，B 方案参考" }
+  ],
+  "options": [
+    { "id": "A", "name": "陶瓷 Snoo 摆件", "shape": "free", "desc": "无底板，把 Snoo 外星人做成白色陶瓷摆件（耳朵、天线小球、橙色玻璃眼睛、地面投影），类似锤子微博的做法；可爱醒目，但主体是白色，浅色壁纸上略弱。" },
+    { "id": "B", "name": "橙色珐琅徽章", "shape": "circle", "desc": "银色金属外圈+Reddit 橙珐琅圆盘，中间白色 Snoo 头像带高光；品牌色最强、任何壁纸都清晰。" }
+  ]
+}

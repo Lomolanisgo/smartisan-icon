@@ -1,0 +1,12 @@
+{
+  "pkg": "nl.rijksoverheid.digid.pub",
+  "label": "DigiD",
+  "references": [
+    { "pkg": "cn.com.mujipassport.android.app", "why": "同为纯文字标志的深色底板，参考其横矩形 + 字标的做法" },
+    { "pkg": "com.jingwei.card", "why": "身份/名片类应用，参考“卡片”隐喻" }
+  ],
+  "options": [
+    { "id": "A", "name": "黑色字标横板", "shape": "landscape", "desc": "黑色亮面横矩形底板，复制原版 DigiD 字形路径（白 + 橙），带轻微投影与上方高光。最忠实原图标，48px 下文字清晰。" },
+    { "id": "B", "name": "黑色身份卡", "shape": "free", "desc": "异形：一张黑色智能身份卡，金色芯片 + NFC 感应纹 + 橙色细条，印 DigiD 字标。强化“数字身份”隐喻，但字稍小。" }
+  ]
+}

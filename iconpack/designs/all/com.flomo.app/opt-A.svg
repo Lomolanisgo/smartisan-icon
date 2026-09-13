@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs>
+<path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+<clipPath id="tileClip"><use href="#tile"/></clipPath>
+<linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F2F2"/></linearGradient>
+<linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/><stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/></linearGradient>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="3.2" flood-color="#000" flood-opacity="0.24"/></filter>
+<filter id="shs" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#000" flood-opacity="0.28"/></filter>
+</defs>
+<use href="#tile" fill="url(#tileFill)"/>
+<g clip-path="url(#tileClip)" fill="none">
+<use href="#tile" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+<use href="#tile" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+<use href="#tile" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+<use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+</g><defs>
+<linearGradient id="fg" x1="0" y1="56" x2="0" y2="196" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#36D27E"/><stop offset="1" stop-color="#149E54"/></linearGradient>
+<linearGradient id="fh" x1="0" y1="56" x2="0" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<mask id="fc" maskUnits="userSpaceOnUse" x="0" y="0" width="256" height="256"><g transform="translate(128 128) scale(1.08) translate(-138 -124)" fill="#FFFFFF"><path d="M98 110A36 36 0 1 1 98 182A36 36 0 1 1 98 110ZM98 133A13 13 0 1 0 98 159A13 13 0 1 0 98 133Z" fill-rule="evenodd"/><rect x="114" y="110" width="21" height="38"/><path d="M117 102H198L184 123H103Z"/><path d="M138 66H218L204 87H124Z"/></g></mask>
+</defs><g filter="url(#sh)"><rect width="256" height="256" fill="url(#fg)" mask="url(#fc)"/></g><rect width="256" height="256" fill="url(#fh)" mask="url(#fc)"/>
+</svg>

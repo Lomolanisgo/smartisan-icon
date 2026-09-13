@@ -1,0 +1,11 @@
+{
+  "pkg": "nl.budgetthuis.app",
+  "label": "Budget Thuis",
+  "references": [
+    { "pkg": "com.dianxinos.powermanager", "why": "电量/能源类应用，参考其硬朗的深色面板 + 发光边缘" }
+  ],
+  "options": [
+    { "id": "A", "name": "绿色横板房屋标", "shape": "landscape", "desc": "Budget Thuis 绿色亮面横矩形，中央复制原版黑色房屋双牌标志与白字路径，加细微高光与投影。最忠实原图标。" },
+    { "id": "B", "name": "立体房屋招牌", "shape": "free", "desc": "异形：黑色房屋标志做成有厚度的搪瓷招牌，品牌绿细描边，底部一圈绿色能源光晕。无底板更醒目，但绿色品牌色占比较少。" }
+  ]
+}

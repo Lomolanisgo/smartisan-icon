@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="sq" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="c"><use href="#sq"/></clipPath>
+    <linearGradient id="f" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF2B24"/><stop offset="1" stop-color="#D90000"/>
+    </linearGradient>
+    <radialGradient id="gl" cx="128" cy="-40" r="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lt" x1="0" y1="40" x2="0" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1E6E6"/>
+    </linearGradient>
+    <g id="logo">
+      <path d="M 29.48 5.47 H 32.01 V 18.11 H 29.48 V 5.47 Z"/>
+      <path d="M13.47,13.9a4.21,4.21,0,0,1-8.42,0V5.47H7.58V13.9a1.68,1.68,0,1,0,3.36,0V5.47h2.53Z"/>
+      <path d="M 25.26 34.53 L 16.84 34.53 L 16.84 21.89 L 19.37 21.89 L 19.37 32 L 25.26 32 L 25.26 34.53 Z"/>
+      <path d="M 25.26 18.11 L 22.73 18.11 L 19.37 10.89 L 19.37 18.11 L 16.84 18.11 L 16.84 5.47 L 19.37 5.47 L 22.73 12.69 L 22.73 5.47 L 25.26 5.47 L 25.26 18.11 Z"/>
+      <path d="M9.26,21.89a4.21,4.21,0,0,0-4.21,4.22v4.21a4.21,4.21,0,0,0,4.21,4.21,4.470,4.470,0,0,0,0.82-0.07l0.86,2.6h2.53l-1.25-3.75a4.21,4.21,0,0,0,1.25-3V26.11a4.21,4.21,0,0,0-4.21-4.22m1.68,8.43a1.68,1.68,0,0,1-3.36,0V26.11a1.68,1.68,0,0,1,3.36,0Z"/>
+      <path d="M30.74,21.89a4.22,4.22,0,0,0-4.22,4.22v4.21a4.22,4.22,0,0,0,8.43,0V26.11a4.22,4.22,0,0,0-4.21-4.22m1.68,8.43a1.69,1.69,0,0,1-3.37,0V26.11a1.69,1.69,0,0,1,3.37,0Z"/>
+    </g>
+  </defs>
+  <use href="#sq" fill="url(#f)"/>
+  <!-- subtle fabric weave -->
+  <g clip-path="url(#c)" stroke="#000" stroke-opacity="0.035" stroke-width="1">
+    <path d="M15 30H241M15 46H241M15 62H241M15 78H241M15 94H241M15 110H241M15 126H241M15 142H241M15 158H241M15 174H241M15 190H241M15 206H241M15 222H241M15 238H241"/>
+  </g>
+  <use href="#sq" fill="url(#gl)"/>
+  <g clip-path="url(#c)" fill="none">
+    <use href="#sq" stroke="#000" stroke-opacity="0.10" stroke-width="5"/>
+    <use href="#sq" stroke="#000" stroke-opacity="0.12" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#sq" stroke="#FF8A84" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#sq" stroke="#A30000" stroke-width="2"/>
+  </g>
+  <!-- debossed letters: dark lip below, light face -->
+  <g transform="translate(40 44) scale(4.4)">
+    <use href="#logo" fill="#8E0000" fill-opacity="0.45" transform="translate(0 0.45)"/>
+    <use href="#logo" fill="url(#lt)" transform="translate(0 0)"/>
+  </g>
+</svg>

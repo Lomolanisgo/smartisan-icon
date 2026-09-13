@@ -1,0 +1,12 @@
+{
+  "pkg": "nl.airmiles.app",
+  "label": "Air Miles",
+  "references": [
+    { "pkg": "de.stocard.stocard", "why": "会员卡/积分应用，参考其多张卡片叠放的造型" },
+    { "pkg": "com.csair.mbp", "why": "航空类蓝色图标，参考其蓝色渐变与白色标志的配色质感" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝天燕子横板", "shape": "landscape", "desc": "还原原图标构图：蓝色天空与白色弧形地面分割，白色燕子飞过分界线处反色为蓝色，燕子为手绘路径。忠实、干净。" },
+    { "id": "B", "name": "积分卡片叠", "shape": "free", "desc": "参考 Stocard 的卡片叠：后面是金色和银色会员卡，前面是蓝色 Air Miles 卡，印白色燕子和白色弧形底边。强调“积分会员卡”隐喻；异形轮廓。" }
+  ]
+}

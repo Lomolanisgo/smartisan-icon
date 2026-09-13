@@ -1,0 +1,12 @@
+{
+  "pkg": "com.samsung.android.app.reminder",
+  "label": "提醒",
+  "references": [
+    { "pkg": "com.ticktick.task", "why": "锤子版滴答清单：白色圆盘+圆弧+对勾" },
+    { "pkg": "com.htc.task", "why": "锤子版 HTC 任务：白纸页眉+勾选列表" }
+  ],
+  "options": [
+    { "id": "A", "name": "圆盘·紫色对勾", "shape": "circle", "desc": "白瓷圆盘上一道深紫圆弧，叠一枚淡紫到紫色的立体对勾，保留三星提醒“圆+勾”的标志。与滴答清单同一造型语言，需注意两者放一起可能略像。" },
+    { "id": "B", "name": "紫色页眉清单", "shape": "landscape", "desc": "横矩形白纸，顶部三星紫色页眉带白色小铃铛，下面两条已勾选、一条未勾选的待办。隐喻直观，和 A 轮廓与隐喻都不同。" }
+  ]
+}

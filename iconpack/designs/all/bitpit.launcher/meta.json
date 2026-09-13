@@ -1,0 +1,12 @@
+{
+  "pkg": "bitpit.launcher",
+  "label": "Niagara Launcher",
+  "references": [
+    { "pkg": "com.uu", "why": "同样是两道弯月形叠放的标志，参考其立体弯月的厚度与高光处理" },
+    { "pkg": "com.google.android.launcher", "why": "同为桌面启动器，参考圆形徽章轮廓" }
+  ],
+  "options": [
+    { "id": "A", "name": "深蓝玻璃圆章", "shape": "circle", "desc": "金属圆环包裹深藏青玻璃面，内嵌品牌双弯月（路径取自原图标），顶部玻璃反光；稳重、贴近原品牌底色。" },
+    { "id": "B", "name": "立体双弯月", "shape": "free", "desc": "无底板，把两片弯月做成带厚度的釉面/亚克力物件，有侧面挤出和顶边高光，参考 UU 图标；更轻盈，但浅色背景下对比稍弱。" }
+  ]
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="sq" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="c"><use href="#sq"/></clipPath>
+    <linearGradient id="f" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0F0F0"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/><stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/>
+    </linearGradient>
+    <linearGradient id="tkf" x1="150" y1="60" x2="260" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2A75F5"/><stop offset="1" stop-color="#0238B6"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+    <path id="tk" d="M100.59,148.51C87.52,156.05 83.04,172.77 90.58,185.84L196.47,369.24L196.48,369.23C204.65,364.52 215.09,367.32 219.81,375.48C224.53,383.65 221.73,394.1 213.56,398.82L213.55,398.82L234.05,434.33C241.6,447.4 258.31,451.88 271.38,444.33L411.41,363.48C424.48,355.94 428.96,339.23 421.42,326.16L400.91,290.65L400.91,290.65C392.74,295.37 382.3,292.57 377.58,284.4C372.86,276.23 375.66,265.79 383.83,261.07L383.83,261.07L277.95,77.66C270.4,64.59 253.69,60.12 240.62,67.66L100.59,148.51Z"/>
+    <path id="t" d="M217.18,203.79H243.47L249.82,174.78L288.8,162.08L279.73,203.79H312.37L306.93,230.07H274.29L260.7,290.81C259.79,294.44 258.88,298.97 258.88,304.41C258.88,312.57 264.32,318.01 272.48,318.01C278.83,318.01 285.17,316.2 290.61,314.38L284.27,342.49C277.92,343.39 270.67,346.11 264.32,346.11C239.84,346.11 221.71,336.14 221.71,308.95C221.71,298.07 223.53,287.19 226.25,276.31L236.22,229.17H209.93L217.18,203.79Z"/>
+    <clipPath id="tkc"><use href="#tk"/></clipPath>
+  </defs>
+  <use href="#sq" fill="url(#f)"/>
+  <g clip-path="url(#c)" fill="none">
+    <use href="#sq" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+    <use href="#sq" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#sq" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#sq" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+  <g transform="translate(-6 -4) scale(0.545)">
+    <use href="#tk" fill="#001A60" fill-opacity="0.35" filter="url(#sh)" transform="translate(4 14)"/>
+    <use href="#tk" fill="url(#tkf)"/>
+    <!-- glossy upper sheen -->
+    <g clip-path="url(#tkc)">
+      <path d="M60 150L260 30L330 150L130 270Z" fill="#FFFFFF" fill-opacity="0.12"/>
+    </g>
+    <use href="#tk" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="3" transform="translate(0 2)"/>
+    <use href="#tk" fill="none" stroke="#01328F" stroke-width="3"/>
+    <use href="#t" fill="#001C66" fill-opacity="0.45" transform="translate(0 6)"/>
+    <use href="#t" fill="#FFFFFF"/>
+  </g>
+</svg>

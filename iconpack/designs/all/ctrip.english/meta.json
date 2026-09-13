@@ -1,0 +1,12 @@
+{
+  "pkg": "ctrip.english",
+  "label": "Trip.com",
+  "references": [
+    { "pkg": "ctrip.android.view", "why": "携程（同公司）锤子图标，蓝色圆形球体，参考其圆形轮廓和光泽" },
+    { "pkg": "com.Qunar", "why": "去哪儿的行李箱图标，参考硬壳行李箱的造型与材质" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色光泽圆球", "shape": "circle", "desc": "与锤子携程图标同为蓝色圆球，白色 Trip 字标浮雕，黄色句点做成立体小球，顶部玻璃高光；与携程成“兄弟”。" },
+    { "id": "B", "name": "蓝色行李箱", "shape": "free", "desc": "参考去哪儿行李箱：蓝色硬壳拉杆箱，竖向压纹、黑色护角和轮子，箱面印 Trip. 字标；旅行隐喻直观。" }
+  ]
+}

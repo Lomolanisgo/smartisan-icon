@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="pin" d="M128 16C172 16 206 50 206 94C206 142 156 184 136 212Q128 224 120 212C100 184 50 142 50 94C50 50 84 16 128 16Z"/>
+    <linearGradient id="pinFill" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#3FCBFF"/><stop offset="0.5" stop-color="#1A86FF"/><stop offset="1" stop-color="#0A52DA"/></linearGradient>
+    <linearGradient id="hl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D8E4F4"/></linearGradient>
+    <radialGradient id="dot" cx="0.4" cy="0.35" r="0.7"><stop offset="0" stop-color="#5CD0FF"/><stop offset="1" stop-color="#0A5CE8"/></radialGradient>
+    <radialGradient id="ring" cx="0.5" cy="0.5" r="0.5"><stop offset="0.6" stop-color="#1E88FF" stop-opacity="0"/><stop offset="0.85" stop-color="#1E88FF" stop-opacity="0.35"/><stop offset="1" stop-color="#1E88FF" stop-opacity="0"/></radialGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="pc"><use href="#pin"/></clipPath>
+  </defs>
+  <ellipse cx="128" cy="220" rx="96" ry="24" fill="url(#ring)"/>
+  <ellipse cx="128" cy="220" rx="60" ry="14" fill="url(#ring)"/>
+  <ellipse cx="128" cy="219" rx="26" ry="6" fill="#0A3F9E" opacity="0.4" filter="url(#blur)"/>
+  <use href="#pin" fill="url(#pinFill)"/>
+  <use href="#pin" fill="url(#hl)"/>
+  <g clip-path="url(#pc)">
+    <use href="#pin" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="3" transform="translate(0 1.5)"/>
+    <ellipse cx="128" cy="210" rx="60" ry="30" fill="#063AA8" opacity="0.4" filter="url(#blur)"/>
+  </g>
+  <use href="#pin" fill="none" stroke="#0843B0" stroke-opacity="0.35" stroke-width="1.2"/>
+  <!-- inset -->
+  <circle cx="128" cy="96" r="40" fill="#073C9E" opacity="0.45" filter="url(#blur)"/>
+  <circle cx="128" cy="94" r="39" fill="url(#white)"/>
+  <circle cx="128" cy="94" r="38.5" fill="none" stroke="#FFFFFF"/>
+  <circle cx="128" cy="96" r="18" fill="#0A3F9E" opacity="0.3" filter="url(#blur)"/>
+  <circle cx="128" cy="94" r="17" fill="url(#dot)"/>
+  <circle cx="122" cy="88" r="4.5" fill="#FFFFFF" opacity="0.85"/>
+</svg>

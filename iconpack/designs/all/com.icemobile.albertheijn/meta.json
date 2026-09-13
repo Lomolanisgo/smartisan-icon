@@ -1,0 +1,13 @@
+{
+  "pkg": "com.icemobile.albertheijn",
+  "label": "Albert Heijn",
+  "references": [
+    { "pkg": "com.taobao.taobao", "why": "参考其立体购物袋造型，用于超市购物隐喻" },
+    { "pkg": "com.jingdong.pdj", "why": "同为到家/超市类，参考其房子形异形徽章做法" },
+    { "pkg": "com.wm.dmall", "why": "同为超市应用，参考其无底板异形标志的处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色釉面标志", "shape": "free", "desc": "把 AH 倾斜的蓝色“房子”标志做成带白色厚边的釉面立体牌，上半部玻璃高光，白色 ah 字形轻微压印。忠实原标志，异形无底板。" },
+    { "id": "B", "name": "蓝色纸购物袋", "shape": "landscape", "desc": "白色标准横矩形瓷砖上放一只 AH 蓝色纸质购物袋（带侧褶和提绳），袋身印白色 ah 标志。参考淘宝购物袋，超市隐喻更直接。" }
+  ]
+}

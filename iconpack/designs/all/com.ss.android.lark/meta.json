@@ -1,0 +1,12 @@
+{
+  "pkg": "com.ss.android.lark",
+  "label": "飞书",
+  "references": [
+    { "pkg": "com.alibaba.android.rimet", "why": "同为办公协作应用，参考钉钉的圆形蓝色徽章造型" },
+    { "pkg": "com.tencent.wework", "why": "同为办公协作应用，参考企业微信的光泽立体感" }
+  ],
+  "options": [
+    { "id": "A", "name": "白瓷圆徽章", "shape": "circle", "desc": "蓝色金属描边圆徽章 + 白瓷面，飞书三色标志（路径取自原图标）加渐变和投影，与钉钉圆徽章呼应；标志色彩完全保留，识别度最高。" },
+    { "id": "B", "name": "深蓝玻璃方块", "shape": "square", "desc": "深海军蓝玻璃方块，中心有蓝色辉光，标志改为白 / 浅蓝 / 青绿的亮色版本浮在上面；更沉稳、夜间感强，但标志主色被提亮，品牌蓝不如 A 纯正。" }
+  ]
+}

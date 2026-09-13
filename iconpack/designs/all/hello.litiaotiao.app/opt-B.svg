@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="coil" x1="40" y1="0" x2="216" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5E6670"/><stop offset="0.35" stop-color="#F2F5F8"/><stop offset="0.6" stop-color="#A9B1BA"/><stop offset="1" stop-color="#4E555E"/>
+    </linearGradient>
+    <linearGradient id="coilB" x1="40" y1="0" x2="216" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A4048"/><stop offset="0.5" stop-color="#7C848D"/><stop offset="1" stop-color="#30353C"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="104" cy="44" r="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8BE3C0"/><stop offset="0.45" stop-color="#2FA57D"/><stop offset="1" stop-color="#0F5A42"/>
+    </radialGradient>
+    <linearGradient id="gl" x1="0" y1="20" x2="0" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="128" cy="236" r="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity="0.35"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="base" x1="0" y1="214" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3FB58B"/><stop offset="1" stop-color="#156B4F"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#053424" flood-opacity="0.6"/></filter>
+  </defs>
+  <ellipse cx="128" cy="238" rx="100" ry="14" fill="url(#shadow)"/>
+  <!-- base plate -->
+  <ellipse cx="128" cy="228" rx="84" ry="16" fill="url(#base)"/>
+  <ellipse cx="128" cy="222" rx="84" ry="16" fill="#46C096"/>
+  <ellipse cx="128" cy="221" rx="80" ry="13" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="2"/>
+  <!-- spring coils: back halves then front halves -->
+  <g fill="none" stroke-width="10" stroke-linecap="round">
+    <g stroke="url(#coilB)">
+      <path d="M62 212C62 202 194 202 194 212"/>
+      <path d="M62 190C62 180 194 180 194 190"/>
+      <path d="M62 168C62 158 194 158 194 168"/>
+      <path d="M62 146C62 136 194 136 194 146"/>
+      <path d="M62 124C62 114 194 114 194 124"/>
+    </g>
+    <g stroke="url(#coil)">
+      <path d="M62 212C62 222 194 222 194 212" transform="translate(0 0)"/>
+      <path d="M62 190C62 200 194 202 194 212" />
+      <path d="M62 168C62 178 194 180 194 190"/>
+      <path d="M62 146C62 156 194 158 194 168"/>
+      <path d="M62 124C62 134 194 136 194 146"/>
+    </g>
+  </g>
+  <!-- jumping ball with skip glyph -->
+  <circle cx="128" cy="66" r="56" fill="url(#ball)"/>
+  <ellipse cx="120" cy="40" rx="36" ry="20" fill="url(#gl)"/>
+  <g fill="#fff" filter="url(#sh)">
+    <path d="M100 48L126 66L100 84Z" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M126 48L152 66L126 84Z" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="154" y="46" width="9" height="40" rx="3"/>
+  </g>
+  <!-- motion marks -->
+  <g stroke="#2FA57D" stroke-width="5" stroke-linecap="round" stroke-opacity="0.6">
+    <path d="M52 92L38 100M204 92L218 100"/>
+  </g>
+</svg>

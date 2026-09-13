@@ -1,0 +1,12 @@
+{
+  "pkg": "com.kfc.nl.mobileapp",
+  "label": "KFC",
+  "references": [
+    { "pkg": "com.yek.android.kfc.activitys", "why": "锤子已有肯德基图标（红色圆徽章 + 上校头像），参考其上校形象与红色调" },
+    { "pkg": "com.hp.mit.atmobile.kfc", "why": "肯德基宅急送，参考其白色底板 + 红色品牌字的处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "红砖桶形徽标", "shape": "portrait", "desc": "红色竖矩形瓷砖，中间是新版 KFC 白色桶形徽标：两侧红条、黑色线描上校头像、KFC 字样。忠实现行 Logo，上校为手绘简化版。" },
+    { "id": "B", "name": "全家桶", "shape": "free", "desc": "异形：红白条纹立体炸鸡桶，桶口堆满金黄炸鸡块，桶身白色标签印红色 KFC。隐喻直观，与 A 轮廓和隐喻都不同。" }
+  ]
+}

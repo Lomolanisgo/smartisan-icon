@@ -1,0 +1,11 @@
+{
+  "pkg": "com.nothing.smartcenter",
+  "label": "Nothing X",
+  "references": [
+    { "pkg": "com.misfitwearables.prometheus", "why": "同为穿戴/配件伴侣应用，参考其白色横矩形底板 + 黑色立体标志的做法" }
+  ],
+  "options": [
+    { "id": "A", "name": "白底立体标志", "shape": "landscape", "desc": "锤子白色横矩形底板上放 Nothing X 标志：浅灰陶瓷胶囊、亮黑胶囊叠在上面、右下角是红色光泽圆点，各层有投影。完全忠实原图标（原图标本就是白底）。" },
+    { "id": "B", "name": "黑色点阵徽章", "shape": "circle", "desc": "黑色圆盘带 Nothing 标志性的点阵纹理，标志反白：半透明灰胶囊、白色胶囊，红点像 LED 一样发光。更有 Nothing 品牌气质，但与原图标黑白关系相反。" }
+  ]
+}

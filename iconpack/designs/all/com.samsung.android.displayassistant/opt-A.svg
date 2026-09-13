@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9DC0D0"/><stop offset="1" stop-color="#6690A4"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C9FB0"/><stop offset="1" stop-color="#4E7486"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="40" x2="0" y2="216" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A4A4A"/><stop offset="1" stop-color="#1E1E1E"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="90" y1="50" x2="170" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9AD6FF"/><stop offset="1" stop-color="#3D98EC"/>
+    </linearGradient>
+    <linearGradient id="refl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3F5E6C"/><stop offset="1" stop-color="#82A4B3"/>
+    </linearGradient>
+    <radialGradient id="kY" cx="0.38" cy="0.3" r="0.75"><stop offset="0" stop-color="#FFE38A"/><stop offset="1" stop-color="#F2A100"/></radialGradient>
+    <radialGradient id="kP" cx="0.38" cy="0.3" r="0.75"><stop offset="0" stop-color="#FFB3C6"/><stop offset="1" stop-color="#F0527C"/></radialGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#1D3A48" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#bg)"/>
+  <path d="M27 24H229C246 24 252 29 252 47V90C180 110 76 110 4 90V47C4 29 10 24 27 24Z" fill="#FFFFFF" opacity="0.14"/>
+  <!-- slider tracks (inset) -->
+  <rect x="42" y="60" width="12" height="136" rx="6" fill="url(#track)"/>
+  <rect x="43" y="61" width="10" height="134" rx="5" fill="#EAF3F7"/>
+  <rect x="43" y="61" width="10" height="134" rx="5" fill="none" stroke="#000" stroke-opacity="0.18"/>
+  <rect x="202" y="60" width="12" height="136" rx="6" fill="url(#track)"/>
+  <rect x="203" y="61" width="10" height="134" rx="5" fill="#EAF3F7"/>
+  <rect x="203" y="61" width="10" height="134" rx="5" fill="none" stroke="#000" stroke-opacity="0.18"/>
+  <!-- phone -->
+  <g filter="url(#sh)">
+    <rect x="80" y="38" width="96" height="180" rx="22" fill="url(#phone)"/>
+  </g>
+  <rect x="80.5" y="38.5" width="95" height="179" rx="21.5" fill="none" stroke="#7A7A7A" stroke-width="1"/>
+  <rect x="92" y="52" width="72" height="152" rx="10" fill="url(#screen)"/>
+  <path d="M102 52H154C160 52 164 56 164 62V96L92 156V62C92 56 96 52 102 52Z" fill="url(#refl)"/>
+  <!-- brightness sun on screen -->
+  <g stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.95">
+    <circle cx="128" cy="128" r="14" fill="#FFFFFF"/>
+    <path d="M128 98V104M128 152V158M98 128H104M152 128H158M107 107L111 111M145 145L149 149M107 149L111 145M145 111L149 107"/>
+  </g>
+  <!-- knobs -->
+  <g filter="url(#sh)">
+    <circle cx="48" cy="100" r="20" fill="url(#kY)"/>
+    <circle cx="208" cy="156" r="20" fill="url(#kP)"/>
+  </g>
+  <ellipse cx="45" cy="92" rx="10" ry="5" fill="#FFFFFF" opacity="0.5"/>
+  <ellipse cx="205" cy="148" rx="10" ry="5" fill="#FFFFFF" opacity="0.5"/>
+  <g clip-path="url(#clip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+</svg>

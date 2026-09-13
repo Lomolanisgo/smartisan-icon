@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="sq" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="clip"><use href="#sq"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF6BAE"/><stop offset="1" stop-color="#E02F7F"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E4488F"/><stop offset="1" stop-color="#B51E62"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="130" x2="0" y2="302" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.25"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7A0F3E" flood-opacity="0.4"/>
+    </filter>
+    <filter id="piece" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.2" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <use href="#sq" fill="url(#bg)"/>
+  <path d="M39 16H217C234 16 240 21 240 39V96C180 120 76 120 16 96V39C16 21 22 16 39 16Z" fill="url(#gloss)" opacity="0.5"/>
+  <g transform="translate(128 128) scale(0.84) translate(-216 -216)">
+    <g filter="url(#sh)">
+      <g filter="url(#piece)">
+        <path d="M130.65,216H216V301.35H162.66C154.17,301.35 146.03,297.98 140.02,291.98C134.02,285.97 130.65,277.83 130.65,269.34V216Z" fill="#FFFFFF"/>
+        <path d="M216,130.65H269.34C277.83,130.65 285.97,134.02 291.98,140.03C297.98,146.03 301.35,154.17 301.35,162.66V216H216V130.65Z" fill="#2D71FF"/>
+        <path d="M130.65,216V162.66C130.65,154.17 134.02,146.03 140.02,140.03C146.03,134.02 154.17,130.65 162.66,130.65H216V216H130.65ZM216,171.99C216,168.04 217.17,164.17 219.37,160.88C221.57,157.59 224.69,155.03 228.35,153.51C232,152 236.03,151.6 239.91,152.37C243.79,153.15 247.35,155.05 250.15,157.85C252.95,160.65 254.85,164.21 255.62,168.09C256.4,171.97 256,175.99 254.49,179.65C252.97,183.3 250.41,186.43 247.12,188.63C243.83,190.82 239.96,192 236,192C230.7,192 225.61,189.89 221.86,186.14C218.11,182.39 216,177.3 216,171.99Z" fill="#9FE0FF"/>
+        <path d="M216,301.35V260.01C216,263.96 214.83,267.83 212.63,271.12C210.43,274.41 207.31,276.98 203.65,278.49C200,280 195.97,280.4 192.09,279.63C188.21,278.86 184.65,276.95 181.85,274.15C179.05,271.36 177.15,267.79 176.38,263.91C175.6,260.03 176,256.01 177.51,252.35C179.03,248.7 181.59,245.57 184.88,243.38C188.17,241.18 192.04,240.01 196,240.01C201.3,240.01 206.39,242.11 210.14,245.86C213.89,249.62 216,254.7 216,260.01V216H301.35V269.34C301.35,277.83 297.98,285.97 291.98,291.98C285.97,297.98 277.83,301.35 269.34,301.35H216Z" fill="#FFB0B0"/>
+      </g>
+    </g>
+    <!-- bevel light over whole block -->
+    <path d="M162.66 130.65H269.34C287 130.65 301.35 145 301.35 162.66V269.34C301.35 287 287 301.35 269.34 301.35H162.66C145 301.35 130.65 287 130.65 269.34V162.66C130.65 145 145 130.65 162.66 130.65Z" fill="url(#shade)"/>
+    <path d="M162.66 132.65H269.34C286 132.65 299.35 146 299.35 162.66" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="2.5"/>
+    <path d="M162.66 132.65C146 132.65 132.65 146 132.65 162.66" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="2.5"/>
+    <line x1="216" y1="134" x2="216" y2="298" stroke="#000" stroke-opacity="0.08" stroke-width="1.5"/>
+    <line x1="134" y1="216" x2="298" y2="216" stroke="#000" stroke-opacity="0.08" stroke-width="1.5"/>
+  </g>
+  <g clip-path="url(#clip)" fill="none">
+    <use href="#sq" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use href="#sq" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#sq" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+</svg>

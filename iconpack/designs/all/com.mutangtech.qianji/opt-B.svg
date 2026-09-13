@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <path id="pt" d="M47 3.06H208.93C227.73 3.06 232.93 8.26 232.93 27.06V228.94C232.93 247.74 227.73 252.94 208.93 252.94H47C28.2 252.94 23 247.74 23 228.94V27.06C23 8.26 28.2 3.06 47 3.06Z"/>
+    <clipPath id="clip"><use href="#pt"/></clipPath>
+    <linearGradient id="leather" x1="0" y1="3" x2="0" y2="253" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A9DFB"/><stop offset="1" stop-color="#1C66C9"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="90" cy="40" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="0.9" fill="#000" fill-opacity="0.08"/><circle cx="4.5" cy="4.5" r="0.8" fill="#fff" fill-opacity="0.05"/></pattern>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E3E86"/><stop offset="0.5" stop-color="#1F5BB4"/><stop offset="1" stop-color="#0C3778"/>
+    </linearGradient>
+    <radialGradient id="coin" cx="112" cy="96" r="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.7" stop-color="#F1F4F8"/><stop offset="1" stop-color="#C9D2DD"/>
+    </radialGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4CA2FF"/><stop offset="1" stop-color="#1D6FD8"/></linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#062A60" flood-opacity="0.5"/></filter>
+  </defs>
+  <use href="#pt" fill="url(#leather)"/>
+  <g clip-path="url(#clip)">
+    <rect x="0" y="0" width="256" height="256" fill="url(#grain)"/>
+    <rect x="0" y="0" width="256" height="256" fill="url(#sheen)"/>
+    <use href="#pt" fill="none" stroke="#000" stroke-opacity="0.2" stroke-width="5"/>
+    <use href="#pt" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="2" transform="translate(0 1)"/>
+  </g>
+  <!-- stitching -->
+  <path d="M51 17H205C213 17 219 23 219 31V225C219 233 213 239 205 239H51C43 239 37 233 37 225V31C37 23 43 17 51 17Z" fill="none" stroke="#DCEBFF" stroke-opacity="0.75" stroke-width="2" stroke-dasharray="6 5"/>
+  <path d="M51 18.5H205C212 18.5 217.5 24 217.5 31" fill="none" stroke="#0A3A7C" stroke-opacity="0.3" stroke-width="1"/>
+  <!-- elastic band -->
+  <rect x="190" y="3" width="16" height="250" fill="url(#band)"/>
+  <path d="M190 3V253M206 3V253" stroke="#000" stroke-opacity="0.2"/>
+  <!-- coin badge -->
+  <g filter="url(#sh)">
+    <circle cx="116" cy="112" r="54" fill="url(#coin)"/>
+  </g>
+  <circle cx="116" cy="112" r="46" fill="url(#blue)"/>
+  <circle cx="116" cy="112" r="46" fill="none" stroke="#0B4AA0" stroke-opacity="0.4" stroke-width="2"/>
+  <g transform="translate(116 112) scale(0.19) translate(-320 -320)">
+    <path d="M416,248C416,250.1 415.59,252.18 414.78,254.12C413.98,256.06 412.8,257.83 411.31,259.31C409.83,260.8 408.06,261.98 406.12,262.78C404.18,263.59 402.1,264 400,264C400,264 376,264 376,264C373.9,264 371.82,263.59 369.88,262.78C367.94,261.98 366.17,260.8 364.69,259.31C363.2,257.83 362.02,256.06 361.22,254.12C360.41,252.18 360,250.1 360,248C360,248 360,216 360,216C360,216 280,216 280,216C280,216 280,244.16 280,244.16C279.93,245.33 280.16,246.5 280.67,247.57C281.17,248.63 281.93,249.55 282.88,250.24C282.88,250.24 392.64,340.8 392.64,340.8C399.92,346.79 405.79,354.31 409.83,362.83C413.87,371.35 415.98,380.65 416,390.08C416,390.08 416,416 416,416C416,424.4 414.34,432.73 411.13,440.49C407.91,448.26 403.2,455.31 397.26,461.26C391.31,467.2 384.26,471.91 376.49,475.13C368.73,478.34 360.4,480 352,480C352,480 352,496 352,496C352,498.1 351.59,500.18 350.78,502.12C349.98,504.06 348.8,505.83 347.31,507.31C345.83,508.8 344.06,509.98 342.12,510.78C340.18,511.59 338.1,512 336,512C336,512 304,512 304,512C301.9,512 299.82,511.59 297.88,510.78C295.94,509.98 294.17,508.8 292.69,507.31C291.2,505.83 290.02,504.06 289.22,502.12C288.41,500.18 288,498.1 288,496C288,496 288,480 288,480C279.6,480 271.27,478.34 263.51,475.13C255.74,471.91 248.69,467.2 242.74,461.26C236.8,455.31 232.09,448.26 228.87,440.49C225.66,432.73 224,424.4 224,416C224,416 224,392 224,392C224,387.76 225.68,383.69 228.69,380.69C231.69,377.69 235.76,376 240,376C240,376 264,376 264,376C266.1,376 268.18,376.41 270.12,377.22C272.06,378.02 273.83,379.2 275.31,380.69C276.8,382.17 277.98,383.94 278.78,385.88C279.59,387.82 280,389.9 280,392C280,392 280,424 280,424C280,424 360,424 360,424C360,424 360,395.84 360,395.84C360.07,394.67 359.84,393.5 359.33,392.43C358.83,391.37 358.07,390.45 357.12,389.76C357.12,389.76 247.36,299.2 247.36,299.2C240.08,293.21 234.21,285.69 230.17,277.17C226.13,268.65 224.02,259.35 224,249.92C224,249.92 224,224 224,224C224,207.03 230.74,190.75 242.74,178.74C254.75,166.74 271.03,160 288,160C288,160 288,144 288,144C288,141.9 288.41,139.82 289.22,137.88C290.02,135.94 291.2,134.17 292.69,132.69C294.17,131.2 295.94,130.02 297.88,129.22C299.82,128.41 301.9,128 304,128C304,128 336,128 336,128C338.1,128 340.18,128.41 342.12,129.22C344.06,130.02 345.83,131.2 347.31,132.69C348.8,134.17 349.98,135.94 350.78,137.88C351.59,139.82 352,141.9 352,144C352,144 352,160 352,160C368.97,160 385.25,166.74 397.26,178.74C409.26,190.75 416,207.03 416,224C416,224 416,248 416,248C416,248 416,248 416,248Z" fill="#fff"/>
+  </g>
+  <!-- ledger lines -->
+  <g stroke="#DCEBFF" stroke-opacity="0.55" stroke-width="4" stroke-linecap="round">
+    <path d="M62 192H170M62 212H140"/>
+  </g>
+</svg>

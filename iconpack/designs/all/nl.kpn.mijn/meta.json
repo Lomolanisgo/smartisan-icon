@@ -1,0 +1,12 @@
+{
+  "pkg": "nl.kpn.mijn",
+  "label": "MijnKPN",
+  "references": [
+    { "pkg": "com.greenpoint.android.mc10086.activity", "why": "中国移动（运营商）：白色陶瓷圆盘上放品牌标志，B 方案直接沿用" },
+    { "pkg": "com.chinamobile.cmccwifi", "why": "运营商类应用，参考白色底上彩色标志的处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "绿色横板白标", "shape": "landscape", "desc": "KPN 绿色亮面横矩形，白色标志（环形轮廓 + 王冠）略带投影，最接近原图标。标志为手工描摹，曲线与原版有细微差异。" },
+    { "id": "B", "name": "陶瓷圆盘绿标", "shape": "circle", "desc": "参考锤子中国移动 10086：白色陶瓷圆盘，中央浅浅下凹，绿色标志微浮雕。同属运营商，与 10086 成兄弟图标。" }
+  ]
+}

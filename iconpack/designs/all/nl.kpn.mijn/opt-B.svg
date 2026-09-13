@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="disc" cx="0.45" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.7" stop-color="#F2F4F5"/><stop offset="1" stop-color="#DDE2E5"/>
+    </radialGradient>
+    <radialGradient id="dish" cx="0.5" cy="0.55" r="0.55">
+      <stop offset="0.75" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#C9D8DE" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="g" x1="0" y1="40" x2="0" y2="215" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3FD83A"/><stop offset="1" stop-color="#00A000"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.22"/>
+    </filter>
+    <filter id="emb" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#005A00" flood-opacity="0.45"/>
+    </filter>
+    <g id="mark">
+      <path d="M96 198 C60 188 56 132 68 98 C80 60 116 40 146 52 C166 60 172 80 169 98 C198 100 216 130 208 166 C200 202 160 216 124 204 C104 198 84 188 76 170" fill="none" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M99 152 L92 114 L112 130 L128 104 L144 130 L164 114 L157 152Z"/>
+      <rect x="98" y="158" width="60" height="12" rx="2.5"/>
+      <path d="M128 82 L136 90 L128 98 L120 90Z"/>
+    </g>
+  </defs>
+  <g filter="url(#sh)">
+    <circle cx="128" cy="126" r="116" fill="url(#disc)"/>
+  </g>
+  <circle cx="128" cy="126" r="115" fill="none" stroke="#C5CCD0" stroke-width="1.5"/>
+  <circle cx="128" cy="126" r="108" fill="url(#dish)"/>
+  <g filter="url(#emb)" transform="translate(128 126) scale(0.82) translate(-134 -127)">
+    <use href="#mark" fill="url(#g)" stroke="url(#g)"/>
+  </g>
+</svg>

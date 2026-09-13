@@ -1,0 +1,12 @@
+{
+  "pkg": "com.samsung.android.app.find",
+  "label": "三星查找",
+  "references": [
+    { "pkg": "cn.trackview.findphone", "why": "同为查找手机应用，参考其蓝色光泽定位针 + 白色圆心的造型" },
+    { "pkg": "com.qq.wifi_transfer", "why": "参考其圆形雷达屏幕、同心圆网格的做法（B 方案）" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色定位针", "shape": "free", "desc": "无底板的亮蓝玻璃质感定位针，中间白色陶瓷圆片嵌蓝色圆点，下方地面有淡蓝色扩散波纹，延续原标志“定位针 + 地面圆环”。" },
+    { "id": "B", "name": "雷达屏", "shape": "circle", "desc": "金属外圈的圆形蓝色雷达屏，有同心圆网格、扫描扇区和光点，中央立着一枚白色小定位针。“搜寻设备”的意味更强，但定位针变小，识别主要靠整体雷达形象。" }
+  ]
+}

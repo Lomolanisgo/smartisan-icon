@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF8B93"/><stop offset="1" stop-color="#F04E5B"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E85A65"/><stop offset="1" stop-color="#C23843"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEFF2"/>
+    </linearGradient>
+    <radialGradient id="bB" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#7FA4FF"/><stop offset="1" stop-color="#2D66FF"/></radialGradient>
+    <radialGradient id="bG" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#8CF5B0"/><stop offset="1" stop-color="#22C95E"/></radialGradient>
+    <radialGradient id="bT" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#4FE3D0"/><stop offset="1" stop-color="#00A592"/></radialGradient>
+    <radialGradient id="bP" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#FF6FAE"/><stop offset="1" stop-color="#E20066"/></radialGradient>
+    <filter id="sh" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7A0B16" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#bg)"/>
+  <path d="M27 24H229C246 24 252 29 252 47V90C180 110 76 110 4 90V47C4 29 10 24 27 24Z" fill="#FFFFFF" opacity="0.12"/>
+  <g transform="translate(-64 -64) scale(0.8889)">
+    <!-- back card peek -->
+    <rect x="156" y="115" width="120" height="30" rx="12" fill="#FFFFFF" opacity="0.5"/>
+    <g filter="url(#sh)">
+      <path d="M274.68,125.32H157.32C148.48,125.32 141.32,132.48 141.32,141.32V189.33C141.32,198.17 148.48,205.33 157.32,205.33H274.68C283.52,205.33 290.68,198.17 290.68,189.33V141.32C290.68,132.48 283.52,125.32 274.68,125.32Z" fill="url(#card)"/>
+    </g>
+    <circle cx="164" cy="145.3" r="9.3" fill="url(#bB)"/>
+    <rect x="181.3" y="136" width="50.7" height="18.7" rx="9.3" fill="#D8D8D8"/>
+    <rect x="152" y="170.7" width="80" height="18.7" rx="9.3" fill="#E8E8E8"/>
+    <circle cx="261.3" cy="178.7" r="16" fill="url(#bG)"/>
+    <ellipse cx="258" cy="171" rx="8" ry="4.5" fill="#FFFFFF" opacity="0.45"/>
+    <g filter="url(#sh)">
+      <path d="M274.68,226.67H157.32C148.48,226.67 141.32,233.83 141.32,242.67V290.68C141.32,299.52 148.48,306.68 157.32,306.68H274.68C283.52,306.68 290.68,299.52 290.68,290.68V242.67C290.68,233.83 283.52,226.67 274.68,226.67Z" fill="url(#card)"/>
+    </g>
+    <circle cx="164" cy="246.7" r="9.3" fill="url(#bT)"/>
+    <rect x="181.3" y="237.3" width="50.7" height="18.7" rx="9.3" fill="#D8D8D8"/>
+    <rect x="152" y="272" width="80" height="18.7" rx="9.3" fill="#E8E8E8"/>
+    <circle cx="261.3" cy="280" r="16" fill="url(#bP)"/>
+    <ellipse cx="258" cy="272.5" rx="8" ry="4.5" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+  <g clip-path="url(#clip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+</svg>

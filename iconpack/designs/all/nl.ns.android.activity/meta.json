@@ -1,0 +1,12 @@
+{
+  "pkg": "nl.ns.android.activity",
+  "label": "NS",
+  "references": [
+    { "pkg": "cn.ikamobile.trainfinder", "why": "锤子的火车车头图标，参考其正面车头、玻璃风挡与光影做法" },
+    { "pkg": "com.netease.railwayticket", "why": "铁路购票类横版底板，参考其色块+立体标志的处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "黄底珐琅标志", "shape": "landscape", "desc": "NS 黄色横版底板，蓝色 NS 标志做成凸起的珐琅质感，带顶部高光与投影；最忠实品牌，48px 下清晰。" },
+    { "id": "B", "name": "黄色列车车头", "shape": "free", "desc": "参考锤子火车车头图标，画 NS 标志性的黄色列车正面：深色风挡、目的地显示屏、车头灯、蓝色裙板，车鼻上印 NS 标志；更拟物，但标志较小。" }
+  ]
+}

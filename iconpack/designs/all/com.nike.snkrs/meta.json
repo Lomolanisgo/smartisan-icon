@@ -1,0 +1,12 @@
+{
+  "pkg": "com.nike.snkrs",
+  "label": "SNKRS",
+  "references": [
+    { "pkg": "com.nike.plusgps", "why": "锤子的 Nike Run Club 图标：圆角卡片 + 勾 + 粗体字，参考其版式（A 方案）" },
+    { "pkg": "com.hupu.shihuo", "why": "同为球鞋购物类，参考其红色主调与立体描边" }
+  ],
+  "options": [
+    { "id": "A", "name": "红色底板勾标", "shape": "landscape", "desc": "横矩形 Nike 红底板，白色勾与 SNKRS 字样带浮雕阴影，版式参考锤子 NRC 图标。路径取自原图标，识别度最高。" },
+    { "id": "B", "name": "红色鞋盒", "shape": "free", "desc": "异形立体红色鞋盒，盒盖印白勾，盒身印 SNKRS，右下角尺码贴纸。用“开箱”隐喻球鞋抽签/发售，拟物感强。" }
+  ]
+}

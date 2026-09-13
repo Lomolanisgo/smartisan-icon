@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="bulb" d="M128 32C165 32 194 61 194 97C194 121 180 136 169 150C161 161 158 167 158 176H98C98 167 95 161 87 150C76 136 62 121 62 97C62 61 91 32 128 32Z"/>
+    <radialGradient id="halo" cx="128" cy="98" r="100" gradientUnits="userSpaceOnUse"><stop offset="0.45" stop-color="#FFB040" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A00" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glass" cx="0.46" cy="0.42" r="0.66"><stop offset="0" stop-color="#FFFCEB"/><stop offset="0.3" stop-color="#FFE7A6"/><stop offset="0.72" stop-color="#FFB649"/><stop offset="1" stop-color="#FF8412"/></radialGradient>
+    <linearGradient id="screw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#80868F"/><stop offset="0.32" stop-color="#F4F6F8"/><stop offset="0.6" stop-color="#C3C8CF"/><stop offset="1" stop-color="#6F757E"/></linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A6069"/><stop offset="1" stop-color="#2E3238"/></linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="bc"><use href="#bulb"/></clipPath>
+  </defs>
+  <circle cx="128" cy="98" r="100" fill="url(#halo)"/>
+  <use href="#bulb" fill="url(#glass)"/>
+  <g clip-path="url(#bc)">
+    <ellipse cx="128" cy="190" rx="70" ry="30" fill="#E86A00" opacity="0.35" filter="url(#blur)"/>
+  </g>
+  <!-- filament -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M113 176V146M143 176V146" stroke="#B9772E" stroke-width="2.5"/>
+    <path d="M113 146L116 112L122 124L128 106L134 124L140 112L143 146" stroke="#FFF4C8" stroke-width="6" opacity="0.5" filter="url(#blur)"/>
+    <path d="M113 146L116 112L122 124L128 106L134 124L140 112L143 146" stroke="#F29A2E" stroke-width="2.5"/>
+  </g>
+  <use href="#bulb" fill="none" stroke="#D96A0C" stroke-opacity="0.45" stroke-width="1.5"/>
+  <path d="M80 92C82 66 100 48 124 44" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="79" cy="108" r="4" fill="#FFFFFF" opacity="0.7"/>
+  <!-- base -->
+  <rect x="94" y="172" width="68" height="12" rx="5" fill="url(#screw)"/>
+  <rect x="98" y="184" width="60" height="10" rx="5" fill="url(#screw)"/>
+  <rect x="98" y="194" width="60" height="10" rx="5" fill="url(#screw)"/>
+  <rect x="100" y="204" width="56" height="10" rx="5" fill="url(#screw)"/>
+  <path d="M98 193.5H158M98 203.5H158" stroke="#5C626B" stroke-opacity="0.5"/>
+  <path d="M106 213H150Q148 226 136 228H120Q108 226 106 213Z" fill="url(#cap)"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <path id="sq" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="clip"><use href="#sq"/></clipPath>
+    <linearGradient id="paper" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFCF4"/><stop offset="1" stop-color="#F1EBDC"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="50" x2="0" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E06666"/><stop offset="1" stop-color="#B83A3E"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C9C2B0"/><stop offset="1" stop-color="#B5AD99"/>
+    </linearGradient>
+    <filter id="ink" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="1.2" flood-color="#6A1E20" flood-opacity="0.35"/></filter>
+  </defs>
+  <use href="#sq" fill="url(#paper)"/>
+  <g clip-path="url(#clip)">
+    <!-- staff lines -->
+    <g stroke="#B7AE99" stroke-opacity="0.55" stroke-width="1.6">
+      <path d="M15 34H241M15 44H241M15 54H241M15 64H241M15 74H241"/>
+      <path d="M15 184H241M15 194H241M15 204H241M15 214H241M15 224H241"/>
+    </g>
+    <g fill="#B7AE99" fill-opacity="0.6">
+      <ellipse cx="190" cy="59" rx="6" ry="4.5" transform="rotate(-20 190 59)"/><path d="M195 58V26" stroke="#B7AE99" stroke-opacity="0.6" stroke-width="2"/>
+      <ellipse cx="62" cy="209" rx="6" ry="4.5" transform="rotate(-20 62 209)"/><path d="M67 208V176" stroke="#B7AE99" stroke-opacity="0.6" stroke-width="2"/>
+    </g>
+    <use href="#sq" fill="none" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+    <use href="#sq" fill="none" stroke="#fff" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#sq" fill="none" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+  <text x="128" y="170" text-anchor="middle" font-family="Microsoft YaHei, 微软雅黑, sans-serif" font-weight="700" font-size="128" fill="url(#red)" filter="url(#ink)">谱</text>
+</svg>

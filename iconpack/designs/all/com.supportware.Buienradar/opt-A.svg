@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="ring" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#E5E9EE"/><stop offset="1" stop-color="#B7C0CA"/>
+    </linearGradient>
+    <radialGradient id="navy" cx="110" cy="80" r="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2A4AA8"/><stop offset="0.6" stop-color="#16307F"/><stop offset="1" stop-color="#0B1D57"/>
+    </radialGradient>
+    <linearGradient id="streak" x1="40" y1="200" x2="220" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9ED8FF"/><stop offset="0.6" stop-color="#5AB4F0"/><stop offset="1" stop-color="#3A96DC"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="26" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="c"><circle cx="128" cy="128" r="102"/></clipPath>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="url(#ring)" filter="url(#ds)"/>
+  <circle cx="128" cy="128" r="115" fill="none" stroke="#98A3AF" stroke-width="1.5"/>
+  <circle cx="128" cy="128" r="102" fill="url(#navy)"/>
+  <g clip-path="url(#c)">
+    <!-- radar rings -->
+    <g fill="none" stroke="#fff" stroke-opacity="0.08" stroke-width="2">
+      <circle cx="128" cy="128" r="34"/><circle cx="128" cy="128" r="68"/>
+    </g>
+    <!-- comet streak (brand mark) -->
+    <path d="M30 206C44 170 64 146 96 124C140 94 186 64 238 20C206 70 170 110 132 146C104 172 72 192 30 206Z" fill="#5AB4F0" opacity="0.5" filter="url(#glow)"/>
+    <path d="M30 206C44 170 64 146 96 124C140 94 186 64 238 20C206 70 170 110 132 146C104 172 72 192 30 206Z" fill="url(#streak)"/>
+    <path d="M22 180C40 150 70 124 112 98C150 74 196 46 238 14" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M40 116C48 66 84 30 128 26C172 30 208 66 216 116C190 98 160 92 128 92C96 92 66 98 40 116Z" fill="url(#gloss)"/>
+  </g>
+  <circle cx="128" cy="128" r="102" fill="none" stroke="#06103A" stroke-opacity="0.6" stroke-width="2"/>
+</svg>

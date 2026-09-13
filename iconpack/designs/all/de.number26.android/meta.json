@@ -1,0 +1,12 @@
+{
+  "pkg": "de.number26.android",
+  "label": "N26",
+  "references": [
+    { "pkg": "com.mybank.android.phone", "why": "同为青绿色网络银行，参考其彩色横矩形底板与白色标志" },
+    { "pkg": "com.cmbchina.ccd.pluto.cmbActivity", "why": "银行应用的横矩形底板构图" }
+  ],
+  "options": [
+    { "id": "A", "name": "青绿横板字标", "shape": "landscape", "desc": "品牌青绿横矩形，顶部柔光，白色细体 N26 字标（上下横线），字标用 Segoe UI Light 渲染。简洁忠实，但与原图几乎一样、拟物感弱。" },
+    { "id": "B", "name": "金属银行卡", "shape": "free", "desc": "N26 以卡片出名：一张倾斜的薄荷绿金属拉丝银行卡，带金色芯片、非接触支付标记和 N26 字标，下方有接触阴影。拟物感强；小尺寸下字标较小。" }
+  ]
+}

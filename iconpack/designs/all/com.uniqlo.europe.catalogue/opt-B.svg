@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="tag" x1="0" y1="-90" x2="0" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF2E26"/><stop offset="1" stop-color="#D60000"/>
+    </linearGradient>
+    <radialGradient id="eye" cx="-2" cy="-65" r="11" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.6" stop-color="#C9CBCF"/><stop offset="1" stop-color="#8A8D93"/>
+    </radialGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <g id="logo">
+      <path d="M 29.48 5.47 H 32.01 V 18.11 H 29.48 V 5.47 Z"/>
+      <path d="M13.47,13.9a4.21,4.21,0,0,1-8.42,0V5.47H7.58V13.9a1.68,1.68,0,1,0,3.36,0V5.47h2.53Z"/>
+      <path d="M 25.26 34.53 L 16.84 34.53 L 16.84 21.89 L 19.37 21.89 L 19.37 32 L 25.26 32 L 25.26 34.53 Z"/>
+      <path d="M 25.26 18.11 L 22.73 18.11 L 19.37 10.89 L 19.37 18.11 L 16.84 18.11 L 16.84 5.47 L 19.37 5.47 L 22.73 12.69 L 22.73 5.47 L 25.26 5.47 L 25.26 18.11 Z"/>
+      <path d="M9.26,21.89a4.21,4.21,0,0,0-4.21,4.22v4.21a4.21,4.21,0,0,0,4.21,4.21,4.470,4.470,0,0,0,0.82-0.07l0.86,2.6h2.53l-1.25-3.75a4.21,4.21,0,0,0,1.25-3V26.11a4.21,4.21,0,0,0-4.21-4.22m1.68,8.43a1.68,1.68,0,0,1-3.36,0V26.11a1.68,1.68,0,0,1,3.36,0Z"/>
+      <path d="M30.74,21.89a4.22,4.22,0,0,0-4.22,4.22v4.21a4.22,4.22,0,0,0,8.43,0V26.11a4.22,4.22,0,0,0-4.21-4.22m1.68,8.43a1.69,1.69,0,0,1-3.37,0V26.11a1.69,1.69,0,0,1,3.37,0Z"/>
+    </g>
+  </defs>
+  <g transform="translate(134 146) rotate(-9)">
+    <!-- cotton string loop through the eyelet -->
+    <path d="M0 -64C-6 -100 -26 -126 -4 -134C18 -140 20 -104 2 -66" fill="none" stroke="#6E6259" stroke-width="5" stroke-linecap="round"/>
+    <path d="M0 -64C-6 -100 -26 -126 -4 -134C18 -140 20 -104 2 -66" fill="none" stroke="#F4EEE6" stroke-width="3" stroke-linecap="round"/>
+    <!-- card tag with punched hole -->
+    <g filter="url(#sh)">
+      <path fill-rule="evenodd" fill="url(#tag)" d="M-62 -52L-34 -90H34L62 -52V80Q62 92 50 92H-50Q-62 92 -62 80Z M-6 -65a6 6 0 1 0 12 0a6 6 0 1 0 -12 0Z"/>
+    </g>
+    <path d="M-60 -51.5L-33 -88H33L60 -51.5" fill="none" stroke="#FF8C86" stroke-width="1.6"/>
+    <path fill="none" stroke="#A40000" stroke-width="1.6" d="M-62 -52L-34 -90H34L62 -52V80Q62 92 50 92H-50Q-62 92 -62 80Z"/>
+    <!-- metal eyelet -->
+    <circle cx="0" cy="-65" r="8.5" fill="none" stroke="url(#eye)" stroke-width="5"/>
+    <circle cx="0" cy="-65" r="11" fill="none" stroke="#7A0000" stroke-opacity="0.35" stroke-width="1"/>
+    <!-- logo -->
+    <g transform="translate(-55 -34) scale(2.75)">
+      <use href="#logo" fill="#8E0000" fill-opacity="0.4" transform="translate(0 0.45)"/>
+      <use href="#logo" fill="#FFFFFF"/>
+    </g>
+    <!-- thin printed rule -->
+    <rect x="-44" y="74" width="88" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.7"/>
+  </g>
+</svg>

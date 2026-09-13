@@ -1,0 +1,28 @@
+{
+  "pkg": "com.mubu.app",
+  "label": "幕布",
+  "references": [
+    {
+      "pkg": "com.todoist",
+      "why": "效率类工具：白色底板 + 品牌标志的做法"
+    },
+    {
+      "pkg": "com.netease.cloudmusic",
+      "why": "锤子圆形徽章类图标的釉面圆盘"
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "name": "白底板黑漆标志",
+      "shape": "landscape",
+      "desc": "白色横矩形底板上放幕布标志（两只哑铃形 + 中间圆点），做成黑色钢琴烤漆、顶部带高光。忠实原标志，干净。"
+    },
+    {
+      "id": "B",
+      "name": "银圈黑盘白标",
+      "shape": "circle",
+      "desc": "银色外圈 + 黑色釉面圆盘，白色立体标志反白。更醒目，但与原图标的白底反差较大。"
+    }
+  ]
+}

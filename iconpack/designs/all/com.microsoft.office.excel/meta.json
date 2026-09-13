@@ -1,0 +1,32 @@
+{
+  "pkg": "com.microsoft.office.excel",
+  "label": "Excel",
+  "references": [
+    {
+      "pkg": "cn.wps.moffice",
+      "why": "锤子版 WPS：立体字母块表示办公文档，参考其字母铭牌做法"
+    },
+    {
+      "pkg": "com.microsoft.office.officehub",
+      "why": "锤子版 Office：品牌色圆盘 + 白色标志"
+    },
+    {
+      "pkg": "com.microsoft.emmx",
+      "why": "已定稿的 Edge 银圈圆盘，微软家族一致"
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "name": "表格纸 + X 铭牌",
+      "shape": "landscape",
+      "desc": "白色横矩形底板上放一张带绿色表头和网格的电子表格纸，左下角叠绿色 X 铭牌。与 Outlook/To Do 的 A 方案同一家族。"
+    },
+    {
+      "id": "B",
+      "name": "银圈绿盘 X 标",
+      "shape": "circle",
+      "desc": "银色外圈 + 绿色釉面圆盘，中间是 Excel 经典构图：深绿 X 方块压在白色表格上。与 Outlook/To Do 的 B 方案同一家族。"
+    }
+  ]
+}

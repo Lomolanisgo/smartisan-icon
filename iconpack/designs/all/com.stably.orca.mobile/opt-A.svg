@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34363A"/>
+      <stop offset="1" stop-color="#121314"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="70" x2="0.2" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.45" stop-color="#D4D6DA"/>
+      <stop offset="0.55" stop-color="#A9ACB2"/>
+      <stop offset="1" stop-color="#E6E7EA"/>
+    </linearGradient>
+    <pattern id="brush" width="256" height="3" patternUnits="userSpaceOnUse"><rect width="256" height="1" fill="#fff" opacity="0.025"/></pattern>
+    <g id="logo">
+      <path d="M38 166 C52 152 72 146 94 146 C108 146 118 141 125 131 L129 141 C120 157 100 163 72 165 C58 166 48 167 38 166 Z"/>
+      <path d="M149 70 L155 72 L133 190 L127 188 Z"/>
+      <path d="M137 111 C160 92 190 85 218 91 C204 103 183 109 167 113 C158 119 152 128 148 138 C146 126 143 117 137 111 Z"/>
+    </g>
+  </defs>
+  <use href="#tile" fill="url(#bg)"/>
+  <g clip-path="url(#tileClip)">
+    <rect width="256" height="256" fill="url(#brush)"/>
+    <ellipse cx="128" cy="30" rx="140" ry="60" fill="#fff" opacity="0.05"/>
+    <use href="#tile" fill="none" stroke="#000" stroke-opacity="0.3" stroke-width="5"/>
+    <use href="#tile" fill="none" stroke="#fff" stroke-opacity="0.18" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+  <!-- engraved shadow + raised silver logo -->
+  <use href="#logo" fill="#000" opacity="0.6" transform="translate(0 3)"/>
+  <use href="#logo" fill="#fff" opacity="0.25" transform="translate(0 -1)"/>
+  <use href="#logo" fill="url(#silver)"/>
+</svg>

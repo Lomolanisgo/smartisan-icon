@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="top" x1="0" y1="36" x2="0" y2="132" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9C58F"/><stop offset="1" stop-color="#D6A968"/>
+    </linearGradient>
+    <linearGradient id="left" x1="24" y1="0" x2="128" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C9925A"/><stop offset="1" stop-color="#B98249"/>
+    </linearGradient>
+    <linearGradient id="right" x1="128" y1="0" x2="232" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A26C3A"/><stop offset="1" stop-color="#8E5C2E"/>
+    </linearGradient>
+    <linearGradient id="tape" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFD21F"/><stop offset="1" stop-color="#FFC000"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="128" cy="236" r="110" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 0.13 0 205)">
+      <stop offset="0" stop-color="#000" stop-opacity="0.35"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="paper" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.12 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <ellipse cx="128" cy="236" rx="110" ry="14" fill="url(#shadow)"/>
+  <g id="box">
+    <path d="M128 36L228 80L128 124L28 80Z" fill="url(#top)"/>
+    <path d="M28 80L128 124V236L28 192Z" fill="url(#left)"/>
+    <path d="M128 124L228 80V192L128 236Z" fill="url(#right)"/>
+  </g>
+  <path d="M28 36H228V236H28Z" fill="#000" filter="url(#paper)" clip-path="none" opacity="0" />
+  <!-- top flap seam -->
+  <path d="M78 58L178 102" stroke="#9C6A38" stroke-width="1.5" opacity="0.7"/>
+  <!-- tape across seam on top, wrapping down right face -->
+  <path d="M68 62L88 53L188 97L168 106Z" fill="url(#tape)" opacity="0.95" transform="translate(0 0)"/>
+  <path d="M168 106L188 97V144L168 153Z" fill="#E8A800" opacity="0.95"/>
+  <!-- edges -->
+  <path d="M28 80L128 124L228 80" fill="none" stroke="#F6DDB4" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M128 124V236" stroke="#7A4C22" stroke-opacity="0.5" stroke-width="1.5"/>
+  <!-- DHL label on left face: local (u,v) -> (28 + u, 80 + 0.44u + v) -->
+  <g transform="matrix(1 0.44 0 1 28 80)">
+    <rect x="14" y="30" width="72" height="48" rx="3" fill="#FFCC00"/>
+    <rect x="14" y="30" width="72" height="48" rx="3" fill="none" stroke="#C99A00" stroke-width="1"/>
+    <g fill="#D40511">
+      <path d="M17 49H27L26 51H16Z"/><path d="M16 53H26L25 55H15Z"/><path d="M15 57H25L24 59H14Z"/>
+      <path d="M74 49H84L83 51H73Z"/><path d="M73 53H83L82 55H72Z"/><path d="M72 57H82L81 59H71Z"/>
+      <text x="50" y="61" text-anchor="middle" font-family="Arial, Segoe UI" font-weight="900" font-style="italic" font-size="19" letter-spacing="-0.8">DHL</text>
+    </g>
+    <path d="M28 52.4H72M27 56.4H71" stroke="#FFCC00" stroke-width="1"/>
+  </g>
+  <!-- fragile/barcode hint on right face -->
+  <g transform="matrix(1 -0.44 0 1 128 124)" opacity="0.55">
+    <rect x="18" y="60" width="44" height="22" fill="#F4EBDD"/>
+    <path d="M22 64V78M25 64V78M29 64V78M31 64V78M35 64V78M39 64V78M41 64V78M45 64V78M48 64V78M52 64V78M55 64V78M58 64V78" stroke="#333" stroke-width="1.4"/>
+  </g>
+</svg>

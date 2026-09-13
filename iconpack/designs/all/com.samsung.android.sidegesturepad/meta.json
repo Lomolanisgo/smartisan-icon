@@ -1,0 +1,9 @@
+{
+  "pkg": "com.samsung.android.sidegesturepad",
+  "label": "One Hand Operation +",
+  "references": [],
+  "options": [
+    { "id": "A", "name": "单手握机", "shape": "square", "desc": "方形青绿色底板，保留原图标的手持手机画面（路径取自原图标），机身做成白色塑料、屏幕是蓝色玻璃，手部加肤色渐变和投影。最忠实于原图标。" },
+    { "id": "B", "name": "侧边手势", "shape": "free", "desc": "一部立体手机（金属边框、黑色玻璃面板），青绿色屏幕右侧有发光的手势条，还有一条从边缘划出的白色箭头，直接表达“侧边滑动手势”。" }
+  ]
+}

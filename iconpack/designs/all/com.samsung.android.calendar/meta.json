@@ -1,0 +1,13 @@
+{
+  "pkg": "com.samsung.android.calendar",
+  "label": "日历",
+  "references": [
+    { "pkg": "com.htc.calendar", "why": "锤子版日历：白纸+彩色页眉+日期格子" },
+    { "pkg": "com.google.android.calendar", "why": "锤子版谷歌日历：金属装订环+大号日期数字、多层纸张叠放" },
+    { "pkg": "com.youloft.calendar", "why": "撕页日历的页眉与纸张质感" }
+  ],
+  "options": [
+    { "id": "A", "name": "撕页日历·31", "shape": "landscape", "desc": "标准横矩形白纸，顶部三星青绿色页眉，两枚金属装订环伸出边框，中间大号“31”（Segoe UI）。最忠实三星原图，48px 下数字清晰。" },
+    { "id": "B", "name": "螺旋台历·月视图", "shape": "free", "desc": "多页叠放的螺旋装订台历，青绿色页眉，下方为 7×4 日期格，其中一格高亮为青绿色。参考 HTC 日历的格子造型，隐喻更“月历”，但小尺寸下格子较碎。" }
+  ]
+}

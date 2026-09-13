@@ -1,0 +1,12 @@
+{
+  "pkg": "com.samsung.android.spay",
+  "label": "三星钱包",
+  "references": [
+    { "pkg": "com.mipay.wallet", "why": "同为手机钱包，参考其白色底板上层叠卡片的构图" },
+    { "pkg": "com.google.android.apps.walletnfcrel", "why": "同为 NFC 钱包，参考其彩色分层条带的立体感" }
+  ],
+  "options": [
+    { "id": "A", "name": "白底卡夹", "shape": "landscape", "desc": "锤子横矩形白底板上放一只蓝紫渐变缝线卡夹，内部绿、青、蓝三张卡叠放，右侧白色斜切插袋，忠实还原三星钱包标志的构图。标志辨识度高，但层次较多，小尺寸下略显细碎。" },
+    { "id": "B", "name": "皮革钱包", "shape": "free", "desc": "无底板的蓝紫皮革钱包实物，带皮纹、缝线和金属按扣搭扣，顶部斜插绿色、青色两张卡。拟物感更强，用品牌色和卡片颜色保留识别度，但不再是标志原形。" }
+  ]
+}

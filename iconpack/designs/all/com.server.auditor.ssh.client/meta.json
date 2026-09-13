@@ -1,0 +1,12 @@
+{
+  "pkg": "com.server.auditor.ssh.client",
+  "label": "Termius",
+  "references": [
+    { "pkg": "com.qq.wifi_transfer", "why": "锤子里深藏青圆形底 + 白色图形的网络工具图标，B 方案的深色圆底参考它" },
+    { "pkg": "com.microsoft.emmx", "why": "圆形金属外圈做法" }
+  ],
+  "options": [
+    { "id": "A", "name": "藏青底板白色软云", "shape": "square", "desc": "藏青渐变方形底板，品牌云朵做成饱满的白色软体，>_ 提示符以藏青色压印在云上。最接近原图标，干净易认。" },
+    { "id": "B", "name": "金属表盘镀铬云框", "shape": "circle", "desc": "圆形金属表圈内是深蓝玻璃面，云朵轮廓做成镀铬描边，>_ 提示符发青色荧光，像一块终端仪表。更有科技感；青光提示符在 48px 下偏小。" }
+  ]
+}

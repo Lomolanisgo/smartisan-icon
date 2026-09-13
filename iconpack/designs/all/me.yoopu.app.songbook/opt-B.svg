@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <path id="pick" d="M128 12C194 12 240 34 240 86C240 150 172 224 128 244C84 224 16 150 16 86C16 34 62 12 128 12Z"/>
+    <clipPath id="clip"><use href="#pick"/></clipPath>
+    <radialGradient id="cel" cx="100" cy="60" r="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F07A74"/><stop offset="0.5" stop-color="#D2474A"/><stop offset="1" stop-color="#9A2328"/>
+    </radialGradient>
+    <linearGradient id="gloss" x1="0" y1="12" x2="0" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="eng" x1="0" y1="60" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F6E3DE"/>
+    </linearGradient>
+    <filter id="osh" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="sw"><feTurbulence type="fractalNoise" baseFrequency="0.018 0.05" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 0.85  0 0 0 0 0.8  0 0 0 1.6 -0.75"/></filter>
+    <filter id="deb" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="-1.5" stdDeviation="0.6" flood-color="#6A1418" flood-opacity="0.7"/></filter>
+  </defs>
+  <use href="#pick" fill="url(#cel)" filter="url(#osh)"/>
+  <g clip-path="url(#clip)">
+    <rect x="0" y="0" width="256" height="256" filter="url(#sw)" opacity="0.35"/>
+    <use href="#pick" fill="none" stroke="#5E0F14" stroke-opacity="0.35" stroke-width="6"/>
+    <use href="#pick" fill="none" stroke="#fff" stroke-opacity="0.45" stroke-width="2" transform="translate(0 1.5)"/>
+    <path d="M16 12H240V104C200 80 166 72 128 72S56 80 16 104Z" fill="url(#gloss)"/>
+  </g>
+  <text x="128" y="162" text-anchor="middle" font-family="Microsoft YaHei, 微软雅黑, sans-serif" font-weight="700" font-size="112" fill="url(#eng)" filter="url(#deb)">谱</text>
+</svg>

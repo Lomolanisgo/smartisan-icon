@@ -1,0 +1,13 @@
+{
+  "pkg": "ch.protonvpn.android",
+  "label": "Proton VPN",
+  "references": [
+    { "pkg": "com.cleanmaster.security", "why": "锤子里带银边的盾牌安全图标，B 方案的盾牌造型参考它" },
+    { "pkg": "com.ali.money.shield", "why": "紫蓝色盾牌 + 中央白色徽记的做法" },
+    { "pkg": "com.openai.chatgpt", "why": "标志做成立体物件（A 方案）" }
+  ],
+  "options": [
+    { "id": "A", "name": "紫青双层玻璃三角", "shape": "free", "desc": "Proton VPN 的倒三角做成两层叠放的厚玻璃：底层紫到青渐变，前层浅色半透明折片，带侧面厚度、顶部反光和投影。忠实原标志，物件感强。" },
+    { "id": "B", "name": "银边紫色盾牌", "shape": "free", "desc": "银白色描边的盾牌，内部为 Proton 紫色（左亮右暗分面），中央是白色立体倒三角徽记。“VPN=安全”的隐喻直观，与锤子安全类图标同族；品牌三角被缩小。" }
+  ]
+}

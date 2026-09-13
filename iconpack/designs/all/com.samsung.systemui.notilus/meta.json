@@ -1,0 +1,9 @@
+{
+  "pkg": "com.samsung.systemui.notilus",
+  "label": "NotiStar",
+  "references": [],
+  "options": [
+    { "id": "A", "name": "通知卡片", "shape": "landscape", "desc": "横矩形珊瑚红底板，上面两张白色通知卡片（路径取自原图标）浮起并带投影，彩色圆点做成玻璃珠。忠实于原图标。" },
+    { "id": "B", "name": "铃铛与星星", "shape": "circle", "desc": "珊瑚红圆形徽章，中间一只白色瓷质铃铛，右上角加金色星星，对应“Noti + Star”。更好认，但离原图标较远。" }
+  ]
+}

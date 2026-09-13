@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="10" x2="0" y2="246" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEEDE7"/>
+    </linearGradient>
+    <linearGradient id="curl" x1="200" y1="200" x2="222" y2="222" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#CFCDC4"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="60" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6CC47C"/><stop offset="1" stop-color="#2F8A46"/>
+    </linearGradient>
+    <linearGradient id="br" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5CC06E"/><stop offset="1" stop-color="#2E8C45"/></linearGradient>
+    <filter id="osh" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.28"/></filter>
+    <filter id="bsh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#0E4A22" flood-opacity="0.45"/></filter>
+  </defs>
+  <!-- paper sheet -->
+  <g filter="url(#osh)">
+    <path d="M44 14H212C216 14 218 16 218 20V204L194 240H44C40 240 38 238 38 234V20C38 16 40 14 44 14Z" fill="url(#paper)"/>
+  </g>
+  <path d="M218 204L194 240V212C194 208 196 204 200 204Z" fill="url(#curl)"/>
+  <!-- faint text lines -->
+  <g stroke="#D5D3CB" stroke-width="4" stroke-linecap="round">
+    <path d="M60 40H130M60 54H112"/>
+    <path d="M60 206H150M60 220H126"/>
+  </g>
+  <!-- logo drawn in green ink -->
+  <path d="M152 108C182 110 196 134 188 158C180 182 152 190 132 184C156 176 170 164 168 146C166 132 160 118 152 108Z" fill="#3E9A52" fill-opacity="0.3"/>
+  <path d="M134 62L146 86C164 97 168 118 156 134C145 148 120 150 108 166C100 178 108 194 130 194C108 202 82 191 82 167C82 142 112 134 123 120C131 109 128 98 120 91C125 83 130 74 134 62Z" fill="url(#ink)"/>
+  <!-- scanner corner brackets -->
+  <g fill="none" stroke="url(#br)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" filter="url(#bsh)">
+    <path d="M10 60V30C10 20 16 8 28 8H58"/>
+    <path d="M198 8H228C240 8 246 20 246 30V60"/>
+    <path d="M246 196V226C246 236 240 248 228 248H198"/>
+    <path d="M58 248H28C16 248 10 236 10 226V196"/>
+  </g>
+</svg>

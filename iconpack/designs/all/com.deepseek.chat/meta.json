@@ -1,0 +1,12 @@
+{
+  "pkg": "com.deepseek.chat",
+  "label": "DeepSeek",
+  "references": [
+    { "pkg": "com.anthropic.claude", "why": "用户已认可的 AI 应用定稿：品牌色横矩形底板 + 浅色下凹标志，A 方案沿用同一语言" },
+    { "pkg": "com.openai.chatgpt", "why": "用户已认可的 AI 应用定稿：标志本身做成立体物件，B 方案沿用该做法" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色底板压印鲸鱼", "shape": "landscape", "desc": "DeepSeek 蓝横矩形底板，鲸鱼做成奶白色下凹压印，带细微颗粒与顶部高光，与 Claude 定稿同一语言。稳妥、48px 下清晰；立体感偏克制。" },
+    { "id": "B", "name": "蓝色釉面立体鲸鱼", "shape": "free", "desc": "无底板，鲸鱼做成有厚度的蓝色釉面陶瓷物件，顶部高光、侧面加深、下方软投影，与 ChatGPT 金属结定稿同一做法。更有物件感，但尺寸视觉上偏大。" }
+  ]
+}

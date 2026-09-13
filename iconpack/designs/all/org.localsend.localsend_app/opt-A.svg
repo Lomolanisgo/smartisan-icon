@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="12" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2BC2B8"/><stop offset="1" stop-color="#006660"/>
+    </linearGradient>
+    <radialGradient id="disc" cx="128" cy="70" r="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#28B8AE"/><stop offset=".6" stop-color="#0A9088"/><stop offset="1" stop-color="#006D67"/>
+    </radialGradient>
+    <radialGradient id="ball" cx=".38" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#F0F7F6"/><stop offset="1" stop-color="#B9D6D3"/>
+    </radialGradient>
+    <linearGradient id="seg" x1="0" y1="60" x2="0" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D8ECEA"/>
+    </linearGradient>
+    <filter id="d" x="-30%" y="-30%" width="160%" height="160%">
+      <feOffset in="SourceAlpha" dy="3"/><feGaussianBlur stdDeviation="2.5"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 .15  0 0 0 0 .14  0 0 0 .55 0" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="gloss" x1="0" y1="14" x2="0" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="#00524D"/>
+  <circle cx="128" cy="128" r="115" fill="url(#edge)"/>
+  <circle cx="128" cy="128" r="111" fill="url(#disc)"/>
+  <!-- anyshare-like light arcs -->
+  <path d="M40 150A90 90 0 0 1 128 38" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+  <path d="M216 106A90 90 0 0 1 150 216" fill="none" stroke="#fff" stroke-opacity=".2" stroke-width="3" stroke-linecap="round"/>
+  <g filter="url(#d)">
+    <circle cx="128" cy="128" r="64" fill="none" stroke="url(#seg)" stroke-width="19" stroke-linecap="round" stroke-dasharray="21 29.27" stroke-dashoffset="10.5"/>
+    <circle cx="128" cy="128" r="36" fill="url(#ball)"/>
+  </g>
+  <path d="M17 128A111 111 0 0 1 239 128C200 104 160 96 128 96S56 104 17 128Z" fill="url(#gloss)"/>
+</svg>

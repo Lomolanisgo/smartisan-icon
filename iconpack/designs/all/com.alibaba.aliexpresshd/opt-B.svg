@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <path id="tile" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="fill" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5578"/><stop offset="1" stop-color="#E41C47"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="15" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.25"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="110" x2="0" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFEA92"/><stop offset="0.4" stop-color="#FFC21A"/><stop offset="0.75" stop-color="#F5A800"/><stop offset="1" stop-color="#FFD24A"/>
+    </linearGradient>
+    <filter id="deb" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#8A0022" flood-opacity="0.45"/>
+    </filter>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3.5" flood-color="#5A0018" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#fill)"/>
+  <g clip-path="url(#tileClip)">
+    <rect x="0" y="0" width="256" height="256" fill="url(#gloss)"/>
+    <g fill="none">
+      <use href="#tile" stroke="#5A0018" stroke-opacity="0.14" stroke-width="5"/>
+      <use href="#tile" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2" transform="translate(0 1)"/>
+      <use href="#tile" stroke="#B5103A" stroke-width="2"/>
+    </g>
+    <!-- white bag outline -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linejoin="round" stroke-linecap="round" filter="url(#deb)">
+      <path d="M68 92H176L184 214H60Z"/>
+      <path d="M96 92V78C96 46 148 46 148 78V92"/>
+    </g>
+    <!-- gold check -->
+    <g filter="url(#sh)">
+      <path d="M56 142C82 138 104 152 118 186C146 148 190 124 238 118C200 136 160 172 134 222C128 232 118 232 113 223C101 188 84 158 56 142Z" fill="url(#gold)"/>
+      <path d="M60 142C84 140 104 154 118 186C146 150 188 126 232 120" fill="none" stroke="#FFF8D6" stroke-width="2" stroke-linecap="round"/>
+      <path d="M113 223C101 188 84 158 56 142" fill="none" stroke="#C88400" stroke-width="1.2" stroke-opacity="0.7"/>
+    </g>
+  </g>
+</svg>

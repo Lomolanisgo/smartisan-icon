@@ -1,0 +1,12 @@
+{
+  "pkg": "com.joyride.cargoroobymoby",
+  "label": "Cargoroo by MOBY",
+  "references": [
+    { "pkg": "com.mobike.mobikeapp", "why": "摩拜单车，横版底板上画单车，参考其构图、白色车轮和底部色带" },
+    { "pkg": "com.shmetro", "why": "上海地铁的立体地图定位针，参考其光泽定位针造型" }
+  ],
+  "options": [
+    { "id": "A", "name": "笑脸货运自行车", "shape": "landscape", "desc": "参考摩拜：黄橙渐变横版底板，深蓝色荷兰式货运单车（bakfiets），前面货箱上是 Cargoroo 的笑脸，底部深蓝色带；说明“共享货运单车”。" },
+    { "id": "B", "name": "立体笑脸定位针", "shape": "free", "desc": "原图标的定位针做成立体物件：深蓝外壳、黄色光泽内面、笑脸，下方地面投影；最忠实品牌，48px 下清晰。" }
+  ]
+}

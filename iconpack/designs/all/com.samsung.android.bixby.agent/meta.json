@@ -1,0 +1,13 @@
+{
+  "pkg": "com.samsung.android.bixby.agent",
+  "label": "Bixby",
+  "references": [
+    { "pkg": "com.miui.voiceassist", "why": "同为语音助手，参考其圆形渐变徽章、内圈细光环的做法" },
+    { "pkg": "com.meizu.voiceassistant", "why": "同为语音助手，圆形带边缘明暗的徽章造型" },
+    { "pkg": "com.microsoft.cortana", "why": "同为智能助手，圆形玻璃质感" }
+  ],
+  "options": [
+    { "id": "A", "name": "渐变圆徽章", "shape": "circle", "desc": "紫到青绿的品牌渐变圆盘，带顶部高光和内圈光环，中间是白色浮雕 Bixby b 标志，与锤子里的语音助手图标是一家。稳妥、辨识度高。" },
+    { "id": "B", "name": "玻璃立体标志", "shape": "free", "desc": "无底板，把 Bixby 标志做成有厚度的彩色玻璃块（紫蓝青渐变正面、深色侧壁、顶部反光），做法类似 ChatGPT 定稿。更醒目，但轮廓不规则，和其它图标并排时视觉重量偏大。" }
+  ]
+}

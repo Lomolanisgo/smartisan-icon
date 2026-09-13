@@ -1,0 +1,12 @@
+{
+  "pkg": "nl.rijksoverheid.mijngegevens.pub",
+  "label": "MijnGegevens",
+  "references": [
+    { "pkg": "com.jingwei.card", "why": "个人资料卡片隐喻：头像 + 信息行" },
+    { "pkg": "cn.gov.tax.its", "why": "政务类应用，参考其蓝色、稳重的官方质感" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝底国徽飘带 + 资料卡", "shape": "landscape", "desc": "蓝色横矩形，顶部中央垂下荷兰政府深蓝飘带（Rijkslint）与简化王冠徽章，下方一张白色个人资料卡。与 Berichtenbox / Toeslagen 的 A 方案同一套家族语言。" },
+    { "id": "B", "name": "身份证件实物", "shape": "free", "desc": "异形：一张写实的证件卡（蓝色抬头、照片、信息行），右上角挂深蓝国徽飘带标签。更有物件感，家族联系靠飘带与徽章。" }
+  ]
+}

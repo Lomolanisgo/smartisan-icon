@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tc"><use href="#tile"/></clipPath>
+    <linearGradient id="fill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#232A5C"/>
+      <stop offset="1" stop-color="#0B0E2B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="128" cy="60" r="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3CE0D2" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#3CE0D2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="w" x1="0" y1="80" x2="0" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCE3F2"/>
+    </linearGradient>
+    <path id="glyph" d="M64 104 C72 96 82 100 84 112 L96 160 C98 174 110 174 114 160 L126 114 L140 160 C144 174 156 174 160 160 L176 108 C180 94 194 94 198 106 C202 118 200 130 212 136"/>
+  </defs>
+  <use href="#tile" fill="url(#fill)"/>
+  <g clip-path="url(#tc)">
+    <rect x="0" y="23" width="256" height="210" fill="url(#glow)"/>
+    <use href="#glyph" transform="translate(0 4)" fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <use href="#glyph" fill="none" stroke="url(#w)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    <use href="#tile" fill="none" stroke="#000" stroke-opacity="0.3" stroke-width="5"/>
+    <use href="#tile" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" fill="none" stroke="#060818" stroke-width="2"/>
+  </g>
+</svg>

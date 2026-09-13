@@ -1,0 +1,12 @@
+{
+  "pkg": "com.fujifilm.instaxup",
+  "label": "instax UP!",
+  "references": [
+    { "pkg": "com.intsig.camscanner", "why": "扫描类应用，instax UP! 用于扫描拍立得相片，B 方案借用取景角标" },
+    { "pkg": "com.google.android.apps.photos", "why": "照片类，参考多彩相片的明快配色" }
+  ],
+  "options": [
+    { "id": "A", "name": "青绿底板·扇形相片", "shape": "square", "desc": "保留原图标的青绿色和四张彩色（橙/粉/黄/蓝）拍立得相片扇形排布，改为方形底板+写实相纸与投影，去掉 instax 文字。与 WIDE Evo A 同为品牌主视觉。" },
+    { "id": "B", "name": "竖版相纸·扫描角标", "shape": "portrait", "desc": "一张略斜的竖版 instax mini 相纸（青绿风景画面），四角为青绿色扫描取景框，点明“扫描保存拍立得”的功能。与 WIDE Evo B（横版宽幅相纸）成对。" }
+  ]
+}

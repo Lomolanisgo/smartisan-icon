@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F2F2"/>
+    </linearGradient>
+    <linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/>
+      <stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/>
+    </linearGradient>
+    <path id="s" d="M128 38C139 82 172 117 216 128C172 139 139 174 128 218C117 174 84 139 40 128C84 117 117 82 128 38Z"/>
+    <clipPath id="sc"><use href="#s"/></clipPath>
+    <radialGradient id="r" cx="128" cy="44" r="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF4641"/><stop offset=".5" stop-color="#F9453F" stop-opacity=".8"/><stop offset="1" stop-color="#F9453F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="y" cx="48" cy="128" r="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD314"/><stop offset=".5" stop-color="#FCC934" stop-opacity=".8"/><stop offset="1" stop-color="#FCC934" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g" cx="128" cy="212" r="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08B962"/><stop offset=".5" stop-color="#1BBD68" stop-opacity=".8"/><stop offset="1" stop-color="#1BBD68" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="b" x1="44" y1="80" x2="212" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4FA0FF"/><stop offset="1" stop-color="#2B7BFA"/>
+    </linearGradient>
+    <filter id="inset" x="-10%" y="-10%" width="120%" height="120%">
+      <feFlood flood-color="#000" flood-opacity=".45"/>
+      <feComposite in2="SourceAlpha" operator="out"/>
+      <feOffset dy="3"/><feGaussianBlur stdDeviation="2.4"/>
+      <feComposite in2="SourceAlpha" operator="in"/>
+    </filter>
+    <radialGradient id="shine" cx="110" cy="92" r="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <use href="#tile" fill="url(#tileFill)"/>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+  </g>
+  <!-- white lip under the recess -->
+  <use href="#s" fill="#fff" transform="translate(0 2)"/>
+  <use href="#s" fill="#000" fill-opacity=".10" transform="translate(0 -1)"/>
+  <g clip-path="url(#sc)">
+    <rect width="256" height="256" fill="url(#b)"/>
+    <rect width="256" height="256" fill="url(#g)"/>
+    <rect width="256" height="256" fill="url(#y)"/>
+    <rect width="256" height="256" fill="url(#r)"/>
+    <rect width="256" height="256" fill="url(#shine)"/>
+  </g>
+  <use href="#s" fill="#000" filter="url(#inset)"/>
+</svg>

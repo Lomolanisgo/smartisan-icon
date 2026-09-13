@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="t" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <path id="p" d="M40 26H216C226 26 230 30 230 40V216C230 226 226 230 216 230H40C30 230 26 226 26 216V40C26 30 30 26 40 26Z"/>
+    <clipPath id="pc"><use href="#p"/></clipPath>
+    <linearGradient id="frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F6F8"/><stop offset=".5" stop-color="#C9CED4"/><stop offset="1" stop-color="#9BA2AA"/>
+    </linearGradient>
+    <linearGradient id="cell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E6FD0"/><stop offset=".55" stop-color="#123F8F"/><stop offset="1" stop-color="#0A2A66"/>
+    </linearGradient>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D6ECFF"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".45" stop-color="#fff" stop-opacity=".05"/><stop offset=".46" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="cres"><circle cx="118" cy="138" r="78" fill="#fff"/><circle cx="146" cy="112" r="66" fill="#000"/></mask>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter>
+    <filter id="gl" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#8FD0FF" flood-opacity=".7"/></filter>
+  </defs>
+  <use href="#t" fill="url(#frame)" filter="url(#ds)"/>
+  <use href="#t" fill="none" stroke="#8C939B" stroke-width="1.5"/>
+  <use href="#p" fill="#0A1F48"/>
+  <g clip-path="url(#pc)">
+    <g fill="url(#cell)">
+      <rect x="28" y="28" width="47" height="47"/><rect x="77" y="28" width="50" height="47"/><rect x="129" y="28" width="50" height="47"/><rect x="181" y="28" width="47" height="47"/>
+      <rect x="28" y="77" width="47" height="50"/><rect x="77" y="77" width="50" height="50"/><rect x="129" y="77" width="50" height="50"/><rect x="181" y="77" width="47" height="50"/>
+      <rect x="28" y="129" width="47" height="50"/><rect x="77" y="129" width="50" height="50"/><rect x="129" y="129" width="50" height="50"/><rect x="181" y="129" width="47" height="50"/>
+      <rect x="28" y="181" width="47" height="47"/><rect x="77" y="181" width="50" height="47"/><rect x="129" y="181" width="50" height="47"/><rect x="181" y="181" width="47" height="47"/>
+    </g>
+    <g stroke="#6FA6F0" stroke-opacity=".35" stroke-width="1">
+      <path d="M28 51.5H228M28 102H228M28 154H228M28 204.5H228"/>
+    </g>
+    <g filter="url(#gl)" fill="url(#w)" transform="translate(128 128) scale(.72) translate(-128 -134)">
+      <rect x="30" y="50" width="180" height="180" mask="url(#cres)"/>
+      <path d="M112 200C162 196 196 164 202 112C218 162 190 212 128 214C122 210 116 205 112 200Z" stroke="#163F86" stroke-width="8" paint-order="stroke"/>
+      <path d="M104 174C98 128 128 92 184 76C182 124 154 160 104 174Z" stroke="#163F86" stroke-width="8" paint-order="stroke"/>
+      <path d="M176 38L179 50L190 44L183 54L194 57L182 59L188 70L178 62L174 74L172 62L161 68L168 58L157 54L169 52L163 42L174 49Z"/>
+    </g>
+    <rect x="26" y="26" width="204" height="204" fill="url(#gloss)"/>
+  </g>
+  <use href="#p" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="2"/>
+</svg>

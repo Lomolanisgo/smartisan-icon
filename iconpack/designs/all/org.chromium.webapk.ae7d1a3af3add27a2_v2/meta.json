@@ -1,0 +1,12 @@
+{
+  "pkg": "org.chromium.webapk.ae7d1a3af3add27a2_v2",
+  "label": "WoordCapture",
+  "references": [
+    { "pkg": "com.intsig.camscanner", "why": "拍照识别/扫描类，参考“取景框+对象”的表达" },
+    { "pkg": "com.youdao.dict", "why": "单词/词典类应用，参考书本与字母的题材" }
+  ],
+  "options": [
+    { "id": "A", "name": "藏蓝取景框·单词卡", "shape": "square", "desc": "品牌藏蓝方块底板，白色扫描取景角标中间是一张略斜的横线索引卡，卡上藏蓝衬线 W。woord=单词、capture=拍摄识别。与 MuntCapture A（取景框+金币）成对。" },
+    { "id": "B", "name": "布面词典书封", "shape": "square", "desc": "藏蓝亚麻布面精装书封，左侧书脊带金色烫线，封面白色压印衬线 W 与细边框，突出“词汇/词典”感。与 MuntCapture B（珐琅纪念币）同为材质化原标志。" }
+  ]
+}

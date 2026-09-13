@@ -1,0 +1,12 @@
+{
+  "pkg": "com.lebara.wallet",
+  "label": "MyLebara",
+  "references": [
+    { "pkg": "com.greenpoint.android.mc10086.activity", "why": "同为运营商自助应用，参考其银边圆形徽章造型" },
+    { "pkg": "com.chinatelecom.bestpayclient", "why": "运营商钱包类图标" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色圆形徽章", "shape": "circle", "desc": "银色外圈加 Lebara 蓝色光面圆盘，白色 LEBARA 字样和信号格；延续 10086 的运营商徽章风格。" },
+    { "id": "B", "name": "蓝色 SIM 卡", "shape": "free", "desc": "实物 SIM 卡：Lebara 蓝色塑料卡体、切角、金色芯片触点，印 LEBARA 与 WALLET；运营商隐喻明确。" }
+  ]
+}

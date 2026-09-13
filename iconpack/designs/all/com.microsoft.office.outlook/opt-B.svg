@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs>
+<linearGradient id="ring" x1="0" y1="10" x2="0" y2="246" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#E4E4E4"/><stop offset="1" stop-color="#CACACA"/></linearGradient>
+<linearGradient id="disk" x1="0" y1="27" x2="0" y2="229" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2FA0F6"/><stop offset="1" stop-color="#0A4AA6"/></linearGradient>
+<linearGradient id="gloss" x1="0" y1="27" x2="0" y2="135" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<clipPath id="diskClip"><circle cx="128" cy="128" r="101"/></clipPath>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="3.2" flood-color="#000" flood-opacity="0.24"/></filter>
+<filter id="shs" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#000" flood-opacity="0.28"/></filter>
+</defs>
+<circle cx="128" cy="128" r="118" fill="url(#ring)" stroke="#B5B5B5" stroke-width="1.5"/>
+<circle cx="128" cy="128" r="116" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="1.5"/>
+<circle cx="128" cy="129.5" r="103.5" fill="#000" fill-opacity="0.16"/>
+<circle cx="128" cy="128" r="101" fill="url(#disk)"/>
+<g clip-path="url(#diskClip)">
+<circle cx="128" cy="128" r="101" fill="none" stroke="#000" stroke-opacity="0.12" stroke-width="5"/>
+<ellipse cx="128" cy="62" rx="118" ry="78" fill="url(#gloss)"/>
+</g>
+<circle cx="128" cy="128" r="101" fill="none" stroke="#0A3F8C" stroke-width="1.5"/><g filter="url(#sh)">
+<path d="M66 102Q66 88 80 88H176Q190 88 190 102V160Q190 174 176 174H80Q66 174 66 160Z" fill="#FFFFFF"/>
+</g>
+<path d="M70 96L128 136L186 96" fill="none" stroke="#1672D6" stroke-opacity="0.55" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M72 168L114 130M184 168L142 130" fill="none" stroke="#1672D6" stroke-opacity="0.25" stroke-width="4" stroke-linecap="round"/>
+</svg>

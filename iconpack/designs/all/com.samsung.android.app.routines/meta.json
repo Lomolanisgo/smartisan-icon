@@ -1,0 +1,12 @@
+{
+  "pkg": "com.samsung.android.app.routines",
+  "label": "模式和日常程序",
+  "references": [
+    { "pkg": "com.samsung.android.sm", "why": "三星系统工具，参考其彩色外圈加白色表盘的圆形徽章造型" },
+    { "pkg": "net.dinglisch.android.taskerm", "why": "同为自动化应用，参考其金属齿轮隐喻" }
+  ],
+  "options": [
+    { "id": "A", "name": "靛蓝徽章", "shape": "circle", "desc": "靛蓝色外圈加白色瓷面圆盘，中间是原标志的循环箭头、虚线轨迹和对勾。和三星系统工具风格一致，也最忠实于原图标。" },
+    { "id": "B", "name": "金属齿轮", "shape": "free", "desc": "参考 Tasker，拉丝金属齿轮中央嵌靛蓝珐琅圆片，上面是白色循环对勾。更容易看出是“自动化”，但齿轮是很常见的隐喻。" }
+  ]
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="sq" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="sqClip"><use href="#sq"/></clipPath>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6EA6FF"/><stop offset="1" stop-color="#3C25DE"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A68D8"/><stop offset="1" stop-color="#2410A0"/></linearGradient>
+    <linearGradient id="door" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5E94FF"/><stop offset="1" stop-color="#4230E0"/></linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C3CAD6"/><stop offset="1" stop-color="#8F99AA"/></linearGradient>
+    <linearGradient id="silverR" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C3CAD6"/><stop offset="1" stop-color="#8F99AA"/></linearGradient>
+    <radialGradient id="dial" cx="0.5" cy="0.35" r="0.7"><stop offset="0" stop-color="#4E4BF0"/><stop offset="1" stop-color="#22168F"/></radialGradient>
+    <linearGradient id="folder" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D5DEFA"/></linearGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.5"/></filter>
+  </defs>
+  <use href="#sq" fill="url(#body)"/>
+  <g clip-path="url(#sqClip)" fill="none">
+    <use href="#sq" stroke="#000" stroke-opacity="0.08" stroke-width="5"/>
+    <use href="#sq" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#sq" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+  <!-- door -->
+  <rect x="33" y="33" width="190" height="190" rx="16" fill="#1B0E88" opacity="0.45"/>
+  <rect x="35" y="35" width="186" height="186" rx="15" fill="url(#door)"/>
+  <path d="M50 36.2H206" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="1.5"/>
+  <rect x="45" y="45" width="166" height="166" rx="10" fill="none" stroke="#1E1290" stroke-opacity="0.3" stroke-width="1.5"/>
+  <rect x="46" y="46.5" width="166" height="166" rx="10" fill="none" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <!-- hinges -->
+  <rect x="219" y="60" width="11" height="32" rx="3.5" fill="url(#silver)"/>
+  <rect x="219" y="164" width="11" height="32" rx="3.5" fill="url(#silver)"/>
+  <!-- dial -->
+  <circle cx="128" cy="131" r="60" fill="#140A6A" opacity="0.45" filter="url(#blur)"/>
+  <circle cx="128" cy="128" r="60" fill="url(#silver)"/>
+  <circle cx="128" cy="128" r="52" fill="url(#silverR)"/>
+  <circle cx="128" cy="128" r="46" fill="url(#dial)"/>
+  <circle cx="128" cy="128" r="56" fill="none" stroke="#6D7688" stroke-width="3" stroke-dasharray="1.5 5.36"/>
+  <!-- folder glyph -->
+  <g transform="translate(0 2)">
+    <path d="M100 110Q100 102 108 102H120Q124 102 126.5 105L129 108H148Q156 108 156 116V144Q156 152 148 152H108Q100 152 100 144Z" fill="#0E0760" opacity="0.4" filter="url(#blur)" transform="translate(0 2)"/>
+    <path d="M100 110Q100 102 108 102H120Q124 102 126.5 105L129 108H148Q156 108 156 116V144Q156 152 148 152H108Q100 152 100 144Z" fill="url(#folder)"/>
+    <path d="M128 118A7 7 0 0 1 132 130.7L134.5 142H121.5L124 130.7A7 7 0 0 1 128 118Z" fill="#2A1FB8"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="fry" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E9A21A"/><stop offset="0.45" stop-color="#FFD85A"/><stop offset="1" stop-color="#E8A11C"/>
+    </linearGradient>
+    <linearGradient id="fryD" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C98410"/><stop offset="0.5" stop-color="#EDB53A"/><stop offset="1" stop-color="#C98410"/>
+    </linearGradient>
+    <linearGradient id="box" x1="52" y1="0" x2="204" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B8140C"/><stop offset="0.3" stop-color="#EA3A2A"/><stop offset="0.55" stop-color="#E02E1F"/><stop offset="1" stop-color="#A9110A"/>
+    </linearGradient>
+    <linearGradient id="boxV" x1="0" y1="104" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.12"/><stop offset="1" stop-color="#000000" stop-opacity="0.12"/>
+    </linearGradient>
+    <path id="m" d="m195.8,17.93c23.3,0 42.2,98.3 42.2,219.7h34c0,-130.7 -34.3,-236.5 -76.3,-236.5 -24,0 -45.2,31.7 -59.2,81.5 -14,-49.8 -35.2,-81.5 -59,-81.5 -42,0 -76.2,105.7 -76.2,236.4h34c0,-121.4 18.7,-219.6 42,-219.6s42.2,90.8 42.2,202.8h33.8c0,-112 19,-202.8 42.3,-202.8"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="238" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE56E"/><stop offset="0.5" stop-color="#FFC20E"/><stop offset="1" stop-color="#F29A00"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#3A0A00" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- fries: back row -->
+  <g>
+    <rect x="70" y="52" width="14" height="92" rx="3" fill="url(#fryD)" transform="rotate(-12 77 144)"/>
+    <rect x="96" y="30" width="14" height="110" rx="3" fill="url(#fryD)" transform="rotate(-5 103 140)"/>
+    <rect x="124" y="22" width="14" height="118" rx="3" fill="url(#fryD)" transform="rotate(2 131 140)"/>
+    <rect x="150" y="34" width="14" height="106" rx="3" fill="url(#fryD)" transform="rotate(8 157 140)"/>
+    <rect x="174" y="56" width="14" height="88" rx="3" fill="url(#fryD)" transform="rotate(14 181 144)"/>
+  </g>
+  <!-- fries: front row -->
+  <g>
+    <rect x="80" y="62" width="15" height="84" rx="3" fill="url(#fry)" transform="rotate(-8 87 146)"/>
+    <rect x="108" y="44" width="15" height="100" rx="3" fill="url(#fry)" transform="rotate(-2 115 144)"/>
+    <rect x="136" y="40" width="15" height="104" rx="3" fill="url(#fry)" transform="rotate(5 143 144)"/>
+    <rect x="160" y="60" width="15" height="84" rx="3" fill="url(#fry)" transform="rotate(10 167 144)"/>
+  </g>
+  <!-- carton -->
+  <g filter="url(#sh)">
+    <path d="M50 102Q128 140 206 102L187 236Q186 245 177 245H79Q70 245 69 236Z" fill="url(#box)"/>
+    <path d="M50 102Q128 140 206 102L187 236Q186 245 177 245H79Q70 245 69 236Z" fill="url(#boxV)"/>
+    <path d="M50 102Q128 140 206 102" fill="none" stroke="#FF8A78" stroke-width="2" stroke-linecap="round"/>
+    <path d="M52 108Q128 146 204 108" fill="none" stroke="#7A0800" stroke-width="1" stroke-opacity="0.35"/>
+  </g>
+  <g transform="translate(128 190) scale(0.3) translate(-136 -120)" filter="url(#sh)">
+    <use href="#m" fill="#C07400" transform="translate(0 8)"/>
+    <use href="#m" fill="url(#gold)"/>
+  </g>
+</svg>

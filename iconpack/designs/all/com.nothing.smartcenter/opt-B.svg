@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="grey" d="M287.28,204.75L204.75,287.28A42.64,42.64 90,0 1,144.45 287.28L144.45,287.28A42.64,42.64 0,0 1,144.45 226.97L226.97,144.45A42.64,42.64 0,0 1,287.28 144.45L287.28,144.45A42.64,42.64 0,0 1,287.28 204.75z"/>
+    <path id="black" d="M204.2,143.9L286.73,226.42A42.64,42.64 90,0 1,286.73 286.73L286.73,286.73A42.64,42.64 0,0 1,226.42 286.73L143.9,204.2A42.64,42.64 0,0 1,143.9 143.9L143.9,143.9A42.64,42.64 90,0 1,204.2 143.9z"/>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6A6D72"/><stop offset="0.5" stop-color="#2A2C2F"/><stop offset="1" stop-color="#4A4D52"/></linearGradient>
+    <radialGradient id="disc" cx="0.5" cy="0.3" r="0.8"><stop offset="0" stop-color="#2C2E31"/><stop offset="1" stop-color="#0A0A0B"/></radialGradient>
+    <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="1.4" fill="#FFFFFF" fill-opacity="0.08"/></pattern>
+    <linearGradient id="wF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D2D2D2"/></linearGradient>
+    <radialGradient id="rF" cx="0.38" cy="0.32" r="0.72"><stop offset="0" stop-color="#FF7A7E"/><stop offset="0.55" stop-color="#E3161F"/><stop offset="1" stop-color="#A30E15"/></radialGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="url(#rim)"/>
+  <circle cx="128" cy="128" r="113" fill="url(#disc)"/>
+  <circle cx="128" cy="128" r="113" fill="url(#dots)"/>
+  <path d="M30 108A100 100 0 0 1 226 108" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1.5"/>
+  <g transform="translate(128 128) scale(0.82) translate(-215.6 -215.6)">
+    <use href="#grey" fill="#FFFFFF" fill-opacity="0.2"/>
+    <use href="#grey" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+    <use href="#black" fill="#000" opacity="0.6" filter="url(#blur)" transform="translate(0 8)"/>
+    <use href="#black" fill="url(#wF)"/>
+    <circle cx="257.12" cy="257.12" r="40" fill="#FF1E28" opacity="0.75" filter="url(#glow)"/>
+    <circle cx="257.12" cy="257.12" r="31.42" fill="url(#rF)"/>
+    <ellipse cx="249" cy="243" rx="13" ry="8" fill="#FFFFFF" opacity="0.5" transform="rotate(-30 249 243)"/>
+  </g>
+  <ellipse cx="128" cy="64" rx="90" ry="46" fill="url(#gloss)"/>
+</svg>

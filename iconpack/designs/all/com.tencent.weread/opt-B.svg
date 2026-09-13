@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="cover" x1="0" y1="90" x2="0" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2A98F5"/><stop offset="1" stop-color="#0E62C2"/>
+    </linearGradient>
+    <linearGradient id="pl" x1="10" y1="0" x2="128" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.8" stop-color="#F6F4EE"/><stop offset="1" stop-color="#D8D3C6"/>
+    </linearGradient>
+    <linearGradient id="pr" x1="246" y1="0" x2="128" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.8" stop-color="#F6F4EE"/><stop offset="1" stop-color="#D8D3C6"/>
+    </linearGradient>
+    <linearGradient id="bub" x1="0" y1="14" x2="0" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6CC6FF"/><stop offset="1" stop-color="#1A84EC"/>
+    </linearGradient>
+    <linearGradient id="gl" x1="0" y1="18" x2="0" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="osh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="bsh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#0A3C78" flood-opacity="0.35"/></filter>
+  </defs>
+  <g filter="url(#osh)">
+    <path d="M128 112C96 98 50 96 6 106V232C50 222 96 224 128 238C160 224 206 222 250 232V106C206 96 160 98 128 112Z" fill="url(#cover)"/>
+    <path d="M128 104C100 90 56 88 14 98V222C56 214 100 216 128 230Z" fill="url(#pl)"/>
+    <path d="M128 104C156 90 200 88 242 98V222C200 214 156 216 128 230Z" fill="url(#pr)"/>
+  </g>
+  <path d="M128 104V230" stroke="#B9B2A2" stroke-width="1.5"/>
+  <g fill="none" stroke="#CFC9BB" stroke-width="3" stroke-linecap="round">
+    <path d="M30 130C58 124 88 126 112 134M30 150C58 144 88 146 112 154M30 170C58 164 88 166 112 174M30 190C58 184 88 186 112 194"/>
+    <path d="M144 134C168 126 198 124 226 130M144 154C168 146 198 144 226 150M144 174C168 166 198 164 226 170M144 194C168 186 198 184 226 190"/>
+  </g>
+  <g filter="url(#bsh)">
+    <path d="M128 16C172 16 200 38 200 64C200 90 172 112 128 112C118 112 109 111 101 108L76 122L84 100C66 91 56 78 56 64C56 38 84 16 128 16Z" fill="url(#bub)"/>
+  </g>
+  <path d="M128 19C170 19 196 38 197 58C176 48 152 44 128 44S80 48 59 58C60 38 86 19 128 19Z" fill="url(#gl)"/>
+  <circle cx="108" cy="66" r="9" fill="#fff"/>
+  <circle cx="148" cy="66" r="9" fill="#fff"/>
+</svg>

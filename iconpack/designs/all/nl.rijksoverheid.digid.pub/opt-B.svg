@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="card" x1="0" y1="54" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#3C3C3C"/><stop offset="0.45" stop-color="#1B1B1B"/><stop offset="1" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBE3A0"/><stop offset="0.5" stop-color="#D9A84A"/><stop offset="1" stop-color="#F2CF7E"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="54" x2="0" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFA75E"/><stop offset="1" stop-color="#EE7A24"/>
+    </linearGradient>
+    <clipPath id="cardClip"><rect x="16" y="52" width="224" height="152" rx="16"/></clipPath>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <g id="dW">
+      <path d="M28.67,71.42V55.72H33.16C38.47,55.72 41.42,58.38 41.42,63.12C41.42,68.8 38.2,71.43 33.06,71.43H28.67V71.42ZM31.54,69.05H33.2C36.35,69.05 38.42,67.35 38.42,63.26C38.42,59.87 36.36,58.1 32.98,58.1H31.54V69.06V69.05Z"/>
+      <path d="M45.3,54.67C46.33,54.67 46.9,55.31 46.9,56.22C46.9,57.06 46.32,57.75 45.3,57.75C44.28,57.75 43.72,57.13 43.72,56.22C43.72,55.38 44.26,54.67 45.3,54.67ZM46.66,71.42H43.96V59.65L46.66,59.53V71.42Z"/>
+      <path d="M53.22,69.13H56.05C58.59,69.13 59.66,70.14 59.66,72.05C59.66,74.3 57.8,76.11 53.48,76.11C50.11,76.11 48.56,74.92 48.56,73.07C48.56,71.95 49.18,71.01 50.35,70.5V70.44C49.8,70.15 49.42,69.55 49.42,68.86C49.42,68.12 49.87,67.42 50.74,67.09V67.02C49.66,66.42 49.03,65.42 49.03,63.89C49.03,61.01 50.97,59.46 53.96,59.46C54.61,59.46 55.19,59.53 55.78,59.7H59.6V61.49H57.78V61.56C58.28,61.94 58.72,62.75 58.72,63.78C58.72,66.39 56.94,67.76 53.69,67.76C53.16,67.76 52.65,67.69 52.2,67.56C51.89,67.73 51.7,68.02 51.7,68.3C51.7,68.82 52.11,69.12 53.21,69.12L53.22,69.13ZM53.72,74.11C56.31,74.11 57.24,73.47 57.24,72.54C57.24,71.84 56.81,71.46 55.64,71.43L51.71,71.31C51.26,71.62 51.06,72 51.06,72.56C51.06,73.49 51.88,74.11 53.72,74.11ZM56.21,63.58C56.21,62.14 55.41,61.38 53.91,61.38C52.57,61.38 51.62,62.14 51.62,63.75C51.62,65.36 52.48,65.93 53.87,65.930C55.36,65.93 56.22,65.24 56.22,63.58H56.21Z"/>
+    </g>
+    <g id="dO">
+      <path d="M62.8,54.67C63.84,54.67 64.4,55.31 64.4,56.22C64.4,57.06 63.82,57.75 62.8,57.75C61.78,57.75 61.22,57.13 61.22,56.22C61.22,55.38 61.77,54.67 62.8,54.67ZM64.16,71.42H61.46V59.65L64.16,59.53V71.42Z"/>
+      <path d="M67.59,71.42V55.72H72.09C77.4,55.72 80.35,58.38 80.35,63.12C80.35,68.8 77.14,71.43 72,71.43H67.59V71.42ZM70.47,69.05H72.12C75.28,69.05 77.34,67.35 77.34,63.26C77.34,59.87 75.29,58.1 71.91,58.1H70.48V69.06L70.47,69.05Z"/>
+    </g>
+  </defs>
+  <g filter="url(#sh)">
+    <rect x="16" y="52" width="224" height="152" rx="16" fill="url(#card)"/>
+  </g>
+  <g clip-path="url(#cardClip)">
+    <path d="M16 52 H240 V96 C170 118 90 80 16 110Z" fill="#fff" opacity="0.07"/>
+    <!-- orange accent stripe -->
+    <rect x="16" y="178" width="224" height="6" fill="#F98A3C" opacity="0.9"/>
+  </g>
+  <rect x="17" y="53" width="222" height="150" rx="15" fill="none" stroke="#fff" stroke-opacity="0.18" stroke-width="1.5"/>
+  <!-- chip -->
+  <rect x="38" y="74" width="42" height="32" rx="6" fill="url(#chip)"/>
+  <path d="M38 85 H52 M38 95 H52 M66 85 H80 M66 95 H80 M52 74 V106 M66 74 V106" stroke="#A7792C" stroke-width="1.6" fill="none"/>
+  <rect x="38" y="74" width="42" height="32" rx="6" fill="none" stroke="#8E6420" stroke-width="1"/>
+  <!-- NFC waves -->
+  <path d="M206 78 C212 84 212 96 206 102 M214 72 C223 81 223 99 214 108" stroke="#fff" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <g transform="translate(128 146) scale(2.75) translate(-54.51 -65.39)">
+    <use href="#dW" fill="#fff"/>
+    <use href="#dO" fill="url(#orange)"/>
+  </g>
+</svg>

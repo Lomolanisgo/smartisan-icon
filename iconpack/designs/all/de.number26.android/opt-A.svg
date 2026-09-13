@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="fill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5BBEA9"/><stop offset="1" stop-color="#3C9A87"/>
+    </linearGradient>
+    <radialGradient id="glare" cx="128" cy="0" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.2"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#0E4D40" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#fill)"/>
+  <rect x="0" y="0" width="256" height="256" fill="url(#glare)" clip-path="url(#tileClip)"/>
+  <g fill="#FFFFFF" filter="url(#sh)">
+    <rect x="44" y="76" width="54" height="7"/>
+    <rect x="44" y="175" width="54" height="7"/>
+    <text x="42" y="163" font-family="Segoe UI, sans-serif" font-weight="300" font-size="100" textLength="58" lengthAdjust="spacingAndGlyphs">N</text>
+    <text x="104" y="163" font-family="Segoe UI, sans-serif" font-weight="300" font-size="100">26</text>
+  </g>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.1" stroke-width="5"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#2E7A6B" stroke-width="2"/>
+  </g>
+</svg>

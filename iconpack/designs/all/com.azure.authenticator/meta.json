@@ -1,0 +1,38 @@
+{
+  "pkg": "com.azure.authenticator",
+  "label": "Authenticator",
+  "references": [
+    {
+      "pkg": "com.google.android.apps.authenticator2",
+      "why": "锤子版 Google 身份验证器：拉丝金属 + 铆钉，C 方案直接参考"
+    },
+    {
+      "pkg": "com.agilebits.onepassword",
+      "why": "锤子版 1Password：金属锁芯 + 蓝色外圈，参考金属与蓝色搭配"
+    },
+    {
+      "pkg": "com.microsoft.emmx",
+      "why": "已定稿的 Edge 银圈圆盘，微软家族 B 方案"
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "name": "蓝色盾锁 + 金属锁梁",
+      "shape": "landscape",
+      "desc": "白色横矩形底板上放一把盾形挂锁：蓝色釉面锁身、镀铬金属锁梁、浅蓝人像。标志形状照搬官方路径，与微软 A 家族统一。"
+    },
+    {
+      "id": "B",
+      "name": "银圈蓝盘白色锁",
+      "shape": "circle",
+      "desc": "银色外圈 + 蓝色圆盘，中间白色盾锁、蓝色人像，与 Outlook/To Do 的 B 方案同色同构。"
+    },
+    {
+      "id": "C",
+      "name": "拉丝钢锁（无底板）",
+      "shape": "free",
+      "desc": "参考锤子版 Google 身份验证器：整把锁做成拉丝不锈钢物件，嵌蓝色珐琅人像徽章和铆钉。最有锤子味，但与微软家族关系弱一些。"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <symbol id="nos" viewBox="30 45 48 17">
+      <path d="M77.869,56.611C77.869,53.609 76.081,52.372 72.047,51.409C69.984,50.928 69.412,50.653 69.412,50.056C69.412,49.483 69.733,49.071 71.062,49.071C72.689,49.071 74.11,49.621 75.531,50.584L77.685,47.1C75.989,45.908 74.018,45.244 71.291,45.244C67.417,45.244 64.965,47.283 64.965,50.308C64.965,53.517 66.822,54.571 70.695,55.465C72.849,55.97 73.422,56.336 73.422,56.932C73.422,57.688 72.918,57.963 71.337,57.963C69.847,57.963 67.807,57.161 66.638,56.359L64.484,59.843C66.157,60.942 68.655,61.791 71.245,61.791C75.095,61.791 77.869,60.278 77.869,56.611" fill="#8A8A8A"/>
+      <path d="M46.475,53.483C46.475,48.846 50.234,45.087 54.871,45.087C59.508,45.087 63.268,48.846 63.268,53.483C63.268,58.12 59.508,61.88 54.871,61.88C50.234,61.88 46.475,58.12 46.475,53.483M50.752,53.483C50.752,51.208 52.596,49.364 54.871,49.364C57.146,49.364 58.99,51.208 58.99,53.483C58.99,55.758 57.146,57.602 54.871,57.602C52.596,57.602 50.752,55.758 50.752,53.483" fill="#E61E14" fill-rule="evenodd"/>
+      <path d="M44.234,61.539L44.234,45.496L39.971,45.496L39.971,49.873C39.971,51.18 39.994,53.311 40.109,54.021C39.765,53.357 38.344,51.225 37.61,50.24L34.081,45.496L30.162,45.496L30.162,61.539L34.425,61.539L34.425,56.634C34.425,55.328 34.402,53.196 34.288,52.486C34.7,53.196 36.075,55.259 36.785,56.245L40.612,61.539L44.234,61.539Z" fill="#8A8A8A"/>
+    </symbol>
+    <path id="tile" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <linearGradient id="red" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0392E"/><stop offset="0.6" stop-color="#D91F14"/><stop offset="1" stop-color="#B3140B"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="36" x2="0" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E8E8E8"/>
+    </linearGradient>
+    <radialGradient id="knob" cx="190" cy="176" r="26" gradientUnits="userSpaceOnUse" fx="184" fy="168">
+      <stop offset="0" stop-color="#F4F4F4"/><stop offset="0.7" stop-color="#B8B8B8"/><stop offset="1" stop-color="#7E7E7E"/>
+    </radialGradient>
+    <filter id="inset" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="-1.5" stdDeviation="0.8" flood-color="#6A0A04" flood-opacity="0.7"/>
+    </filter>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#4A0400" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#red)"/>
+  <g clip-path="url(#clip)" fill="none">
+    <ellipse cx="128" cy="18" rx="170" ry="70" fill="#fff" opacity="0.12"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.12" stroke-width="5"/>
+    <use href="#tile" stroke="#fff" stroke-opacity="0.35" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#8E0E06" stroke-width="2"/>
+  </g>
+  <!-- display panel with NOS logo -->
+  <g filter="url(#ds)">
+    <rect x="36" y="38" width="184" height="78" rx="10" fill="url(#panel)"/>
+  </g>
+  <rect x="36" y="38" width="184" height="78" rx="10" fill="none" stroke="#fff" stroke-width="1.5"/>
+  <use href="#nos" x="50" y="52" width="156" height="54"/>
+  <!-- speaker grille -->
+  <g filter="url(#inset)" fill="#7E0F08">
+    <rect x="38" y="140" width="116" height="6" rx="3"/>
+    <rect x="38" y="156" width="116" height="6" rx="3"/>
+    <rect x="38" y="172" width="116" height="6" rx="3"/>
+    <rect x="38" y="188" width="116" height="6" rx="3"/>
+    <rect x="38" y="204" width="116" height="6" rx="3"/>
+  </g>
+  <!-- knob -->
+  <circle cx="190" cy="176" r="28" fill="#7E0F08" filter="url(#inset)"/>
+  <circle cx="190" cy="176" r="24" fill="url(#knob)" filter="url(#ds)"/>
+  <circle cx="190" cy="176" r="15" fill="none" stroke="#9A9A9A" stroke-width="1"/>
+  <rect x="188" y="154" width="4" height="12" rx="2" fill="#E61E14"/>
+</svg>

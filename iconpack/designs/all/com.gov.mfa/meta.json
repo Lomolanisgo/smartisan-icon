@@ -1,0 +1,12 @@
+{
+  "pkg": "com.gov.mfa",
+  "label": "中国领事",
+  "references": [
+    { "pkg": "cn.gov.tax.its", "why": "同为政务应用，参考其蓝色庄重配色与立体金属边" },
+    { "pkg": "com.greenpoint.android.mc10086.activity", "why": "银边圆形徽章造型" }
+  ],
+  "options": [
+    { "id": "A", "name": "领事徽章", "shape": "circle", "desc": "忠实还原原标志：银色徽章，外圈环绕 CHINA · CONSULAR · AFFAIRS 与五颗星，中央金边蓝色珐琅上是金色“领事”。“领事”用楷体代替原图篆书。" },
+    { "id": "B", "name": "中国护照", "shape": "free", "desc": "深红色护照封面带皮纹和书页边，烫金“中华人民共和国”、领事圆章、“护照 PASSPORT”；隐喻直观。没有画国徽，改用领事圆章。" }
+  ]
+}

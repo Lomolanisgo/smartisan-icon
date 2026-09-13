@@ -1,0 +1,12 @@
+{
+  "pkg": "com.dearu.bubble.jyp",
+  "label": "JYP bubble",
+  "references": [
+    { "pkg": "jp.naver.line.android", "why": "锤子 LINE 的光面对话气泡+白色文字，A 方案参考" },
+    { "pkg": "com.kakao.talk", "why": "韩国聊天应用气泡造型参考" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色光面对话气泡", "shape": "free", "desc": "和锤子 LINE 同一造型语言的蓝色光面椭圆气泡，白色斜体“bubble”字标+“JYP”；是聊天类应用，形态最贴切。文字用 Segoe UI 渲染。" },
+    { "id": "B", "name": "肥皂泡", "shape": "free", "desc": "“bubble”直译：半透明带虹彩边的肥皂泡，内有蓝色“bubble”字标和“JYP”，右下一个小泡；更轻盈梦幻，但浅色壁纸上边界不如 A 清晰。" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pkg": "de.danoeh.antennapod",
+  "label": "AntennaPod",
+  "references": [
+    { "pkg": "com.miui.fm", "why": "圆形底板+白色信号塔的广播图标，A 方案直接参考" },
+    { "pkg": "au.com.shiftyjelly.pocketcasts", "why": "播客应用的圆形徽章造型" },
+    { "pkg": "com.douban.radio", "why": "锤子电台类的写实做法" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝色信号徽章", "shape": "circle", "desc": "白色外圈+蓝色渐变圆盘，白色 A 字形信号塔和两道半透明电波，顶部玻璃高光；与 MIUI 电台同一套语言，最忠实原标志。" },
+    { "id": "B", "name": "金属发射塔", "shape": "free", "desc": "无底板的写实铁塔：拉丝钢 A 形塔身带交叉斜撑、深色底座，塔顶蓝色玻璃球，两侧发光的蓝色电波；更拟物，但电波较细，48px 下略复杂。" }
+  ]
+}

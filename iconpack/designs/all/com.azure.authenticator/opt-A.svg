@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs>
+<path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+<clipPath id="tileClip"><use href="#tile"/></clipPath>
+<linearGradient id="tileFill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F2F2"/></linearGradient>
+<linearGradient id="tileRim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/><stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#D0D0D0"/></linearGradient>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="3.2" flood-color="#000" flood-opacity="0.24"/></filter>
+<filter id="shs" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#000" flood-opacity="0.28"/></filter>
+</defs>
+<use href="#tile" fill="url(#tileFill)"/>
+<g clip-path="url(#tileClip)" fill="none">
+<use href="#tile" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+<use href="#tile" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+<use href="#tile" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+<use href="#tile" stroke="url(#tileRim)" stroke-width="2"/>
+</g><defs>
+<path id="auB" d="M86.8265,41.8807A16.6471,16.6471 0,0 0,72.5616 25.4059c-0.4018,-0.1005 -0.7032,-0.1005 -1.105,-0.201a174.6749,174.6749 0,0 0,-46.9132 0c-0.4018,0.1005 -0.8037,0.1005 -1.1051,0.201A16.5712,16.5712 0,0 0,9.1735 41.8807c0.1,14.2649 4.621,36.0639 28.2283,50.7306a19.9654,19.9654 0,0 0,21.0959 0C82.306,78.0451 86.8265,56.246 86.8265,41.8807Z"/><path id="auS" d="M24.5068,25.7267c0.381,-0.1 0.6667,-0.1 1.0478,-0.2 2.19,-0.2994 4.3808,-0.5989 6.5713,-0.7985a16.6314,16.6314 0,0 1,16 -13.2747,16.6313 16.6313,0 0,1 16,13.2747c2.1905,0.2 4.3809,0.4991 6.5715,0.7985 0.381,0.1 0.7618,0.1 1.0476,0.2a21.7169,21.7169 0,0 1,3.4285 0.8983c-1,-15.649 -12.7619,-26.25 -27.0476,-26.25S22.1735,10.976 21.1735,26.625A18.3046,18.3046 0,0 1,24.5068 25.7267Z"/>
+<clipPath id="auClip"><use href="#auB"/></clipPath>
+<linearGradient id="auG" gradientUnits="userSpaceOnUse" x1="0" y1="23" x2="0" y2="60"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<linearGradient id="bodyA" gradientUnits="userSpaceOnUse" x1="0" y1="23" x2="0" y2="96"><stop offset="0" stop-color="#1E90F2"/><stop offset="1" stop-color="#0B4598"/></linearGradient>
+<linearGradient id="metal" gradientUnits="userSpaceOnUse" x1="21" y1="0" x2="75" y2="0"><stop offset="0" stop-color="#8E98A3"/><stop offset="0.3" stop-color="#F4F6F8"/><stop offset="0.55" stop-color="#B7BEC6"/><stop offset="0.8" stop-color="#EEF1F4"/><stop offset="1" stop-color="#7F8994"/></linearGradient>
+<linearGradient id="skin" gradientUnits="userSpaceOnUse" x1="0" y1="30" x2="0" y2="95"><stop offset="0" stop-color="#8FE0FF"/><stop offset="1" stop-color="#139AE8"/></linearGradient>
+</defs>
+<g transform="translate(128 131) scale(1.95) translate(-48 -48)">
+<g filter="url(#sh)"><use href="#auS" fill="url(#metal)"/><use href="#auB" fill="url(#bodyA)"/></g>
+<g clip-path="url(#auClip)">
+<g filter="url(#shs)"><circle cx="48.35" cy="44.72" r="14.6" fill="url(#skin)"/><circle cx="48.35" cy="88.4" r="25.6" fill="url(#skin)"/></g>
+<rect x="0" y="23" width="96" height="30" fill="url(#auG)"/>
+<use href="#auB" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="1" transform="translate(0 0.6)"/>
+<use href="#auB" fill="none" stroke="#062F6E" stroke-opacity="0.6" stroke-width="2"/>
+</g>
+<use href="#auS" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="0.5"/>
+</g>
+</svg>

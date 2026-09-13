@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="s" d="M128 16C142 72 184 114 240 128C184 142 142 184 128 240C114 184 72 142 16 128C72 114 114 72 128 16Z"/>
+    <clipPath id="sc"><use href="#s"/></clipPath>
+    <radialGradient id="r" cx="128" cy="22" r="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF4641"/><stop offset=".45" stop-color="#F9453F" stop-opacity=".85"/><stop offset="1" stop-color="#F9453F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="y" cx="24" cy="128" r="115" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD314"/><stop offset=".45" stop-color="#FCC934" stop-opacity=".85"/><stop offset="1" stop-color="#FCC934" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g" cx="128" cy="236" r="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08B962"/><stop offset=".45" stop-color="#1BBD68" stop-opacity=".85"/><stop offset="1" stop-color="#1BBD68" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="b" x1="30" y1="60" x2="240" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4FA0FF"/><stop offset="1" stop-color="#2B7BFA"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <linearGradient id="hiTL" x1="60" y1="60" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".3"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- contact shadow -->
+  <ellipse cx="128" cy="236" rx="46" ry="7" fill="#000" opacity=".22" filter="url(#blur)"/>
+  <use href="#s" fill="#000" opacity=".25" filter="url(#blur)" transform="translate(0 7)"/>
+  <!-- glass thickness -->
+  <g clip-path="url(#sc)" transform="translate(0 5)">
+    <rect width="256" height="256" fill="url(#b)"/>
+    <rect width="256" height="256" fill="url(#g)"/>
+    <rect width="256" height="256" fill="url(#y)"/>
+    <rect width="256" height="256" fill="url(#r)"/>
+    <rect width="256" height="256" fill="#000" opacity=".38"/>
+  </g>
+  <!-- colour body -->
+  <g clip-path="url(#sc)">
+    <rect width="256" height="256" fill="url(#b)"/>
+    <rect width="256" height="256" fill="url(#g)"/>
+    <rect width="256" height="256" fill="url(#y)"/>
+    <rect width="256" height="256" fill="url(#r)"/>
+    <!-- four faceted planes: light from top -->
+    <path d="M128 16L128 128L16 128C72 114 114 72 128 16Z" fill="url(#hiTL)"/>
+    <path d="M128 16L128 128L240 128C184 114 142 72 128 16Z" fill="#fff" opacity=".1"/>
+    <path d="M240 128L128 128L128 240C142 184 184 142 240 128Z" fill="#000" opacity=".14"/>
+    <path d="M16 128L128 128L128 240C114 184 72 142 16 128Z" fill="#000" opacity=".04"/>
+    <!-- ridge highlights -->
+    <path d="M128 26V122M26 128H122" stroke="#fff" stroke-width="2" stroke-opacity=".55" filter="url(#soft)"/>
+    <circle cx="128" cy="128" r="9" fill="#fff" opacity=".45" filter="url(#blur)"/>
+  </g>
+  <use href="#s" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.5"/>
+</svg>

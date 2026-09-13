@@ -1,0 +1,12 @@
+{
+  "pkg": "com.chinarailway.globalticketing",
+  "label": "铁路12306",
+  "references": [
+    { "pkg": "com.netease.railwayticket", "why": "网易火车票，蓝色横版底板，参考其底色与速度线" },
+    { "pkg": "cn.ikamobile.trainfinder", "why": "白色高铁车头图标，参考其车头造型与光泽" }
+  ],
+  "options": [
+    { "id": "A", "name": "蓝底路徽", "shape": "landscape", "desc": "延续原图标构成：天蓝渐变横版底板加淡淡的速度线，红色中国铁路路徽（手绘矢量）做凸起珐琅质感，下方白字“中国铁路”。" },
+    { "id": "B", "name": "高铁车头", "shape": "free", "desc": "参考锤子高铁车头图标：银白车身、深色风挡、蓝色腰线、车灯，车鼻印红色路徽；更拟物，无文字。" }
+  ]
+}

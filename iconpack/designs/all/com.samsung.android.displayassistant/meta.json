@@ -1,0 +1,11 @@
+{
+  "pkg": "com.samsung.android.displayassistant",
+  "label": "Display Assistant",
+  "references": [
+    { "pkg": "com.idea.android.eye.protector", "why": "同为屏幕亮度/护眼类，参考其太阳亮度隐喻" }
+  ],
+  "options": [
+    { "id": "A", "name": "手机与调光推子", "shape": "landscape", "desc": "横矩形灰蓝色底板，中间是黑色手机、蓝色屏幕上有亮度太阳，两侧是嵌入式滑轨，配黄色和粉色玻璃推钮。保留原图标构图。" },
+    { "id": "B", "name": "金属调光旋钮", "shape": "circle", "desc": "灰蓝色圆盘上有刻度，外圈是黄到粉的渐变进度弧，中央是拉丝金属旋钮，钮面上有小手机图形。像实体调光器，拟物感更强。" }
+  ]
+}

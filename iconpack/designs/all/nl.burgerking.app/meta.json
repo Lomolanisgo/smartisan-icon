@@ -1,0 +1,12 @@
+{
+  "pkg": "nl.burgerking.app",
+  "label": "Burger King NL",
+  "references": [
+    { "pkg": "com.yum.mos", "why": "同为快餐（必胜客），参考其把品牌标志做成无底板立体物件的做法" },
+    { "pkg": "com.yek.android.kfc.activitys", "why": "同为快餐（肯德基），参考其圆形徽章轮廓" }
+  ],
+  "options": [
+    { "id": "A", "name": "立体面包字标", "shape": "free", "desc": "异形：把 BK 的“面包夹字”标志做成有光泽的立体上下面包，中间红色粗体 BURGER KING。忠实 Logo，但文字依赖 Segoe UI Black。" },
+    { "id": "B", "name": "奶油色汉堡徽章", "shape": "circle", "desc": "奶油色圆形徽章（品牌底色）+ 红色细环，中间写实汉堡（芝麻面包、生菜、番茄、芝士、肉饼），无文字，小尺寸更清晰。" }
+  ]
+}

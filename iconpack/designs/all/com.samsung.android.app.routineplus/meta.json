@@ -1,0 +1,12 @@
+{
+  "pkg": "com.samsung.android.app.routineplus",
+  "label": "日常程序+",
+  "references": [
+    { "pkg": "com.samsung.android.sm", "why": "三星系统工具，参考其彩色外圈加白色表盘的圆形徽章造型" },
+    { "pkg": "net.dinglisch.android.taskerm", "why": "同为自动化应用，参考其金属齿轮隐喻" }
+  ],
+  "options": [
+    { "id": "A", "name": "靛蓝徽章·加号", "shape": "circle", "desc": "与“模式和日常程序”方案 A 同一套造型：靛蓝外圈、白色圆盘，中间是右半实线、左半虚线的圆环加加号，两者放在一起像一对兄弟。" },
+    { "id": "B", "name": "金属齿轮·加号", "shape": "free", "desc": "与“模式和日常程序”方案 B 同一套造型：金属齿轮加靛蓝珐琅圆片，里面是白色半圆环和加号。" }
+  ]
+}

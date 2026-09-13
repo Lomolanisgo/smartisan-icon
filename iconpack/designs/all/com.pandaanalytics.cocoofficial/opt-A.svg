@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <path id="cup" d="M58 82H198L183 236Q182 244 174 244H82Q74 244 73 236Z"/>
+    <clipPath id="cc"><use href="#cup"/></clipPath>
+    <linearGradient id="tea" x1="0" y1="96" x2="0" y2="244" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F6CFA0"/><stop offset="1" stop-color="#D99257"/>
+    </linearGradient>
+    <linearGradient id="plastic" x1="58" y1="0" x2="198" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="0.18" stop-color="#FFFFFF" stop-opacity="0.65"/>
+      <stop offset="0.3" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.85" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5A2A00" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="lid" x1="0" y1="66" x2="0" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFA646"/><stop offset="1" stop-color="#E97400"/>
+    </linearGradient>
+    <linearGradient id="straw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E86E00"/><stop offset="0.4" stop-color="#FFB060"/><stop offset="1" stop-color="#D86200"/>
+    </linearGradient>
+    <radialGradient id="pearl" cx="0.35" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#7A5A48"/><stop offset="1" stop-color="#241208"/>
+    </radialGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5A2A00" flood-opacity="0.3"/>
+    </filter>
+    <path id="mas" d="M-10 -48C-40 -48 -54 -22 -54 6C-54 36 -30 56 0 56C32 56 54 34 54 4C54 -14 46 -28 34 -38L44 -66L14 -48C6 -49 0 -48 -10 -48Z"/>
+  </defs>
+  <g filter="url(#sh)">
+    <!-- straw -->
+    <rect x="148" y="0" width="17" height="100" rx="4" fill="url(#straw)" transform="rotate(16 156 90)"/>
+    <!-- cup -->
+    <use href="#cup" fill="#FFFFFF" fill-opacity="0.55"/>
+    <g clip-path="url(#cc)">
+      <rect x="40" y="98" width="180" height="160" fill="url(#tea)"/>
+      <path d="M40 98Q128 106 220 98" fill="none" stroke="#FFE8C8" stroke-width="3"/>
+      <g fill="url(#pearl)">
+        <circle cx="86" cy="232" r="8"/><circle cx="104" cy="236" r="8"/><circle cx="122" cy="232" r="8"/>
+        <circle cx="140" cy="236" r="8"/><circle cx="158" cy="232" r="8"/><circle cx="176" cy="236" r="8"/>
+        <circle cx="95" cy="218" r="8"/><circle cx="113" cy="220" r="8"/><circle cx="131" cy="217" r="8"/>
+        <circle cx="149" cy="220" r="8"/><circle cx="167" cy="218" r="8"/>
+        <circle cx="122" cy="204" r="7.5"/><circle cx="140" cy="206" r="7.5"/><circle cx="104" cy="206" r="7.5"/><circle cx="158" cy="205" r="7"/>
+      </g>
+      <use href="#cup" fill="url(#plastic)"/>
+    </g>
+    <use href="#cup" fill="none" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="2"/>
+    <use href="#cup" fill="none" stroke="#B88A60" stroke-opacity="0.45" stroke-width="1"/>
+    <!-- lid rim -->
+    <rect x="50" y="68" width="156" height="18" rx="7" fill="url(#lid)"/>
+    <rect x="54" y="70" width="148" height="3" rx="1.5" fill="#FFFFFF" fill-opacity="0.45"/>
+  </g>
+  <!-- mascot on cup -->
+  <g transform="translate(126 148) scale(0.52)">
+    <use href="#mas" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="11" stroke-linejoin="round"/>
+    <circle cx="-18" cy="4" r="13" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="7"/>
+    <circle cx="16" cy="4" r="13" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="7"/>
+    <circle cx="-13" cy="4" r="6.5" fill="#4A4A4A"/>
+    <circle cx="21" cy="4" r="6.5" fill="#4A4A4A"/>
+  </g>
+</svg>

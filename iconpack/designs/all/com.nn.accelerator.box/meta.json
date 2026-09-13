@@ -1,0 +1,12 @@
+{
+  "pkg": "com.nn.accelerator.box",
+  "label": "雷神加速器",
+  "references": [
+    { "pkg": "org.zwanoo.android.speedtest", "why": "同为“速度”类工具，参考其仪表盘造型、金属表圈与刻度发光" },
+    { "pkg": "com.meizu.flyme.gamecenter", "why": "游戏相关工具，参考橙色主色的处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "橙色光泽球", "shape": "free", "desc": "无底板，把品牌橙色球体做成高光饱满的立体球，白色 L 形条带随球面弯曲；去掉原图的“时长可暂停”文字角标，品牌识别最直接。" },
+    { "id": "B", "name": "加速仪表盘", "shape": "circle", "desc": "参考 Speedtest 的金属表盘，橙色刻度逐渐变红发光、指针拉满，中心轴帽是缩小的雷神橙球；表达“加速”，品牌球较小。" }
+  ]
+}

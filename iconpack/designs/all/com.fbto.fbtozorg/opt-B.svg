@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="body" x1="0" y1="80" x2="0" y2="226" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D5E3EF"/>
+    </linearGradient>
+    <linearGradient id="lid" x1="0" y1="80" x2="0" y2="124" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3C9DF8"/><stop offset="1" stop-color="#0B74DD"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="0" y1="36" x2="0" y2="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5A6773"/><stop offset="1" stop-color="#2E3740"/>
+    </linearGradient>
+    <linearGradient id="cross" x1="0" y1="132" x2="0" y2="212" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3AA0F8"/><stop offset="1" stop-color="#0A6CD6"/>
+    </linearGradient>
+    <clipPath id="bodyClip"><rect x="22" y="80" width="212" height="146" rx="22"/></clipPath>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <filter id="sh2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#003A7A" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <!-- handle -->
+  <path d="M92 86 V60 C92 48 100 40 112 40 H144 C156 40 164 48 164 60 V86" fill="none" stroke="url(#handle)" stroke-width="13" stroke-linejoin="round"/>
+  <path d="M92 62 C92 50 100 43 112 43 H144" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="3"/>
+  <g filter="url(#sh)">
+    <rect x="22" y="80" width="212" height="146" rx="22" fill="url(#body)"/>
+  </g>
+  <g clip-path="url(#bodyClip)">
+    <rect x="22" y="80" width="212" height="42" fill="url(#lid)"/>
+    <rect x="22" y="122" width="212" height="3" fill="#07539F" opacity="0.5"/>
+    <rect x="22" y="81" width="212" height="2" fill="#fff" opacity="0.45"/>
+  </g>
+  <!-- latches -->
+  <rect x="50" y="114" width="18" height="18" rx="4" fill="#B8C4CE" stroke="#8795A1" stroke-width="1"/>
+  <rect x="188" y="114" width="18" height="18" rx="4" fill="#B8C4CE" stroke="#8795A1" stroke-width="1"/>
+  <!-- FBTO on lid -->
+  <rect x="80" y="87" width="96" height="28" rx="14" fill="#fff"/>
+  <rect x="80" y="113" width="96" height="2" rx="1" fill="#000" opacity="0.08"/>
+  <text x="94" y="109.5" font-family="Segoe UI Black, Segoe UI, Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="-0.5" fill="#10357A">FBT</text>
+  <g transform="rotate(-90 152 101)" fill="none" stroke-width="4.5">
+    <circle cx="152" cy="101" r="7" stroke="#E4003B" stroke-dasharray="11 33"/>
+    <circle cx="152" cy="101" r="7" stroke="#FFA300" stroke-dasharray="11 33" stroke-dashoffset="-11"/>
+    <circle cx="152" cy="101" r="7" stroke="#00B050" stroke-dasharray="11 33" stroke-dashoffset="-22"/>
+    <circle cx="152" cy="101" r="7" stroke="#0096E6" stroke-dasharray="11 33" stroke-dashoffset="-33"/>
+  </g>
+  <!-- cross -->
+  <g filter="url(#sh2)">
+    <path d="M114 138 H142 C145 138 146 139 146 142 V160 H164 C167 160 168 161 168 164 V186 C168 189 167 190 164 190 H146 V208 C146 211 145 212 142 212 H114 C111 212 110 211 110 208 V190 H92 C89 190 88 189 88 186 V164 C88 161 89 160 92 160 H110 V142 C110 139 111 138 114 138Z" fill="url(#cross)"/>
+  </g>
+</svg>

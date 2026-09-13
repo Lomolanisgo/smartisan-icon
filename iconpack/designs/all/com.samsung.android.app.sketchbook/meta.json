@@ -1,0 +1,12 @@
+{
+  "pkg": "com.samsung.android.app.sketchbook",
+  "label": "创意工作室",
+  "references": [
+    { "pkg": "com.meizu.media.painter", "why": "锤子版魅族画板：白色调色板+画笔" },
+    { "pkg": "com.sonymobile.sketch", "why": "锤子版索尼 Sketch：写实画具的材质表现" }
+  ],
+  "options": [
+    { "id": "A", "name": "木画架", "shape": "free", "desc": "写实木质画架，白色画布上有三星原图同款紫蓝涂鸦笔触和青绿色线条。忠实原图“画架”标志，拟物细节丰富；下部画架腿较细，48px 下略弱。" },
+    { "id": "B", "name": "调色板+画笔", "shape": "free", "desc": "白色立体调色板，带拇指孔和紫、蓝、青、粉、黄五团颜料，斜放一支紫蓝色画笔。参考魅族画板，隐喻通用，但与原图画架意象不同。" }
+  ]
+}

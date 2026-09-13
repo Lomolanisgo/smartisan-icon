@@ -1,0 +1,11 @@
+{
+  "pkg": "com.locnall.KimGiSa",
+  "label": "LiveBridge",
+  "references": [
+    { "pkg": "com.maxmpz.audioplayer", "why": "参考深色玻璃圆章与发光元素的处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "音柱大桥", "shape": "landscape", "desc": "薄荷绿横矩形，均衡器音柱排成悬索桥的两座主塔，下方是拱形桥面和黑色“直播状态”胶囊条；忠实原图标元素。" },
+    { "id": "B", "name": "直播胶囊圆章", "shape": "circle", "desc": "深色玻璃圆章，上方青绿拱桥，下方白色胶囊开关带发光绿点和信号波纹；突出“Live”状态，与原图标布局不同。" }
+  ]
+}

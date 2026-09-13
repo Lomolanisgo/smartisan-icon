@@ -1,0 +1,12 @@
+{
+  "pkg": "com.alibaba.aliexpresshd",
+  "label": "AliExpress",
+  "references": [
+    { "pkg": "com.taobao.taobao", "why": "同属阿里电商，参考淘宝的立体购物袋造型" },
+    { "pkg": "com.tmall.wireless", "why": "同属阿里电商，参考天猫的红色购物袋与提手细节" }
+  ],
+  "options": [
+    { "id": "A", "name": "立体购物袋金勾", "shape": "free", "desc": "异形：玫红色立体购物袋（侧褶、提绳），金色立体对勾从袋前划过并伸出袋外。与淘宝/天猫购物袋同一家族，保留原图标的袋 + 勾元素。" },
+    { "id": "B", "name": "玫红方砖线袋", "shape": "square", "desc": "玫红方砖，白色压印线描购物袋 + 金属光泽金勾，贴近原图标的扁平构图，材质做成浮雕与金属。" }
+  ]
+}

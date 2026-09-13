@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M47 3.06H208.93C227.73 3.06 232.93 8.26 232.93 27.06V228.94C232.93 247.74 227.73 252.94 208.93 252.94H47C28.2 252.94 23 247.74 23 228.94V27.06C23 8.26 28.2 3.06 47 3.06Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDFBF4"/>
+      <stop offset="1" stop-color="#F1EBDD"/>
+    </linearGradient>
+    <linearGradient id="bind" x1="0" y1="0" x2="0" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A493B8"/>
+      <stop offset="1" stop-color="#7A6690"/>
+    </linearGradient>
+    <linearGradient id="bulb" x1="0" y1="70" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD95A"/>
+      <stop offset="1" stop-color="#F7AE20"/>
+    </linearGradient>
+    <pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.6" fill="#8A7A5A" opacity="0.08"/><circle cx="4" cy="4" r="0.5" fill="#8A7A5A" opacity="0.06"/></pattern>
+  </defs>
+  <use href="#tile" fill="url(#paper)"/>
+  <g clip-path="url(#tileClip)">
+    <rect width="256" height="256" fill="url(#grain)"/>
+    <!-- ruled lines -->
+    <g stroke="#CFC4AE" stroke-width="1.2">
+      <line x1="23" y1="86" x2="233" y2="86"/>
+      <line x1="23" y1="120" x2="233" y2="120"/>
+      <line x1="23" y1="154" x2="233" y2="154"/>
+      <line x1="23" y1="188" x2="233" y2="188"/>
+      <line x1="23" y1="222" x2="233" y2="222"/>
+    </g>
+    <!-- binding strip -->
+    <rect x="0" y="0" width="256" height="46" fill="url(#bind)"/>
+    <rect x="0" y="44" width="256" height="2" fill="#4E3C5E" opacity="0.35"/>
+    <rect x="0" y="46" width="256" height="5" fill="#000" opacity="0.06"/>
+    <use href="#tile" fill="none" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use href="#tile" fill="none" stroke="#fff" stroke-width="2" transform="translate(0 1)" stroke-opacity="0.6"/>
+    <use href="#tile" fill="none" stroke="#C9C0AE" stroke-width="2"/>
+  </g>
+  <!-- marker sketch bulb -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M128 76 C156 76 176 96 176 124 C176 142 166 152 158 164 C154 170 152 174 152 180 H104 C104 174 102 170 98 164 C90 152 80 142 80 124 C80 96 100 76 128 76 Z" fill="url(#bulb)" opacity="0.95"/>
+    <path d="M128 76 C156 76 176 96 176 124 C176 142 166 152 158 164 C154 170 152 174 152 180 H104 C104 174 102 170 98 164 C90 152 80 142 80 124 C80 96 100 76 128 76 Z" fill="none" stroke="#5E4A2A" stroke-width="3.5"/>
+    <path d="M106 190 H150 M108 202 H148" stroke="#7A6690" stroke-width="7"/>
+    <path d="M118 214 H138" stroke="#5E4A2A" stroke-width="6"/>
+    <path d="M98 118 C98 104 108 94 120 92" fill="none" stroke="#fff" stroke-width="6" opacity="0.9"/>
+    <!-- colored pencil rays -->
+    <path d="M128 60 V50" stroke="#9C78C8" stroke-width="6"/>
+    <path d="M168 72 L175 64" stroke="#C0609E" stroke-width="6"/>
+    <path d="M190 118 H200" stroke="#E0607A" stroke-width="6"/>
+    <path d="M178 164 L186 172" stroke="#E0506A" stroke-width="6"/>
+    <path d="M88 72 L81 64" stroke="#7470D8" stroke-width="6"/>
+    <path d="M66 118 H56" stroke="#5A82E6" stroke-width="6"/>
+    <path d="M78 164 L70 172" stroke="#4C86EE" stroke-width="6"/>
+  </g>
+</svg>

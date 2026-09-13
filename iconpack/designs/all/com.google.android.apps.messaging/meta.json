@@ -1,0 +1,12 @@
+{
+  "pkg": "com.google.android.apps.messaging",
+  "label": "Messages",
+  "references": [
+    { "pkg": "com.htc.sense.mms", "why": "锤子版 HTC 短信：白色立体气泡+彩色文字行" },
+    { "pkg": "com.google.android.dialer", "why": "谷歌系应用在锤子包里的白色圆盘底座" }
+  ],
+  "options": [
+    { "id": "A", "name": "白色气泡·蓝色文字", "shape": "free", "desc": "无底板白色立体对话气泡（尾巴在左下），里面三条谷歌蓝文字行。与 HTC 短信为兄弟造型，最具锤子味，但品牌双气泡标志弱化。" },
+    { "id": "B", "name": "圆盘·双蓝气泡", "shape": "circle", "desc": "白瓷圆盘上叠放浅蓝、深蓝两枚带玻璃高光的气泡，还原 Google Messages 的双气泡标志。品牌识别更强。" }
+  ]
+}

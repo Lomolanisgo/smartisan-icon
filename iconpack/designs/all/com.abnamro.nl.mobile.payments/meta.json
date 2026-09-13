@@ -1,0 +1,12 @@
+{
+  "pkg": "com.abnamro.nl.mobile.payments",
+  "label": "ABN AMRO",
+  "references": [
+    { "pkg": "com.cmbchina.ccd.pluto.cmbActivity", "why": "银行应用，参考其横矩形底板 + 标志居中的构图" },
+    { "pkg": "com.chinamworld.bocmbci", "why": "中国银行把行徽做成立体物件，参考其徽章质感" }
+  ],
+  "options": [
+    { "id": "A", "name": "白板盾徽", "shape": "landscape", "desc": "标准白色横矩形底板，上面是带渐变与顶部高光的青绿/金黄盾形行徽，路径直接取自原图标。忠实、与白底图标协调，但偏平。" },
+    { "id": "B", "name": "金边珐琅徽章", "shape": "free", "desc": "盾徽本身做成带金色包边的珐琅徽章，无底板，顶部玻璃反光。拟物感强、有“银行”的厚重感；异形轮廓在网格中略显突出。" }
+  ]
+}

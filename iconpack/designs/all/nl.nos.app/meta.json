@@ -1,0 +1,12 @@
+{
+  "pkg": "nl.nos.app",
+  "label": "NOS",
+  "references": [
+    { "pkg": "com.ss.android.article.news", "why": "新闻类的报纸实物隐喻" },
+    { "pkg": "bbc.mobile.news.ww", "why": "同为广播公司新闻应用，参考其红色收音机造型" }
+  ],
+  "options": [
+    { "id": "A", "name": "报纸", "shape": "free", "desc": "叠放的报纸，报头为 NOS 标志（矢量路径取自原图标），下方红线、标题、正文栏和配图；新闻隐喻清楚。" },
+    { "id": "B", "name": "红色收音机", "shape": "square", "desc": "参考 BBC News 的收音机：红色方块机身，白色显示面板印 NOS 标志，下方喇叭格栅与银色旋钮；标志大、48px 清晰。" }
+  ]
+}

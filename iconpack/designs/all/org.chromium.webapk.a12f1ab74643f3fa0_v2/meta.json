@@ -1,0 +1,12 @@
+{
+  "pkg": "org.chromium.webapk.a12f1ab74643f3fa0_v2",
+  "label": "MuntCapture",
+  "references": [
+    { "pkg": "com.intsig.camscanner", "why": "拍照识别/扫描类，参考“取景框+对象”的表达" },
+    { "pkg": "com.clover.imoney", "why": "货币类，参考锤子圆形徽章与钱币题材的处理" }
+  ],
+  "options": [
+    { "id": "A", "name": "绿底取景框·金币", "shape": "square", "desc": "品牌绿方块底板，白色扫描取景角标中间是一枚金色硬币，币面浮雕衬线 M。munt=硬币、capture=拍摄识别，含义直接。与 WoordCapture A（取景框+单词卡）成对。" },
+    { "id": "B", "name": "珐琅纪念币", "shape": "circle", "desc": "忠实原图标的绿色圆+白色衬线 M，做成银色滚齿边框的绿色珐琅纪念币，顶部玻璃高光。与 WoordCapture B（布面书封）同为“材质化原标志”。" }
+  ]
+}

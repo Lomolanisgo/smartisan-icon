@@ -1,0 +1,11 @@
+{
+  "pkg": "me.yoopu.app.songbook",
+  "label": "有谱么",
+  "references": [
+    { "pkg": "com.gamestar.perfectpiano", "why": "同为乐器 / 乐谱类应用，参考其写实乐器材质的表现方式" }
+  ],
+  "options": [
+    { "id": "A", "name": "五线谱纸", "shape": "square", "desc": "米白纸质方块，上下各一组淡五线谱和音符，中央红色粗体“谱”字（微软雅黑粗体，带墨色投影）；最忠实于原图标的红字白底。" },
+    { "id": "B", "name": "红色吉他拨片", "shape": "free", "desc": "异形红色赛璐珞吉他拨片，有云纹肌理和顶部高光，“谱”字白色阴刻；突出吉他谱属性，造型独特，48px 下依然好认。" }
+  ]
+}

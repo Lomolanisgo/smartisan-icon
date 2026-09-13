@@ -1,65 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- DHL wordmark: official path from Wikimedia Commons File:DHL_Logo.svg, uniform scale 1.0470 -->
   <defs>
-    <path id="env" d="M20 52C20 47 23 44 28 44H228C233 44 236 47 236 52V210C236 215 233 218 228 218H28C23 218 20 215 20 210Z"/>
-    <clipPath id="ec"><use href="#env"/></clipPath>
-    <linearGradient id="paper" x1="0" y1="44" x2="0" y2="218" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFD83A"/><stop offset="0.5" stop-color="#FFCC00"/><stop offset="1" stop-color="#F2B800"/>
+    <path id="body" d="M20 50C20 45 23 42 28 42H228C233 42 236 45 236 50V212C236 217 233 220 228 220H28C23 220 20 217 20 212Z"/>
+    <path id="flap" d="M20 50C20 45 23 42 28 42H228C233 42 236 45 236 50V82C236 85 234 87 231 87H25C22 87 20 85 20 82Z"/>
+    <clipPath id="bc"><use href="#body"/></clipPath>
+    <linearGradient id="paper" x1="0" y1="42" x2="0" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD21A"/><stop offset="0.55" stop-color="#FFCC00"/><stop offset="1" stop-color="#F0B400"/>
+    </linearGradient>
+    <linearGradient id="flapG" x1="0" y1="42" x2="0" y2="87" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE56E"/><stop offset="0.6" stop-color="#FFD62A"/><stop offset="1" stop-color="#F5C400"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="200" x2="0" y2="226" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D99E00"/><stop offset="1" stop-color="#B98200"/>
     </linearGradient>
     <linearGradient id="side" x1="20" y1="0" x2="236" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#000" stop-opacity="0.06"/><stop offset="0.15" stop-color="#000" stop-opacity="0"/>
-      <stop offset="0.85" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.08"/>
+      <stop offset="0" stop-color="#000" stop-opacity="0.07"/><stop offset="0.12" stop-color="#000" stop-opacity="0"/>
+      <stop offset="0.88" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.09"/>
     </linearGradient>
-    <linearGradient id="flap" x1="0" y1="44" x2="0" y2="76" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFE266"/><stop offset="1" stop-color="#FFD21A"/>
+    <linearGradient id="red" x1="0" y1="6.965" x2="0" y2="31.819" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E4002B"/><stop offset="1" stop-color="#C60024"/>
     </linearGradient>
-    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E0101E"/><stop offset="1" stop-color="#C4000F"/>
-    </linearGradient>
-    <radialGradient id="shadow" cx="128" cy="226" r="118" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 0.11 0 201)">
-      <stop offset="0" stop-color="#000" stop-opacity="0.4"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    <radialGradient id="shadow" cx="128" cy="228" r="120" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 0.11 0 203)">
+      <stop offset="0" stop-color="#000" stop-opacity="0.42"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
     </radialGradient>
     <filter id="fiber" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9 0.35" numOctaves="3" seed="11" result="n"/>
-      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.3  0 0 0 0 0  0 0 0 0.16 0"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.3  0 0 0 0 0  0 0 0 0.15 0"/>
       <feComposite in2="SourceGraphic" operator="in"/>
     </filter>
-    <filter id="ink" x="-10%" y="-20%" width="120%" height="140%">
-      <feDropShadow dx="0" dy="1.008" stdDeviation="0.504" flood-color="#7A5A00" flood-opacity="0.35"/>
+    <filter id="flapShadow" x="-5%" y="-20%" width="110%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#7A5200" flood-opacity="0.45"/>
     </filter>
-    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="1.2" flood-color="#6A4A00" flood-opacity="0.35"/>
+    <filter id="ink" x="-5%" y="-20%" width="110%" height="140%">
+      <feDropShadow dx="0" dy="0.478" stdDeviation="0.239" flood-color="#7A5A00" flood-opacity="0.35"/>
     </filter>
   </defs>
-  <ellipse cx="128" cy="224" rx="118" ry="12" fill="url(#shadow)"/>
-  <use href="#env" fill="url(#paper)" filter="url(#soft)"/>
-  <g clip-path="url(#ec)">
+  <ellipse cx="128" cy="226" rx="120" ry="12" fill="url(#shadow)"/>
+  <!-- paper thickness: back sheet peeking out at bottom/right -->
+  <path d="M22 54C22 49 25 46 30 46H229C234 46 238 49 238 54V215C238 221 235 224 229 224H30C25 224 22 221 22 215Z" fill="url(#edge)"/>
+  <use href="#body" fill="url(#paper)"/>
+  <g clip-path="url(#bc)">
     <rect x="0" y="0" width="256" height="256" fill="#000" filter="url(#fiber)"/>
-    <rect x="20" y="44" width="216" height="174" fill="url(#side)"/>
-    <!-- top closing flap with tear strip -->
-    <path d="M20 44H236V74C236 76 235 77 233 77H23C21 77 20 76 20 74Z" fill="url(#flap)"/>
-    <path d="M20 77.5H236" stroke="#B88A00" stroke-opacity="0.55" stroke-width="1.5"/>
-    <path d="M20 79.5H236" stroke="#FFF1A8" stroke-opacity="0.8" stroke-width="1"/>
-    <path d="M28 62H228" stroke="#C99A00" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="5 3"/>
-    <path d="M206 44V77" stroke="#C99A00" stroke-opacity="0.35" stroke-width="1"/>
+    <rect x="20" y="42" width="216" height="178" fill="url(#side)"/>
     <!-- bottom seam -->
-    <path d="M20 206H236" stroke="#C99A00" stroke-opacity="0.35" stroke-width="1"/>
-    <!-- subtle paper wrinkle highlights -->
-    <path d="M40 150C90 140 150 158 220 146" fill="none" stroke="#FFF3B0" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
-    <path d="M40 158C90 148 150 166 220 154" fill="none" stroke="#B88A00" stroke-opacity="0.10" stroke-width="4" stroke-linecap="round"/>
+    <path d="M20 207H236" stroke="#C99A00" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M20 208.5H236" stroke="#FFF1A8" stroke-opacity="0.5" stroke-width="1"/>
+    <!-- gentle bulge highlight -->
+    <path d="M20 120C80 104 176 104 236 120V150C176 136 80 136 20 150Z" fill="#FFF3B0" opacity="0.12"/>
   </g>
-  <use href="#env" fill="none" stroke="#FFF4B8" stroke-opacity="0.8" stroke-width="1.5" transform="translate(0 1)" clip-path="url(#ec)"/>
-  <use href="#env" fill="none" stroke="#C99200" stroke-opacity="0.6" stroke-width="1"/>
-  <!-- original DHL logo (traced) -->
-  <path transform="translate(136 110) scale(0.5952380952380952) translate(-216 -215.5)" d="M159.83 173.08L159.17 173.39L158.39 174.17L157.61 175.83L155.39 178.17L154.82 179.50L153.39 181.17L152.61 182.83L150.39 185.17L149.61 186.83L147.39 189.17L146.82 190.50L145.39 192.17L144.61 193.83L142.39 196.17L141.56 198.17L141.56 198.50L141.83 198.80L143.83 199.00L248.17 199.08L248.95 199.50L249.56 200.50L247.82 204.50L246.39 206.17L245.61 207.83L243.39 210.17L242.61 211.83L241.39 213.17L240.61 214.83L239.39 216.17L238.61 217.83L237.17 219.56L237.02 220.50L237.25 221.50L239.83 222.92L281.83 223.00L283.35 222.83L283.76 222.50L284.39 221.17L285.61 219.83L286.39 218.17L288.61 215.83L289.18 214.50L290.61 212.83L291.39 211.17L293.61 208.83L294.39 207.17L295.61 205.83L297.81 201.50L298.17 199.56L298.92 198.17L298.97 194.17L298.81 193.50L298.08 192.17L297.83 189.56L295.82 185.50L294.39 183.83L293.50 182.04L290.83 179.39L289.17 178.61L287.50 177.18L286.50 176.82L281.50 174.19L278.83 173.92L277.17 173.08ZM90.83 208.09L90.25 208.50L90.03 209.17L90.08 217.17L90.39 217.83L91.17 218.61L91.83 218.92L92.83 219.00L149.17 218.92L150.17 218.32L152.61 215.83L153.39 214.17L154.61 212.83L155.39 211.17L157.24 209.17L157.43 208.50L156.83 208.09L155.50 208.00ZM169.83 208.08L169.04 208.50L167.50 210.04L166.61 211.83L164.39 214.17L163.82 215.50L162.39 217.17L161.61 218.83L159.39 221.17L158.82 222.50L157.39 224.17L156.61 225.83L154.39 228.17L153.82 229.50L152.39 231.17L151.61 232.83L149.39 235.17L148.61 236.83L146.39 239.17L145.82 240.50L144.39 242.17L143.61 243.83L141.39 246.17L140.82 247.50L139.39 249.17L138.61 250.83L136.39 253.17L135.61 254.83L134.20 256.50L134.26 257.50L134.83 257.91L233.17 257.92L234.83 257.08L238.17 256.92L239.83 256.08L242.17 255.92L243.56 255.17L245.50 254.81L246.56 254.17L248.44 253.83L258.50 248.82L260.17 247.39L261.83 246.61L265.17 243.39L266.50 242.82L267.17 242.32L274.50 234.96L275.44 232.83L275.44 232.50L275.10 232.17L273.83 232.00L208.83 231.92L208.17 231.61L206.83 230.29L206.52 229.83L206.50 229.17L207.39 227.17L209.61 224.83L210.18 223.50L211.61 221.83L212.39 220.17L214.61 217.83L215.39 216.17L216.61 214.83L217.39 213.17L218.82 211.50L219.56 209.50L219.26 208.83L218.50 208.19L216.83 208.00ZM305.83 208.08L305.04 208.50L303.39 210.17L302.82 211.50L301.39 213.17L300.61 214.83L298.52 217.17L298.53 217.83L298.83 218.23L299.50 218.56L300.83 218.08L301.83 218.00L337.50 218.00L339.17 218.08L340.50 218.56L341.50 217.95L341.92 217.17L341.97 209.17L341.75 208.50L341.17 208.09ZM90.83 228.09L90.25 228.50L90.03 229.17L90.03 236.83L90.50 237.75L91.83 238.00L135.83 237.97L136.76 237.50L137.39 236.17L139.61 233.83L140.39 232.17L141.82 230.50L142.44 228.83L142.44 228.50L142.10 228.17L140.83 228.00ZM290.83 228.09L290.24 228.50L289.61 229.83L288.39 231.17L287.61 232.83L285.18 235.50L284.56 237.17L284.56 237.50L285.17 237.92L340.17 238.00L341.50 237.75L341.97 236.83L341.97 229.17L341.75 228.50L340.83 228.03ZM91.83 247.08L90.69 247.83L90.08 248.83L90.03 255.83L90.19 256.50L91.04 257.50L91.56 257.83L92.50 257.99L121.17 257.92L121.96 257.50L123.61 255.83L124.39 254.17L126.61 251.83L127.18 250.50L128.60 248.83L128.88 248.17L128.83 247.71L128.50 247.25L127.50 247.01ZM277.83 247.08L277.04 247.50L275.39 249.17L274.61 250.83L272.39 253.17L271.61 254.83L270.40 256.17L270.12 256.83L270.17 257.29L270.50 257.75L271.17 257.97L339.50 257.99L340.44 257.83L340.96 257.50L341.81 256.50L341.97 255.83L341.92 248.83L341.61 248.17L340.96 247.50L339.83 247.03Z" fill="url(#red)" filter="url(#ink)"/>
-  <!-- white number + weight table, as on the real pack -->
-  <path d="M44 144L56 136H63V188H53V149L44 154Z" fill="#fff"/>
-  <g>
-    <rect x="80" y="152" width="84" height="9" fill="#D40511"/>
-    <g fill="#fff" fill-opacity="0.9">
-      <rect x="80" y="163" width="40" height="6"/><rect x="124" y="163" width="40" height="6"/>
-      <rect x="80" y="171" width="40" height="6"/><rect x="124" y="171" width="40" height="6"/>
-      <rect x="80" y="179" width="40" height="6"/><rect x="124" y="179" width="40" height="6"/>
+  <use href="#body" fill="none" stroke="#FFF4B8" stroke-opacity="0.7" stroke-width="1.5" transform="translate(0 1)" clip-path="url(#bc)"/>
+  <use href="#body" fill="none" stroke="#B88600" stroke-opacity="0.55" stroke-width="1"/>
+  <!-- top closing flap with its own shadow -->
+  <use href="#flap" fill="url(#flapG)" filter="url(#flapShadow)"/>
+  <g clip-path="url(#bc)">
+    <path d="M28 64H228" stroke="#C99A00" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="5 3"/>
+    <path d="M22 44.5H234" stroke="#FFF6C8" stroke-opacity="0.9" stroke-width="1.5"/>
+  </g>
+  <path d="M21 85.5H235" stroke="#FFF1A0" stroke-opacity="0.8" stroke-width="1"/>
+  <!-- tear tab -->
+  <path d="M200 42H222V60C222 62 221 63 219 63H203C201 63 200 62 200 60Z" fill="#F2BE00" stroke="#C99A00" stroke-opacity="0.5" stroke-width="1"/>
+  <!-- official DHL wordmark -->
+  <path transform="translate(128 128) scale(1.0470) translate(-87.874 -19.392)" d="m 56.665,16.206 c -0.768,1.04 -2.053,2.848 -2.835,3.904 -0.397,0.537 -1.114,1.512 1.263,1.512 2.515,0 12.515,0 12.515,0 0,0 2.017,-2.744 3.708,-5.039 2.3,-3.122 0.199,-9.618 -8.024,-9.618 -7.36,0 -32.384,0 -32.384,0 l -5.615,7.629 c 0,0 29.109,0 30.603,0 1.545,0 1.524,0.588 0.769,1.612 z m -9.194,7.298 c -2.377,0 -1.66,-0.977 -1.263,-1.514 0.782,-1.056 2.088,-2.845 2.856,-3.885 0.756,-1.024 0.776,-1.612 -0.771,-1.612 -1.493,0 -13.996,0 -13.996,0 L 23.02,31.819 c 0,0 20.141,0 27.501,0 9.083,0 14.14,-6.178 15.699,-8.314 0,-10e-4 -16.235,-10e-4 -18.749,-10e-4 z m 17.89,8.315 h 16.133 l 6.116,-8.316 -16.131,0.002 c -0.005,-10e-4 -6.118,8.314 -6.118,8.314 z m 41.625,-24.854 -6.188,8.405 h -7.2 L 99.783,6.965 H 83.655 l -10.79,14.657 h 39.46 L 123.112,6.965 Z M 88.694,31.819 h 16.127 l 6.119,-8.314 H 94.813 c -0.006,-10e-4 -6.119,8.314 -6.119,8.314 z M 0,26.784 v 1.766 h 22.468 l 1.298,-1.766 z m 26.181,-3.28 H 0 v 1.764 H 24.88 Z M 0,31.819 h 20.061 l 1.292,-1.756 H 0 Z m 152.072,-3.27 h 23.676 v -1.766 h -22.376 z m -2.405,3.27 h 26.081 v -1.756 h -24.79 z m 6.116,-8.315 -1.297,1.766 h 21.262 V 23.504 Z M 134.659,21.622 145.448,6.965 h -17.081 c -0.006,0 -10.797,14.657 -10.797,14.657 z m -18.472,1.882 c 0,0 -1.179,1.611 -1.752,2.387 -2.025,2.736 -0.234,5.928 6.376,5.928 7.636,0 25.901,0 25.901,0 l 6.119,-8.314 h -36.644 z" fill="url(#red)" filter="url(#ink)"/>
+  <!-- subtle printed info block (simplified weight table) -->
+  <g opacity="0.85">
+    <rect x="34" y="168" width="64" height="7" fill="#D40511"/>
+    <g fill="#fff" fill-opacity="0.75">
+      <rect x="34" y="178" width="30" height="4"/><rect x="68" y="178" width="30" height="4"/>
+      <rect x="34" y="185" width="30" height="4"/><rect x="68" y="185" width="30" height="4"/>
+      <rect x="34" y="192" width="30" height="4"/><rect x="68" y="192" width="30" height="4"/>
     </g>
+    <rect x="178" y="192" width="44" height="5" rx="1" fill="#D40511" fill-opacity="0.8"/>
   </g>
-  <rect x="186" y="190" width="36" height="5" rx="1" fill="#D40511" fill-opacity="0.85"/>
 </svg>

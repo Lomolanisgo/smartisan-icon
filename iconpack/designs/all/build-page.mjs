@@ -66,6 +66,8 @@ const html = `<!doctype html>
   .small div { flex:1; display:flex; justify-content:center; gap:4px; padding:6px 0; border-radius:8px; overflow:hidden; }
   .dk { background:#2b3440; } .lt { background:#dfe6ee; }
   .small img { width:44px; height:44px; min-width:0; flex-shrink:1; object-fit:contain; }
+  .upd { font-size:11px; color:#fff; background:#2e8b57; border-radius:8px; padding:0 6px; margin-left:4px; }
+  section.has-upd { border-color:#2e8b57; }
   .name { font-weight:600; margin-top:6px; } .shape { font-size:11px; color:#fff; background:#999; border-radius:8px; padding:0 6px; margin-left:4px; }
   .desc { color:#555; font-size:12.5px; } .why { color:var(--mute); font-size:12px; }
   .note { width:100%; margin-top:10px; font:13px system-ui,"Microsoft YaHei"; padding:6px 8px; border:1px solid var(--line); border-radius:8px; }
@@ -86,6 +88,7 @@ const html = `<!doctype html>
   <button data-f="all" aria-pressed="true">全部</button>
   <button data-f="todo">未选</button>
   <button data-f="done">已选</button>
+  <button data-f="upd">有更新</button>
   <span id="count" class="sub" style="margin:0"></span>
 </div>
 <div id="list"></div>
@@ -116,10 +119,13 @@ function render() {
     const done = st.sel.length > 0;
     if (filter === 'todo' && done) continue;
     if (filter === 'done' && !done) continue;
+    const hasUpd = e.options.some(o => o.updated);
+    if (filter === 'upd' && !hasUpd) continue;
     if (q && !(e.pkg.toLowerCase().includes(q) || String(e.label ?? '').toLowerCase().includes(q))) continue;
     shown++;
     const s = document.createElement('section');
     if (done) s.className = 'done';
+    if (hasUpd) s.classList.add('has-upd');
     let h = '<div class="head"><h2>' + esc(e.label ?? e.pkg) + '</h2><code>' + esc(e.pkg) + '</code></div><div class="row">';
     h += '<div class="card ref">' + imgs(['../../phone-icons/' + encodeURIComponent(e.iconFile)]) + '<div class="name">现在的图标</div></div>';
     for (const r of e.refs.filter(r => r.has)) {
@@ -128,7 +134,7 @@ function render() {
     for (const o of e.options) {
       const i = st.sel.indexOf(o.id);
       h += '<div class="card opt' + (i >= 0 ? ' sel' : '') + '" data-id="' + o.id + '">' + imgs([encodeURIComponent(e.pkg) + '/opt-' + o.id + '.png']) +
-        '<div class="name">' + o.id + ' · ' + esc(o.name) + (o.shape ? '<span class="shape">' + (SHAPE[o.shape] || esc(o.shape)) + '</span>' : '') + '</div>' +
+        '<div class="name">' + o.id + ' · ' + esc(o.name) + (o.shape ? '<span class="shape">' + (SHAPE[o.shape] || esc(o.shape)) + '</span>' : '') + (o.updated ? '<span class="upd">已更新</span>' : '') + '</div>' +
         '<div class="desc">' + esc(o.desc) + '</div></div>';
     }
     h += '</div><input class="note" placeholder="修改意见（可选）" value="' + esc(st.note) + '">';

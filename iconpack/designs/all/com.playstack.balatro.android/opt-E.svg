@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M47 3.06H208.93C227.73 3.06 232.93 8.26 232.93 27.06V228.94C232.93 247.74 227.73 252.94 208.93 252.94H47C28.2 252.94 23 247.74 23 228.94V27.06C23 8.26 28.2 3.06 47 3.06Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <clipPath id="win"><rect x="40" y="36" width="176" height="184" rx="10"/></clipPath>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E6E0D2"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#141A2E"/><stop offset="1" stop-color="#05060C"/>
+    </radialGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF5A44"/><stop offset="0.5" stop-color="#E0282A"/><stop offset="1" stop-color="#8E1018"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A9CFF"/><stop offset="0.5" stop-color="#2A64D8"/><stop offset="1" stop-color="#153A96"/>
+    </linearGradient>
+    <filter id="flow" x="0" y="0" width="256" height="256" filterUnits="userSpaceOnUse">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="1" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="ssh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-opacity="0.8"/></filter>
+    <path id="sp" d="M4 0h1v1h-1zM3 1h3v1h-3zM2 2h5v1h-5zM1 3h7v1h-7zM0 4h9v1h-9zM0 5h9v1h-9zM1 6h2v1h-2zM4 6h1v1h-1zM6 6h2v1h-2zM4 7h1v1h-1zM3 8h3v1h-3z"/>
+    <linearGradient id="gloss" x1="0" y1="36" x2="0" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.45" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <use href="#tile" fill="url(#paper)"/>
+  <!-- corner pips -->
+  <use href="#sp" transform="translate(28 12) scale(2)" fill="#1A1420"/>
+  <use href="#sp" transform="translate(228 244) rotate(180) scale(2)" fill="#1A1420"/>
+  <rect x="40" y="36" width="176" height="184" rx="10" fill="url(#bg)"/>
+  <g clip-path="url(#win)">
+    <g filter="url(#flow)" transform="translate(128 128) scale(0.85) translate(-128 -128)">
+      <path d="M20 120 C60 40 170 20 236 60 C180 44 100 50 20 120 Z" fill="#7A1420"/>
+      <path d="M236 200 C190 250 90 250 30 200 C90 230 170 234 236 200 Z" fill="#1A3A8A"/>
+      <path d="M8 200 C30 110 110 50 190 70 C236 82 244 140 214 170 C196 150 200 110 176 96 C130 72 60 110 8 200 Z" fill="url(#red)"/>
+      <path d="M250 70 C236 170 160 230 80 210 C34 198 20 150 44 118 C54 140 56 176 90 186 C140 200 210 160 250 70 Z" fill="url(#blue)"/>
+      <path d="M60 150 C70 110 120 90 160 110 C180 122 178 150 160 160 C160 140 150 124 130 122 C104 120 80 132 60 150 Z" fill="url(#red)"/>
+      <path d="M200 120 C196 160 160 184 120 180 C96 176 86 160 92 142 C102 156 120 164 140 160 C170 154 190 138 200 120 Z" fill="url(#blue)"/>
+      <g fill="none" stroke-linecap="round">
+        <path d="M30 180 C60 100 130 70 190 80" stroke="#FFB09A" stroke-width="2"/>
+        <path d="M226 120 C214 180 150 214 90 200" stroke="#BFE0FF" stroke-width="2"/>
+        <path d="M80 140 C100 112 140 104 166 122" stroke="#FF8A70" stroke-width="1.5"/>
+      </g>
+    </g>
+    <g filter="url(#ssh)" transform="translate(78.5 78.5) scale(11)">
+      <use href="#sp" fill="#FFFFFF" stroke="#15101C" stroke-width="0.5" paint-order="stroke"/>
+    </g>
+    <rect x="40" y="36" width="176" height="184" fill="url(#gloss)"/>
+  </g>
+  <rect x="40" y="36" width="176" height="184" rx="10" fill="none" stroke="#000" stroke-opacity="0.6" stroke-width="2"/>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use href="#tile" stroke="#fff" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#C6C0B2" stroke-width="2"/>
+  </g>
+</svg>

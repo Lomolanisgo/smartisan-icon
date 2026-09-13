@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="disc"><circle cx="118" cy="142" r="100"/></clipPath>
+    <radialGradient id="bg" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#141A2E"/>
+      <stop offset="1" stop-color="#05060C"/>
+    </radialGradient>
+    <linearGradient id="bezel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6A6A78"/>
+      <stop offset="0.5" stop-color="#2A2A34"/>
+      <stop offset="1" stop-color="#111117"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF5A44"/><stop offset="0.5" stop-color="#E0282A"/><stop offset="1" stop-color="#8E1018"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A9CFF"/><stop offset="0.5" stop-color="#2A64D8"/><stop offset="1" stop-color="#153A96"/>
+    </linearGradient>
+    <filter id="flow" x="0" y="0" width="256" height="256" filterUnits="userSpaceOnUse">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="1" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCD6C8"/></linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.5"/></filter>
+    <filter id="ssh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="2.5" flood-color="#000" flood-opacity="0.8"/></filter>
+  </defs>
+  <!-- cards fanned behind (joker rotated outward so hat + face show) -->
+  <g filter="url(#sh)">
+    <g transform="translate(176 62) rotate(10) scale(0.85)">
+      <rect x="-34" y="-48" width="68" height="96" rx="7" fill="#2E6BD6" stroke="#fff" stroke-width="3"/>
+      <rect x="-24" y="-38" width="48" height="76" rx="3" fill="none" stroke="#9CC0FF" stroke-width="2"/>
+    </g>
+    <g transform="translate(204 76) rotate(35) scale(0.85)">
+      <rect x="-34" y="-48" width="68" height="96" rx="7" fill="url(#paper)" stroke="#9A9282" stroke-width="1.5"/>
+      <g transform="translate(0 -12)">
+        <path d="M-20 -6 L-14 -36 L-4 -12 L0 -42 L4 -12 L14 -36 L20 -6 Z" fill="#2E6BD6" stroke="#1E3F8C" stroke-width="1.2" stroke-linejoin="round"/>
+        <path d="M-20 -6 L-14 -36 L-4 -12 Z" fill="#D8322E"/>
+        <path d="M20 -6 L14 -36 L4 -12 Z" fill="#E8B020"/>
+        <circle cx="-14" cy="-36" r="4" fill="#E8B020"/><circle cx="0" cy="-42" r="4" fill="#D8322E"/><circle cx="14" cy="-36" r="4" fill="#E8B020"/>
+        <circle cx="0" cy="8" r="15" fill="#F6EEE2" stroke="#9A8A74" stroke-width="1.2"/>
+        <circle cx="-5" cy="5" r="1.8" fill="#222"/><circle cx="5" cy="5" r="1.8" fill="#222"/>
+        <circle cx="0" cy="10" r="2.6" fill="#D8322E"/>
+        <path d="M-7 15 Q0 21 7 15" fill="none" stroke="#B82020" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+  <!-- disc -->
+  <circle cx="118" cy="146" r="110" fill="#000" opacity="0.3"/>
+  <circle cx="118" cy="142" r="110" fill="url(#bezel)"/>
+  <circle cx="118" cy="142" r="100" fill="url(#bg)"/>
+  <g clip-path="url(#disc)">
+    <g filter="url(#flow)" transform="translate(-10 14)">
+      <path d="M20 120 C60 40 170 20 236 60 C180 44 100 50 20 120 Z" fill="#7A1420"/>
+      <path d="M236 200 C190 250 90 250 30 200 C90 230 170 234 236 200 Z" fill="#1A3A8A"/>
+      <path d="M8 200 C30 110 110 50 190 70 C236 82 244 140 214 170 C196 150 200 110 176 96 C130 72 60 110 8 200 Z" fill="url(#red)"/>
+      <path d="M250 70 C236 170 160 230 80 210 C34 198 20 150 44 118 C54 140 56 176 90 186 C140 200 210 160 250 70 Z" fill="url(#blue)"/>
+      <path d="M60 150 C70 110 120 90 160 110 C180 122 178 150 160 160 C160 140 150 124 130 122 C104 120 80 132 60 150 Z" fill="url(#red)"/>
+      <path d="M200 120 C196 160 160 184 120 180 C96 176 86 160 92 142 C102 156 120 164 140 160 C170 154 190 138 200 120 Z" fill="url(#blue)"/>
+      <g fill="none" stroke-linecap="round">
+        <path d="M30 180 C60 100 130 70 190 80" stroke="#FFB09A" stroke-width="2"/>
+        <path d="M226 120 C214 180 150 214 90 200" stroke="#BFE0FF" stroke-width="2"/>
+        <path d="M80 140 C100 112 140 104 166 122" stroke="#FF8A70" stroke-width="1.5"/>
+      </g>
+    </g>
+    <!-- pixel spade, solid body -->
+    <g filter="url(#ssh)" transform="translate(64 88) scale(12)">
+      <path d="M4 0h1v1h-1zM3 1h3v1h-3zM2 2h5v1h-5zM1 3h7v1h-7zM0 4h9v1h-9zM0 5h9v1h-9zM1 6h2v1h-2zM4 6h1v1h-1zM6 6h2v1h-2zM4 7h1v1h-1zM3 8h3v1h-3z" fill="#FFFFFF" stroke="#15101C" stroke-width="0.5" paint-order="stroke"/>
+    </g>
+    <path d="M18 136 C22 82 66 42 118 42 C170 42 214 82 218 136 C188 114 154 106 118 106 C82 106 48 114 18 136 Z" fill="url(#gloss)"/>
+  </g>
+  <circle cx="118" cy="142" r="100" fill="none" stroke="#000" stroke-width="2"/>
+  <circle cx="118" cy="142" r="109" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1.5"/>
+</svg>

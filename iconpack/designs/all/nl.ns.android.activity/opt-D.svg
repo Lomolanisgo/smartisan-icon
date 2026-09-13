@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="t" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tc"><use href="#t"/></clipPath>
+    <linearGradient id="tf" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE06A"/><stop offset="1" stop-color="#F7BC10"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="96" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD02A"/><stop offset="1" stop-color="#EBA800"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="34" x2="0" y2="98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5E636A"/><stop offset="1" stop-color="#272A2F"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="52" x2="0" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3C4654"/><stop offset="1" stop-color="#0C1016"/>
+    </linearGradient>
+    <linearGradient id="skirt" x1="0" y1="196" x2="0" y2="224" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A3D42"/><stop offset="1" stop-color="#141518"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#E6ECF2"/><stop offset="1" stop-color="#7D8894"/>
+    </radialGradient>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+      <feComposite in2="SourceAlpha" operator="in"/>
+    </filter>
+    <filter id="sh" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="ns" d="M100.983,69.133C95.517,69.133 90.733,67.085 87.317,63.672L67.5,43.192C66.133,42.509 64.767,41.827 63.4,41.827H26.5L53.833,69.133H34.7L0.533,35L34.7,0.867H75.017C80.483,0.867 85.267,2.915 88.683,6.328L108.5,26.808C109.867,27.491 111.233,28.173 112.6,28.173H149.5L122.167,0.867H141.3L175.467,35L141.3,69.133H100.983ZM63.4,28.173C68.867,28.173 73.65,30.221 77.067,33.635L96.883,54.115C98.25,54.797 99.617,55.48 100.983,55.48H135.833L149.5,41.827H112.6C107.133,41.827 102.35,39.779 98.933,36.365L79.117,15.885C77.75,15.203 76.383,14.52 75.017,14.52H40.167L26.5,28.173H63.4Z" fill-rule="evenodd"/>
+  </defs>
+  <use href="#t" fill="url(#tf)"/>
+  <use href="#t" filter="url(#noise)"/>
+  <g clip-path="url(#tc)">
+    <!-- blue side bands of the train body receding behind the front -->
+    <path d="M-4 118H80V170H-4Z" fill="#1C4AA8"/><path d="M176 118H260V170H176Z" fill="#1C4AA8"/>
+    <path d="M-4 128H80V156H-4ZM176 128H260V156H176Z" fill="#141A26"/>
+    <path d="M-4 104L80 96V118H-4ZM260 104L176 96V118H260Z" fill="#CF9200"/>
+    <path d="M-4 92L90 60V98L-4 106ZM260 92L166 60V98L260 106Z" fill="#3A3D42"/>
+    <path d="M-4 170H80V204H-4ZM176 170H260V204H176Z" fill="#CF9200"/>
+    <!-- track / platform band -->
+    <rect x="0" y="206" width="256" height="30" fill="#002A6E"/>
+    <rect x="0" y="206" width="256" height="1.5" fill="#fff" opacity=".3"/>
+  </g>
+  <g filter="url(#sh)">
+    <!-- front face -->
+    <path d="M72 96H184Q190 96 190 102V204H66V102Q66 96 72 96Z" fill="url(#face)"/>
+    <!-- raised cab hump -->
+    <path d="M62 100L80 44Q84 34 96 34H160Q172 34 176 44L194 100Z" fill="url(#roof)"/>
+    <!-- skirt -->
+    <path d="M64 200H192V218Q192 226 184 226H72Q64 226 64 218Z" fill="url(#skirt)"/>
+  </g>
+  <!-- windscreen -->
+  <path d="M80 90L91 54Q93 50 98 50H158Q163 50 165 54L176 90Z" fill="url(#glass)"/>
+  <path d="M91 54Q93 50 98 50H158Q163 50 165 54L166 58Q124 58 86 84Z" fill="#fff" opacity=".18"/>
+  <path d="M128 50V90" stroke="#0C1016" stroke-width="3"/>
+  <circle cx="128" cy="42" r="3.2" fill="#FFE9A0"/>
+  <rect x="66" y="98" width="124" height="2" fill="#fff" opacity=".5"/>
+  <path d="M67 100V202M189 100V202" stroke="#7A5200" stroke-width="2.5" opacity=".75"/>
+  <!-- gangway door -->
+  <rect x="104" y="106" width="48" height="92" rx="4" fill="none" stroke="#8F6400" stroke-width="3.5"/>
+  <rect x="105.8" y="107.8" width="44.4" height="88.4" rx="3" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1"/>
+  <g fill="#3A3D42"><rect x="110" y="140" width="4.5" height="22" rx="2.2"/><rect x="141.5" y="140" width="4.5" height="22" rx="2.2"/></g>
+  <!-- headlights -->
+  <g fill="#2A2D32"><rect x="72" y="176" width="24" height="20" rx="9"/><rect x="160" y="176" width="24" height="20" rx="9"/></g>
+  <circle cx="84" cy="186" r="7.5" fill="url(#lamp)"/><circle cx="172" cy="186" r="7.5" fill="url(#lamp)"/>
+  <!-- coupler -->
+  <rect x="108" y="208" width="40" height="14" rx="4" fill="#0B0C0E"/>
+  <rect x="116" y="211" width="24" height="8" rx="2" fill="#555A61"/>
+  <!-- small NS logo -->
+  <use href="#ns" fill="#FFC917" transform="translate(196 212) scale(.26)"/>
+  <g clip-path="url(#tc)" fill="none">
+    <use href="#t" stroke="#9A6A00" stroke-opacity=".10" stroke-width="5"/>
+    <use href="#t" stroke="#9A6A00" stroke-opacity=".14" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#t" stroke="#fff" stroke-opacity=".6" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#t" stroke="#D99F00" stroke-width="2"/>
+  </g>
+</svg>

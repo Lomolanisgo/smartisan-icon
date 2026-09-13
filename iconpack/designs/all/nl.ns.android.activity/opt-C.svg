@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="face" x1="0" y1="96" x2="0" y2="214" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD84A"/><stop offset="1" stop-color="#F2B400"/>
+    </linearGradient>
+    <linearGradient id="side" x1="12" y1="0" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D99A00"/><stop offset="1" stop-color="#EDB000"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="40" x2="0" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5A5F66"/><stop offset="1" stop-color="#2A2D32"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="56" x2="0" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3C4654"/><stop offset="1" stop-color="#0E1218"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="12" y1="0" x2="118" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1A3F8F"/><stop offset="1" stop-color="#2452B8"/>
+    </linearGradient>
+    <linearGradient id="skirt" x1="0" y1="200" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A3D42"/><stop offset="1" stop-color="#141518"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#E6ECF2"/><stop offset="1" stop-color="#7D8894"/>
+    </radialGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="125%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#sh)">
+    <!-- side body (receding to the left) -->
+    <path d="M120 96L12 116V200L120 216Z" fill="url(#side)"/>
+    <!-- side roof sloping down from the hump -->
+    <path d="M126 50L12 102V116L120 96Z" fill="url(#roof)"/>
+    <!-- side skirt -->
+    <path d="M120 216L12 200V214L118 238Z" fill="#1E2024"/>
+    <!-- front face -->
+    <path d="M120 96H236Q240 96 240 100V212Q240 216 236 216H120Z" fill="url(#face)"/>
+    <!-- raised cab hump -->
+    <path d="M114 98L126 50Q130 40 142 40H214Q226 40 230 50L242 98Z" fill="url(#roof)"/>
+    <!-- front skirt -->
+    <path d="M118 214H240V230Q240 240 230 240H128Q118 240 118 230Z" fill="url(#skirt)"/>
+  </g>
+  <!-- side blue band with window strip -->
+  <path d="M112 112L14 128V172L112 172Z" fill="url(#blue)"/>
+  <path d="M104 122L22 134V160L104 158Z" fill="#141A26"/>
+  <g stroke="#2452B8" stroke-width="3"><path d="M82 125V159M60 129V160M40 132V160"/></g>
+  <path d="M104 122L22 134V140L104 130Z" fill="#fff" opacity=".12"/>
+  <!-- side door seam -->
+  <path d="M94 176V210M100 176V211" stroke="#A87400" stroke-width="1.5" opacity=".7"/>
+  <!-- windscreen -->
+  <path d="M130 90L139 58Q141 54 146 54H210Q215 54 217 58L226 90Z" fill="url(#glass)"/>
+  <path d="M139 58Q141 54 146 54H210Q215 54 217 58L218 62Q180 60 136 84Z" fill="#fff" opacity=".18"/>
+  <path d="M178 54V90" stroke="#0E1218" stroke-width="3"/>
+  <circle cx="178" cy="46" r="3" fill="#FFE9A0"/>
+  <!-- top edge highlight of face -->
+  <rect x="120" y="98" width="120" height="2" fill="#fff" opacity=".45"/>
+  <!-- front edge corner line -->
+  <path d="M120 98V216" stroke="#B98300" stroke-width="2" opacity=".6"/>
+  <!-- gangway door -->
+  <rect x="154" y="106" width="50" height="104" rx="4" fill="none" stroke="#9A6C00" stroke-width="3"/>
+  <rect x="155.5" y="107.5" width="47" height="101" rx="3" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1"/>
+  <g fill="#3A3D42"><rect x="160" y="146" width="4" height="22" rx="2"/><rect x="194" y="146" width="4" height="22" rx="2"/></g>
+  <!-- headlights -->
+  <g fill="#2A2D32"><rect x="126" y="186" width="22" height="20" rx="8"/><rect x="212" y="186" width="22" height="20" rx="8"/></g>
+  <circle cx="137" cy="196" r="7" fill="url(#lamp)"/><circle cx="223" cy="196" r="7" fill="url(#lamp)"/>
+  <!-- coupler -->
+  <rect x="160" y="220" width="40" height="16" rx="4" fill="#0B0C0E"/>
+  <rect x="168" y="224" width="24" height="8" rx="2" fill="#555A61"/>
+</svg>

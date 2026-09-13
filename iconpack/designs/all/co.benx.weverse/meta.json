@@ -3,7 +3,7 @@
   "label": "Weverse",
   "references": [],
   "options": [
-    { "id": "A", "name": "深蓝横板 w", "shape": "landscape", "desc": "锤子横矩形轮廓，深藏青底带青色微光，白色凸起的手写体 w；忠实于现有品牌图标。" },
+    { "id": "A", "name": "深蓝横板 w", "shape": "landscape", "updated": true, "desc": "锤子横矩形轮廓（按 tile-spec），深藏青底带青色微光，白色凸起的 w；w 改为原图标的原版字形（从 phone-icons 原图描摹成矢量，等比缩放 0.9，居中），不再是手绘近似。对照见 _logo-compare.png。" },
     { "id": "B", "name": "应援棒", "shape": "free", "desc": "粉丝社区隐喻：发光的应援棒，玻璃球头透出薄荷青光（Weverse 辅助色），里面是深蓝 w，深蓝手柄+银色接环；有趣、辨识度高，但与原图标差异较大。" }
   ]
 }

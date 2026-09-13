@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="s" d="SPARK" stroke-linejoin="round"/>
+    <!-- chat bubble: soft rounded body + tail at lower-left -->
+    <path id="bub" d="M128 30C194 30 238 68 238 118C238 168 194 204 128 204C114 204 101 202 89 199C78 212 58 224 34 226C46 214 52 200 52 186C30 169 18 146 18 118C18 68 62 30 128 30Z"/>
+    <linearGradient id="bg" x1="0" y1="30" x2="0" y2="226" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFDF8"/>
+      <stop offset="0.6" stop-color="#F3ECE0"/>
+      <stop offset="1" stop-color="#E2D7C5"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="32" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="60" x2="0" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E77F58"/>
+      <stop offset="1" stop-color="#C2522F"/>
+    </linearGradient>
+    <clipPath id="bc"><use xlink:href="#bub"/></clipPath>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dy="5" result="b"/>
+      <feFlood flood-color="#3b2a18" flood-opacity="0.35"/>
+      <feComposite in2="b" operator="in" result="sh"/>
+      <feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sshadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.8"/>
+      <feOffset dy="2.5" result="b"/>
+      <feFlood flood-color="#6b2a12" flood-opacity="0.45"/>
+      <feComposite in2="b" operator="in" result="sh"/>
+      <feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <g filter="url(#shadow)"><use xlink:href="#bub" fill="url(#bg)"/></g>
+  <g clip-path="url(#bc)">
+    <!-- bottom edge rim darkening -->
+    <use xlink:href="#bub" fill="none" stroke="#B9A88E" stroke-width="6" opacity="0.45" filter="url(#blur)" transform="translate(0 -3)"/>
+    <!-- top gloss -->
+    <ellipse cx="128" cy="76" rx="96" ry="46" fill="url(#gloss)" opacity="0.9"/>
+  </g>
+  <use xlink:href="#bub" fill="none" stroke="#C9BBA4" stroke-width="1"/>
+  <!-- spark, slightly raised -->
+  <g filter="url(#sshadow)">
+    <use xlink:href="#s" fill="url(#face)" stroke="#C85A36" stroke-width="0.5" transform="translate(128 117) scale(1.5) translate(-52.9 -54.2)"/>
+  </g>
+  <clipPath id="sc"><use xlink:href="#s" transform="translate(128 117) scale(1.5) translate(-52.9 -54.2)"/></clipPath>
+  <g clip-path="url(#sc)">
+    <rect x="0" y="0" width="256" height="256" fill="url(#gloss)" opacity="0.35"/>
+  </g>
+</svg>

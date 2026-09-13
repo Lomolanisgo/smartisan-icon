@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="s" d="SPARK" stroke-linejoin="round"/>
+    <linearGradient id="face" x1="0" y1="20" x2="0" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EE8C66"/>
+      <stop offset="0.5" stop-color="#D96A43"/>
+      <stop offset="1" stop-color="#BC4F2C"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="20" x2="0" y2="246" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A94A2A"/>
+      <stop offset="1" stop-color="#7E3219"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="24" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip"><use xlink:href="#s" transform="translate(128 122) scale(2.42) translate(-52.9 -54.2)"/></clipPath>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="blur2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+  <!-- ground shadow -->
+  <g filter="url(#blur)" opacity="0.38">
+    <use xlink:href="#s" fill="#3a1608" transform="translate(128 134) scale(2.42) translate(-52.9 -54.2)"/>
+  </g>
+  <!-- extrusion -->
+  <g fill="url(#side)" stroke="url(#side)" stroke-width="0.9">
+    <use xlink:href="#s" transform="translate(128 131) scale(2.42) translate(-52.9 -54.2)"/>
+    <use xlink:href="#s" transform="translate(128 129.5) scale(2.42) translate(-52.9 -54.2)"/>
+    <use xlink:href="#s" transform="translate(128 128) scale(2.42) translate(-52.9 -54.2)"/>
+    <use xlink:href="#s" transform="translate(128 126.5) scale(2.42) translate(-52.9 -54.2)"/>
+    <use xlink:href="#s" transform="translate(128 125) scale(2.42) translate(-52.9 -54.2)"/>
+    <use xlink:href="#s" transform="translate(128 123.5) scale(2.42) translate(-52.9 -54.2)"/>
+  </g>
+  <!-- face -->
+  <use xlink:href="#s" fill="url(#face)" stroke="#E88962" stroke-width="0.6" transform="translate(128 122) scale(2.42) translate(-52.9 -54.2)"/>
+  <g clip-path="url(#clip)">
+    <!-- inner bevel: dark offset up (shadow at bottom edges) -->
+    <use xlink:href="#s" fill="none" stroke="#FFD2BE" stroke-opacity="0.5" stroke-width="0.5" transform="translate(128 122.8) scale(2.42) translate(-52.9 -54.2)"/>
+    <!-- gloss sweep upper half -->
+    <path d="M0 0H256V104C190 124 70 124 0 104Z" fill="url(#gloss)"/>
+  </g>
+</svg>

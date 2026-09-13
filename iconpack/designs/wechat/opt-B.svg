@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+<defs>
+ <linearGradient id="body" gradientUnits="userSpaceOnUse" x1="0" y1="30" x2="0" y2="236"><stop offset="0" stop-color="#8be65a"/><stop offset="0.5" stop-color="#3fc92d"/><stop offset="1" stop-color="#1c9f19"/></linearGradient>
+ <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.6"/><stop offset="1" stop-color="#fff" stop-opacity="0.05"/></linearGradient>
+ <filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="3"/><feComponentTransfer><feFuncA type="linear" slope="0.4"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="dot" x="-40%" y="-40%" width="180%" height="190%"><feFlood flood-color="#0b5a08"/><feComposite operator="in" in2="SourceAlpha"/><feGaussianBlur stdDeviation="2.5"/><feOffset dy="3"/><feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <radialGradient id="dotG" cx="0.5" cy="0.25" r="0.8"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dcefd5"/></radialGradient>
+</defs>
+<g filter="url(#drop)">
+ <path d="M44 24 H212 C233 24 250 41 250 62 V168 C250 189 233 206 212 206 H104 L52 236 L64 206 H44 C23 206 6 189 6 168 V62 C6 41 23 24 44 24 Z" fill="#168a14"/>
+ <path d="M44 25 H212 C232 25 249 42 249 62 V167 C249 188 232 204 212 204 H103.5 L54.5 232 L65.5 204 H44 C24 204 7 188 7 167 V62 C7 42 24 25 44 25 Z" fill="url(#body)"/>
+ <path d="M44 27 H212 C231 27 247 43 247 62 V100 C180 86 76 86 9 100 V62 C9 43 25 27 44 27 Z" fill="url(#gloss)"/>
+ <path d="M44 26.5 H212 C231 26.5 247.5 43 247.5 62" fill="none" stroke="#d6fbb8" stroke-opacity="0.8" stroke-width="1.5"/>
+</g>
+<g filter="url(#dot)" fill="url(#dotG)">
+ <circle cx="92" cy="115" r="20"/><circle cx="164" cy="115" r="20"/>
+</g>
+<g fill="#fff" opacity="0.7"><ellipse cx="88" cy="106" rx="8" ry="4.5"/><ellipse cx="160" cy="106" rx="8" ry="4.5"/></g>
+</svg>

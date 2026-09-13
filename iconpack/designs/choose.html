@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>图标方案选择</title>
+<style>
+  :root { --bg:#f2f1ee; --card:#fff; --ink:#222; --mute:#777; --line:#e3e1dc; --accent:#d9534f; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.6 system-ui,"Microsoft YaHei",sans-serif; padding:24px 24px 160px; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:var(--mute); margin:0 0 24px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin:0 auto 20px; max-width:1200px; }
+  section h2 { font-size:17px; margin:0 0 12px; }
+  .row { display:flex; flex-wrap:wrap; gap:14px; }
+  .opt { width:250px; border:2px solid var(--line); border-radius:12px; padding:10px; cursor:pointer; transition:.15s; position:relative; }
+  .opt:hover { border-color:#bbb; }
+  .opt.sel { border-color:var(--accent); box-shadow:0 0 0 3px #d9534f33; }
+  .opt.sel::after { content:"✓ 已选"; position:absolute; top:8px; right:10px; background:var(--accent); color:#fff; font-size:12px; padding:1px 8px; border-radius:10px; }
+  .opt.cur { cursor:default; background:#faf9f7; }
+  .big { display:flex; justify-content:center; gap:6px; background:repeating-conic-gradient(#eee 0 25%,#fff 0 50%) 0 0/16px 16px; border-radius:8px; padding:6px; }
+  .big img { width:180px; height:180px; }
+  .big.pair img { flex:1; min-width:0; width:auto; max-width:112px; height:auto; aspect-ratio:1; }
+  .small { display:flex; gap:8px; margin-top:8px; }
+  .small div { flex:1; display:flex; justify-content:center; gap:6px; padding:8px 0; border-radius:8px; }
+  .small .dk { background:#2b3440; } .small .lt { background:#dfe6ee; }
+  .small img { width:48px; height:48px; min-width:0; flex-shrink:1; object-fit:contain; }
+  .small div { overflow:hidden; }
+  .name { font-weight:600; margin-top:8px; }
+  .desc { color:#555; font-size:13px; }
+  .tag { display:inline-block; font-size:11px; color:#fff; background:#999; border-radius:8px; padding:0 6px; margin-left:4px; vertical-align:1px; }
+  .q { color:var(--mute); font-size:13px; margin-top:10px; }
+  .bar { position:fixed; left:0; right:0; bottom:0; background:#222; color:#eee; padding:12px 24px; display:flex; gap:12px; align-items:center; }
+  .bar textarea { flex:1; height:90px; font:13px/1.5 ui-monospace,Consolas,monospace; background:#111; color:#eee; border:1px solid #444; border-radius:8px; padding:8px; }
+  .bar button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:10px 18px; font-size:14px; cursor:pointer; }
+  .note { width:100%; margin-top:10px; font:13px system-ui,"Microsoft YaHei"; padding:6px 8px; border:1px solid var(--line); border-radius:8px; box-sizing:border-box; }
+</style>
+</head>
+<body>
+<h1>图标方案选择</h1>
+<p class="sub">点选每组中喜欢的方案（再点一次取消），可在输入框写修改意见；底部会自动汇总，点“复制”后贴回给我。每个方案下方是 48px 在深色 / 浅色壁纸上的效果。</p>
+<div id="app"></div>
+<div class="bar"><textarea id="out" readonly></textarea><button id="copy">复制</button></div>
+<script>
+const R = '../../../../../../../../'; // unused
+const REPO = 'file:///D:/Others-Github/smartisan_icon/iconpack/';
+const G = [
+ { id:'wechat', title:'微信 WeChat', cur:[REPO+'png/com.tencent.mm.png'], curName:'当前锤子图标',
+   q:'问题：B 的气泡尾巴会超出统一的长方形边界，能接受吗？',
+   opts:[
+    ['A','白瓷底·双气泡','浅灰白长方形底板（同 bilibili 轮廓），上面放经典绿白立体气泡，识别度最接近原版。'],
+    ['B','长方形绿气泡','整个图标就是一只横向长方形绿色气泡，左下带尾巴，两颗凸起白点。轮廓最独特。'],
+    ['C','绿底浮雕气泡','翠绿玻璃质感长方形底板，内圈压印边框，淡绿与白色气泡浮雕凸起。'] ] },
+ { id:'edge', title:'Microsoft Edge', cur:[REPO+'phone-icons/com.microsoft.emmx.svg'], curName:'手机当前图标',
+   q:'问题：Edge Dev 要不要单独用绿色版（见 B-dev）？蓝色保持原版 #2F7BD2 还是更亮一点？',
+   opts:[
+    ['A','蓝色玻璃方块','经典 Edge 蓝圆角方块，顶部高光，白色 e 轻微压印。最接近老 logo。'],
+    ['B','立体蓝 e','无底板的满版 3D 蓝色 e，带光泽和厚度，最有锤子味。','推荐'],
+    ['B-dev','立体绿 e（Dev 版）','B 的绿色版，给 com.microsoft.emmx.dev 用。'],
+    ['C','银白方块蓝 e','银白渐变圆角方块，中间立体光泽蓝色 e，深色壁纸上更显眼。'] ] },
+ { id:'chatgpt', title:'ChatGPT', cur:[REPO+'phone-icons/com.openai.chatgpt.svg', REPO+'png/com.chinamworld.bocmbci.png'], curName:'当前图标 / 中国银行参考',
+   q:'问题：厚度要不要减到接近中国银行那样的浅斜面？黑色版在深色壁纸上可能不够显眼。',
+   opts:[
+    ['A','曜石黑','黑色亮面实体花结，顶光、斜面高光、柔和投影，最接近中国银行的处理。'],
+    ['B','翡翠绿','同样立体结构，改为品牌绿 #10A37F，深浅壁纸都显眼。'],
+    ['C','白瓷圆章','白色陶瓷圆盘上浮雕花结，素雅，但小尺寸对比度偏低。'] ] },
+ { id:'duolingo', title:'多邻国 Duolingo', cur:[REPO+'png/com.duolingo.png'], curName:'当前锤子图标',
+   q:'问题：A 的羽毛冒出底板约 20px，要严格长方形吗？瞳孔略向内看，会不会像斗鸡眼？',
+   opts:[
+    ['A','毛绒方块 Duo','Duo 身体本身就是绿色毛毡长方形，带缝线和顶部小羽毛，像方形公仔。'],
+    ['B','探头 Duo','浅色长方形底板（bilibili 同款），Duo 从底边探出脑袋和小翅膀。'],
+    ['C','浮雕 Duo','亮面绿色玻璃方块，Duo 头像同色浮雕，小尺寸识别度最高。'] ] },
+ { id:'claude', title:'Claude（讨论方向）', cur:[REPO+'phone-icons/com.anthropic.claude.svg'], curName:'手机当前图标',
+   q:'讨论：你更想要“认 logo”（A/D）还是“认物件”（B/C）？要不要底板？要不要混搭（如 B 的米纸材质做 D 的气泡）？',
+   opts:[
+    ['A','陶釉立体星芒','中国银行式挤出立体星芒，满版无底板，最像官方，但网格里偏轻。'],
+    ['B','米纸压印','米白纸质长方形，星芒像活字印刷压进纸里，暖纸感，网格里稳，但偏克制。'],
+    ['C','火漆印章','赭红火漆封蜡，星芒凸起，拟物趣味最强，但离官方最远、对比度低。'],
+    ['D','聊天气泡','象牙白光泽气泡（参照锤子微信）+ 珊瑚色星芒，点明对话 AI，但易和聊天应用混淆。'] ] },
+ { id:'applemusic', todo:true, prefix:'new-', title:'Apple Music（网易云风格，第二轮）', cur:[REPO+'png/com.netease.cloudmusic.png', REPO+'phone-icons/com.apple.android.music.svg'], curName:'网易云参考 / 手机当前图标',
+   q:'问题：A 和网易云颜色形状都很像，同屏可能分不清；要不要加上网易云那种更细更亮的外环、音符周围的亮圈？',
+   opts:[
+    ['A','红色音箱网','和网易云同构：红色亮面外环 + 六边形音箱网圆盘，白色音符，和网易云最像。'],
+    ['B','渐变音箱网','同样结构，外环和网面改成经典红粉→紫→蓝渐变，白色音符。'],
+    ['C','银白音箱网','银白金属外环 + 浅灰白网面，中间渐变彩色音符，是经典白底 Apple Music 的音箱网版。'] ] },
+ { id:'douyin', title:'抖音 + 抖音国际版 TikTok', pair:true, cur:[REPO+'png/com.ss.android.ugc.aweme.png', REPO+'phone-icons/com.zhiliaoapp.musically.svg'], curName:'当前抖音 / 手机 TikTok',
+   q:'问题：TikTok 要不要用经典的尖角音符（目前两者共用抖音音符）？也可混搭，如 A 的黑白底 + C 的地球。',
+   opts:[
+    ['A','黑白双生','抖音黑亮底白音符，TikTok 银白底黑音符。反差最大，48px 一眼分清，无文字最干净。'],
+    ['B','锤子标签带','都是黑底，底部标签带：抖音红带「抖音」，TikTok 青带「TikTok」。直观但偏忙。'],
+    ['C','唱片与地球','抖音酒红唱片纹理底，TikTok 深蓝绿底 + 发光地球。质感最丰富，但小尺寸不如 A/B 好分。'] ] },
+];
+const sel = {}, notes = {};
+const app = document.getElementById('app');
+G.forEach(g => { if (g.id === 'applemusic') g.todo = false })
+G.push({ id:'edge', todo:true, prefix:'edge2-', pair:['stable','dev'], title:'Edge 第二轮（参考锤子浏览器图标；左普通版 / 右 Dev 版）',
+  cur:[REPO+'png/com.qihoo.browser.png', REPO+'png/com.mx.browser.png', REPO+'png/com.oupeng.browser.png'], curName:'锤子浏览器参考：360 / 傲游 / 欧朋',
+  q:'问题：Dev 版暂用青绿色 #1AA172，想换别的颜色吗？',
+  opts:[
+    ['A','银边玻璃圆盘','银白金属外圈 + 凸面蓝色玻璃圆盘，白色 e 浮雕。参考 360、百度浏览器。48px 最清楚之一。'],
+    ['B','立体 e 字','无底板的满版 3D e，有厚度和光泽。参考欧朋立体 O、360 立体 e。大图最抢眼。'],
+    ['C','地球玻璃球','蓝色光泽圆球带淡淡经纬线，白色 e 居中。参考傲游、三星浏览器。和家族最搭。'],
+    ['D','白瓷圆盘彩色 e','浅色瓷盘 + 彩色细描边，中间立体彩色 e。参考夸克。浅色壁纸上偏弱。'] ] })
+G.forEach(g => { if (g.id === 'edge') g.todo = false })
+G.push({ id:'douyin', todo:true, prefix:'phone-', pair:['douyin','tiktok'], title:'抖音 / TikTok 竖版手机（左抖音 / 右 TikTok）',
+  cur:[REPO+'png/com.xingin.xhs.png'], curName:'轮廓参考：锤子小红书',
+  q:'问题：TikTok 屏幕上红色光晕透出一点粉色，要不要改成纯白屏？',
+  opts:[
+    ['A','写实界面','带听筒摄像头，完整界面：右侧头像/点赞/评论/分享、左下文案、底部标签 + 加号。最写实，48px 下侧边图标会糊。'],
+    ['B','极简大音符','窄边框近全面屏，只有大音符 + 加大的加号。小尺寸最清晰。'],
+    ['C','金属边框','机身外一圈金属边框（致敬锤子手机），右侧留点赞/评论/分享，底部标签 + 中号加号。拟物感最强。'] ] })
+const imgs = (g,o) => Array.isArray(g.pair) ? g.pair.map(s => `${g.id}/${g.prefix}${o}-${s}.png`)
+  : g.pair ? [`${g.id}/opt-${o}-douyin.png`, `${g.id}/opt-${o}-tiktok.png`] : [`${g.id}/${g.prefix || 'opt-'}${o}.png`];
+G.splice(0, G.length, ...G.filter(g => g.todo));
+function card(srcs, name, desc, pair, tag) {
+  const d = document.createElement('div'); d.className = 'opt';
+  const im = s => `<img src="${s}">`;
+  d.innerHTML = `<div class="big ${srcs.length>1?'pair':''}">${srcs.map(im).join('')}</div>
+    <div class="small"><div class="dk">${srcs.map(im).join('')}</div><div class="lt">${srcs.map(im).join('')}</div></div>
+    <div class="name">${name}${tag?`<span class="tag">${tag}</span>`:''}</div><div class="desc">${desc}</div>`;
+  return d;
+}
+for (const g of G) {
+  const s = document.createElement('section');
+  s.innerHTML = `<h2>${g.title}</h2>`;
+  const row = document.createElement('div'); row.className = 'row';
+  const c = card(g.cur, g.curName, '仅供对比'); c.classList.add('cur'); row.append(c);
+  for (const [k, n, desc, tag] of g.opts) {
+    const d = card(imgs(g,k), `${k} · ${n}`, desc, g.pair, tag);
+    d.onclick = () => {
+      sel[g.id] ??= new Set();
+      sel[g.id].has(k) ? sel[g.id].delete(k) : sel[g.id].add(k);
+      d.classList.toggle('sel'); render();
+    };
+    row.append(d);
+  }
+  s.append(row);
+  s.insertAdjacentHTML('beforeend', `<div class="q">${g.q}</div>`);
+  const t = document.createElement('input'); t.className = 'note'; t.placeholder = '修改意见 / 回答上面的问题（可选）';
+  t.oninput = () => { notes[g.id] = t.value; render(); };
+  s.append(t);
+  app.append(s);
+}
+function render() {
+  document.getElementById('out').value = G.map(g => {
+    const k = [...(sel[g.id] || [])].join('+') || '未选';
+    const n = notes[g.id] ? `；意见：${notes[g.id]}` : '';
+    return `${g.title}：${k}${n}`;
+  }).join('\n');
+}
+render();
+document.getElementById('copy').onclick = () => { const o = document.getElementById('out'); o.select(); document.execCommand('copy'); };
+</script>
+</body>
+</html>

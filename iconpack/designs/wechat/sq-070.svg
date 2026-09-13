@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+<defs>
+ <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e6e7e9"/></linearGradient>
+ <linearGradient id="tileEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4d6d9"/><stop offset="1" stop-color="#b9bcc0"/></linearGradient>
+ <filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dy="3"/><feComponentTransfer><feFuncA type="linear" slope="0.35"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="bub" x="-30%" y="-40%" width="160%" height="190%"><feGaussianBlur in="SourceAlpha" stdDeviation="3.5"/><feOffset dy="4"/><feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <linearGradient id="green" gradientUnits="userSpaceOnUse" x1="0" y1="71.5" x2="0" y2="159"><stop offset="0" stop-color="#8ee85a"/><stop offset="0.55" stop-color="#3fcb2e"/><stop offset="1" stop-color="#1fae1c"/></linearGradient>
+ <linearGradient id="white" gradientUnits="userSpaceOnUse" x1="0" y1="106.5" x2="0" y2="184.9"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dcdfe2"/></linearGradient>
+ <radialGradient id="eyeG" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#1c6e12"/><stop offset="1" stop-color="#0f5009"/></radialGradient>
+ <radialGradient id="eyeW" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#6f7479"/><stop offset="1" stop-color="#4a4f54"/></radialGradient>
+ <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+</defs>
+<g filter="url(#drop)">
+ <rect x="6" y="24" width="244" height="208" rx="26" fill="url(#tileEdge)"/>
+ <rect x="7" y="25" width="242" height="206" rx="25" fill="url(#tile)"/>
+ <rect x="8.5" y="26.5" width="239" height="203" rx="24" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.9"/>
+</g>
+<g filter="url(#bub)">
+ <path d="M104 71.5 C142 71.5 170 89 170 111.4 C170 133.8 142 151.3 104 151.3 C95 151.3 87 150.6 79 148.5 L53 160.62 L59 141.5 C45 134.5 38 123.3 38 111.4 C38 89 66 71.5 104 71.5 Z" fill="url(#green)" stroke="#23a31c" stroke-width="1.2" stroke-linejoin="round"/>
+ <path d="M104 75.5 C139 75.5 164 89 164 105.1 C140 98.1 70 98.1 44 105.1 C46 88.3 70 75.5 104 75.5 Z" fill="url(#gloss)"/>
+ <circle cx="84" cy="103.7" r="8.5" fill="url(#eyeG)"/><circle cx="124" cy="103.7" r="8.5" fill="url(#eyeG)"/>
+</g>
+<g filter="url(#bub)">
+ <path d="M158 107.9 C192 107.9 216 123.3 216 142.9 C216 153.4 209 162.5 197 168.8 L202 185.69 L180 175.1 C173 176.5 166 177.9 158 177.9 C124 177.9 100 162.5 100 142.9 C100 123.3 124 107.9 158 107.9 Z" fill="url(#white)" stroke="#c7cacd" stroke-width="1.2" stroke-linejoin="round"/>
+ <path d="M158 111.9 C186 111.9 208 121.9 211 135.9 C190 130.3 126 130.3 105 135.9 C109 121.9 130 111.9 158 111.9 Z" fill="url(#gloss)" opacity="0.9"/>
+ <circle cx="141" cy="136.6" r="7.5" fill="url(#eyeW)"/><circle cx="175" cy="136.6" r="7.5" fill="url(#eyeW)"/>
+</g>
+</svg>

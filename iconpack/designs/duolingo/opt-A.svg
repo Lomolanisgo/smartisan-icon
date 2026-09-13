@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9BE83F"/>
+      <stop offset="0.55" stop-color="#6FCB1C"/>
+      <stop offset="1" stop-color="#4EA80A"/>
+    </linearGradient>
+    <linearGradient id="tuft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A8EE4E"/>
+      <stop offset="1" stop-color="#78D326"/>
+    </linearGradient>
+    <radialGradient id="belly" cx="0.5" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#D9F7A6"/>
+      <stop offset="1" stop-color="#B4E871"/>
+    </radialGradient>
+    <radialGradient id="eyeW" cx="0.45" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.75" stop-color="#F4F7F2"/>
+      <stop offset="1" stop-color="#D9E3D2"/>
+    </radialGradient>
+    <linearGradient id="pupil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#2B2B2B"/>
+    </linearGradient>
+    <linearGradient id="beakT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD84A"/>
+      <stop offset="1" stop-color="#FFB300"/>
+    </linearGradient>
+    <linearGradient id="beakB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF9A1A"/>
+      <stop offset="1" stop-color="#E86F00"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#1F4A00" flood-opacity="0.35"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#2F6B00" flood-opacity="0.35"/>
+    </filter>
+    <filter id="felt" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -1.6 1.05" result="w"/>
+      <feComposite in="w" in2="SourceAlpha" operator="in"/>
+    </filter>
+    <clipPath id="tileClip"><rect x="10" y="40" width="236" height="196" rx="46"/></clipPath>
+  </defs>
+
+  <!-- body = rounded rectangle, with feather tufts on top -->
+  <g filter="url(#shadow)">
+    <path fill="url(#body)" d="M56 40 H200 A46 46 0 0 1 246 86 V190 A46 46 0 0 1 200 236 H56 A46 46 0 0 1 10 190 V86 A46 46 0 0 1 56 40 Z"/>
+    <!-- tufts -->
+    <rect x="-10" y="-30" width="20" height="40" rx="10" fill="url(#tuft)" transform="translate(116,44) rotate(-28)"/>
+    <rect x="-9" y="-26" width="18" height="34" rx="9" fill="url(#tuft)" transform="translate(100,48) rotate(-55)"/>
+    <rect x="-10" y="-30" width="20" height="40" rx="10" fill="url(#tuft)" transform="translate(140,44) rotate(28)"/>
+    <rect x="-9" y="-26" width="18" height="34" rx="9" fill="url(#tuft)" transform="translate(156,48) rotate(55)"/>
+  </g>
+
+  <g clip-path="url(#tileClip)">
+    <!-- belly -->
+    <ellipse cx="128" cy="252" rx="78" ry="62" fill="url(#belly)"/>
+    <!-- belly feather marks -->
+    <g fill="none" stroke="#8FD448" stroke-width="3" stroke-linecap="round" opacity="0.7">
+      <path d="M104 218 l6 -5 l6 5"/><path d="M140 218 l6 -5 l6 5"/><path d="M122 230 l6 -5 l6 5"/>
+    </g>
+    <!-- wings as side folds -->
+    <path d="M10 110 C34 120 42 170 30 236 H10 Z" fill="#5AB514" opacity="0.8"/>
+    <path d="M246 110 C222 120 214 170 226 236 H246 Z" fill="#5AB514" opacity="0.8"/>
+    <!-- top soft highlight -->
+    <rect x="10" y="40" width="236" height="70" fill="url(#gloss)" opacity="0.6"/>
+    <!-- felt texture -->
+    <rect x="10" y="40" width="236" height="196" filter="url(#felt)" opacity="0.18"/>
+  </g>
+  <!-- stitched inner edge -->
+  <rect x="17" y="47" width="222" height="182" rx="39" fill="none" stroke="#C9F58F" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.55"/>
+
+  <!-- eyes -->
+  <g filter="url(#soft)">
+    <ellipse cx="86" cy="116" rx="36" ry="40" fill="url(#eyeW)"/>
+    <ellipse cx="170" cy="116" rx="36" ry="40" fill="url(#eyeW)"/>
+  </g>
+  <rect x="84" y="94" width="26" height="42" rx="13" fill="url(#pupil)"/>
+  <rect x="146" y="94" width="26" height="42" rx="13" fill="url(#pupil)"/>
+  <circle cx="92" cy="104" r="7" fill="#fff"/>
+  <circle cx="154" cy="104" r="7" fill="#fff"/>
+  <circle cx="104" cy="126" r="2.6" fill="#fff" opacity="0.8"/>
+  <circle cx="166" cy="126" r="2.6" fill="#fff" opacity="0.8"/>
+
+  <!-- beak -->
+  <g filter="url(#soft)">
+    <rect x="113" y="148" width="30" height="36" rx="15" fill="url(#beakB)"/>
+    <path fill="url(#beakT)" d="M100 160 C103 146 115 138 128 138 C141 138 153 146 156 160 C156 162 155 163 153 163 L128 168 L103 163 C101 163 100 162 100 160 Z"/>
+  </g>
+  <path d="M121 142 C125 141 131 141 135 142 C139 143 140 147 138 149 H118 C116 147 117 143 121 142 Z" fill="#FFF1A0" opacity="0.9"/>
+</svg>

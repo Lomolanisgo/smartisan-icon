@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8FE033"/>
+      <stop offset="1" stop-color="#4FAA06"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A6EC55"/>
+      <stop offset="1" stop-color="#6CC71C"/>
+    </linearGradient>
+    <radialGradient id="eyeW" cx="0.45" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.75" stop-color="#F4F7F2"/>
+      <stop offset="1" stop-color="#D5E0CD"/>
+    </radialGradient>
+    <linearGradient id="pupil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/>
+      <stop offset="1" stop-color="#2B2B2B"/>
+    </linearGradient>
+    <linearGradient id="beakT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD84A"/>
+      <stop offset="1" stop-color="#FFB300"/>
+    </linearGradient>
+    <linearGradient id="beakB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF9A1A"/>
+      <stop offset="1" stop-color="#E86F00"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#1A3A00" flood-opacity="0.35"/>
+    </filter>
+    <!-- emboss: light rim top, dark shadow bottom -->
+    <filter id="emboss" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset in="SourceAlpha" dy="2.5" result="o1"/>
+      <feGaussianBlur in="o1" stdDeviation="1.8" result="b1"/>
+      <feFlood flood-color="#2C6800" flood-opacity="0.55"/>
+      <feComposite in2="b1" operator="in" result="dark"/>
+      <feOffset in="SourceAlpha" dy="-1.5" result="o2"/>
+      <feGaussianBlur in="o2" stdDeviation="1" result="b2"/>
+      <feFlood flood-color="#E4FFB8" flood-opacity="0.8"/>
+      <feComposite in2="b2" operator="in" result="light"/>
+      <feMerge><feMergeNode in="dark"/><feMergeNode in="light"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#2F6B00" flood-opacity="0.4"/>
+    </filter>
+    <clipPath id="tileClip"><rect x="8" y="22" width="240" height="212" rx="30"/></clipPath>
+  </defs>
+
+  <rect x="8" y="22" width="240" height="212" rx="30" fill="url(#tile)" filter="url(#shadow)"/>
+  <!-- inner bevel -->
+  <rect x="9.5" y="23.5" width="237" height="209" rx="28.5" fill="none" stroke="#C8F68C" stroke-width="2" opacity="0.7"/>
+
+  <!-- embossed face plate -->
+  <g clip-path="url(#tileClip)">
+  <g filter="url(#emboss)">
+    <path fill="url(#face)" d="M40 250 V122 C40 84 72 66 128 66 C184 66 216 84 216 122 V250 Z"/>
+    <rect x="-10" y="-28" width="20" height="38" rx="10" fill="#B8F270" transform="translate(116,72) rotate(-32)"/>
+    <rect x="-9" y="-24" width="18" height="32" rx="9" fill="#B8F270" transform="translate(99,76) rotate(-58)"/>
+    <rect x="-10" y="-28" width="20" height="38" rx="10" fill="#B8F270" transform="translate(140,72) rotate(32)"/>
+    <rect x="-9" y="-24" width="18" height="32" rx="9" fill="#B8F270" transform="translate(157,76) rotate(58)"/>
+  </g>
+  <ellipse cx="128" cy="240" rx="58" ry="38" fill="#C2EC86" opacity="0.8"/>
+  </g>
+
+  <!-- eyes -->
+  <g filter="url(#emboss)">
+    <ellipse cx="94" cy="124" rx="31" ry="35" fill="url(#eyeW)"/>
+    <ellipse cx="162" cy="124" rx="31" ry="35" fill="url(#eyeW)"/>
+  </g>
+  <rect x="92" y="104" width="23" height="38" rx="11.5" fill="url(#pupil)"/>
+  <rect x="141" y="104" width="23" height="38" rx="11.5" fill="url(#pupil)"/>
+  <circle cx="98" cy="114" r="6" fill="#fff"/>
+  <circle cx="147" cy="114" r="6" fill="#fff"/>
+
+  <!-- beak -->
+  <g filter="url(#soft)">
+    <rect x="115" y="155" width="26" height="32" rx="13" fill="url(#beakB)"/>
+    <path fill="url(#beakT)" d="M103 166 C106 153 116 146 128 146 C140 146 150 153 153 166 C153 168 152 169 150 169 L128 173 L106 169 C104 169 103 168 103 166 Z"/>
+  </g>
+  <path d="M122 149 C125 148 131 148 134 149 C137 150 138 153 136 155 H120 C118 153 119 150 122 149 Z" fill="#FFF1A0" opacity="0.9"/>
+
+  <!-- glass gloss over top half -->
+  <g clip-path="url(#tileClip)">
+    <path d="M8 22 H248 V96 C190 118 66 118 8 96 Z" fill="url(#gloss)" opacity="0.55"/>
+  </g>
+</svg>

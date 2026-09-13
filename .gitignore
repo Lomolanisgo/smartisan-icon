@@ -2,6 +2,18 @@
 node_modules
 /dist
 
+# 图标包构建产物
+/iconpack/raw
+/iconpack/png
+/iconpack/build
+/iconpack/failed.txt
+/iconpack/phone-apps.json
+/iconpack/phone-icons
+/iconpack/release.jks
+/iconpack/app/res/drawable-nodpi
+/iconpack/app/res/xml
+/iconpack/app/assets
+
 
 # local env files
 .env.local

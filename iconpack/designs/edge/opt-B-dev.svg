@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+<defs>
+<path id="e" fill-rule="evenodd" d="M214,126 C214,70 178,40 128,40 C86,40 54,62 28,102 C42,100 56,106 62,118 C50,130 46,142 46,152 C46,198 84,228 140,228 C176,228 204,210 222,176 C198,190 174,198 150,198 C118,198 98,180 96,154 L214,154 Z M96,126 C96,98 112,80 134,80 C158,80 172,98 172,126 Z"/>
+<radialGradient id="body" cx=".35" cy=".2" r=".95"><stop offset="0" stop-color="#7EE0B4"/><stop offset=".45" stop-color="#23A56E"/><stop offset="1" stop-color="#0F6E47"/></radialGradient>
+<linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".45" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="side" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12704A"/><stop offset="1" stop-color="#084A30"/></linearGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<g transform="translate(128,128) scale(1.16) translate(-126,-136)">
+<use href="#e" fill="#000" opacity=".35" transform="translate(0,9)" filter="url(#sh)"/>
+<use href="#e" fill="url(#side)" transform="translate(0,5)"/>
+<use href="#e" fill="url(#side)" transform="translate(0,2.5)"/>
+<use href="#e" fill="url(#body)"/>
+<use href="#e" fill="url(#gloss)"/>
+<use href="#e" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.2"/>
+</g>
+</svg>

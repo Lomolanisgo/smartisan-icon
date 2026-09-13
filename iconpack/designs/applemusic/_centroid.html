@@ -1,0 +1,8 @@
+<html><body><pre id="o"></pre><script>
+const c=document.createElement('canvas');c.width=c.height=256;const x=c.getContext('2d');
+x.setTransform(1.12,0,0,1.12,128-116*1.12,129-117*1.12);
+x.fill(new Path2D("M100 68 L170 50 L170 150 A25 19 -22 1 1 159 131 L159 76 L111 88 L111 164 A25 19 -22 1 1 100 145 Z"));
+const d=x.getImageData(0,0,256,256).data;let s=0,sx=0,sy=0,x0=256,y0=256,x1=0,y1=0;
+for(let j=0;j<256;j++)for(let i=0;i<256;i++){const a=d[(j*256+i)*4+3];if(a){s+=a;sx+=a*(i+.5);sy+=a*(j+.5);if(i<x0)x0=i;if(j<y0)y0=j;if(i>x1)x1=i;if(j>y1)y1=j;}}
+document.getElementById('o').textContent=`centroid ${(sx/s).toFixed(2)} ${(sy/s).toFixed(2)} bbox ${x0} ${y0} ${x1+1} ${y1+1} bboxc ${((x0+x1+1)/2).toFixed(2)} ${((y0+y1+1)/2).toFixed(2)}`;
+</script></body></html>

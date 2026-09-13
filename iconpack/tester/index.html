@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>锤子图标包测试</title>
+<link rel="icon" href="data:,">
+<style>
+  :root {
+    --bg: #f4f4f1;
+    --panel: #ffffff;
+    --text: #1d1d1b;
+    --muted: #75756f;
+    --line: #e2e2dc;
+    --accent: #c8102e;
+    --accent-soft: #fbe9ec;
+    --ok: #2f7d4f;
+    --ok-soft: #e6f2ea;
+    --warn: #9a6400;
+    --warn-soft: #fbf0dc;
+    --tile: 76px;
+    --radius: 0%;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151514;
+      --panel: #1f1f1d;
+      --text: #ececE6;
+      --muted: #9a9a92;
+      --line: #33332f;
+      --accent: #ff5a6e;
+      --accent-soft: #3a1d22;
+      --ok: #7fcf9c;
+      --ok-soft: #1c3024;
+      --warn: #e7b35a;
+      --warn-soft: #362a15;
+    }
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 14px/1.5 -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  }
+  header {
+    position: sticky; top: 0; z-index: 5;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 20px;
+  }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; max-width: 1400px; margin: 0 auto; }
+  .bar + .bar { margin-top: 10px; }
+  h1 { font-size: 16px; margin: 0; letter-spacing: .02em; white-space: nowrap; }
+  h1 b { color: var(--accent); }
+  #q {
+    flex: 1 1 280px; min-width: 0;
+    font: inherit; padding: 9px 12px;
+    border: 1px solid var(--line); border-radius: 8px;
+    background: var(--panel); color: var(--text);
+  }
+  #q:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--panel); }
+  .seg button {
+    font: inherit; font-size: 13px; border: 0; background: none; color: var(--muted);
+    padding: 6px 10px; cursor: pointer;
+  }
+  .seg button + button { border-left: 1px solid var(--line); }
+  .seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .seg button:disabled { opacity: .45; cursor: not-allowed; }
+  .seg.mode button { padding: 6px 14px; font-size: 14px; }
+  label.ctl { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; }
+  .btn {
+    font: inherit; font-size: 13px; padding: 7px 12px; border-radius: 8px; cursor: pointer;
+    border: 1px solid var(--line); background: var(--panel); color: var(--text);
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .stats { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .stats .link {
+    font: inherit; border: 0; background: none; padding: 0; cursor: pointer;
+    color: var(--accent); text-decoration: underline; text-underline-offset: 2px;
+  }
+  main { max-width: 1400px; margin: 0 auto; padding: 16px 20px 60px; }
+
+  .grid {
+    display: grid; gap: 6px;
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--tile) + 40px), 1fr));
+  }
+  .grid.pairs { grid-template-columns: repeat(auto-fill, minmax(calc(var(--tile) * 2 + 56px), 1fr)); }
+  .grid.wall {
+    padding: 18px; border-radius: 16px;
+    background: linear-gradient(145deg, #3b4a6b, #8a5a7a 55%, #d9a26a);
+  }
+  .cell {
+    display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 0;
+    padding: 12px 4px 8px; border-radius: 10px; cursor: pointer;
+    border: 1px solid transparent; background: none; color: inherit; font: inherit;
+    content-visibility: auto; contain-intrinsic-size: auto 140px;
+  }
+  .cell:hover, .cell:focus-visible { background: var(--panel); border-color: var(--line); outline: none; }
+  .wall .cell:hover, .wall .cell:focus-visible { background: rgba(255,255,255,.14); border-color: transparent; }
+  .icon {
+    width: var(--tile); height: var(--tile); border-radius: var(--radius);
+    object-fit: cover; display: block; flex: none;
+  }
+  .noicon {
+    display: grid; place-items: center; background: var(--line); color: var(--muted);
+    font-size: calc(var(--tile) * .4);
+  }
+  .pair { display: flex; align-items: center; gap: 6px; margin-bottom: 2px; }
+  .arrow { color: var(--muted); font-size: 12px; }
+  .wall .arrow { color: #fff; }
+  .cell .label, .cell .name {
+    max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 4px;
+  }
+  .cell .label { font-size: 12px; }
+  .cell .usage { font-size: 11px; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .wall .cell .usage { color: #ffd6dc; text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+  .cell .name { font-size: 11px; color: var(--muted); }
+  .wall .cell .label, .wall .cell .name { color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+  .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
+  .dot.act { background: var(--ok); }
+  .dot.pkg { background: var(--warn); }
+  .dot.mod, .dot.miss { background: var(--accent); }
+
+  .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+  .empty code { color: var(--text); }
+
+  dialog {
+    width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 48px);
+    border: 1px solid var(--line); border-radius: 14px; padding: 0;
+    background: var(--panel); color: var(--text);
+  }
+  dialog::backdrop { background: rgba(0,0,0,.45); }
+  .dlg-head { display: flex; gap: 16px; align-items: center; padding: 20px; border-bottom: 1px solid var(--line); }
+  .dlg-head .icon { --tile: 96px; }
+  .dlg-head h2 { font-size: 17px; margin: 0; word-break: break-all; }
+  .dlg-head .sub { color: var(--muted); margin: 2px 0 6px; }
+  .dlg-body { padding: 16px 20px; display: grid; gap: 16px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-size: 12px; padding: 2px 8px; border-radius: 99px; background: var(--bg); color: var(--muted); }
+  .tag.act { background: var(--ok-soft); color: var(--ok); }
+  .tag.pkg { background: var(--warn-soft); color: var(--warn); }
+  .tag.mod { background: var(--accent-soft); color: var(--accent); }
+  h3 { font-size: 12px; margin: 0 0 6px; color: var(--muted); font-weight: 600; letter-spacing: .04em; }
+  .mono { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 12px; word-break: break-all; }
+  ul.acts { margin: 0; padding-left: 18px; }
+  .preview-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .preview-row + .preview-row { margin-top: 10px; }
+  .preview-row .row-title { width: 44px; font-size: 12px; color: var(--muted); }
+  .preview-row figure { margin: 0; text-align: center; font-size: 11px; color: var(--muted); }
+  .preview-row .icon { --tile: 64px; margin-bottom: 4px; }
+  .cands { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cand { text-align: center; font-size: 11px; color: var(--muted); max-width: 110px; }
+  .cand img { width: 64px; height: 64px; display: block; margin: 0 auto 4px; border-radius: 8px; border: 2px solid transparent; background: var(--bg); }
+  .cand.on img { border-color: var(--accent); }
+  .cand span { display: block; word-break: break-all; }
+  .dlg-foot { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; padding: 14px 20px; border-top: 1px solid var(--line); }
+
+  .toast {
+    position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%);
+    background: var(--text); color: var(--bg); padding: 8px 16px; border-radius: 8px; font-size: 13px;
+    opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 20; max-width: calc(100vw - 32px);
+  }
+  .toast.show { opacity: 1; }
+  @media (max-width: 600px) {
+    header { padding: 12px 16px; }
+    main { padding: 12px 16px 48px; }
+    :root { --tile: 56px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <h1><b>锤子</b>图标包测试</h1>
+    <div class="seg mode" id="mode" role="group" aria-label="视图">
+      <button data-v="pack" aria-pressed="true">图标包</button>
+      <button data-v="phone" id="mode-phone">我的手机</button>
+      <button data-v="mods">我的改动</button>
+    </div>
+    <input id="q" type="search" autocomplete="off" autofocus>
+  </div>
+  <div class="bar">
+    <div class="seg" id="filter-pack" role="group" aria-label="筛选">
+      <button data-v="all" aria-pressed="true">全部</button>
+      <button data-v="act">精确匹配</button>
+      <button data-v="pkg">仅包名</button>
+      <button data-v="mod">已自定义</button>
+    </div>
+    <div class="seg" id="filter-phone" role="group" aria-label="筛选" hidden>
+      <button data-v="missing" aria-pressed="true">没有锤子图标</button>
+      <button data-v="have">已有锤子图标</button>
+      <button data-v="all">全部</button>
+    </div>
+    <div class="seg" id="sort-phone" role="group" aria-label="排序" hidden>
+      <button data-v="time" aria-pressed="true">使用时长</button>
+      <button data-v="launch">启动次数</button>
+      <button data-v="recent">最近使用</button>
+      <button data-v="name">名称</button>
+    </div>
+    <div class="seg" id="filter-mods" role="group" aria-label="筛选" hidden>
+      <button data-v="all" aria-pressed="true">全部改动</button>
+      <button data-v="override">自定义图标</button>
+      <button data-v="choice">改用候选</button>
+      <button data-v="activity">补充 Activity</button>
+    </div>
+    <div class="seg" id="shape" role="group" aria-label="形状">
+      <button data-v="0%" aria-pressed="true">原图</button>
+      <button data-v="26%">One UI</button>
+      <button data-v="50%">圆形</button>
+    </div>
+    <label class="ctl">大小 <input id="size" type="range" min="40" max="140" value="76"></label>
+    <label class="ctl"><input id="wall" type="checkbox"> 壁纸背景</label>
+    <button class="btn" id="regen" title="修改 overrides 后重新生成">重新生成</button>
+    <span class="stats" id="stats"></span>
+  </div>
+</header>
+
+<main>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden></div>
+</main>
+
+<dialog id="dlg">
+  <div class="dlg-head">
+    <img class="icon" id="d-icon" alt="">
+    <div>
+      <h2 id="d-title"></h2>
+      <div class="sub mono" id="d-sub"></div>
+      <div class="tags" id="d-tags"></div>
+    </div>
+  </div>
+  <div class="dlg-body">
+    <section>
+      <h3>桌面形状预览</h3>
+      <div id="d-previews"></div>
+    </section>
+    <section>
+      <h3 id="d-acts-title">启动 Activity</h3>
+      <div id="d-acts"></div>
+    </section>
+    <section id="d-cand-wrap">
+      <h3>锤子提供的候选图（红框为当前使用）</h3>
+      <div class="cands" id="d-cands"></div>
+    </section>
+    <section id="d-drawable-wrap">
+      <h3>drawable</h3>
+      <div class="mono" id="d-drawable"></div>
+    </section>
+  </div>
+  <div class="dlg-foot">
+    <button class="btn" id="d-copy-pkg">复制包名</button>
+    <button class="btn" id="d-copy-req">复制请求</button>
+    <button class="btn" id="d-close">关闭</button>
+  </div>
+</dialog>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = s => document.querySelector(s)
+const state = {
+  icons: [], byPkg: new Map(), phone: null,
+  mode: 'pack', packFilter: 'all', phoneFilter: 'missing', phoneSort: 'time', modsFilter: 'all', q: '', version: Date.now(),
+}
+const SOURCE_LABEL = { raw: '锤子原图', choice: '已改用候选图', override: '自定义图标' }
+const SHAPES = [['原图', '0%'], ['One UI', '26%'], ['圆形', '50%']]
+
+const packUrl = pkg => `/png/${encodeURIComponent(pkg)}.png?v=${state.version}`
+const phoneUrl = app => `/phone-icons/${encodeURIComponent(app.iconFile)}?v=${state.version}`
+const escapeHtml = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
+const img = (src, extra = '') => src
+  ? `<img class="icon" loading="lazy" alt="" src="${src}" ${extra}>`
+  : `<span class="icon noicon" ${extra}>?</span>`
+
+const byName = (a, b) => (a.label ?? a.pkg).localeCompare(b.label ?? b.pkg, 'zh-CN')
+const parseTime = t => (t ? Date.parse(t.replace(' ', 'T')) : 0)
+function phoneComparator(sort) {
+  const key = {
+    time: a => a.usage?.yearSeconds ?? 0,
+    launch: a => a.usage?.yearLaunches ?? 0,
+    recent: a => parseTime(a.usage?.lastUsed),
+  }[sort]
+  return key ? (a, b) => key(b) - key(a) || byName(a, b) : byName
+}
+function formatDuration(sec) {
+  if (!sec) return '0 分钟'
+  const h = Math.floor(sec / 3600)
+  const m = Math.round((sec % 3600) / 60)
+  return h ? `${h} 小时 ${m} 分` : `${Math.max(m, 1)} 分钟`
+}
+function formatAgo(t) {
+  if (!t) return '从未使用'
+  const sec = (Date.now() - parseTime(t)) / 1000
+  if (sec < 3600) return `${Math.max(1, Math.round(sec / 60))} 分钟前`
+  if (sec < 86400) return `${Math.round(sec / 3600)} 小时前`
+  if (sec < 86400 * 30) return `${Math.round(sec / 86400)} 天前`
+  return t.slice(0, 10)
+}
+function usageText(app) {
+  const u = app.usage
+  if (!u) return ''
+  if (state.phoneSort === 'launch') return `启动 ${u.yearLaunches} 次`
+  if (state.phoneSort === 'recent') return formatAgo(u.lastUsed)
+  return formatDuration(u.yearSeconds)
+}
+
+// 手机应用与图标包的匹配状态（按当前索引实时计算）
+function phoneStatus(app) {
+  const icon = state.byPkg.get(app.pkg)
+  if (!icon) return 'missing'
+  return app.activities.some(a => icon.activities.includes(a)) ? 'exact' : 'partial'
+}
+
+async function load() {
+  const [index, phone] = await Promise.all([
+    fetch('/api/index', { cache: 'no-store' }).then(r => r.json()),
+    fetch('/api/phone', { cache: 'no-store' }).then(r => (r.ok ? r.json() : null)).catch(() => null),
+  ])
+  state.icons = index.icons
+  state.byPkg = new Map(index.icons.map(i => [i.pkg, i]))
+  state.phone = phone
+  state.version = Date.now()
+  const phoneBtn = $('#mode-phone')
+  phoneBtn.disabled = !phone
+  phoneBtn.title = phone ? '' : '先运行 phone-apps.mjs 和 phone-icons.mjs'
+  if (!phone && state.mode === 'phone') setMode('pack')
+  render()
+}
+
+function setMode(mode) {
+  state.mode = mode
+  // 记在地址栏，刷新后停留在当前视图
+  history.replaceState(null, '', mode === 'pack' ? location.pathname + location.search : '#' + mode)
+  document.querySelectorAll('#mode button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === mode))
+  $('#filter-pack').hidden = mode !== 'pack'
+  $('#filter-phone').hidden = mode !== 'phone'
+  $('#sort-phone').hidden = mode !== 'phone'
+  $('#filter-mods').hidden = mode !== 'mods'
+  $('#q').placeholder = mode === 'pack'
+    ? '搜索包名，如 tencent、com.eg.android.AlipayGphone'
+    : '搜索应用名或包名，如 微信、outlook'
+  render()
+}
+
+function render() {
+  if (state.mode === 'pack') renderPack()
+  else if (state.mode === 'mods') renderMods()
+  else if (state.phone) renderPhone() // 数据加载完成前不渲染手机视图
+}
+
+function fillGrid(cells, pairs) {
+  const grid = $('#grid')
+  grid.classList.toggle('pairs', pairs)
+  grid.replaceChildren(...cells)
+}
+
+function makeCell(title, html, onClick) {
+  const b = document.createElement('button')
+  b.className = 'cell'
+  b.title = title
+  b.innerHTML = html
+  b.onclick = onClick
+  return b
+}
+
+function renderPack() {
+  const q = state.q.trim().toLowerCase()
+  const f = state.packFilter
+  const list = state.icons.filter(i => {
+    if (f === 'act' && !i.activities.length) return false
+    if (f === 'pkg' && i.activities.length) return false
+    if (f === 'mod' && i.source === 'raw') return false
+    if (!q) return true
+    return i.pkg.toLowerCase().includes(q) || i.drawable.includes(q) ||
+      i.activities.some(a => a.toLowerCase().includes(q))
+  })
+  fillGrid(list.map(i => makeCell(i.pkg,
+    `${img(packUrl(i.pkg))}<span class="name">${i.source !== 'raw' ? '<i class="dot mod"></i>' : ''}<i class="dot ${i.activities.length ? 'act' : 'pkg'}"></i>${escapeHtml(i.pkg)}</span>`,
+    () => openPackDetail(i))), false)
+
+  const total = state.icons.length
+  const act = state.icons.filter(i => i.activities.length).length
+  const mod = state.icons.filter(i => i.source !== 'raw').length
+  $('#stats').innerHTML =
+    `显示 ${list.length} / ${total} · <i class="dot act"></i>精确 ${act} · <i class="dot pkg"></i>仅包名 ${total - act} · <i class="dot mod"></i>自定义 ${mod}`
+
+  showEmpty(list.length, q => `新增图标：包名 ${q}\n图标来源：（附图片路径或描述）\n启动 Activity：（可选）`)
+}
+
+function renderPhone() {
+  const q = state.q.trim().toLowerCase()
+  const f = state.phoneFilter
+  const list = state.phone.filter(app => {
+    const s = phoneStatus(app)
+    if (f === 'missing' && s !== 'missing') return false
+    if (f === 'have' && s === 'missing') return false
+    if (!q) return true
+    return app.pkg.toLowerCase().includes(q) || (app.label ?? '').toLowerCase().includes(q)
+  }).sort(phoneComparator(state.phoneSort))
+
+  const pairs = f !== 'missing'
+  fillGrid(list.map(app => {
+    const s = phoneStatus(app)
+    const current = img(app.iconFile && phoneUrl(app), `title="现在的图标"`)
+    const icons = s === 'missing'
+      ? current
+      : `<div class="pair">${current}<span class="arrow">→</span>${img(packUrl(app.pkg), 'title="锤子图标"')}</div>`
+    const dot = { missing: 'miss', exact: 'act', partial: 'pkg' }[s]
+    return makeCell(`${app.label ?? ''} ${app.pkg}`,
+      `${icons}<span class="label">${escapeHtml(app.label ?? app.pkg)}</span>` +
+      (app.usage ? `<span class="usage">${usageText(app)}</span>` : '') +
+      `<span class="name"><i class="dot ${dot}"></i>${escapeHtml(app.pkg)}</span>`,
+      () => openPhoneDetail(app))
+  }), pairs)
+
+  const total = state.phone.length
+  const missing = state.phone.filter(a => phoneStatus(a) === 'missing').length
+  const noIcon = state.phone.filter(a => !a.iconFile)
+  const range = state.phone.find(a => a.usage)?.usage.yearRange
+  $('#stats').innerHTML =
+    `显示 ${list.length} / ${total} · <i class="dot act"></i>已有锤子图标 ${total - missing} · <i class="dot miss"></i>没有 ${missing}` +
+    (range ? ` · 使用统计 ${escapeHtml(range)}` : '') +
+    (noIcon.length
+      ? ` · 未能提取现有图标 ${noIcon.length}：` +
+        noIcon.map((a, i) => `<button class="link" data-fail="${i}" title="${escapeHtml(a.iconError ?? '')}">${escapeHtml(a.label ?? a.pkg)}</button>`).join('、')
+      : '')
+  $('#stats').querySelectorAll('[data-fail]').forEach(b => { b.onclick = () => openPhoneDetail(noIcon[+b.dataset.fail]) })
+
+  showEmpty(list.length, q => `新增图标：${q}\n图标来源：（附图片路径或描述）`)
+}
+
+// ---------- 我的改动：自定义图标 / 改用候选图 / 补充 Activity ----------
+
+function modKinds(i) {
+  const kinds = []
+  if (i.source === 'override') kinds.push('override')
+  if (i.source === 'choice') kinds.push('choice')
+  if (i.customActivities?.length) kinds.push('activity')
+  return kinds
+}
+const MOD_LABEL = {
+  override: i => (i.original ? '替换为自定义图标' : '新增自定义图标'),
+  choice: () => '改用候选图',
+  activity: i => `补充 ${i.customActivities.length} 个 Activity`,
+}
+const phoneApp = pkg => state.phone?.find(a => a.pkg === pkg)
+const rawUrl = (pkg, file) => `/raw/${encodeURIComponent(pkg)}/${encodeURIComponent(file)}`
+
+// 改动前的图：锤子默认图，没有则用手机上现在的图标
+function beforeUrl(i) {
+  if (i.source === 'raw') return null
+  if (i.original) return rawUrl(i.pkg, i.original)
+  const app = phoneApp(i.pkg)
+  return app?.iconFile ? phoneUrl(app) : null
+}
+
+function renderMods() {
+  const q = state.q.trim().toLowerCase()
+  const f = state.modsFilter
+  const all = state.icons.filter(i => modKinds(i).length)
+  const list = all.filter(i => {
+    if (f !== 'all' && !modKinds(i).includes(f)) return false
+    if (!q) return true
+    return i.pkg.toLowerCase().includes(q) || (phoneApp(i.pkg)?.label ?? '').toLowerCase().includes(q)
+  }).sort((a, b) => (b.modifiedAt ?? '').localeCompare(a.modifiedAt ?? '') || a.pkg.localeCompare(b.pkg))
+
+  fillGrid(list.map(i => {
+    const app = phoneApp(i.pkg)
+    const before = beforeUrl(i)
+    const icons = before
+      ? `<div class="pair">${img(before, 'title="改动前"')}<span class="arrow">→</span>${img(packUrl(i.pkg), 'title="现在"')}</div>`
+      : img(packUrl(i.pkg))
+    return makeCell(`${app?.label ?? ''} ${i.pkg}`,
+      `${icons}<span class="label">${escapeHtml(app?.label ?? i.pkg)}</span>` +
+      `<span class="usage">${modKinds(i).map(k => MOD_LABEL[k](i)).join(' · ')}</span>` +
+      `<span class="name">${escapeHtml(i.pkg)}</span>`,
+      () => openModDetail(i))
+  }), true)
+
+  const count = k => all.filter(i => modKinds(i).includes(k)).length
+  $('#stats').textContent =
+    `显示 ${list.length} / ${all.length} 项改动 · 自定义图标 ${count('override')} · 改用候选 ${count('choice')} · 补充 Activity ${count('activity')}`
+
+  showEmpty(list.length, q => `新增图标：${q}\n图标来源：（附图片路径或描述）`)
+}
+
+function openModDetail(i) {
+  const app = phoneApp(i.pkg)
+  const previews = []
+  if (app?.iconFile) previews.push(['手机', phoneUrl(app)])
+  if (i.original && i.source !== 'raw') previews.push(['锤子', rawUrl(i.pkg, i.original)])
+  previews.push([i.source === 'raw' ? '锤子' : '新图标', packUrl(i.pkg)])
+  const tags = modKinds(i).map(k => ['mod', MOD_LABEL[k](i)])
+  if (i.modifiedAt) tags.push(['', `修改于 ${new Date(i.modifiedAt).toLocaleString('zh-CN')}`])
+  openDetail({
+    headSrc: packUrl(i.pkg),
+    title: app?.label ?? i.pkg,
+    sub: app?.label ? i.pkg : '',
+    tags,
+    previews,
+    actsTitle: i.customActivities.length
+      ? `匹配的启动 Activity（手动补充 ${i.customActivities.length} 个）`
+      : '匹配的启动 Activity',
+    activities: i.activities,
+    icon: i,
+    request: modifyRequest(i, app?.label ? `${app.label}（${i.pkg}）` : i.pkg),
+  })
+}
+
+function showEmpty(count, addTemplate) {
+  const empty = $('#empty')
+  empty.hidden = count > 0
+  if (count) return
+  const q = state.q.trim()
+  empty.innerHTML = q
+    ? `没有找到 <code>${escapeHtml(q)}</code>。<br><br><button class="btn" id="copy-add">复制新增请求</button>`
+    : '没有符合条件的图标'
+  const add = $('#copy-add')
+  if (add) add.onclick = () => copy(addTemplate(q))
+}
+
+function previewRow(title, src) {
+  return `<div class="preview-row"><span class="row-title">${title}</span>` +
+    SHAPES.map(([n, r]) => `<figure>${img(src, `style="--radius:${r}"`)}<figcaption>${n}</figcaption></figure>`).join('') +
+    '</div>'
+}
+
+function openDetail({ headSrc, title, sub, tags, previews, actsTitle, activities, icon, request }) {
+  $('#d-icon').src = headSrc || ''
+  $('#d-title').textContent = title
+  $('#d-sub').textContent = sub
+  $('#d-sub').hidden = !sub
+  $('#d-tags').innerHTML = tags.map(([cls, text]) => `<span class="tag ${cls}">${escapeHtml(text)}</span>`).join('')
+  $('#d-previews').innerHTML = previews.map(([t, src]) => previewRow(t, src)).join('')
+  $('#d-acts-title').textContent = actsTitle
+  $('#d-acts').innerHTML = activities.length
+    ? `<ul class="acts mono">${activities.map(a => `<li>${escapeHtml(a)}</li>`).join('')}</ul>`
+    : '<span class="mono" style="color:var(--muted)">无（按包名匹配）</span>'
+  $('#d-cand-wrap').hidden = !icon?.candidates.length
+  $('#d-cands').innerHTML = (icon?.candidates ?? []).map(f =>
+    `<div class="cand ${f === icon.chosen ? 'on' : ''}">
+       <img loading="lazy" src="/raw/${encodeURIComponent(icon.pkg)}/${encodeURIComponent(f)}" alt="">
+       <span class="mono">${escapeHtml(f)}</span>
+     </div>`).join('')
+  $('#d-drawable-wrap').hidden = !icon
+  $('#d-drawable').textContent = icon?.drawable ?? ''
+  const pkg = icon?.pkg ?? sub ?? title
+  $('#d-copy-pkg').onclick = () => copy(pkg)
+  $('#d-copy-req').textContent = icon ? '复制修改请求' : '复制新增请求'
+  $('#d-copy-req').onclick = () => copy(request)
+  $('#dlg').showModal()
+}
+
+function modifyRequest(icon, name) {
+  return `修改图标：${name}\n当前：${SOURCE_LABEL[icon.source]}${icon.chosen ? `（${icon.chosen}）` : ''}\n` +
+    (icon.candidates.length > 1 ? `候选：${icon.candidates.join('、')}\n` : '') +
+    `需求：（例如 改用候选 xxx.png / 替换为某图片 / 补充 Activity）`
+}
+
+function openPackDetail(icon) {
+  const src = packUrl(icon.pkg)
+  openDetail({
+    headSrc: src,
+    title: icon.pkg,
+    sub: '',
+    tags: [
+      [icon.source === 'raw' ? '' : 'mod', SOURCE_LABEL[icon.source]],
+      icon.activities.length
+        ? ['act', `精确匹配 · ${icon.activities.length} 个 Activity`]
+        : ['pkg', '仅包名匹配（Theme Park 可能不生效）'],
+    ],
+    previews: [['锤子', src]],
+    actsTitle: '匹配的启动 Activity',
+    activities: icon.activities,
+    icon,
+    request: modifyRequest(icon, icon.pkg),
+  })
+}
+
+function openPhoneDetail(app) {
+  const s = phoneStatus(app)
+  const icon = state.byPkg.get(app.pkg)
+  const current = app.iconFile ? phoneUrl(app) : null
+  const name = app.label ? `${app.label}（${app.pkg}）` : app.pkg
+  const tags = [
+    s === 'missing' ? ['mod', '没有锤子图标'] : s === 'exact' ? ['act', '锤子图标 · 精确匹配'] : ['pkg', '锤子图标 · Activity 不一致'],
+    [app.userInstalled ? '' : 'pkg', app.userInstalled ? '用户安装' : '系统应用'],
+  ]
+  if (app.adaptive) tags.push(['', '自适应图标'])
+  if (app.usage) {
+    const u = app.usage
+    tags.push(['', `统计期内使用 ${formatDuration(u.yearSeconds)} · 启动 ${u.yearLaunches} 次`])
+    tags.push(['', `近一周 ${formatDuration(u.weekSeconds)} · 最近使用 ${formatAgo(u.lastUsed)}`])
+  }
+  if (!current) tags.push(['pkg', `未能提取现有图标：${app.iconError ?? '未运行 phone-icons.mjs'}`])
+  openDetail({
+    headSrc: current ?? (icon && packUrl(app.pkg)),
+    title: app.label ?? app.pkg,
+    sub: app.label ? app.pkg : '',
+    tags,
+    previews: icon ? [['现在', current], ['锤子', packUrl(app.pkg)]] : [['现在', current]],
+    actsTitle: '手机上的启动 Activity',
+    activities: app.activities,
+    icon,
+    request: icon
+      ? modifyRequest(icon, name)
+      : `新增图标：${name}\n启动 Activity：${app.activities.join('、')}\n需求：（例如 用锤子某个图标 / 使用某张图片）`,
+  })
+}
+
+let toastTimer
+function toast(msg) {
+  const t = $('#toast')
+  t.textContent = msg
+  t.classList.add('show')
+  clearTimeout(toastTimer)
+  toastTimer = setTimeout(() => t.classList.remove('show'), 1800)
+}
+async function copy(text) {
+  try {
+    await navigator.clipboard.writeText(text)
+    toast('已复制')
+  } catch {
+    prompt('复制下面的内容', text)
+  }
+}
+
+function segment(el, onChange) {
+  el.addEventListener('click', e => {
+    const b = e.target.closest('button')
+    if (!b || b.disabled) return
+    el.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b))
+    onChange(b.dataset.v)
+  })
+}
+
+let searchTimer
+$('#q').addEventListener('input', e => {
+  clearTimeout(searchTimer)
+  searchTimer = setTimeout(() => { state.q = e.target.value; render() }, 120)
+})
+segment($('#mode'), setMode)
+segment($('#filter-pack'), v => { state.packFilter = v; render() })
+segment($('#filter-phone'), v => { state.phoneFilter = v; render() })
+segment($('#sort-phone'), v => { state.phoneSort = v; render() })
+segment($('#filter-mods'), v => { state.modsFilter = v; render() })
+segment($('#shape'), v => document.documentElement.style.setProperty('--radius', v))
+$('#size').addEventListener('input', e => document.documentElement.style.setProperty('--tile', e.target.value + 'px'))
+$('#wall').addEventListener('change', e => $('#grid').classList.toggle('wall', e.target.checked))
+$('#d-close').onclick = () => $('#dlg').close()
+$('#dlg').addEventListener('click', e => { if (e.target === e.currentTarget) e.currentTarget.close() })
+$('#regen').onclick = async () => {
+  const b = $('#regen')
+  b.disabled = true
+  b.textContent = '生成中…'
+  try {
+    const res = await fetch('/api/generate', { method: 'POST' })
+    const data = await res.json()
+    toast(data.ok ? data.output : '生成失败：' + data.output)
+    if (data.ok) await load()
+  } finally {
+    b.disabled = false
+    b.textContent = '重新生成'
+  }
+}
+
+setMode(['#phone', '#mods'].includes(location.hash) ? location.hash.slice(1) : 'pack')
+load().catch(err => {
+  $('#empty').hidden = false
+  $('#empty').textContent = '加载索引失败：' + err.message
+})
+</script>
+</body>
+</html>

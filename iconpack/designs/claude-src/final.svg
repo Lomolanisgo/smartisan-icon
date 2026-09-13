@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="s" d="SPARK"/>
+    <!-- shared Smartisan rectangular tile silhouette (see tile-spec/spec.md) -->
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use xlink:href="#tile"/></clipPath>
+    <linearGradient id="clay" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E58A68"/>
+      <stop offset="0.55" stop-color="#D97757"/>
+      <stop offset="1" stop-color="#C6613F"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A8492A"/>
+      <stop offset="1" stop-color="#9A3F22"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="50" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FAF4EA"/>
+      <stop offset="1" stop-color="#EFE5D4"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="23" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.15  0 0 0 0 0.07  0 0 0 0.9 -0.35" result="g"/>
+      <feComposite in="g" in2="SourceAlpha" operator="in"/>
+    </filter>
+    <filter id="inset" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feOffset in="SourceAlpha" dy="3.2"/>
+      <feGaussianBlur stdDeviation="1.8" result="o"/>
+      <feComposite in="SourceAlpha" in2="o" operator="arithmetic" k2="1" k3="-1" result="rim"/>
+      <feFlood flood-color="#6E2A12" flood-opacity="0.85"/>
+      <feComposite in2="rim" operator="in" result="dark"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="dark"/></feMerge>
+    </filter>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="0.8"/></filter>
+  </defs>
+  <!-- tile: same silhouette, rim treatment and no outer shadow, as the bilibili override -->
+  <use xlink:href="#tile" fill="url(#clay)"/>
+  <use xlink:href="#tile" fill="#fff" filter="url(#grain)" opacity="0.3"/>
+  <use xlink:href="#tile" fill="url(#sheen)"/>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use xlink:href="#tile" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
+    <use xlink:href="#tile" stroke="#000" stroke-opacity="0.08" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use xlink:href="#tile" stroke="#F6B79C" stroke-opacity="0.8" stroke-width="2" transform="translate(0 1)"/>
+    <use xlink:href="#tile" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+  <!-- lower lip light catch -->
+  <use xlink:href="#s" fill="#F7B89E" filter="url(#soft)" transform="translate(128 128.6) scale(1.9) translate(-52.9 -54.2)"/>
+  <!-- pressed paper-white spark -->
+  <g filter="url(#inset)">
+    <use xlink:href="#s" fill="url(#paper)" transform="translate(128 126.4) scale(1.9) translate(-52.9 -54.2)"/>
+  </g>
+</svg>

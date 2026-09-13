@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>定稿图标预览</title>
+<style>
+  body { margin:0; background:#f2f1ee; color:#222; font:14px/1.6 system-ui,"Microsoft YaHei",sans-serif; padding:24px; }
+  h1 { font-size:22px; margin:0 0 4px; } .sub { color:#777; margin:0 0 20px; }
+  .grid { display:flex; flex-wrap:wrap; gap:16px; }
+  .card { width:260px; background:#fff; border:1px solid #e3e1dc; border-radius:14px; padding:12px; }
+  .card.new { border:2px solid #d9534f; }
+  .big { display:flex; justify-content:center; background:repeating-conic-gradient(#eee 0 25%,#fff 0 50%) 0 0/16px 16px; border-radius:8px; padding:8px; }
+  .big img { width:200px; height:200px; }
+  .small { display:flex; gap:8px; margin-top:8px; }
+  .small div { flex:1; display:flex; justify-content:center; padding:8px 0; border-radius:8px; }
+  .dk { background:#2b3440; } .lt { background:#dfe6ee; }
+  .small img { width:48px; height:48px; }
+  .name { font-weight:600; margin-top:8px; } .desc { color:#666; font-size:13px; }
+  .wall { margin-top:28px; background:linear-gradient(135deg,#34495e,#6c5b7b); border-radius:16px; padding:24px; display:grid; grid-template-columns:repeat(auto-fill,72px); gap:22px; }
+  .wall div { text-align:center; color:#fff; font-size:11px; } .wall img { width:64px; height:64px; display:block; margin:0 auto 4px; }
+</style>
+</head>
+<body>
+<h1>定稿图标预览</h1>
+<p class="sub">图片直接读取 iconpack/overrides/icons 里的文件。红框为这轮新改的。</p>
+<div class="grid" id="g"></div>
+<div class="wall" id="w"></div>
+<script>
+const O = 'file:///D:/Others-Github/smartisan_icon/iconpack/overrides/icons/';
+const L = [
+  ['com.microsoft.emmx','Edge','蓝底白 e，e 直接取自你给的图',1],
+  ['com.microsoft.emmx.dev','Edge Dev','白底蓝 e',1],
+  ['com.anthropic.claude','Claude','B 改长方形，珊瑚色底 + 米白星芒压印',1],
+  ['com.openai.chatgpt','ChatGPT','A 黑色立体花结，内部空隙填白',1],
+  ['com.apple.android.music','Apple Music','C 银白音箱网，音符已视觉居中',1],
+  ['com.tencent.mm','微信','A 白瓷底·双气泡'],
+  ['com.duolingo','多邻国','A 毛绒方块 Duo'],
+  ['com.ss.android.ugc.aweme','抖音','A 黑底'],
+  ['com.zhiliaoapp.musically','TikTok','A 银白底'],
+  ['com.bilibili.app.in','bilibili','之前已有，作对比'],
+];
+const g = document.getElementById('g'), w = document.getElementById('w');
+for (const [p,n,d,isNew] of L) {
+  const s = O + p + '.png?' + Date.now();
+  g.insertAdjacentHTML('beforeend', `<div class="card ${isNew?'new':''}"><div class="big"><img src="${s}"></div>
+    <div class="small"><div class="dk"><img src="${s}"></div><div class="lt"><img src="${s}"></div></div>
+    <div class="name">${n}</div><div class="desc">${d}</div></div>`);
+  w.insertAdjacentHTML('beforeend', `<div><img src="${s}">${n}</div>`);
+}
+</script>
+</body>
+</html>

@@ -23,7 +23,9 @@
   <circle cx="128" cy="128" r="106" fill="url(#blue)"/>
   <circle cx="128" cy="128" r="106" fill="none" stroke="#0B3F9E" stroke-opacity="0.35" stroke-width="2"/>
   <path d="M24 120 C28 64 74 22 128 22 C182 22 228 64 232 120 C198 100 164 92 128 92 C92 92 58 100 24 120 Z" fill="url(#gloss)"/>
-  <g filter="url(#sh)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <clipPath id="disc"><circle cx="128" cy="128" r="105"/></clipPath>
+  <!-- whole tower group shifted +22 so the top circle (was cy 106) sits exactly on the badge centre (128,128); legs clipped by the disc -->
+  <g clip-path="url(#disc)"><g transform="translate(0 22)" filter="url(#sh)" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <g stroke="#DCEFFF" stroke-width="12" opacity="0.8">
       <path d="M102.8 142 A44 44 0 1 1 153.2 142"/>
       <path d="M86.7 165 A72 72 0 1 1 169.3 165"/>
@@ -33,5 +35,5 @@
       <path d="M108 172 H148"/>
     </g>
     <circle cx="128" cy="106" r="17" fill="#FFFFFF" stroke="none"/>
-  </g>
+  </g></g>
 </svg>

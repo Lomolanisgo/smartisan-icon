@@ -3,10 +3,10 @@
   "label": "PostNL",
   "references": [
     { "pkg": "com.sf.activity", "why": "同为快递应用，参考顺丰图标的品牌色底板与压印标志做法" },
-    { "pkg": "com.dada.mobile.android", "why": "快递类拟物实物隐喻（纸箱）的材质处理，B 方案改为邮筒实物" }
+    { "pkg": "com.dada.mobile.android", "why": "快递类的拟物实物隐喻（纸箱），B 方案改为邮筒实物" }
   ],
   "options": [
-    { "id": "A", "name": "橙色光面标志牌", "shape": "landscape", "desc": "PostNL 橙色横矩形底板，白色圆角三角标志、皇冠和 postnl 字样带轻微压印投影；最忠实品牌，48px 下清晰。" },
+    { "id": "A", "name": "橙色光面标志牌", "shape": "landscape", "updated": true, "desc": "按规范的橙色横矩形底板；整个白色标志（圆角三角、原图皇冠、postnl 字样）从原图描摹为矢量，等比例放置，带轻微压印投影。" },
     { "id": "B", "name": "橙色邮筒", "shape": "free", "desc": "荷兰街头橙色 PostNL 邮筒实物：圆顶、投信口、立柱与地面投影，正面印白色标志；隐喻直观，但标志较小。" }
   ]
 }

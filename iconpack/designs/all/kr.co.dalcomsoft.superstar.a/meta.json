@@ -6,7 +6,7 @@
     { "pkg": "com.brianbaek.popstar", "why": "星星类游戏的立体星形参考" }
   ],
   "options": [
-    { "id": "A", "name": "粉紫字标横板", "shape": "landscape", "desc": "锤子横矩形轮廓，紫到粉的渐变底，保留品牌的“SUPER（白框紫字）/ STAR（空心描边）/ SMTOWN”三行字标，加两颗闪光；最像原品牌，但文字多，48px 下只能看清大字。" },
+    { "id": "A", "name": "粉紫字标横板", "shape": "landscape", "updated": true, "desc": "锤子横矩形轮廓（按 tile-spec），紫到粉的渐变底；图案改为原图标的“SUPER / STAR / SMTOWN”原版字形（从 phone-icons 原图描摹成矢量，1:1 比例，含 SUPER 的内线与 STAR 的装饰线），去掉了自加的闪光。对照见 _logo-compare.png。" },
     { "id": "B", "name": "音游星光碟", "shape": "circle", "desc": "参考锤子节奏大师：品红外圈、深紫与亮紫多层同心圆光碟，中心是立体粉白星星，外圈带两段点击轨迹；无文字，小尺寸清晰，但品牌识别主要靠配色。" }
   ]
 }

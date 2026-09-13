@@ -2,11 +2,11 @@
   "pkg": "com.ups.mobile.android",
   "label": "UPS",
   "references": [
-    { "pkg": "cn.gov.tax.its", "why": "立体盾牌造型的边框厚度与高光处理" },
-    { "pkg": "com.sf.activity", "why": "同为快递，参考其棕色皮革质感底板与压印标志" }
+    { "pkg": "com.sf.activity", "why": "同为快递，B 方案按顺丰图标做：浅棕皮革边框加内凹深棕面板，中央放品牌标志" },
+    { "pkg": "cn.gov.tax.its", "why": "立体盾牌的厚度与高光处理" }
   ],
   "options": [
-    { "id": "A", "name": "金边立体盾牌", "shape": "free", "desc": "UPS 盾牌做成金色包边的立体徽章，棕色内面、顶部金色弧带、金色 ups 字样；标志即图标，识别度最高。" },
-    { "id": "B", "name": "棕色皮革缝线卡", "shape": "square", "desc": "参考顺丰的皮革卡片：棕色皮革方块加浅色缝线，中央嵌金属 UPS 盾牌铭牌；质感更强，盾牌略小。" }
+    { "id": "A", "name": "立体盾牌", "shape": "free", "updated": true, "desc": "原图 UPS 盾牌标志（从 phone-icons 原图描摹为矢量，等比例、不变形），加金色渐变、内侧浮雕投影、顶部玻璃高光和外投影，做成立体徽章。" },
+    { "id": "B", "name": "顺丰式皮革卡", "shape": "landscape", "updated": true, "desc": "严格按横矩形规范：浅棕皮纹边框、内凹深棕皮革面板（仿顺丰图标），中央嵌原图 UPS 盾牌（描摹矢量、等比例），做成带高光的金属铭牌。" }
   ]
 }

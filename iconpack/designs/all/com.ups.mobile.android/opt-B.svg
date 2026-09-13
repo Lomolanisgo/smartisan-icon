@@ -1,45 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
   <defs>
-    <path id="tile" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
-    <clipPath id="clip"><use href="#tile"/></clipPath>
-    <linearGradient id="leather" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7A5236"/><stop offset="0.5" stop-color="#5A3824"/><stop offset="1" stop-color="#452818"/>
+    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <clipPath id="tileClip"><use href="#tile"/></clipPath>
+    <path id="outer" d="M211.17 104.16L202.83 104.43L193.50 105.08L183.50 106.16L170.96 108.17L161.50 110.24L150.50 113.27L138.83 117.32L127.17 122.38L123.17 124.42L121.95 125.50L121.69 127.50L121.70 238.17L122.13 246.17L123.19 253.17L125.23 261.17L127.17 266.55L130.17 272.98L134.17 279.54L138.22 284.83L143.50 290.40L148.50 294.67L152.83 297.69L159.50 301.80L166.67 305.83L177.83 311.67L192.50 318.82L211.83 327.71L216.50 329.52L218.83 328.80L230.17 323.75L255.17 311.77L272.17 302.70L281.66 296.83L284.83 294.58L288.17 291.78L291.50 288.63L294.83 284.94L297.83 281.11L300.70 276.83L304.63 269.50L306.80 264.17L308.85 257.50L309.83 253.16L310.63 248.17L311.18 241.50L311.30 126.83L311.05 125.50L309.83 124.42L301.50 120.37L296.31 118.17L288.50 115.23L282.17 113.17L275.18 111.17L267.17 109.23L256.17 107.14L240.57 105.17L224.50 104.19Z"/>
+    <path id="brown" d="M248.17 126.12L244.50 126.95L237.50 127.03L233.83 127.95L229.17 128.06L226.50 128.92L222.50 129.08L220.50 129.90L217.50 130.05L215.17 130.91L212.50 131.08L210.50 131.90L208.17 132.11L206.50 132.87L204.17 133.12L202.50 133.87L200.50 134.12L198.83 134.87L197.17 135.13L195.50 135.88L193.83 136.16L192.50 136.85L190.83 137.17L189.50 137.86L185.50 139.15L184.17 139.85L182.80 140.17L179.50 141.76L173.50 144.18L165.50 148.18L158.50 152.17L154.50 154.82L153.17 155.40L151.83 156.54L150.17 157.40L148.83 158.60L147.17 159.46L145.50 160.93L143.17 162.37L140.83 164.52L138.50 166.05L135.83 168.64L131.83 171.73L131.18 172.50L130.98 173.17L131.04 246.83L131.90 249.50L132.13 252.83L132.88 254.50L133.08 256.50L133.83 258.27L134.16 259.83L137.29 267.50L140.15 272.50L142.11 275.50L143.92 277.50L145.46 279.83L150.17 284.66L153.83 287.36L155.50 288.91L161.17 292.62L162.50 293.20L166.50 295.82L169.50 297.19L179.50 302.81L187.50 306.80L201.50 313.18L204.50 314.82L216.17 319.95L217.50 319.77L220.50 318.18L228.50 314.82L231.50 313.18L245.50 306.80L255.50 301.77L263.50 297.25L266.50 295.82L270.50 293.23L271.50 292.83L277.50 288.91L279.41 287.17L281.83 285.53L286.97 280.50L289.17 277.40L290.92 275.50L295.80 267.50L298.83 260.17L299.13 258.50L299.83 257.06L300.09 254.83L300.91 252.83L301.14 249.50L301.92 247.50L302.09 236.83L301.94 128.50L301.17 127.63L299.17 127.10L289.83 126.96L284.83 126.03ZM216.99 176.50L219.17 176.48L222.17 176.93L226.17 177.06L232.50 179.34L235.58 181.17L239.50 184.45L242.87 188.50L244.79 191.83L246.85 196.50L247.17 198.17L247.94 199.83L248.15 202.17L248.95 204.17L249.06 208.83L249.80 211.83L250.00 215.50L249.80 219.50L249.05 222.50L248.93 227.50L248.11 229.50L247.90 232.17L247.11 233.83L246.84 235.50L243.78 242.50L241.62 245.83L235.83 251.62L232.50 253.72L226.50 255.91L215.17 256.01L214.17 256.21L213.56 256.83L213.44 287.83L213.06 289.50L212.50 289.86L211.50 289.99L197.83 289.96L196.78 289.50L196.45 288.83L196.37 287.83L196.41 183.83L196.94 182.50L198.50 181.17L202.50 179.19L205.35 178.17L207.50 177.91L208.50 177.50ZM274.91 176.50L277.50 176.49L280.17 176.95L283.17 177.03L286.83 178.17L289.50 179.29L292.50 181.13L293.77 182.83L293.89 194.17L293.50 195.58L292.50 195.75L290.50 194.10L287.50 192.18L285.50 191.21L283.51 190.83L282.17 190.11L275.50 190.04L272.50 191.18L270.39 193.17L269.13 196.17L269.01 198.50L269.16 199.50L270.17 201.62L271.83 204.04L275.17 206.61L276.50 207.18L284.83 212.38L289.83 216.74L292.89 220.50L294.77 224.17L295.91 227.50L295.99 237.83L295.80 238.83L295.17 240.18L294.83 241.97L293.61 244.83L291.64 247.83L286.83 252.61L282.54 254.83L279.83 255.87L276.83 256.09L274.50 256.87L271.17 256.97L269.50 256.76L267.50 256.08L264.50 255.92L262.50 255.10L260.83 254.83L256.41 252.83L254.23 251.50L254.00 250.17L254.10 237.50L254.50 236.89L255.17 236.92L259.50 239.79L264.50 241.88L266.83 242.14L269.17 242.91L271.17 242.82L274.50 241.81L276.83 240.58L277.85 239.50L278.86 237.50L279.63 234.17L278.88 230.17L277.83 228.38L273.83 224.36L263.50 217.92L259.50 214.28L256.39 210.83L254.17 206.50L253.90 204.50L253.08 202.50L253.02 195.17L253.85 192.83L254.14 190.83L255.18 188.50L257.17 185.38L261.17 181.36L264.50 179.18L266.56 178.17L268.17 177.86L269.83 177.07L272.83 176.94ZM139.65 178.17L140.83 178.00L153.83 178.02L154.83 178.31L155.45 179.17L155.62 180.83L155.62 230.50L156.02 235.83L156.32 236.83L157.68 239.17L160.17 241.59L160.83 241.91L161.83 242.00L168.83 241.86L171.17 240.66L171.91 239.50L172.00 180.17L172.17 178.65L172.65 178.17L173.50 178.01L186.50 178.00L187.64 178.17L188.44 178.83L188.77 180.83L188.76 247.83L188.48 249.50L187.50 250.69L181.17 253.80L179.50 254.15L178.17 254.85L175.83 255.15L174.17 255.91L169.83 256.08L166.17 256.92L161.17 256.91L158.17 256.08L154.83 255.82L149.50 253.59L145.50 250.56L142.47 246.83L141.21 244.50L140.79 242.83L140.13 241.50L139.86 239.50L139.14 237.83L139.01 236.83L139.00 179.83L139.09 178.83ZM216.17 190.08L213.50 191.37L213.10 192.50L213.09 239.83L213.50 241.17L214.17 241.75L218.83 242.33L222.50 241.87L224.97 240.50L228.50 236.73L229.78 234.17L230.15 232.50L230.86 231.17L231.08 228.50L231.83 226.66L231.99 225.50L231.97 205.50L231.12 202.83L230.87 200.17L229.85 197.50L228.83 195.48L226.83 192.91L224.50 191.18L222.14 190.17Z"/>
+    <clipPath id="panelClip"><path d="M31 37H225C235 37 239 41 239 51V205C239 215 235 219 225 219H31C21 219 17 215 17 205V51C17 41 21 37 31 37Z"/></clipPath>
+    <linearGradient id="tan" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E2B87C"/><stop offset="0.5" stop-color="#D1A263"/><stop offset="1" stop-color="#BE8C4E"/>
+    </linearGradient>
+    <linearGradient id="leather" x1="0" y1="37" x2="0" y2="219" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A3524"/><stop offset="1" stop-color="#3A281A"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A67A44"/><stop offset="1" stop-color="#8E6534"/>
     </linearGradient>
     <filter id="grain" x="0" y="0" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
-      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.22 0"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.28 0"/>
       <feComposite in2="SourceGraphic" operator="in"/>
     </filter>
-    <linearGradient id="shieldG" x1="0" y1="62" x2="0" y2="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#3A2014"/><stop offset="1" stop-color="#24120A"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A6"/><stop offset="0.35" stop-color="#FFB500"/><stop offset="1" stop-color="#C98800"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="60" x2="0" y2="205" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFE59A"/><stop offset="0.45" stop-color="#F2AE10"/><stop offset="1" stop-color="#B87800"/>
+    <linearGradient id="brownG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A2A1E"/><stop offset="1" stop-color="#2A140C"/>
     </linearGradient>
-    <filter id="deboss" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="0.6" flood-color="#C99A6E" flood-opacity="0.6"/>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/><stop offset="0.4" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="oc"><use href="#outer"/></clipPath>
+    <filter id="plate" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3.0048" stdDeviation="2.40384" flood-color="#140800" flood-opacity="0.6"/>
     </filter>
-    <filter id="tx" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="0.8" flood-color="#000" flood-opacity="0.6"/>
+    <filter id="bev" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5024" stdDeviation="0.7512" flood-color="#000" flood-opacity="0.7"/>
     </filter>
   </defs>
-  <use href="#tile" fill="url(#leather)"/>
-  <rect x="15" y="15" width="226" height="226" fill="#000" filter="url(#grain)" clip-path="url(#clip)"/>
-  <g clip-path="url(#clip)" fill="none">
-    <ellipse cx="128" cy="20" rx="160" ry="80" fill="#fff" opacity="0.08"/>
-    <use href="#tile" stroke="#000" stroke-opacity="0.25" stroke-width="5"/>
-    <use href="#tile" stroke="#fff" stroke-opacity="0.18" stroke-width="2" transform="translate(0 1)"/>
-    <use href="#tile" stroke="#2E1A0E" stroke-width="2"/>
+  <!-- SF-style: tan leather frame + recessed dark brown panel -->
+  <use href="#tile" fill="url(#tan)"/>
+  <rect x="0" y="0" width="256" height="256" fill="#000" filter="url(#grain)" clip-path="url(#tileClip)"/>
+  <g clip-path="url(#tileClip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.08" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.12" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#F6DDB0" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#rim)" stroke-width="2"/>
   </g>
-  <!-- stitching -->
-  <path d="M43 29H213C224 29 227 32 227 43V213C227 224 224 227 213 227H43C32 227 29 224 29 213V43C29 32 32 29 43 29Z" fill="none" stroke="#1E0F06" stroke-opacity="0.5" stroke-width="3" stroke-dasharray="7 5" transform="translate(0 1)"/>
-  <path d="M43 29H213C224 29 227 32 227 43V213C227 224 224 227 213 227H43C32 227 29 224 29 213V43C29 32 32 29 43 29Z" fill="none" stroke="#E8C9A0" stroke-width="2.2" stroke-dasharray="7 5"/>
-  <!-- metal shield plate -->
-  <g filter="url(#deboss)">
-    <path d="M70 70C108 55 148 55 186 70V140C186 175 160 194 128 210C96 194 70 175 70 140Z" fill="url(#gold)"/>
-    <path d="M78 76C112 63 144 63 178 76V139C178 169 156 186 128 200C100 186 78 169 78 139Z" fill="url(#shieldG)"/>
-    <path d="M78 76C112 63 144 63 178 76V96C142 86 110 88 78 104Z" fill="url(#gold)" opacity="0.95"/>
-    <text x="128" y="160" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="700" font-size="54" letter-spacing="-2.5" fill="url(#gold)" filter="url(#tx)">ups</text>
+  <path id="panel" d="M31 37H225C235 37 239 41 239 51V205C239 215 235 219 225 219H31C21 219 17 215 17 205V51C17 41 21 37 31 37Z" fill="url(#leather)"/>
+  <rect x="0" y="0" width="256" height="256" fill="#000" filter="url(#grain)" clip-path="url(#panelClip)"/>
+  <g clip-path="url(#panelClip)" fill="none">
+    <use href="#panel" stroke="#000" stroke-opacity="0.45" stroke-width="6" transform="translate(0 2)"/>
   </g>
-  <path d="M74 70C108 57 148 57 182 70" fill="none" stroke="#FFF6D0" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round"/>
+  <use href="#panel" fill="none" stroke="#FBE6C0" stroke-opacity="0.55" stroke-width="1" transform="translate(0 1)"/>
+  <g transform="translate(128 128) scale(0.6656017039403621) translate(-216.495 -216.83999999999997)">
+    <use href="#outer" fill="url(#gold)" filter="url(#plate)"/>
+    <use href="#brown" fill="url(#brownG)" fill-rule="evenodd" filter="url(#bev)"/>
+    <g clip-path="url(#oc)"><use href="#outer" fill="url(#gloss)"/></g>
+    <use href="#outer" fill="none" stroke="#FFF3C4" stroke-opacity="0.5" stroke-width="1.5024"/>
+  </g>
 </svg>

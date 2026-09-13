@@ -5,14 +5,14 @@
     <linearGradient id="paper" x1="0" y1="3" x2="0" y2="253" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F0EB"/>
     </linearGradient>
-    <linearGradient id="cover" x1="0" y1="3" x2="0" y2="60" gradientUnits="userSpaceOnUse">
+    <linearGradient id="cover" x1="23" y1="0" x2="72" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#FF6A4A"/><stop offset="1" stop-color="#DA2E22"/>
     </linearGradient>
     <linearGradient id="fold" x1="232" y1="200" x2="186" y2="246" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#D9D2C8"/><stop offset="0.5" stop-color="#F4F0EA"/><stop offset="1" stop-color="#FFFFFF"/>
     </linearGradient>
-    <linearGradient id="coil" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#7C838A"/><stop offset="0.45" stop-color="#F4F6F8"/><stop offset="1" stop-color="#6E757C"/>
+    <linearGradient id="coil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F6F8"/><stop offset="0.5" stop-color="#A9AFB5"/><stop offset="1" stop-color="#6E757C"/>
     </linearGradient>
     <linearGradient id="pen" x1="0" y1="-11" x2="0" y2="11" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#FF8A5C"/><stop offset="0.35" stop-color="#F0502E"/><stop offset="1" stop-color="#A81E14"/>
@@ -25,31 +25,34 @@
   </defs>
   <use href="#page" fill="url(#paper)" filter="url(#dsh)"/>
   <g clip-path="url(#pc)">
-    <rect x="0" y="0" width="256" height="58" fill="url(#cover)"/>
-    <rect x="0" y="57" width="256" height="2" fill="#000" fill-opacity="0.15"/>
+    <!-- cover strip along the left edge: pages turn sideways like a book -->
+    <rect x="0" y="0" width="70" height="256" fill="url(#cover)"/>
+    <rect x="69" y="0" width="2" height="256" fill="#000" fill-opacity="0.15"/>
+    <rect x="71" y="0" width="4" height="256" fill="#000" fill-opacity="0.04"/>
     <rect x="0" y="4" width="256" height="1.5" fill="#FFFFFF" fill-opacity="0.4"/>
     <g stroke="#E6D9D2" stroke-width="2">
-      <line x1="44" y1="92" x2="212" y2="92"/><line x1="44" y1="118" x2="212" y2="118"/>
-      <line x1="44" y1="144" x2="212" y2="144"/><line x1="44" y1="170" x2="212" y2="170"/>
-      <line x1="44" y1="196" x2="212" y2="196"/><line x1="44" y1="222" x2="170" y2="222"/>
+      <line x1="88" y1="44" x2="212" y2="44"/><line x1="88" y1="70" x2="212" y2="70"/>
+      <line x1="88" y1="96" x2="212" y2="96"/><line x1="88" y1="122" x2="212" y2="122"/>
+      <line x1="88" y1="148" x2="212" y2="148"/><line x1="88" y1="174" x2="212" y2="174"/>
+      <line x1="88" y1="200" x2="212" y2="200"/><line x1="88" y1="226" x2="170" y2="226"/>
     </g>
   </g>
   <use href="#page" fill="none" stroke="#000" stroke-opacity="0.13"/>
-  <!-- spiral -->
+  <!-- spiral along the left edge -->
   <g fill="#8E1A12">
-    <circle cx="56" cy="40" r="5"/><circle cx="85" cy="40" r="5"/><circle cx="114" cy="40" r="5"/>
-    <circle cx="143" cy="40" r="5"/><circle cx="172" cy="40" r="5"/><circle cx="201" cy="40" r="5"/>
+    <circle cx="46" cy="38" r="5"/><circle cx="46" cy="74" r="5"/><circle cx="46" cy="110" r="5"/>
+    <circle cx="46" cy="146" r="5"/><circle cx="46" cy="182" r="5"/><circle cx="46" cy="218" r="5"/>
   </g>
   <g fill="url(#coil)" stroke="#5A6168" stroke-width="0.8">
-    <rect x="52" y="-0" width="8" height="42" rx="4"/><rect x="81" y="0" width="8" height="42" rx="4"/>
-    <rect x="110" y="0" width="8" height="42" rx="4"/><rect x="139" y="0" width="8" height="42" rx="4"/>
-    <rect x="168" y="0" width="8" height="42" rx="4"/><rect x="197" y="0" width="8" height="42" rx="4"/>
+    <rect x="4" y="34" width="44" height="8" rx="4"/><rect x="4" y="70" width="44" height="8" rx="4"/>
+    <rect x="4" y="106" width="44" height="8" rx="4"/><rect x="4" y="142" width="44" height="8" rx="4"/>
+    <rect x="4" y="178" width="44" height="8" rx="4"/><rect x="4" y="214" width="44" height="8" rx="4"/>
   </g>
   <!-- folded corner -->
   <path d="M232.93 200L180 252.94L184 212C185 205 188 203 194 202Z" fill="#000" fill-opacity="0.12" transform="translate(-3 -3)"/>
   <path d="M232.93 200L180 252.94L184 212C185 205 188 203 194 202Z" fill="url(#fold)" stroke="#CFC6BA" stroke-width="1"/>
   <!-- handwriting -->
-  <path d="M52 108c8-10 14-10 16 0s8 8 14-2 12-8 14 2 10 6 16-4" fill="none" stroke="#3E3E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path transform="translate(42 -44)" d="M52 108c8-10 14-10 16 0s8 8 14-2 12-8 14 2 10 6 16-4" fill="none" stroke="#3E3E3E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- S Pen -->
   <g transform="translate(118 196) rotate(-50)" filter="url(#sh)">
     <path d="M0 -11H118C124 -11 128 -6 128 0S124 11 118 11H0Z" fill="url(#pen)"/>

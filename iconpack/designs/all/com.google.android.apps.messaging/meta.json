@@ -7,6 +7,7 @@
   ],
   "options": [
     { "id": "A", "name": "白色气泡·蓝色文字", "shape": "free", "desc": "无底板白色立体对话气泡（尾巴在左下），里面三条谷歌蓝文字行。与 HTC 短信为兄弟造型，最具锤子味，但品牌双气泡标志弱化。" },
-    { "id": "B", "name": "圆盘·双蓝气泡", "shape": "circle", "desc": "白瓷圆盘上叠放浅蓝、深蓝两枚带玻璃高光的气泡，还原 Google Messages 的双气泡标志。品牌识别更强。" }
+    { "id": "B", "name": "圆盘·双蓝气泡", "shape": "circle", "desc": "白瓷圆盘上叠放浅蓝、深蓝两枚带玻璃高光的气泡，还原 Google Messages 的双气泡标志。品牌识别更强。" },
+    { "id": "C", "name": "圆盘·原版双气泡", "shape": "circle", "updated": true, "desc": "在已选的 B 基础上修改：气泡换成从 Google Messages 原图标（phone-icons）逐像素描出的精确标志——浅蓝药丸、带尾巴的蓝气泡和深蓝重叠区三层（等比缩放，颜色取自原图），加玻璃高光，保留白瓷圆盘。锤子原厂没有“短信”系统图标可参考（已查 raw、png、downloader 清单与 web），因此以谷歌原标志为准。" }
   ]
 }

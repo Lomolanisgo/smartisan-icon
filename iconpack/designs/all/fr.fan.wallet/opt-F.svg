@@ -22,9 +22,9 @@
   <ellipse cx="128" cy="232" rx="104" ry="6" fill="#000" fill-opacity="0.3" filter="url(#sh)"/>
   <!-- wallet back panel -->
   <rect x="18" y="84" width="220" height="146" rx="18" fill="url(#back)"/>
-  <!-- white ticket standing upright inside the pocket (original ticket outline, rotated upright, notch end up) -->
+  <!-- white ticket standing upright inside the pocket (original ticket outline, tilted about 4 degrees, notch end up) -->
   <clipPath id="inside"><rect x="0" y="0" width="256" height="222"/></clipPath>
-  <g clip-path="url(#inside)"><g transform="translate(128 164) rotate(210) scale(0.55) translate(-256 -256)">
+  <g clip-path="url(#inside)"><g transform="translate(128 164) rotate(214) scale(0.55) translate(-256 -256)">
     <use href="#tk" fill="#FFFFFF"/>
     <use href="#tk" fill="#DDE3EE" fill-opacity="0.5"/>
     <use href="#tk" fill="none" stroke="#8E9AB2" stroke-width="3.5"/>

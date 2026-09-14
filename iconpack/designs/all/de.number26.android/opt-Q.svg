@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="lbTile" d="M15 15H241V241H15Z"/>
+    <clipPath id="lbClip"><use href="#lbTile"/></clipPath>
+    <linearGradient id="lbFill" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4AAA97"/><stop offset="1" stop-color="#308E7A"/></linearGradient>
+    <linearGradient id="lbGloss" x1="0" y1="15" x2="0" y2="130" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+  </defs>
+  <use href="#lbTile" fill="url(#lbFill)"/>
+  <g clip-path="url(#lbClip)">
+    <path d="M15 15H241V120C170 138 86 138 15 124Z" fill="url(#lbGloss)"/>
+    <rect x="15" y="183" width="226" height="1" fill="#000" fill-opacity="0.10"/>
+    <rect x="15" y="184" width="226" height="1" fill="#FFFFFF" fill-opacity="0.18"/>
+  </g>
+  <g clip-path="url(#lbClip)" fill="none">
+    <use href="#lbTile" stroke="#000" stroke-opacity="0.12" stroke-width="5"/>
+    <use href="#lbTile" stroke="#000" stroke-opacity="0.14" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#lbTile" stroke="#90CBBF" stroke-opacity="0.8" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#lbTile" stroke="#256D5F" stroke-width="2"/>
+  </g>
+  <g clip-path="url(#lbClip)">
+  <svg xmlns="http://www.w3.org/2000/svg" x="21.00" y="29.86" width="214.00" height="138.28" viewBox="-2 44 260 168" overflow="visible">
+  <defs>
+    <clipPath id="card"><rect x="4" y="50" width="248" height="156" rx="14"/></clipPath>
+    <linearGradient id="frost" x1="0" y1="50" x2="0" y2="206" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FAFBFB"/><stop offset="1" stop-color="#DCDFE2"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="58" x2="0" y2="102" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2A2626"/><stop offset="1" stop-color="#0D0B0B"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F5F6"/><stop offset="0.45" stop-color="#B9BDC2"/><stop offset="0.7" stop-color="#E6E8EA"/><stop offset="1" stop-color="#9DA2A8"/>
+    </linearGradient>
+    <radialGradient id="holo" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.5" stop-color="#C8CBD0"/><stop offset="1" stop-color="#8E939A"/>
+    </radialGradient>
+    <linearGradient id="rainbow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF9AD5" stop-opacity="0.35"/><stop offset="0.35" stop-color="#9AE7FF" stop-opacity="0.35"/><stop offset="0.7" stop-color="#FFF19A" stop-opacity="0.35"/><stop offset="1" stop-color="#B69AFF" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.75"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="blur3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="red"><circle cx="207" cy="182" r="15"/></clipPath>
+  </defs>
+
+  <!-- soft contact shadow -->
+  <ellipse cx="128" cy="210" rx="112" ry="7" fill="#000" opacity="0.18" filter="url(#blur3)"/>
+
+  <!-- frosted translucent body -->
+  <rect x="4" y="50" width="248" height="156" rx="14" fill="url(#frost)" fill-opacity="0.86"/>
+  <g clip-path="url(#card)">
+    <!-- shapes seen blurred through the card -->
+    <path d="M-10,230 C40,170 90,160 150,190 C190,210 220,200 270,160 V240 H-10Z" fill="#5E6770" opacity="0.16" filter="url(#blur6)"/>
+    <ellipse cx="70" cy="178" rx="46" ry="22" fill="#6C747C" opacity="0.10" filter="url(#blur6)"/>
+    <!-- refraction sheen -->
+    <path d="M96,40 L136,40 L60,220 L20,220Z" fill="url(#sheen)" opacity="0.45" filter="url(#blur3)"/>
+    <!-- black band -->
+    <rect x="0" y="58" width="256" height="44" fill="url(#band)"/>
+    <rect x="0" y="58" width="256" height="1" fill="#FFFFFF" opacity="0.18"/>
+  </g>
+
+  <!-- N26 logo: exact traced original path -->
+  <path fill="#FFFFFF" fill-rule="evenodd" transform="translate(-16.9 15.35) scale(0.3)" d="M140.63 163.61L139.88 164.07L139.56 164.88L139.53 169.13L139.88 170.42L141.13 171.05L184.63 171.07L186.02 170.63L186.55 169.38L186.48 164.63L186.00 163.88L185.13 163.55ZM216.63 185.87L212.38 186.76L209.13 188.15L206.13 190.22L203.88 192.66L201.93 196.13L201.01 199.38L200.70 203.38L201.25 206.38L201.88 207.05L202.88 207.40L207.88 207.86L209.13 207.61L209.66 206.63L209.53 202.88L209.80 200.38L210.59 198.13L211.63 196.49L213.38 194.86L215.63 193.72L218.38 193.16L220.88 193.17L223.38 193.69L225.38 194.73L226.88 196.13L228.10 198.13L228.82 200.63L229.10 203.38L228.92 206.13L228.33 209.13L227.18 212.13L225.38 215.27L223.40 217.88L219.97 221.63L214.13 226.97L200.76 237.63L200.21 239.38L200.36 243.63L201.13 244.48L202.63 244.72L237.88 244.55L238.85 243.63L239.02 241.38L238.87 238.38L237.88 237.36L216.63 237.17L215.38 237.05L214.65 236.63L214.66 236.13L215.23 235.38L222.88 229.20L226.63 225.76L230.13 222.10L232.90 218.63L235.24 214.88L236.98 210.88L237.94 207.13L238.31 203.63L238.00 199.38L236.98 195.63L235.23 192.38L232.88 189.80L230.00 187.88L226.63 186.55L221.63 185.72ZM270.13 185.87L265.88 186.83L261.88 188.70L258.63 191.39L255.75 195.13L253.56 199.63L251.84 205.63L250.99 212.38L250.87 217.63L251.28 223.63L252.42 229.63L254.04 234.13L256.43 238.13L259.38 241.18L263.13 243.50L267.63 244.89L272.63 245.31L276.13 244.93L280.13 243.76L283.38 242.02L286.38 239.43L288.49 236.63L290.24 232.88L291.19 228.88L291.43 224.13L291.18 221.38L290.44 218.13L288.44 213.63L287.03 211.63L285.13 209.70L281.13 207.28L278.38 206.40L274.88 205.93L272.38 205.91L269.63 206.32L265.38 207.85L260.63 211.70L259.87 211.63L259.58 210.13L259.97 206.88L260.77 203.38L261.90 200.38L263.13 198.16L264.63 196.24L266.38 194.72L268.38 193.63L270.63 193.00L273.13 192.77L275.38 193.09L277.38 193.86L278.78 194.88L279.88 196.12L281.88 200.52L282.88 201.31L284.38 201.30L288.91 200.38L289.88 199.94L290.25 199.38L290.07 197.38L288.27 193.38L286.42 190.88L283.88 188.66L280.38 186.89L277.13 186.05L273.38 185.67ZM141.63 186.11L140.68 186.38L140.13 186.86L139.76 188.38L139.76 242.13L140.13 244.13L140.71 244.63L141.63 244.87L146.63 244.90L147.88 244.51L148.38 243.63L148.51 203.13L148.65 201.38L149.13 200.55L149.63 200.81L150.38 201.85L174.88 243.99L175.88 244.69L177.13 244.91L184.13 244.90L185.63 244.51L186.22 243.63L186.35 241.88L186.35 188.88L186.28 187.63L185.88 186.70L184.38 186.09L179.38 186.10L178.13 186.59L177.64 187.63L177.57 227.38L177.38 229.48L176.88 230.07L175.63 228.69L151.45 187.13L150.63 186.41L149.38 186.09ZM270.76 212.88L273.13 212.90L275.38 213.38L277.13 214.09L278.96 215.38L280.33 216.88L281.39 218.63L282.25 220.88L282.71 223.63L282.76 226.38L282.39 229.38L281.56 231.88L280.62 233.63L279.20 235.38L277.38 236.80L275.38 237.70L273.13 238.19L270.63 238.12L268.13 237.43L266.13 236.34L264.39 234.88L262.78 232.88L261.52 230.63L260.56 228.13L259.79 224.63L259.90 222.88L260.73 220.63L261.970 218.38L263.38 216.58L265.13 215.01L266.88 213.95ZM140.63 260.03L139.88 260.57L139.58 261.38L139.51 265.38L139.84 266.88L140.88 267.43L184.38 267.49L185.88 267.20L186.53 266.13L186.46 261.13L186.04 260.38L185.13 259.96Z"/>
+
+  <!-- copper outline rectangle crossing the band -->
+  <rect x="158" y="61" width="88" height="66" rx="4" fill="none" stroke="#C88E6C" stroke-width="2.2"/>
+  <rect x="158" y="62" width="88" height="66" rx="4" fill="none" stroke="#FFE1CC" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- chip -->
+  <rect x="24" y="112" width="36" height="30" rx="5" fill="url(#chip)" stroke="#8D9298" stroke-width="0.8"/>
+  <path d="M24 122H36M24 132H36M48 122H60M48 132H60M36 112V142M48 112V142M36 127H48" stroke="#8D9298" stroke-width="0.9" fill="none"/>
+  <!-- contactless -->
+  <g fill="none" stroke="#2B2B2B" stroke-width="2.6" stroke-linecap="round">
+    <path d="M72 121a8 8 0 0 1 0 12"/><path d="M78 116a15 15 0 0 1 0 22"/><path d="M84 111a22 22 0 0 1 0 32"/>
+  </g>
+
+  <!-- debit hologram disc -->
+  <circle cx="220" cy="128" r="17" fill="url(#holo)"/>
+  <circle cx="220" cy="128" r="17" fill="url(#rainbow)"/>
+  <circle cx="220" cy="128" r="16.4" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.8"/>
+
+  <!-- embossed number, simplified to groups -->
+  <g fill="#3A3A3A">
+    <rect x="24" y="156" width="40" height="7" rx="2"/>
+    <rect x="72" y="156" width="40" height="7" rx="2"/>
+    <rect x="120" y="156" width="40" height="7" rx="2"/>
+    <rect x="168" y="156" width="40" height="7" rx="2"/>
+  </g>
+  <g fill="#FFFFFF" opacity="0.7">
+    <rect x="24" y="163" width="40" height="1"/><rect x="72" y="163" width="40" height="1"/>
+    <rect x="120" y="163" width="40" height="1"/><rect x="168" y="163" width="40" height="1"/>
+  </g>
+
+  <!-- Mastercard -->
+  <circle cx="207" cy="182" r="15" fill="#EB001B"/>
+  <circle cx="228" cy="182" r="15" fill="#F79E1B"/>
+  <circle cx="228" cy="182" r="15" fill="#FF5F00" clip-path="url(#red)"/>
+
+  <!-- card edge: highlight + thin rim -->
+  <rect x="4.75" y="50.75" width="246.5" height="154.5" rx="13.3" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.9"/>
+  <rect x="4" y="50" width="248" height="156" rx="14" fill="none" stroke="#000" stroke-opacity="0.22" stroke-width="1"/>
+  <path d="M10,205.5 H246" stroke="#000" stroke-opacity="0.15" stroke-width="1"/>
+</svg>
+
+  </g>
+  <text x="128" y="212.0" dominant-baseline="central" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="700" font-size="28.0" fill="#000000" fill-opacity="0.25" transform="translate(0 -1)">N26</text>
+  <text x="128" y="212.0" dominant-baseline="central" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="700" font-size="28.0" fill="#FFFFFF">N26</text>
+</svg>

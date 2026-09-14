@@ -2,11 +2,34 @@
   "pkg": "com.ticketmaster.mobile.android.na",
   "label": "Ticketmaster",
   "references": [
-    { "pkg": "cn.damai", "why": "大麦网：米色纸质票券、两侧半圆缺口，直接参考其票面造型（B 方案）" },
-    { "pkg": "com.ylpw.ticketapp", "why": "永乐票务：票根锯齿与撕线细节" }
+    {
+      "pkg": "cn.damai",
+      "why": "大麦网：米色纸质票券、两侧半圆缺口，直接参考其票面造型（B 方案）"
+    },
+    {
+      "pkg": "com.ylpw.ticketapp",
+      "why": "永乐票务：票根锯齿与撕线细节"
+    }
   ],
   "options": [
-    { "id": "A", "name": "蓝色底板 t 标", "shape": "landscape", "desc": "横矩形品牌蓝底板，白色斜体 t 带浮雕阴影，两侧暗示票券缺口。简洁、识别度高。" },
-    { "id": "B", "name": "纸质门票", "shape": "free", "desc": "米白纸票，两侧和撕线处半圆缺口，左侧印大号蓝色 t，右侧蓝色票根带条形码。参考大麦票券造型，与 Fan Wallet 的倾斜蓝票区分。" }
+    {
+      "id": "A",
+      "name": "蓝色底板 t 标",
+      "shape": "landscape",
+      "desc": "横矩形品牌蓝底板，白色斜体 t 带浮雕阴影，两侧暗示票券缺口。简洁、识别度高。"
+    },
+    {
+      "id": "B",
+      "name": "纸质门票",
+      "shape": "free",
+      "desc": "米白纸票，两侧和撕线处半圆缺口，左侧印大号蓝色 t，右侧蓝色票根带条形码。参考大麦票券造型，与 Fan Wallet 的倾斜蓝票区分。"
+    },
+    {
+      "id": "Q",
+      "name": "深藏青底板 + 名称",
+      "shape": "square",
+      "updated": true,
+      "desc": "原物件放在 226 直角正方形底板上方，下方色带写应用名；底板取图标里与物件对比的颜色，使整体外框为正方形。"
+    }
   ]
 }

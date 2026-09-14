@@ -2,13 +2,49 @@
   "pkg": "de.number26.android",
   "label": "N26",
   "references": [
-    { "pkg": "com.mybank.android.phone", "why": "同为青绿色网络银行，参考其彩色横矩形底板与白色标志" },
-    { "pkg": "com.cmbchina.ccd.pluto.cmbActivity", "why": "银行应用的横矩形底板构图" }
+    {
+      "pkg": "com.mybank.android.phone",
+      "why": "同为青绿色网络银行，参考其彩色横矩形底板与白色标志"
+    },
+    {
+      "pkg": "com.cmbchina.ccd.pluto.cmbActivity",
+      "why": "银行应用的横矩形底板构图"
+    }
   ],
   "options": [
-    { "id": "A", "name": "青绿横板字标", "shape": "landscape", "desc": "品牌青绿横矩形（按 tile-spec 规格），顶部柔光，白色 N26 标志带轻投影。标志为从原图标内嵌 PNG 精确描摹的矢量路径（等比缩放，未变形，已用 _logo-compare.png 叠图核对）。", "updated": true },
-    { "id": "B", "name": "金属银行卡", "shape": "free", "desc": "N26 以卡片出名：一张倾斜的薄荷绿金属拉丝银行卡，带金色芯片、非接触支付标记和 N26 字标，下方有接触阴影。拟物感强；小尺寸下字标较小。" },
-    { "id": "C", "name": "透明银行卡", "shape": "free", "desc": "参考：用户提供的 N26 银行卡照片。卡片本身作为图标：磨砂半透明卡身（能隐约透出后方模糊形状，带斜向折射高光），顶部黑色条带上是原图标 N26 标志（精确描摹路径），右侧铜色细线矩形横跨黑条，银色芯片、非接触标记、debit 全息圆片、Mastercard 双圆；卡号简化为四组压印短条，省略姓名与文字。", "updated": true },
-    { "id": "D", "name": "青绿板上的透明卡", "shape": "landscape", "desc": "参考：用户提供的 N26 银行卡照片。按 tile-spec 规格的 N26 青绿横板，上面斜放同款磨砂半透明卡片（透出底下的青绿色），卡片在底板上投下柔和阴影；已用 verify.ps1 核对底板轮廓。", "updated": true }
+    {
+      "id": "A",
+      "name": "青绿横板字标",
+      "shape": "landscape",
+      "desc": "品牌青绿横矩形（按 tile-spec 规格），顶部柔光，白色 N26 标志带轻投影。标志为从原图标内嵌 PNG 精确描摹的矢量路径（等比缩放，未变形，已用 _logo-compare.png 叠图核对）。",
+      "updated": true
+    },
+    {
+      "id": "B",
+      "name": "金属银行卡",
+      "shape": "free",
+      "desc": "N26 以卡片出名：一张倾斜的薄荷绿金属拉丝银行卡，带金色芯片、非接触支付标记和 N26 字标，下方有接触阴影。拟物感强；小尺寸下字标较小。"
+    },
+    {
+      "id": "C",
+      "name": "透明银行卡",
+      "shape": "free",
+      "desc": "参考：用户提供的 N26 银行卡照片。卡片本身作为图标：磨砂半透明卡身（能隐约透出后方模糊形状，带斜向折射高光），顶部黑色条带上是原图标 N26 标志（精确描摹路径），右侧铜色细线矩形横跨黑条，银色芯片、非接触标记、debit 全息圆片、Mastercard 双圆；卡号简化为四组压印短条，省略姓名与文字。",
+      "updated": true
+    },
+    {
+      "id": "D",
+      "name": "青绿板上的透明卡",
+      "shape": "landscape",
+      "desc": "参考：用户提供的 N26 银行卡照片。按 tile-spec 规格的 N26 青绿横板，上面斜放同款磨砂半透明卡片（透出底下的青绿色），卡片在底板上投下柔和阴影；已用 verify.ps1 核对底板轮廓。",
+      "updated": true
+    },
+    {
+      "id": "Q",
+      "name": "N26 青绿底板 + 名称",
+      "shape": "square",
+      "updated": true,
+      "desc": "原物件放在 226 直角正方形底板上方，下方色带写应用名；底板取图标里与物件对比的颜色，使整体外框为正方形。"
+    }
   ]
 }

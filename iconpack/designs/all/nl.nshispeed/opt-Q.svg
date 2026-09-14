@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="lbTile" d="M15 15H241V241H15Z"/>
+    <clipPath id="lbClip"><use href="#lbTile"/></clipPath>
+    <linearGradient id="lbFill" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1A458F"/><stop offset="1" stop-color="#002A72"/></linearGradient>
+    <linearGradient id="lbGloss" x1="0" y1="15" x2="0" y2="130" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+  </defs>
+  <use href="#lbTile" fill="url(#lbFill)"/>
+  <g clip-path="url(#lbClip)">
+    <path d="M15 15H241V120C170 138 86 138 15 124Z" fill="url(#lbGloss)"/>
+    <rect x="15" y="183" width="226" height="1" fill="#000" fill-opacity="0.10"/>
+    <rect x="15" y="184" width="226" height="1" fill="#FFFFFF" fill-opacity="0.18"/>
+  </g>
+  <g clip-path="url(#lbClip)" fill="none">
+    <use href="#lbTile" stroke="#000" stroke-opacity="0.12" stroke-width="5"/>
+    <use href="#lbTile" stroke="#000" stroke-opacity="0.14" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#lbTile" stroke="#738DBA" stroke-opacity="0.8" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#lbTile" stroke="#002158" stroke-width="2"/>
+  </g>
+  <g clip-path="url(#lbClip)">
+  <svg xmlns="http://www.w3.org/2000/svg" x="21.00" y="23.36" width="214.00" height="151.28" viewBox="12 46 232 164" overflow="visible">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEAE2"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1650B0"/><stop offset="1" stop-color="#002A74"/>
+    </linearGradient>
+    <linearGradient id="stub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD84A"/><stop offset="1" stop-color="#F2B400"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.5"/><feOffset dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <mask id="holes">
+      <rect width="256" height="256" fill="#fff"/>
+      <circle cx="180" cy="52" r="10" fill="#000"/><circle cx="180" cy="204" r="10" fill="#000"/>
+    </mask>
+    <clipPath id="tk"><rect x="18" y="52" width="220" height="152" rx="12"/></clipPath>
+    <path id="ns" d="M100.983,69.133C95.517,69.133 90.733,67.085 87.317,63.672L67.5,43.192C66.133,42.509 64.767,41.827 63.4,41.827H26.5L53.833,69.133H34.7L0.533,35L34.7,0.867H75.017C80.483,0.867 85.267,2.915 88.683,6.328L108.5,26.808C109.867,27.491 111.233,28.173 112.6,28.173H149.5L122.167,0.867H141.3L175.467,35L141.3,69.133H100.983ZM63.4,28.173C68.867,28.173 73.65,30.221 77.067,33.635L96.883,54.115C98.25,54.797 99.617,55.48 100.983,55.48H135.833L149.5,41.827H112.6C107.133,41.827 102.35,39.779 98.933,36.365L79.117,15.885C77.75,15.203 76.383,14.52 75.017,14.52H40.167L26.5,28.173H63.4Z" fill-rule="evenodd"/>
+  </defs>
+  <g>
+    <g filter="url(#sh)">
+      <g mask="url(#holes)">
+        <rect x="18" y="52" width="220" height="152" rx="12" fill="url(#paper)"/>
+        <g clip-path="url(#tk)">
+          <rect x="18" y="52" width="162" height="56" fill="url(#band)"/>
+          <rect x="180" y="52" width="58" height="152" fill="url(#stub)"/>
+          <rect x="18" y="52" width="220" height="1.5" fill="#fff" opacity=".5"/>
+        </g>
+      </g>
+    </g>
+    <!-- logo on band -->
+    <use href="#ns" fill="#FFC917" transform="translate(40 66.5) scale(.5)"/>
+    <!-- route -->
+    <g font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#0A2E6E">
+      <text x="32" y="150" font-size="19">AMS</text>
+      <text x="168" y="150" font-size="19" text-anchor="end">PAR</text>
+    </g>
+    <circle cx="84" cy="143.5" r="3" fill="#0A2E6E"/>
+    <path d="M89 143.5H108" stroke="#0A2E6E" stroke-width="2.5" stroke-dasharray="3.5 3"/>
+    <path d="M107 138l6 5.5-6 5.5" fill="none" stroke="#0A2E6E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="34" y="166" width="72" height="6" rx="3" fill="#B9B4A8"/>
+    <rect x="34" y="180" width="48" height="6" rx="3" fill="#CFCABE"/>
+    <!-- perforation -->
+    <path d="M180 64V192" stroke="#fff" stroke-width="2.5" stroke-dasharray="4 5" opacity=".9"/>
+    <!-- barcode on stub -->
+    <g fill="#0A2E6E" transform="translate(196 72)">
+      <rect x="0" width="3" height="112"/><rect x="6" width="1.5" height="112"/><rect x="10" width="4" height="112"/>
+      <rect x="17" width="1.5" height="112"/><rect x="21" width="3" height="112"/>
+    </g>
+  </g>
+</svg>
+
+  </g>
+  <text x="128" y="212.0" dominant-baseline="central" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="700" font-size="21.8" fill="#000000" fill-opacity="0.25" transform="translate(0 -1)">NS International</text>
+  <text x="128" y="212.0" dominant-baseline="central" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-weight="700" font-size="21.8" fill="#FFFFFF">NS International</text>
+</svg>

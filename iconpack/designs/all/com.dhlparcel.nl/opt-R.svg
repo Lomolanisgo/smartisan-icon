@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Square DHL envelope (opt-B squared). Outer silhouette 15–241. DHL wordmark: official path from Wikimedia Commons File:DHL_Logo.svg, uniform scale 1.0470 -->
+  <defs>
+    <path id="dhl" d="m 56.665,16.206 c -0.768,1.04 -2.053,2.848 -2.835,3.904 -0.397,0.537 -1.114,1.512 1.263,1.512 2.515,0 12.515,0 12.515,0 0,0 2.017,-2.744 3.708,-5.039 2.3,-3.122 0.199,-9.618 -8.024,-9.618 -7.36,0 -32.384,0 -32.384,0 l -5.615,7.629 c 0,0 29.109,0 30.603,0 1.545,0 1.524,0.588 0.769,1.612 z m -9.194,7.298 c -2.377,0 -1.66,-0.977 -1.263,-1.514 0.782,-1.056 2.088,-2.845 2.856,-3.885 0.756,-1.024 0.776,-1.612 -0.771,-1.612 -1.493,0 -13.996,0 -13.996,0 L 23.02,31.819 c 0,0 20.141,0 27.501,0 9.083,0 14.14,-6.178 15.699,-8.314 0,-10e-4 -16.235,-10e-4 -18.749,-10e-4 z m 17.89,8.315 h 16.133 l 6.116,-8.316 -16.131,0.002 c -0.005,-10e-4 -6.118,8.314 -6.118,8.314 z m 41.625,-24.854 -6.188,8.405 h -7.2 L 99.783,6.965 H 83.655 l -10.79,14.657 h 39.46 L 123.112,6.965 Z M 88.694,31.819 h 16.127 l 6.119,-8.314 H 94.813 c -0.006,-10e-4 -6.119,8.314 -6.119,8.314 z M 0,26.784 v 1.766 h 22.468 l 1.298,-1.766 z m 26.181,-3.28 H 0 v 1.764 H 24.88 Z M 0,31.819 h 20.061 l 1.292,-1.756 H 0 Z m 152.072,-3.27 h 23.676 v -1.766 h -22.376 z m -2.405,3.27 h 26.081 v -1.756 h -24.79 z m 6.116,-8.315 -1.297,1.766 h 21.262 V 23.504 Z M 134.659,21.622 145.448,6.965 h -17.081 c -0.006,0 -10.797,14.657 -10.797,14.657 z m -18.472,1.882 c 0,0 -1.179,1.611 -1.752,2.387 -2.025,2.736 -0.234,5.928 6.376,5.928 7.636,0 25.901,0 25.901,0 l 6.119,-8.314 h -36.644 z"/>
+    <path id="body" d="M15 18Q15 15 18 15H236Q239 15 239 18V236Q239 239 236 239H18Q15 239 15 236Z"/>
+    <path id="flap" d="M15 18Q15 15 18 15H236Q239 15 239 18V66Q239 70 235 70H19Q15 70 15 66Z"/>
+    <clipPath id="outer"><rect x="15" y="15" width="226" height="226"/></clipPath>
+    <clipPath id="bc"><use href="#body"/></clipPath>
+    <linearGradient id="paper" x1="0" y1="15" x2="0" y2="239" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD21A"/><stop offset="0.55" stop-color="#FFCC00"/><stop offset="1" stop-color="#F0B400"/>
+    </linearGradient>
+    <linearGradient id="flapG" x1="0" y1="15" x2="0" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE56E"/><stop offset="0.6" stop-color="#FFD62A"/><stop offset="1" stop-color="#F5C400"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="215" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D99E00"/><stop offset="1" stop-color="#B98200"/>
+    </linearGradient>
+    <linearGradient id="side" x1="15" y1="0" x2="239" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity="0.07"/><stop offset="0.12" stop-color="#000" stop-opacity="0"/>
+      <stop offset="0.88" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.09"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="6.965" x2="0" y2="31.819" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E4002B"/><stop offset="1" stop-color="#C60024"/>
+    </linearGradient>
+    <filter id="fiber" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9 0.35" numOctaves="3" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.3  0 0 0 0 0  0 0 0 0.15 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="flapShadow" x="-5%" y="-20%" width="110%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#7A5200" flood-opacity="0.45"/>
+    </filter>
+    <filter id="ink" x="-5%" y="-20%" width="110%" height="140%">
+      <feDropShadow dx="0" dy="0.478" stdDeviation="0.239" flood-color="#7A5A00" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#outer)">
+  <!-- paper thickness: back sheet peeking out at bottom/right (inside 15–241) -->
+  <path d="M17 22Q17 19 20 19H238Q241 19 241 22V238Q241 241 238 241H20Q17 241 17 238Z" fill="url(#edge)"/>
+  <use href="#body" fill="url(#paper)"/>
+  <g clip-path="url(#bc)">
+    <rect x="0" y="0" width="256" height="256" fill="#000" filter="url(#fiber)"/>
+    <rect x="15" y="15" width="224" height="224" fill="url(#side)"/>
+    <path d="M15 225H239" stroke="#C99A00" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M15 226.5H239" stroke="#FFF1A8" stroke-opacity="0.5" stroke-width="1"/>
+    <path d="M15 118C80 100 174 100 239 118V152C174 136 80 136 15 152Z" fill="#FFF3B0" opacity="0.12"/>
+  </g>
+  <use href="#body" fill="none" stroke="#FFF4B8" stroke-opacity="0.7" stroke-width="1.5" transform="translate(0 1)" clip-path="url(#bc)"/>
+  <use href="#body" fill="none" stroke="#B88600" stroke-opacity="0.55" stroke-width="1"/>
+  <!-- top closing flap, shadow clipped to the envelope -->
+  <g clip-path="url(#bc)">
+    <use href="#flap" fill="url(#flapG)" filter="url(#flapShadow)"/>
+    <path d="M23 39H231" stroke="#C99A00" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="5 3"/>
+    <path d="M17 17.5H237" stroke="#FFF6C8" stroke-opacity="0.9" stroke-width="1.5"/>
+    <path d="M16 68.5H238" stroke="#FFF1A0" stroke-opacity="0.8" stroke-width="1"/>
+    <path d="M203 14H225V35Q225 37 223 37H205Q203 37 203 35Z" fill="#F2BE00" stroke="#C99A00" stroke-opacity="0.5" stroke-width="1"/>
+  </g>
+  <use href="#dhl" transform="translate(127 140) scale(1.0470) translate(-87.874 -19.392)" fill="url(#red)" filter="url(#ink)"/>
+  <g opacity="0.85">
+    <rect x="30" y="180" width="64" height="7" fill="#D40511"/>
+    <g fill="#fff" fill-opacity="0.75">
+      <rect x="30" y="190" width="30" height="4"/><rect x="64" y="190" width="30" height="4"/>
+      <rect x="30" y="197" width="30" height="4"/><rect x="64" y="197" width="30" height="4"/>
+      <rect x="30" y="204" width="30" height="4"/><rect x="64" y="204" width="30" height="4"/>
+    </g>
+    <rect x="180" y="203" width="44" height="5" rx="1" fill="#D40511" fill-opacity="0.8"/>
+  </g>
+  </g>
+</svg>

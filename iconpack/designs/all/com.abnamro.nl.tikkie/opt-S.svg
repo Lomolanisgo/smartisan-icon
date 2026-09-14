@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M15 15H241V241H15Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <path id="bubble" d="M54.744,28.75C40.934,28.75 29.739,39.875 29.739,53.598C29.739,57.069 30.455,60.374 31.749,63.375C32.174,64.616 32.395,65.941 32.395,67.327C32.395,71.469 30.325,75.126 27.161,77.347C26.861,77.557 27.008,78.028 27.376,78.028H27.388C32.228,78.028 36.709,76.515 40.389,73.945C44.452,76.781 49.402,78.446 54.745,78.446C68.555,78.446 79.75,67.321 79.75,53.598C79.75,39.875 68.555,28.75 54.744,28.75Z"/>
+    <path id="euro" d="M43.561,57.116C42.588,57.116 42.12,56.678 42.12,55.69C42.12,54.848 42.588,54.336 43.561,54.336H43.597V53.641C43.597,53.238 43.597,52.799 43.633,52.36H43.561C42.588,52.36 42.12,51.921 42.12,50.933C42.12,50.092 42.588,49.58 43.561,49.58H44.03C44.57,47.348 45.615,45.409 47.129,43.799C49.543,41.201 52.57,39.921 56.209,39.921C58.335,39.921 60.209,40.36 61.795,41.275C63.416,42.153 64.209,43.214 64.245,44.421C64.245,45.994 63.272,47.421 61.867,47.458C61.182,47.494 60.389,47.202 59.488,46.653C58.588,46.067 57.507,45.775 56.245,45.775C54.192,45.775 52.57,46.507 51.381,47.933C50.984,48.445 50.624,48.994 50.372,49.58H55.885C56.786,49.58 57.326,50.092 57.326,50.933C57.326,51.921 56.786,52.36 55.885,52.36H49.687C49.651,52.799 49.615,53.238 49.615,53.641V54.336H53.795C54.66,54.336 55.201,54.848 55.201,55.69C55.201,56.678 54.66,57.116 53.795,57.116H50.191C50.48,57.885 50.876,58.58 51.381,59.202C52.57,60.629 54.192,61.36 56.245,61.36C57.507,61.36 58.588,61.068 59.488,60.519C60.389,59.933 61.182,59.641 61.867,59.677C63.272,59.714 64.245,61.178 64.245,62.678C64.209,63.921 63.416,64.982 61.795,65.897C60.209,66.775 58.335,67.214 56.209,67.214C52.57,67.214 49.543,65.934 47.129,63.336C45.507,61.58 44.462,59.495 43.922,57.116H43.561Z"/>
+    <linearGradient id="bg" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7070C4"/><stop offset="0.5" stop-color="#5656AC"/><stop offset="1" stop-color="#444494"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="128" cy="118" r="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/>
+    </radialGradient>
+    <radialGradient id="teal" cx="112" cy="88" r="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6ED3CD"/><stop offset="0.45" stop-color="#3FAEAA"/><stop offset="1" stop-color="#257D7A"/>
+    </radialGradient>
+    <linearGradient id="gloss" x1="0" y1="62" x2="0" y2="124" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.55"/><stop offset="1" stop-color="#fff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="white" x1="0" y1="88" x2="0" y2="165" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.6" stop-color="#F3F7F7"/><stop offset="1" stop-color="#D9E6E6"/>
+    </linearGradient>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3.5" flood-color="#1E1E55" flood-opacity="0.55"/>
+    </filter>
+    <filter id="emb" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0.5" result="b"/>
+      <feOffset in="b" dy="1" result="o"/>
+      <feFlood flood-color="#0F4F4C" flood-opacity="0.7"/>
+      <feComposite in2="o" operator="in" result="sh"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.4" result="b2"/>
+      <feOffset in="b2" dy="1.6" result="o2"/>
+      <feFlood flood-color="#0F4F4C" flood-opacity="0.35"/>
+      <feComposite in2="o2" operator="in" result="sh2"/>
+      <feMerge><feMergeNode in="sh2"/><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="bclip"><use href="#bubble" transform="matrix(2.7308 0 0 2.7308 -19.465 -19.465)"/></clipPath>
+    <clipPath id="eclip"><use href="#euro" transform="matrix(2.7308 0 0 2.7308 -19.465 -19.465)"/></clipPath>
+  </defs>
+  <use href="#tile" fill="url(#bg)"/>
+  <g clip-path="url(#clip)" fill="none">
+    <use href="#tile" fill="url(#vig)"/>
+    <ellipse cx="128" cy="6" rx="200" ry="90" fill="#fff" opacity="0.08"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.14" stroke-width="5"/>
+    <use href="#tile" stroke="#fff" stroke-opacity="0.35" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#36367A" stroke-width="2"/>
+  </g>
+  <!-- ceramic/glass bubble -->
+  <g transform="matrix(2.7308 0 0 2.7308 -19.465 -19.465)">
+    <use href="#bubble" fill="url(#teal)" filter="url(#ds)"/>
+  </g>
+  <g clip-path="url(#bclip)">
+    <!-- bottom bounce light -->
+    <ellipse cx="140" cy="200" rx="70" ry="22" fill="#9FF0EA" opacity="0.28"/>
+    <!-- top glossy cap -->
+    <path d="M62 112C62 76 92 60 128 60C164 60 194 76 194 112C170 98 150 94 128 94C106 94 86 98 62 112Z" fill="url(#gloss)"/>
+    <g transform="matrix(2.7308 0 0 2.7308 -19.465 -19.465)" fill="none">
+      <use href="#bubble" stroke="#fff" stroke-opacity="0.55" stroke-width="0.8" transform="translate(0 0.45)"/>
+      <use href="#bubble" stroke="#17605D" stroke-opacity="0.5" stroke-width="0.7"/>
+    </g>
+  </g>
+  <!-- raised enamel euro -->
+  <g transform="matrix(2.7308 0 0 2.7308 -19.465 -19.465)">
+    <use href="#euro" fill="url(#white)" filter="url(#emb)"/>
+  </g>
+  <g clip-path="url(#eclip)" fill="none">
+    <g transform="matrix(2.7308 0 0 2.7308 -19.465 -19.465)">
+      <use href="#euro" stroke="#fff" stroke-width="0.6" transform="translate(0 0.35)"/>
+      <use href="#euro" stroke="#9DB9B8" stroke-opacity="0.6" stroke-width="0.5" transform="translate(0 -0.35)"/>
+    </g>
+  </g>
+</svg>

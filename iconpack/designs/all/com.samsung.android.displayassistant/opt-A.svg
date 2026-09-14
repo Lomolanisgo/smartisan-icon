@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="9.062 9.062 237.876 237.876">
   <defs>
-    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <path id="tile" d="M23 23H233V233H23Z"/>
     <clipPath id="clip"><use href="#tile"/></clipPath>
     <linearGradient id="bg" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#9DC0D0"/><stop offset="1" stop-color="#6690A4"/>
@@ -27,14 +27,14 @@
     </filter>
   </defs>
   <use href="#tile" fill="url(#bg)"/>
-  <path d="M27 24H229C246 24 252 29 252 47V90C180 110 76 110 4 90V47C4 29 10 24 27 24Z" fill="#FFFFFF" opacity="0.14"/>
+  <path d="M23 23H233V90C170 110 86 110 23 90Z" fill="#FFFFFF" opacity="0.14"/>
   <!-- slider tracks (inset) -->
-  <rect x="42" y="60" width="12" height="136" rx="6" fill="url(#track)"/>
-  <rect x="43" y="61" width="10" height="134" rx="5" fill="#EAF3F7"/>
-  <rect x="43" y="61" width="10" height="134" rx="5" fill="none" stroke="#000" stroke-opacity="0.18"/>
-  <rect x="202" y="60" width="12" height="136" rx="6" fill="url(#track)"/>
-  <rect x="203" y="61" width="10" height="134" rx="5" fill="#EAF3F7"/>
-  <rect x="203" y="61" width="10" height="134" rx="5" fill="none" stroke="#000" stroke-opacity="0.18"/>
+  <rect x="52" y="60" width="12" height="136" rx="6" fill="url(#track)"/>
+  <rect x="53" y="61" width="10" height="134" rx="5" fill="#EAF3F7"/>
+  <rect x="53" y="61" width="10" height="134" rx="5" fill="none" stroke="#000" stroke-opacity="0.18"/>
+  <rect x="192" y="60" width="12" height="136" rx="6" fill="url(#track)"/>
+  <rect x="193" y="61" width="10" height="134" rx="5" fill="#EAF3F7"/>
+  <rect x="193" y="61" width="10" height="134" rx="5" fill="none" stroke="#000" stroke-opacity="0.18"/>
   <!-- phone -->
   <g filter="url(#sh)">
     <rect x="80" y="38" width="96" height="180" rx="22" fill="url(#phone)"/>
@@ -49,11 +49,11 @@
   </g>
   <!-- knobs -->
   <g filter="url(#sh)">
-    <circle cx="48" cy="100" r="20" fill="url(#kY)"/>
-    <circle cx="208" cy="156" r="20" fill="url(#kP)"/>
+    <circle cx="58" cy="100" r="20" fill="url(#kY)"/>
+    <circle cx="198" cy="156" r="20" fill="url(#kP)"/>
   </g>
-  <ellipse cx="45" cy="92" rx="10" ry="5" fill="#FFFFFF" opacity="0.5"/>
-  <ellipse cx="205" cy="148" rx="10" ry="5" fill="#FFFFFF" opacity="0.5"/>
+  <ellipse cx="55" cy="92" rx="10" ry="5" fill="#FFFFFF" opacity="0.5"/>
+  <ellipse cx="195" cy="148" rx="10" ry="5" fill="#FFFFFF" opacity="0.5"/>
   <g clip-path="url(#clip)" fill="none">
     <use href="#tile" stroke="#000" stroke-opacity="0.06" stroke-width="5"/>
     <use href="#tile" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2" transform="translate(0 1)"/>

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
   <defs>
-    <path id="t" d="M39 15H217C235.8 15 241 20.2 241 39V217C241 235.8 235.8 241 217 241H39C20.2 241 15 235.8 15 217V39C15 20.2 20.2 15 39 15Z"/>
-    <path id="p" d="M40 26H216C226 26 230 30 230 40V216C230 226 226 230 216 230H40C30 230 26 226 26 216V40C26 30 30 26 40 26Z"/>
+    <path id="t" d="M15 15H241V241H15Z"/>
+    <path id="p" d="M26 26H230V230H26Z"/>
     <clipPath id="pc"><use href="#p"/></clipPath>
     <linearGradient id="frame" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#F4F6F8"/><stop offset=".5" stop-color="#C9CED4"/><stop offset="1" stop-color="#9BA2AA"/>

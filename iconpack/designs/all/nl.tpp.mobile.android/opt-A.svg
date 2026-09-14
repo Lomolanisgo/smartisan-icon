@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="9.062 9.062 237.876 237.876">
   <defs>
-    <path id="tile" d="M27.06 23H228.94C247.74 23 252.94 28.2 252.94 47V208.93C252.94 227.73 247.74 232.93 228.94 232.93H27.06C8.26 232.93 3.06 227.73 3.06 208.93V47C3.06 28.2 8.26 23 27.06 23Z"/>
+    <path id="tile" d="M23 23H233V233H23Z"/>
     <clipPath id="tileClip"><use href="#tile"/></clipPath>
     <linearGradient id="fill" x1="0" y1="23" x2="0" y2="233" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#FF9A33"/><stop offset="0.55" stop-color="#FA7A0A"/><stop offset="1" stop-color="#EB6600"/>

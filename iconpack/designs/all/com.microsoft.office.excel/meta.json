@@ -27,6 +27,20 @@
       "name": "银圈绿盘 X 标",
       "shape": "circle",
       "desc": "银色外圈 + 绿色釉面圆盘，中间是 Excel 经典构图：深绿 X 方块压在白色表格上。与 Outlook/To Do 的 B 方案同一家族。"
+    },
+    {
+      "id": "S1",
+      "name": "绿底 + 表格纸 + X 铭牌",
+      "shape": "square",
+      "desc": "微软系列 S1（Word/Excel/PowerPoint/Outlook/To Do 统一）：品牌绿直角方块底板，右侧折角白纸（绿色表头 + 网格），左侧深绿 X 铭牌。参考锤子原版 Excel 构图。",
+      "updated": true
+    },
+    {
+      "id": "S2",
+      "name": "白底 + 绿色 X 键帽",
+      "shape": "square",
+      "desc": "微软系列 S2：白色直角底板上一块带厚度的绿色立体键帽（参考锤子 WPS 字母块），中间白色 X。",
+      "updated": true
     }
   ]
 }

@@ -26,6 +26,7 @@
   },
   "com.microsoft.office.outlook": {
     "sel": [
+      "S1",
       "A"
     ]
   },
@@ -86,6 +87,7 @@
   },
   "com.microsoft.todos": {
     "sel": [
+      "S1",
       "A"
     ]
   },
@@ -116,6 +118,7 @@
   },
   "com.microsoft.office.excel": {
     "sel": [
+      "S1",
       "A"
     ]
   },
@@ -136,6 +139,7 @@
   },
   "nl.nshispeed": {
     "sel": [
+      "Q",
       "B"
     ]
   },
@@ -176,6 +180,7 @@
   },
   "com.server.auditor.ssh.client": {
     "sel": [
+      "E",
       "C"
     ]
   },
@@ -245,6 +250,7 @@
   },
   "nl.rijksoverheid.mijngegevens.pub": {
     "sel": [
+      "Q",
       "B"
     ]
   },
@@ -260,6 +266,7 @@
   },
   "com.ticketmaster.mobile.android.na": {
     "sel": [
+      "Q",
       "B"
     ]
   },
@@ -280,6 +287,7 @@
   },
   "nl.rijksoverheid.mbb.pub": {
     "sel": [
+      "S",
       "B"
     ]
   },
@@ -320,6 +328,7 @@
   },
   "com.abnamro.nl.tikkie": {
     "sel": [
+      "R",
       "C"
     ]
   },
@@ -339,6 +348,7 @@
   },
   "com.dhlparcel.nl": {
     "sel": [
+      "S",
       "B"
     ]
   },
@@ -496,11 +506,13 @@
   },
   "fr.fan.wallet": {
     "sel": [
+      "Q",
       "F"
     ]
   },
   "com.pavelkozemirov.guesstheartist": {
     "sel": [
+      "E",
       "C"
     ]
   },
@@ -586,6 +598,7 @@
   },
   "de.number26.android": {
     "sel": [
+      "Q",
       "C",
       "A"
     ]
@@ -598,6 +611,16 @@
   "org.chromium.webapk.ae7d1a3af3add27a2_v2": {
     "sel": [
       "B"
+    ]
+  },
+  "com.microsoft.office.word": {
+    "sel": [
+      "S1"
+    ]
+  },
+  "com.microsoft.office.powerpoint": {
+    "sel": [
+      "S1"
     ]
   }
 }

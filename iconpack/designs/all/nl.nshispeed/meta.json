@@ -2,11 +2,35 @@
   "pkg": "nl.nshispeed",
   "label": "NS International",
   "references": [
-    { "pkg": "com.netease.railwayticket", "why": "火车票应用，参考其“票”的隐喻和横版底板" },
-    { "pkg": "cn.ikamobile.trainfinder", "why": "同为铁路出行，参考整体拟物风格" }
+    {
+      "pkg": "com.netease.railwayticket",
+      "why": "火车票应用，参考其“票”的隐喻和横版底板"
+    },
+    {
+      "pkg": "cn.ikamobile.trainfinder",
+      "why": "同为铁路出行，参考整体拟物风格"
+    }
   ],
   "options": [
-    { "id": "A", "name": "蓝底金色标志", "shape": "landscape", "desc": "保留原图标构成：深蓝横版底板，NS 标志和 International 字样（原 SVG 路径）做成金黄色凸起效果；与 NS 主应用 A 方案成对（黄底/蓝底）。" },
-    { "id": "B", "name": "国际火车票", "shape": "free", "updated": true, "desc": "摆正（不倾斜）的纸质车票：蓝色票头印黄色 NS 标志，票面 AMS → PAR 路线，右侧黄色存根带打孔线和条形码；隐喻“国际车票”，与 NS 主应用区分明显，但文字在 48px 下只作为纹理。" }
+    {
+      "id": "A",
+      "name": "蓝底金色标志",
+      "shape": "landscape",
+      "desc": "保留原图标构成：深蓝横版底板，NS 标志和 International 字样（原 SVG 路径）做成金黄色凸起效果；与 NS 主应用 A 方案成对（黄底/蓝底）。"
+    },
+    {
+      "id": "B",
+      "name": "国际火车票",
+      "shape": "free",
+      "updated": true,
+      "desc": "摆正（不倾斜）的纸质车票：蓝色票头印黄色 NS 标志，票面 AMS → PAR 路线，右侧黄色存根带打孔线和条形码；隐喻“国际车票”，与 NS 主应用区分明显，但文字在 48px 下只作为纹理。"
+    },
+    {
+      "id": "Q",
+      "name": "NS 蓝底板 + 名称",
+      "shape": "square",
+      "updated": true,
+      "desc": "原物件放在 226 直角正方形底板上方，下方色带写应用名；底板取图标里与物件对比的颜色，使整体外框为正方形。"
+    }
   ]
 }

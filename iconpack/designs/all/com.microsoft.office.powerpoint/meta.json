@@ -1,0 +1,13 @@
+{
+  "pkg": "com.microsoft.office.powerpoint",
+  "label": "PowerPoint",
+  "references": [
+    { "pkg": "com.microsoft.office.excel", "why": "锤子原版 Excel：文档纸 + 左下角品牌字母铭牌的构图" },
+    { "pkg": "cn.wps.moffice", "why": "锤子版 WPS：立体字母方块，S2 系列的键帽造型参考" },
+    { "pkg": "com.microsoft.office.officehub", "why": "锤子版 Office 的橙红品牌色" }
+  ],
+  "options": [
+    { "id": "S1", "name": "橙红底 + 幻灯片纸 + P 铭牌", "shape": "square", "desc": "微软系列 S1：品牌橙红直角方块底板，右侧折角白纸上是带柱状图/饼图的幻灯片和要点列表，左侧深橙 P 铭牌。", "updated": true },
+    { "id": "S2", "name": "白底 + 橙红 P 键帽", "shape": "square", "desc": "微软系列 S2：白色直角底板上一块带厚度的橙红立体键帽，中间白色 P。", "updated": true }
+  ]
+}

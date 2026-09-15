@@ -1,0 +1,8 @@
+{
+  "pkg": "com.anthropic.claude",
+  "label": "Claude",
+  "references": [],
+  "options": [
+    { "id": "A", "name": "Claude 星芒（无底板）", "shape": "free", "desc": "去掉橙色方底板，只留官方星芒标志，做成橙赭色陶釉立体件：辐条略加粗、宽约 226px，向下挤出 9px 深赭厚度，正面上亮下深渐变、上沿高光、下沿暗带、左上光斑，底下柔和地面投影。" }
+  ]
+}

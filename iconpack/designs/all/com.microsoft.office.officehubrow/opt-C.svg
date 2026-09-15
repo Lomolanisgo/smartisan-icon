@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- 官方 Copilot 双片路径（来自手机图标 SVG，108 坐标系，包围盒 x 22.4–85.6，y 24–84） -->
+    <path id="pA" d="M65.39,36.42L64.75,39H58.56C53.97,39 49.97,42.12 48.86,46.57L43.25,69H32.06C25.55,69 20.78,62.89 22.36,56.57L27.98,34.1C29.46,28.16 34.79,24 40.91,24H55.69C62.2,24 66.97,30.11 65.39,36.42Z"/>
+    <path id="pB" d="M42.61,71.57L43.25,69H49.44C54.03,69 58.03,65.88 59.14,61.42L64.75,39H75.94C82.45,39 87.22,45.11 85.64,51.42L80.02,73.9C78.54,79.84 73.21,84 67.09,84H52.31C45.8,84 41.03,77.89 42.61,71.57Z"/>
+    <clipPath id="cA"><use href="#pA"/></clipPath>
+    <clipPath id="cB"><use href="#pB"/></clipPath>
+    <!-- 官方配色 -->
+    <radialGradient id="gA" gradientUnits="userSpaceOnUse" cx="82" cy="-41.5" r="127.46"><stop offset="0.66" stop-color="#109DF2"/><stop offset="0.88" stop-color="#AAD445"/><stop offset="0.99" stop-color="#FFD400"/></radialGradient>
+    <linearGradient id="gA2" gradientUnits="userSpaceOnUse" x1="41.64" y1="24" x2="41.39" y2="69"><stop offset="0" stop-color="#3DCBFF"/><stop offset="0.25" stop-color="#0588F7" stop-opacity="0"/></linearGradient>
+    <radialGradient id="gB" gradientUnits="userSpaceOnUse" cx="78.52" cy="34.59" r="59.92"><stop offset="0.07" stop-color="#8C48FF"/><stop offset="0.5" stop-color="#F2598A"/><stop offset="0.9" stop-color="#FFB152"/></radialGradient>
+    <linearGradient id="gB2" gradientUnits="userSpaceOnUse" x1="80.53" y1="36.25" x2="80.51" y2="48.51"><stop offset="0.06" stop-color="#F8ADFA"/><stop offset="0.71" stop-color="#A86EDD" stop-opacity="0"/></linearGradient>
+    <linearGradient id="lit" x1="0" y1="24" x2="0" y2="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".14"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <!-- 组内被放大 3.6 倍，滤镜数值按此缩小 -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="1.4"/></filter>
+    <filter id="innerBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.1"/></filter>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation=".55"/></filter>
+  </defs>
+
+  <!-- 标志宽约 230，居中略偏上 -->
+  <g transform="translate(128 122) scale(3.6) translate(-54 -54)">
+    <!-- 地面投影 -->
+    <g transform="translate(0 3)" fill="#000" fill-opacity=".32" filter="url(#shadow)"><use href="#pA"/><use href="#pB"/></g>
+
+    <!-- 下片 B（粉紫）：厚度 -->
+    <g clip-path="url(#cB)" transform="translate(0 2)"><rect width="108" height="108" fill="url(#gB)"/><rect width="108" height="108" fill="#000" opacity=".5"/></g>
+    <g clip-path="url(#cB)" transform="translate(0 1)"><rect width="108" height="108" fill="url(#gB)"/><rect width="108" height="108" fill="#000" opacity=".3"/></g>
+    <!-- 下片 B：正面 -->
+    <g clip-path="url(#cB)">
+      <rect width="108" height="108" fill="url(#gB)"/><rect width="108" height="108" fill="url(#gB2)"/><rect width="108" height="108" fill="url(#lit)"/>
+      <use href="#pB" fill="none" stroke="#5A1040" stroke-width="4" stroke-opacity=".32" filter="url(#innerBlur)"/>
+      <use href="#pB" fill="none" stroke="#5A1040" stroke-width="1.4" stroke-opacity=".22" filter="url(#softBlur)"/>
+      <use href="#pB" transform="translate(0 .9)" fill="none" stroke="#fff" stroke-width="1.1" stroke-opacity=".7" filter="url(#softBlur)"/>
+      <path d="M64.75 39H75.94C82.45 39 87.22 45.11 85.64 51.42L84 58H61Z" fill="url(#gloss)" opacity=".5"/>
+    </g>
+    <use href="#pB" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width=".35"/>
+
+    <!-- 上片 A（蓝绿）：厚度 -->
+    <g clip-path="url(#cA)" transform="translate(0 2)"><rect width="108" height="108" fill="url(#gA)"/><rect width="108" height="108" fill="#000" opacity=".5"/></g>
+    <g clip-path="url(#cA)" transform="translate(0 1)"><rect width="108" height="108" fill="url(#gA)"/><rect width="108" height="108" fill="#000" opacity=".3"/></g>
+    <!-- 上片 A：正面 -->
+    <g clip-path="url(#cA)">
+      <rect width="108" height="108" fill="url(#gA)"/><rect width="108" height="108" fill="url(#gA2)"/><rect width="108" height="108" fill="url(#lit)"/>
+      <use href="#pA" fill="none" stroke="#063A6E" stroke-width="4" stroke-opacity=".32" filter="url(#innerBlur)"/>
+      <use href="#pA" fill="none" stroke="#063A6E" stroke-width="1.4" stroke-opacity=".22" filter="url(#softBlur)"/>
+      <use href="#pA" transform="translate(0 .9)" fill="none" stroke="#fff" stroke-width="1.1" stroke-opacity=".7" filter="url(#softBlur)"/>
+      <path d="M27.98 34.1C29.46 28.16 34.79 24 40.91 24H55.69C62.2 24 66.97 30.11 65.39 36.42L64 42H26Z" fill="url(#gloss)" opacity=".5"/>
+    </g>
+    <use href="#pA" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width=".35"/>
+  </g>
+</svg>

@@ -2,16 +2,52 @@
   "pkg": "nl.ns.android.activity",
   "label": "NS",
   "references": [
-    { "pkg": "cn.ikamobile.trainfinder", "why": "锤子的火车车头图标，参考其正面车头、玻璃风挡与光影做法" },
-    { "pkg": "com.netease.railwayticket", "why": "铁路购票类横版底板，参考其色块+立体标志的处理" }
+    {
+      "pkg": "cn.ikamobile.trainfinder",
+      "why": "锤子的火车车头图标，参考其正面车头、玻璃风挡与光影做法"
+    },
+    {
+      "pkg": "com.netease.railwayticket",
+      "why": "铁路购票类横版底板，参考其色块+立体标志的处理"
+    }
   ],
   "credits": [
-    { "source": "Märklin 39425", "url": "https://www.marklin.nl/producten/details/article/39425", "note": "ICM Koploper 侧面造型参考" }
+    {
+      "source": "Märklin 39425",
+      "url": "https://www.marklin.nl/producten/details/article/39425",
+      "note": "ICM Koploper 侧面造型参考"
+    }
   ],
   "options": [
-    { "id": "A", "name": "黄底珐琅标志", "shape": "landscape", "desc": "NS 黄色横版底板，蓝色 NS 标志做成凸起的珐琅质感，带顶部高光与投影；最忠实品牌，48px 下清晰。" },
-    { "id": "B", "name": "黄色列车车头", "shape": "free", "desc": "参考锤子火车车头图标，画 NS 标志性的黄色列车正面：深色风挡、目的地显示屏、车头灯、蓝色裙板，车鼻上印 NS 标志；更拟物，但标志较小。" },
-    { "id": "C", "name": "Koploper 侧面（无底板）", "shape": "free", "desc": "NS ICM Koploper 驾驶车的侧面剪影，车头朝左、横向铺满画布：深灰凸起驾驶室和环绕风挡，车顶长坡道降到正常高度；蓝色车窗带、黄色下车身、黑色 NS 标志和车号 4015，车门、转向架和一小段轨道；细节已简化，48px 下驼峰、蓝带和标志可辨。参考图片：Märklin 39425（https://www.marklin.nl/producten/details/article/39425）" },
-    { "id": "D", "name": "Koploper 侧面·横版底板", "shape": "landscape", "desc": "同一辆 Koploper 驾驶车的侧面，放在锤子白色横版底板上从左向右驶过，车尾被底板右边缘裁切，底部是轨道和道砟；与 C 造型一致，只是加了底板，和其它横版图标更统一。参考图片：Märklin 39425（https://www.marklin.nl/producten/details/article/39425）" }
+    {
+      "id": "A",
+      "name": "黄底珐琅标志",
+      "shape": "landscape",
+      "desc": "NS 黄色横版底板，蓝色 NS 标志做成凸起的珐琅质感，带顶部高光与投影；最忠实品牌，48px 下清晰。"
+    },
+    {
+      "id": "B",
+      "name": "黄色列车车头",
+      "shape": "free",
+      "desc": "参考锤子火车车头图标，画 NS 标志性的黄色列车正面：深色风挡、目的地显示屏、车头灯、蓝色裙板，车鼻上印 NS 标志；更拟物，但标志较小。"
+    },
+    {
+      "id": "C",
+      "name": "Koploper 侧面（无底板）",
+      "shape": "free",
+      "desc": "NS ICM Koploper 驾驶车的侧面剪影，车头朝左、横向铺满画布：深灰凸起驾驶室和环绕风挡，车顶长坡道降到正常高度；蓝色车窗带、黄色下车身、黑色 NS 标志和车号 4015，车门、转向架和一小段轨道；细节已简化，48px 下驼峰、蓝带和标志可辨。参考图片：Märklin 39425（https://www.marklin.nl/producten/details/article/39425）"
+    },
+    {
+      "id": "D",
+      "name": "Koploper 侧面·横版底板",
+      "shape": "landscape",
+      "desc": "同一辆 Koploper 驾驶车的侧面，放在锤子白色横版底板上从左向右驶过，车尾被底板右边缘裁切，底部是轨道和道砟；与 C 造型一致，只是加了底板，和其它横版图标更统一。参考图片：Märklin 39425（https://www.marklin.nl/producten/details/article/39425）"
+    },
+    {
+      "id": "E",
+      "name": "NS 标志（无底板，黄色勾边）",
+      "shape": "free",
+      "desc": "异形：去掉黄色底板，只保留蓝色 NS 标志做成立体物件；蓝色线条外围加一圈黄色勾边保留品牌黄，勾边和蓝面都有向下挤出的厚度、上沿高光与地面投影。"
+    }
   ]
 }

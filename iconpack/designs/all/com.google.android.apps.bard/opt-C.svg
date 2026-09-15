@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Gemini 四角星路径（与 opt-A 相同，包围盒 16–240） -->
+    <path id="s" d="M128 16C142 72 184 114 240 128C184 142 142 184 128 240C114 184 72 142 16 128C72 114 114 72 128 16Z"/>
+    <clipPath id="sc"><use href="#s"/></clipPath>
+    <!-- 四色：红(上) 黄(左) 绿(下) 蓝(右) -->
+    <radialGradient id="r" cx="128" cy="22" r="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A55"/><stop offset=".45" stop-color="#F9453F" stop-opacity="1"/><stop offset="1" stop-color="#F9453F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="y" cx="24" cy="128" r="115" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD82A"/><stop offset=".45" stop-color="#FCC934" stop-opacity="1"/><stop offset="1" stop-color="#FCC934" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g" cx="128" cy="236" r="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0BBF66"/><stop offset=".45" stop-color="#1BBD68" stop-opacity="1"/><stop offset="1" stop-color="#1BBD68" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="b" x1="30" y1="60" x2="240" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5AA8FF"/><stop offset="1" stop-color="#2B7BFA"/>
+    </linearGradient>
+    <!-- 顶光：上亮下暗 -->
+    <linearGradient id="lit" x1="0" y1="16" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".18"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="innerBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <!-- 星宽约 228，居中略偏上 -->
+  <g transform="translate(128 123) scale(1.02) translate(-128 -128)">
+    <!-- 地面投影 -->
+    <use href="#s" transform="translate(0 11)" fill="#000" fill-opacity=".32" filter="url(#shadow)"/>
+    <!-- 玻璃厚度：向下挤出 8，两档深色 -->
+    <g clip-path="url(#sc)" transform="translate(0 8)">
+      <rect width="256" height="256" fill="url(#b)"/><rect width="256" height="256" fill="url(#g)"/>
+      <rect width="256" height="256" fill="url(#y)"/><rect width="256" height="256" fill="url(#r)"/>
+      <rect width="256" height="256" fill="#000" opacity=".5"/>
+    </g>
+    <g clip-path="url(#sc)" transform="translate(0 4)">
+      <rect width="256" height="256" fill="url(#b)"/><rect width="256" height="256" fill="url(#g)"/>
+      <rect width="256" height="256" fill="url(#y)"/><rect width="256" height="256" fill="url(#r)"/>
+      <rect width="256" height="256" fill="#000" opacity=".32"/>
+    </g>
+    <!-- 正面 -->
+    <g clip-path="url(#sc)">
+      <rect width="256" height="256" fill="url(#b)"/><rect width="256" height="256" fill="url(#g)"/>
+      <rect width="256" height="256" fill="url(#y)"/><rect width="256" height="256" fill="url(#r)"/>
+      <rect width="256" height="256" fill="url(#lit)"/>
+      <!-- 内侧柔和暗边 -->
+      <use href="#s" fill="none" stroke="#000" stroke-width="12" stroke-opacity=".22" filter="url(#innerBlur)"/>
+      <use href="#s" fill="none" stroke="#000" stroke-width="5" stroke-opacity=".15" filter="url(#softBlur)"/>
+      <!-- 上沿窄高光（下移后只留在朝上的边） -->
+      <use href="#s" transform="translate(0 3.2)" fill="none" stroke="#fff" stroke-width="3.5" stroke-opacity=".75" filter="url(#softBlur)"/>
+      <!-- 上臂釉面反光 -->
+      <path d="M128 30C134 62 150 90 176 112L128 128L80 112C106 90 122 62 128 30Z" fill="url(#gloss)" opacity=".55"/>
+      <!-- 中心光斑 -->
+      <circle cx="128" cy="126" r="14" fill="#fff" opacity=".5" filter="url(#glow)"/>
+      <circle cx="128" cy="126" r="4" fill="#fff" opacity=".8" filter="url(#softBlur)"/>
+    </g>
+    <!-- 外轮廓细线 -->
+    <use href="#s" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="1.2"/>
+  </g>
+</svg>

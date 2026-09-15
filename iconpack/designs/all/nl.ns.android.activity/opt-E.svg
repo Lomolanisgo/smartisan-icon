@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- 官方 NS 标志路径（来自手机图标 SVG），包围盒约 x 0.5–175.5，y 0.9–69.1 -->
+    <path id="ns" d="M100.983,69.133C95.517,69.133 90.733,67.085 87.317,63.672L67.5,43.192C66.133,42.509 64.767,41.827 63.4,41.827H26.5L53.833,69.133H34.7L0.533,35L34.7,0.867H75.017C80.483,0.867 85.267,2.915 88.683,6.328L108.5,26.808C109.867,27.491 111.233,28.173 112.6,28.173H149.5L122.167,0.867H141.3L175.467,35L141.3,69.133H100.983ZM63.4,28.173C68.867,28.173 73.65,30.221 77.067,33.635L96.883,54.115C98.25,54.797 99.617,55.48 100.983,55.48H135.833L149.5,41.827H112.6C107.133,41.827 102.35,39.779 98.933,36.365L79.117,15.885C77.75,15.203 76.383,14.52 75.017,14.52H40.167L26.5,28.173H63.4Z" fill-rule="evenodd"/>
+    <clipPath id="nsClip"><use href="#ns"/></clipPath>
+
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E6BD1"/>
+      <stop offset="0.45" stop-color="#1650B5"/>
+      <stop offset="1" stop-color="#062C7A"/>
+    </linearGradient>
+    <linearGradient id="blueSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A2E78"/>
+      <stop offset="1" stop-color="#041B4D"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE45C"/>
+      <stop offset="0.5" stop-color="#FFC81A"/>
+      <stop offset="1" stop-color="#EFA800"/>
+    </linearGradient>
+    <linearGradient id="goldSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C88700"/>
+      <stop offset="1" stop-color="#A66B00"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-40%" width="140%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="softBlur" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  </defs>
+
+  <!-- 标志宽约 232（含勾边），居中 -->
+  <g transform="translate(4.8 77) scale(1.40)" stroke-linejoin="round">
+    <!-- 地面投影 -->
+    <use href="#ns" transform="translate(0 9)" stroke="#000" stroke-width="7" stroke-opacity="0.35" fill="#000" fill-opacity="0.35" filter="url(#shadow)"/>
+    <!-- 黄色勾边的厚度（向下挤出） -->
+    <use href="#ns" transform="translate(0 6)" stroke="url(#goldSide)" stroke-width="7" fill="url(#goldSide)"/>
+    <use href="#ns" transform="translate(0 3)" stroke="#B87A00" stroke-width="7" fill="#B87A00"/>
+    <!-- 黄色勾边正面 -->
+    <use href="#ns" stroke="url(#gold)" stroke-width="7" fill="url(#gold)"/>
+    <!-- 蓝色线条厚度 -->
+    <use href="#ns" transform="translate(0 2.2)" fill="url(#blueSide)"/>
+    <!-- 蓝色正面 -->
+    <use href="#ns" fill="url(#blue)"/>
+    <g clip-path="url(#nsClip)">
+      <!-- 蓝面上沿窄高光 -->
+      <use href="#ns" transform="translate(0 1.6)" fill="none" stroke="#9FC3FF" stroke-width="2.2" stroke-opacity="0.85" filter="url(#softBlur)"/>
+      <!-- 上半部釉面反光 -->
+      <rect x="-5" y="-2" width="190" height="34" fill="url(#gloss)"/>
+    </g>
+    <!-- 蓝黄交界的细线 -->
+    <use href="#ns" fill="none" stroke="#082B6E" stroke-width="0.6" stroke-opacity="0.7"/>
+  </g>
+</svg>

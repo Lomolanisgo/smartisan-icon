@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- 2015 版 Edge 老 logo "e"（Dev 版用绿色）（沿用 designs/edge/opt-B 的路径，包围盒 x 28–222，y 40–228） -->
+    <path id="e" fill-rule="evenodd" d="M214,126 C214,70 178,40 128,40 C86,40 54,62 28,102 C42,100 56,106 62,118 C50,130 46,142 46,152 C46,198 84,228 140,228 C176,228 204,210 222,176 C198,190 174,198 150,198 C118,198 98,180 96,154 L214,154 Z M96,126 C96,98 112,80 134,80 C158,80 172,98 172,126 Z"/>
+    <clipPath id="eClip"><use href="#e"/></clipPath>
+    <!-- 正面：上亮下深的 Edge Dev 绿 -->
+    <linearGradient id="face" x1="0" y1="40" x2="0" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8FE6C2"/><stop offset=".3" stop-color="#3FBF8A"/><stop offset=".7" stop-color="#23A56E"/><stop offset="1" stop-color="#137A4E"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="105" cy="70" r="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 厚度 -->
+    <linearGradient id="side" x1="0" y1="40" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#15734C"/><stop offset="1" stop-color="#08492F"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="4.2"/></filter>
+    <filter id="innerBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3.4"/></filter>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.7"/></filter>
+  </defs>
+
+  <!-- e 宽约 232，居中略偏上 -->
+  <g transform="translate(128 122) scale(1.196) translate(-125 -134)">
+    <!-- 地面投影 -->
+    <use href="#e" transform="translate(0 10)" fill="#000" fill-opacity=".32" filter="url(#shadow)"/>
+    <!-- 厚度：向下挤出 7 -->
+    <use href="#e" transform="translate(0 7)" fill="url(#side)"/>
+    <use href="#e" transform="translate(0 3.5)" fill="#136F49"/>
+    <!-- 正面 -->
+    <use href="#e" fill="url(#face)"/>
+    <g clip-path="url(#eClip)">
+      <use href="#e" fill="url(#sheen)"/>
+      <!-- 内侧柔和暗边 -->
+      <use href="#e" fill="none" stroke="#0A4B32" stroke-width="11" stroke-opacity=".32" filter="url(#innerBlur)"/>
+      <use href="#e" fill="none" stroke="#15704A" stroke-width="5" stroke-opacity=".35" filter="url(#softBlur)"/>
+      <!-- 上沿窄高光 -->
+      <use href="#e" transform="translate(0 2.8)" fill="none" stroke="#E8FFF4" stroke-width="4.2" stroke-opacity=".9" filter="url(#softBlur)"/>
+      <!-- 上半部釉面反光 -->
+      <rect x="20" y="40" width="210" height="88" fill="url(#gloss)" opacity=".45"/>
+    </g>
+    <!-- 外轮廓细线 -->
+    <use href="#e" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="1"/>
+  </g>
+</svg>

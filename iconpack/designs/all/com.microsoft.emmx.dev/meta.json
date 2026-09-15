@@ -1,0 +1,11 @@
+{
+  "pkg": "com.microsoft.emmx.dev",
+  "label": "Edge Dev",
+  "references": [
+    { "pkg": "com.openai.chatgpt", "why": "用户已认可的无底板做法：标志本身做成有厚度的立体物件" }
+  ],
+  "options": [
+    { "id": "A", "name": "老版立体绿 e（无底板）", "shape": "free", "desc": "与 Edge 的 A 方案同款造型（2015 版 \"e\" 满版立体物件、挤出厚度、暗边、高光、投影），改为绿色以区分 Dev 通道；无底板。" },
+    { "id": "B", "name": "新版旋涡玻璃标 + DEV 牌（无底板）", "shape": "free", "desc": "与 Edge 的 B 方案同款蓝绿旋涡玻璃物件（官方 Dev 图标的旋涡配色与正式版一致），按官方样式在右下角加一块有厚度的黄色珐琅 DEV 小牌；DEV 字样用系统字体 Segoe UI 渲染。" }
+  ]
+}

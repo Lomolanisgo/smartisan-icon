@@ -37,6 +37,7 @@
   },
   "nl.ns.android.activity": {
     "sel": [
+      "E",
       "A"
     ]
   },
@@ -134,13 +135,14 @@
   },
   "com.chinarailway.globalticketing": {
     "sel": [
+      "C",
       "A"
     ]
   },
   "nl.nshispeed": {
     "sel": [
-      "Q",
-      "B"
+      "B",
+      "Q"
     ]
   },
   "org.localsend.localsend_app": {
@@ -155,6 +157,7 @@
   },
   "com.mcdonalds.mobileapp": {
     "sel": [
+      "C",
       "A"
     ]
   },
@@ -206,6 +209,7 @@
   },
   "com.deepseek.chat": {
     "sel": [
+      "C",
       "A"
     ]
   },
@@ -235,6 +239,7 @@
   },
   "com.ups.mobile.android": {
     "sel": [
+      "C",
       "B"
     ]
   },
@@ -313,6 +318,7 @@
   },
   "nl.tpp.mobile.android": {
     "sel": [
+      "C",
       "A"
     ]
   },
@@ -323,6 +329,7 @@
   },
   "nl.kpn.mijn": {
     "sel": [
+      "C",
       "A"
     ]
   },
@@ -420,6 +427,7 @@
   },
   "com.microsoft.office.officehubrow": {
     "sel": [
+      "C",
       "A"
     ]
   },
@@ -578,11 +586,13 @@
   },
   "com.android.samsung.utilityapp": {
     "sel": [
+      "C",
       "A"
     ]
   },
   "com.google.android.apps.bard": {
     "sel": [
+      "C",
       "B"
     ]
   },

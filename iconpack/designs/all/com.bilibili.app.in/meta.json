@@ -1,0 +1,13 @@
+{
+  "pkg": "com.bilibili.app.in",
+  "label": "bilibili",
+  "references": [],
+  "options": [
+    {
+      "id": "A",
+      "name": "bilibili 文字标志（无底板）",
+      "shape": "free",
+      "desc": "从现用图标（designs/bilibili/square.svg）里把粉色「bilibili」文字标志按饱和度抠出并等值线描摹成路径（未重画、不含小电视），去掉白色底板，横向铺满画布（宽约 240）做成粉色立体件：上亮下深粉色渐变、向下挤出 6px 深粉厚度、内侧暗边、上沿高光、釉面反光、地面投影。"
+    }
+  ]
+}

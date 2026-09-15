@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M15 15H241V241H15Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <linearGradient id="fill" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEDED"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C6C6C6"/><stop offset="0.2" stop-color="#CFCFCF"/>
+      <stop offset="0.85" stop-color="#DADADA"/><stop offset="1" stop-color="#C8C8C8"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.08"/><stop offset="1" stop-color="#000" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9C5E2A"/><stop offset="0.4" stop-color="#E7B478"/><stop offset="0.7" stop-color="#C98849"/><stop offset="1" stop-color="#8A5022"/>
+    </linearGradient>
+    <linearGradient id="grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8E120B"/><stop offset="0.4" stop-color="#F0483C"/><stop offset="1" stop-color="#9A160D"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFAFA"/><stop offset="0.45" stop-color="#C5CACF"/><stop offset="0.55" stop-color="#9DA3AA"/><stop offset="1" stop-color="#6D737A"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDEFF1"/><stop offset="0.5" stop-color="#AEB4BA"/><stop offset="1" stop-color="#5E646B"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <filter id="hsh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2" dy="6" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <g id="mini">
+      <rect width="74" height="74" rx="9"/>
+    </g>
+    <g id="hammer">
+      <rect x="-8" y="-30" width="16" height="128" rx="7" fill="url(#wood)"/>
+      <rect x="-9.5" y="52" width="19" height="48" rx="8" fill="url(#grip)"/>
+      <path d="M-9.5 62H9.5M-9.5 72H9.5M-9.5 82H9.5" stroke="#6E0C06" stroke-opacity="0.45" stroke-width="1.5"/>
+      <path d="M-60 -50 L-22 -62 H36 V-26 H-22 L-60 -38 Z" fill="url(#steel)" stroke="#5A5F66" stroke-width="1"/>
+      <rect x="32" y="-68" width="24" height="48" rx="4" fill="url(#face)" stroke="#50555B" stroke-width="1"/>
+      <rect x="-11" y="-28" width="22" height="9" rx="2" fill="url(#face)" stroke="#50555B" stroke-width="0.8"/>
+      <path d="M-20 -60 H34" stroke="#fff" stroke-opacity="0.9" stroke-width="1.5"/>
+    </g>
+  </defs>
+  <use href="#tile" fill="url(#fill)"/>
+  <g clip-path="url(#clip)" fill="none">
+    <use href="#tile" stroke="#000" stroke-opacity="0.05" stroke-width="5"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.07" stroke-width="4" transform="translate(0 -1.5)"/>
+    <use href="#tile" stroke="#FFFFFF" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="url(#rim)" stroke-width="2"/>
+  </g>
+  <!-- 2x2 tile grid -->
+  <g filter="url(#sh)">
+    <use href="#mini" x="46" y="46" fill="#E8453C"/>
+    <use href="#mini" x="136" y="46" fill="#3C8FE3"/>
+    <use href="#mini" x="46" y="136" fill="#F2A930"/>
+    <use href="#mini" x="136" y="136" fill="#48AE5B"/>
+  </g>
+  <g fill="url(#gloss)">
+    <use href="#mini" x="46" y="46"/><use href="#mini" x="136" y="46"/>
+    <use href="#mini" x="46" y="136"/><use href="#mini" x="136" y="136"/>
+  </g>
+  <!-- simple glyphs -->
+  <g fill="#fff" opacity="0.95">
+    <circle cx="83" cy="83" r="18" fill="none" stroke="#fff" stroke-width="7"/>
+    <rect x="152" y="67" width="42" height="32" rx="4"/>
+    <path d="M83 154 L101 190 H65 Z"/>
+    <path d="M160 173 l10 10 l20 -22" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(132 138) rotate(42) scale(0.95)" filter="url(#hsh)">
+    <use href="#hammer"/>
+  </g>
+</svg>

@@ -36,8 +36,8 @@
 | --- | --- |
 | 横矩形 landscape | 与 bilibili 国际版完全一致：x 3.06–252.94，y 23–232.93，超椭圆圆角 r=24，**无外投影**，1px 描边 + 内侧明暗。路径和图层见 `iconpack/designs/tile-spec/spec.md`，参考实现 `tile-spec/tile.svg` |
 | 竖矩形 portrait | 横矩形旋转 90°（同小红书 `iconpack/png/com.xingin.xhs.png`）：x 23–232.93，y 3.06–252.94 |
-| 方形 square | 超椭圆圆角方块，建议 x/y 均为 15–241（226×226），圆角 r=24，描边与明暗同上 |
-| 圆形 circle | 直径约 232，圆心 (128,128)；可参考锤子里的圆形徽章类图标（如 `com.netease.cloudmusic.png`、`com.chinamworld.bocmbci.png`） |
+| 方形 square | 超椭圆圆角方块，x/y 均为 4–252（248×248，与圆形和锤子原图同大；226 偏小已弃用），圆角 r=24，描边与明暗同上 |
+| 圆形 circle | 直径 248，圆心 (128,128)；可参考锤子里的圆形徽章类图标（如 `com.netease.cloudmusic.png`、`com.chinamworld.bocmbci.png`） |
 | 异形 free | 标志本身做成立体物件、无底板（如中国银行、ChatGPT 定稿的做法） |
 
 同一应用的 A、B 方案要**明显不同**（换轮廓、换隐喻或换材质），不要只是换颜色。

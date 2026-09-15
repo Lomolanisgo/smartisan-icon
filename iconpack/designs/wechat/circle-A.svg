@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- 微信 · 圆形气泡 A：圆（直径 224）+ 左下角气泡尾巴，保留绿色材质和两只白色“眼睛” -->
+  <defs>
+    <radialGradient id="fill" cx="100" cy="46" r="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8EEA5E"/><stop offset="0.5" stop-color="#41CB2E"/><stop offset="1" stop-color="#1C9E18"/>
+    </radialGradient>
+    <linearGradient id="gloss" x1="0" y1="8" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.42"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="8" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C9F7AE" stop-opacity="0.9"/><stop offset="0.5" stop-color="#2F9A22" stop-opacity="0.5"/><stop offset="1" stop-color="#16750F" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="dotG" cx="0.45" cy="0.3" r="0.8"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCEFD5"/></radialGradient>
+    <filter id="dot" x="-40%" y="-40%" width="180%" height="190%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/><feOffset dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.45"/></feComponentTransfer>
+      <feFlood flood-color="#0B5A08"/><feComposite operator="in" in2="SourceGraphic"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- bubble = circle (c 132,118 r 112) + tail to (30,246) -->
+    <path id="bub" d="M132 6A112 112 0 1 1 90.6 222.1C76 234 55 243 30 246C44 234 54 220 59 202.5A112 112 0 0 1 132 6Z"/>
+    <clipPath id="clip"><use href="#bub"/></clipPath>
+  </defs>
+  <use href="#bub" fill="url(#fill)"/>
+  <g clip-path="url(#clip)">
+    <ellipse cx="132" cy="22" rx="130" ry="92" fill="url(#gloss)"/>
+    <use href="#bub" fill="none" stroke="#000" stroke-opacity="0.07" stroke-width="5"/>
+    <use href="#bub" fill="none" stroke="url(#rim)" stroke-width="2.5"/>
+  </g>
+  <g filter="url(#dot)" fill="url(#dotG)">
+    <circle cx="96" cy="120" r="19"/><circle cx="168" cy="120" r="19"/>
+  </g>
+  <g fill="#fff" opacity="0.7"><ellipse cx="92" cy="112" rx="7.5" ry="4.2"/><ellipse cx="164" cy="112" rx="7.5" ry="4.2"/></g>
+</svg>

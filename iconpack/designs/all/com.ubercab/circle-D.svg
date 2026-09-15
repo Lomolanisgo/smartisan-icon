@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Uber · 圆形 D 的立体叠加层（透明）：由 circle-D.ps1 叠在 src-img/uber-circle.png（原图标 + 圆形遮罩）上 -->
+  <defs>
+    <clipPath id="clip"><circle cx="128" cy="128" r="124"/></clipPath>
+    <radialGradient id="shade" cx="96" cy="44" r="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.16"/><stop offset="0.55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+    <linearGradient id="gloss" x1="0" y1="4" x2="0" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.30"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="4" x2="0" y2="252" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.08"/><stop offset="1" stop-color="#fff" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#clip)">
+    <circle cx="128" cy="128" r="124" fill="url(#shade)"/>
+    <ellipse cx="128" cy="30" rx="150" ry="98" fill="url(#gloss)"/>
+    <circle cx="128" cy="128" r="124" fill="none" stroke="#000" stroke-opacity="0.25" stroke-width="5"/>
+    <circle cx="128" cy="128" r="123" fill="none" stroke="url(#rim)" stroke-width="2.5"/>
+  </g>
+</svg>

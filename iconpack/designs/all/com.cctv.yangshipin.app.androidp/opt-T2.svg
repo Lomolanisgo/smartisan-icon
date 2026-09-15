@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- 央视频 · T2：80 年代银色 Trinitron——拉丝银灰正面、两侧胡桃木侧板、左侧大屏幕、右侧控制栏（按键、红色指示灯、竖条扬声器格栅）；
+       无底座、无品牌字样。机身 x 4–252（宽 248），y 44–212。屏幕里是 B 方案的白色央视频标志。 -->
+  <defs>
+    <path id="logo" d="M89.83 29.14L86.50 30.24L84.17 31.83L83.12 32.83L81.19 35.83L80.39 38.50L80.17 40.17L80.05 56.83L79.77 58.17L79.03 59.17L78.19 59.83L76.83 60.53L75.50 60.92L59.50 60.98L56.50 61.25L53.83 62.43L51.81 64.17L50.23 66.17L49.15 68.83L48.98 72.50L49.08 83.83L50.23 86.83L51.83 88.94L54.17 90.78L55.83 91.63L56.83 91.92L73.83 92.04L75.50 92.23L77.60 93.17L79.02 94.50L79.83 95.68L80.12 97.50L80.18 119.17L79.94 121.17L79.17 122.38L77.50 123.61L76.17 123.97L58.83 124.00L56.83 124.21L54.50 125.20L52.73 126.50L51.32 127.83L50.03 129.83L49.22 131.83L49.01 133.17L49.00 145.50L49.16 147.17L50.20 149.83L51.70 151.83L53.83 153.66L56.50 154.86L60.17 155.22L70.17 155.15L72.83 154.78L75.83 153.25L76.83 152.42L78.50 150.40L79.86 147.50L80.11 131.17L81.17 128.12L82.50 126.27L83.83 125.10L85.17 124.34L86.17 124.06L101.83 123.87L102.83 123.71L105.41 122.83L107.83 121.25L108.99 120.17L110.81 117.50L111.73 114.83L111.94 112.50L111.82 101.50L110.61 98.17L108.50 95.38L105.50 93.33L101.83 92.26L87.50 92.15L84.50 91.91L83.17 91.19L81.78 89.83L81.17 88.91L80.26 86.83L80.06 84.83L80.10 68.17L80.35 66.83L81.15 64.83L82.34 63.17L83.50 62.11L85.83 61.05L88.50 60.88L101.17 60.84L102.50 60.63L105.17 59.82L107.50 58.53L108.95 57.17L110.82 54.50L111.86 51.50L111.99 48.50L111.88 38.50L110.83 35.41L108.81 32.50L107.50 31.41L105.57 30.17L102.50 29.16ZM120.17 61.10L117.50 62.11L115.50 63.55L113.36 66.17L112.27 68.50L112.01 70.17L112.00 82.17L112.10 83.83L112.39 84.83L113.17 86.52L115.17 89.15L117.37 90.83L119.17 91.73L121.17 92.00L136.83 92.10L137.83 92.31L139.78 93.17L141.48 94.50L142.87 96.50L143.44 99.50L143.45 117.50L143.00 119.83L142.55 120.83L141.12 122.50L138.83 123.81L137.50 123.99L120.50 124.10L117.83 125.10L115.44 126.83L113.30 129.50L112.38 131.50L112.12 132.50L112.00 144.17L112.13 146.83L113.17 149.54L115.17 152.22L117.17 153.78L119.50 154.82L123.83 155.22L132.17 155.21L135.50 154.91L138.17 153.75L139.83 152.49L141.58 150.50L142.83 147.83L143.24 144.17L143.30 130.17L144.03 127.50L144.80 126.17L145.50 125.35L146.67 124.50L148.17 124.00L163.83 123.91L165.83 123.76L168.83 122.74L171.50 120.90L172.74 119.50L173.79 117.83L174.88 114.83L175.00 111.50L174.88 101.17L173.78 98.17L172.36 96.17L171.17 94.97L168.17 93.12L165.50 92.35L164.17 92.18L147.50 92.04L146.17 91.70L145.17 90.84L144.11 89.50L143.33 86.83L143.30 72.17L142.91 68.50L141.50 65.45L140.43 64.17L138.83 62.76L135.83 61.30L134.83 61.05L124.17 60.96ZM28.83 92.16L26.83 92.32L23.50 93.35L20.42 95.50L18.25 98.50L17.24 101.50L17.10 104.17L17.16 113.83L17.40 115.17L18.20 117.50L19.99 120.17L21.17 121.26L23.50 122.81L26.50 123.79L38.50 123.88L39.83 123.70L42.50 122.76L45.26 120.83L46.49 119.50L47.80 117.17L48.69 114.17L48.84 112.17L48.83 103.13L48.59 101.50L47.76 98.83L46.62 96.83L45.50 95.53L43.72 94.17L41.83 93.11L38.17 92.20Z"/>
+    <!-- walnut side panels -->
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A3E16"/><stop offset="0.45" stop-color="#B8672C"/><stop offset="1" stop-color="#8A4A1C"/>
+    </linearGradient>
+    <pattern id="grain" width="14" height="40" patternUnits="userSpaceOnUse">
+      <path d="M2 0C4 10 1 22 3 40M7 0C9 14 6 26 8 40M11 0C12 9 10 28 12 40" fill="none" stroke="#4A2208" stroke-opacity="0.35" stroke-width="0.8"/>
+    </pattern>
+    <!-- brushed silver-grey front -->
+    <linearGradient id="front" x1="0" y1="44" x2="0" y2="212" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B9BBBD"/><stop offset="0.5" stop-color="#9C9EA1"/><stop offset="1" stop-color="#7E8184"/>
+    </linearGradient>
+    <pattern id="brush" width="256" height="3" patternUnits="userSpaceOnUse">
+      <path d="M0 1.5H256" stroke="#fff" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bezel" x1="0" y1="56" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1A1B1D"/><stop offset="1" stop-color="#3A3C3F"/>
+    </linearGradient>
+    <radialGradient id="screen" cx="98" cy="112" r="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF3A4B"/><stop offset="0.6" stop-color="#D40617"/><stop offset="1" stop-color="#6E0008"/>
+    </radialGradient>
+    <linearGradient id="glassV" x1="0" y1="64" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.30"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="col" x1="0" y1="58" x2="0" y2="198" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2E3033"/><stop offset="1" stop-color="#1B1C1E"/>
+    </linearGradient>
+    <clipPath id="sc"><path id="tube" d="M38 66H164C170 66 173 69 173.6 75C175 98 175 158 173.6 180C173 186 170 189 164 189H38C32 189 29 186 28.4 180C27 158 27 98 28.4 75C29 69 32 66 38 66Z"/></clipPath>
+    <filter id="ds" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#fff" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- cabinet silhouette (for the drop shadow) -->
+  <rect x="4" y="44" width="248" height="168" rx="6" fill="#6B6E71" filter="url(#ds)"/>
+
+  <!-- wood side panels -->
+  <rect x="4" y="44" width="12" height="168" rx="5" fill="url(#wood)"/>
+  <rect x="4" y="44" width="12" height="168" rx="5" fill="url(#grain)"/>
+  <rect x="240" y="44" width="12" height="168" rx="5" fill="url(#wood)"/>
+  <rect x="240" y="44" width="12" height="168" rx="5" fill="url(#grain)"/>
+
+  <!-- silver front -->
+  <rect x="14" y="44" width="228" height="168" fill="url(#front)"/>
+  <rect x="14" y="44" width="228" height="168" fill="url(#brush)"/>
+  <path d="M14 44.75H242" stroke="#E4E5E6" stroke-width="1.5"/>
+  <path d="M14 211.25H242" stroke="#4E5053" stroke-width="1.5"/>
+
+  <!-- screen bezel + tube -->
+  <rect x="20" y="56" width="162" height="144" rx="8" fill="url(#bezel)"/>
+  <rect x="20.5" y="56.5" width="161" height="143" rx="7.5" fill="none" stroke="#000" stroke-opacity="0.55"/>
+  <use href="#tube" fill="url(#screen)"/>
+  <g clip-path="url(#sc)">
+    <g transform="translate(101 128) scale(0.6) translate(-96 -92)" fill="#fff" filter="url(#glow)">
+      <use href="#logo"/>
+    </g>
+    <g stroke="#000" stroke-opacity="0.07" stroke-width="1">
+      <path d="M24 72H178M24 79H178M24 86H178M24 93H178M24 100H178M24 107H178M24 114H178M24 121H178M24 128H178M24 135H178M24 142H178M24 149H178M24 156H178M24 163H178M24 170H178M24 177H178M24 184H178"/>
+    </g>
+    <path d="M24 62H178V98C130 92 76 96 24 114Z" fill="url(#glassV)"/>
+  </g>
+  <use href="#tube" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="1.5"/>
+
+  <!-- right control column -->
+  <rect x="190" y="56" width="44" height="144" rx="3" fill="url(#col)"/>
+  <rect x="190.5" y="56.5" width="43" height="143" rx="2.5" fill="none" stroke="#000" stroke-opacity="0.5"/>
+  <circle cx="186" cy="61" r="2.4" fill="#FF2A2A"/>
+  <!-- channel buttons -->
+  <g fill="#C9CBCD" stroke="#55585B" stroke-width="0.7">
+    <rect x="196" y="64" width="9" height="6" rx="1"/><rect x="196" y="74" width="9" height="6" rx="1"/>
+    <rect x="196" y="84" width="9" height="6" rx="1"/><rect x="196" y="94" width="9" height="6" rx="1"/>
+    <rect x="196" y="104" width="9" height="6" rx="1"/>
+  </g>
+  <rect x="211" y="64" width="17" height="46" rx="2" fill="#0F1011" stroke="#55585B" stroke-width="0.7"/>
+  <g fill="#8FD4FF" fill-opacity="0.35"><rect x="214" y="68" width="11" height="3"/><rect x="214" y="76" width="11" height="3"/><rect x="214" y="84" width="11" height="3"/></g>
+  <!-- small knobs -->
+  <circle cx="201" cy="122" r="4.5" fill="#B7B9BB" stroke="#4E5053" stroke-width="0.8"/>
+  <circle cx="221" cy="122" r="4.5" fill="#B7B9BB" stroke="#4E5053" stroke-width="0.8"/>
+  <!-- vertical speaker grille -->
+  <rect x="196" y="134" width="32" height="60" rx="2" fill="#141516"/>
+  <g stroke="#3C3E41" stroke-width="1.6">
+    <path d="M200 137V191M204.5 137V191M209 137V191M213.5 137V191M218 137V191M222.5 137V191"/>
+  </g>
+</svg>

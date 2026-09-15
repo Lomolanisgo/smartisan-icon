@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- 多邻国 · 圆形：final.svg 的绿色毛毡猫头鹰，底板改为圆形（直径 240，圆心下移 4），头顶羽毛从圆顶伸出、不超出画布 -->
+  <defs>
+    <circle id="disc" cx="128" cy="132" r="120"/>
+    <clipPath id="discClip"><use href="#disc"/></clipPath>
+    <linearGradient id="body" x1="0" y1="12" x2="0" y2="252" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9BE83F"/><stop offset="0.55" stop-color="#6FCB1C"/><stop offset="1" stop-color="#4EA80A"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="12" x2="0" y2="252" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6DB22A"/><stop offset="0.2" stop-color="#5FA61E"/><stop offset="0.85" stop-color="#3F8A06"/><stop offset="1" stop-color="#357A02"/>
+    </linearGradient>
+    <linearGradient id="tuft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A8EE4E"/><stop offset="1" stop-color="#80D62E"/>
+    </linearGradient>
+    <radialGradient id="belly" cx="0.5" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#D9F7A6"/><stop offset="1" stop-color="#B4E871"/>
+    </radialGradient>
+    <radialGradient id="eyeW" cx="0.45" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.75" stop-color="#F4F7F2"/><stop offset="1" stop-color="#D9E3D2"/>
+    </radialGradient>
+    <linearGradient id="pupil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#555"/><stop offset="1" stop-color="#2B2B2B"/>
+    </linearGradient>
+    <linearGradient id="beakT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD84A"/><stop offset="1" stop-color="#FFB300"/>
+    </linearGradient>
+    <linearGradient id="beakB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF9A1A"/><stop offset="1" stop-color="#E86F00"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="12" x2="0" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#2F6B00" flood-opacity="0.35"/>
+    </filter>
+    <filter id="felt" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -1.6 1.05" result="w"/>
+      <feComposite in="w" in2="SourceAlpha" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- feather tufts behind the disc, tips at about y=3 -->
+  <g transform="translate(0 -3)">
+    <rect x="-10" y="-30" width="20" height="40" rx="10" fill="url(#tuft)" transform="translate(116,36) rotate(-28)"/>
+    <rect x="-9" y="-26" width="18" height="34" rx="9" fill="url(#tuft)" transform="translate(99,33) rotate(-58)"/>
+    <rect x="-10" y="-30" width="20" height="40" rx="10" fill="url(#tuft)" transform="translate(140,36) rotate(28)"/>
+    <rect x="-9" y="-26" width="18" height="34" rx="9" fill="url(#tuft)" transform="translate(157,33) rotate(58)"/>
+  </g>
+
+  <use href="#disc" fill="url(#body)"/>
+  <g clip-path="url(#discClip)">
+    <ellipse cx="128" cy="262" rx="90" ry="70" fill="url(#belly)"/>
+    <g fill="none" stroke="#8FD448" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.7">
+      <path d="M104 220 l6 -5 l6 5"/><path d="M140 220 l6 -5 l6 5"/><path d="M122 232 l6 -5 l6 5"/>
+    </g>
+    <path d="M8 100 C44 110 54 170 42 252 H8 Z" fill="#5AB514" opacity="0.8"/>
+    <path d="M248 100 C212 110 202 170 214 252 H248 Z" fill="#5AB514" opacity="0.8"/>
+    <rect x="0" y="12" width="256" height="98" fill="url(#gloss)" opacity="0.6"/>
+    <rect x="0" y="0" width="256" height="256" filter="url(#felt)" opacity="0.18"/>
+    <!-- rim + inner shading -->
+    <g fill="none">
+      <use href="#disc" stroke="#1F4A00" stroke-opacity="0.10" stroke-width="5"/>
+      <use href="#disc" stroke="#1F4A00" stroke-opacity="0.14" stroke-width="4" transform="translate(0 -1.5)"/>
+      <use href="#disc" stroke="#C8F58A" stroke-opacity="0.9" stroke-width="2" transform="translate(0 1)"/>
+      <use href="#disc" stroke="url(#rim)" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- stitched inner edge -->
+  <circle cx="128" cy="132" r="110" fill="none" stroke="#C9F58F" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.55"/>
+
+  <!-- eyes -->
+  <g filter="url(#soft)">
+    <ellipse cx="84" cy="114" rx="39" ry="43" fill="url(#eyeW)"/>
+    <ellipse cx="172" cy="114" rx="39" ry="43" fill="url(#eyeW)"/>
+  </g>
+  <rect x="82" y="91" width="27" height="45" rx="13.5" fill="url(#pupil)"/>
+  <rect x="147" y="91" width="27" height="45" rx="13.5" fill="url(#pupil)"/>
+  <circle cx="90" cy="101" r="7.3" fill="#fff"/>
+  <circle cx="155" cy="101" r="7.3" fill="#fff"/>
+  <circle cx="103" cy="125" r="2.7" fill="#fff" opacity="0.8"/>
+  <circle cx="167" cy="125" r="2.7" fill="#fff" opacity="0.8"/>
+
+  <!-- beak -->
+  <g filter="url(#soft)" transform="translate(128 150) scale(1.05) translate(-128 -144)">
+    <rect x="113" y="141" width="30" height="36" rx="15" fill="url(#beakB)"/>
+    <path fill="url(#beakT)" d="M100 153 C103 139 115 131 128 131 C141 131 153 139 156 153 C156 155 155 156 153 156 L128 161 L103 156 C101 156 100 155 100 153 Z"/>
+  </g>
+  <path transform="translate(128 150) scale(1.05) translate(-128 -144)" d="M121 135 C125 134 131 134 135 135 C139 136 140 140 138 142 H118 C116 140 117 136 121 135 Z" fill="#FFF1A0" opacity="0.9"/>
+</svg>

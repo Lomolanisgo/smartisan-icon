@@ -35,6 +35,24 @@ Remove-Item $resZip, $unsigned, $aligned, $apk -ErrorAction SilentlyContinue
 if ($LASTEXITCODE -ne 0) { throw 'aapt2 compile 失败' }
 & "$bt\aapt2.exe" link -o $unsigned -I $androidJar --manifest (Join-Path $app 'AndroidManifest.xml') -A (Join-Path $app 'assets') --min-sdk-version 26 --target-sdk-version 35 $resZip
 if ($LASTEXITCODE -ne 0) { throw 'aapt2 link 失败' }
+
+# 代码（桌面入口的图标浏览）：javac -> d8 -> classes.dex 放进 APK
+$classes = Join-Path $out 'classes'
+$dexDir = Join-Path $out 'dex'
+Remove-Item $classes, $dexDir -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force $classes, $dexDir | Out-Null
+$sources = Get-ChildItem (Join-Path $app 'src') -Recurse -Filter *.java | ForEach-Object FullName
+# --release 8：java.* 用 JDK 的 API（含 lambda 需要的 LambdaMetafactory），android.* 来自 android.jar；d8 负责脱糖
+& javac -encoding UTF-8 --release 8 -classpath $androidJar -d $classes $sources
+if ($LASTEXITCODE -ne 0) { throw 'javac 失败' }
+$classFiles = Get-ChildItem $classes -Recurse -Filter *.class | ForEach-Object FullName
+& "$bt\d8.bat" --release --min-api 26 --lib $androidJar --output $dexDir $classFiles
+if ($LASTEXITCODE -ne 0) { throw 'd8 失败' }
+Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
+$zip = [IO.Compression.ZipFile]::Open($unsigned, 'Update')
+try { [void][IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, (Join-Path $dexDir 'classes.dex'), 'classes.dex') }
+finally { $zip.Dispose() }
+Remove-Item $classes, $dexDir -Recurse -Force
 & "$bt\zipalign.exe" -f -p 4 $unsigned $aligned
 if ($LASTEXITCODE -ne 0) { throw 'zipalign 失败' }
 

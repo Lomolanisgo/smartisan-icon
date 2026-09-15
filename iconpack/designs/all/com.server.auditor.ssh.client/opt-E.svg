@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><g transform="translate(128 128) scale(1.09735) translate(-128 -128)">
   <defs>
     <path id="tile" d="M15 15H241V241H15Z"/>
     <clipPath id="clip"><use href="#tile"/></clipPath>
@@ -49,4 +49,4 @@
       <use href="#glyph" fill="#000" opacity="0.35" filter="url(#soft2)" clip-path="none" transform="translate(0 -0.3)" style="mix-blend-mode:multiply"/>
     </g>
   </g>
-</svg>
+</g></svg>

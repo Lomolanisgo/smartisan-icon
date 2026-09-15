@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- 微信 · 圆形气泡 B：纯圆（直径 248，与 App logo 同规格），无尾巴，保留绿色材质和两只白色“眼睛” -->
+  <defs>
+    <radialGradient id="fill" cx="96" cy="44" r="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8EEA5E"/><stop offset="0.5" stop-color="#41CB2E"/><stop offset="1" stop-color="#1C9E18"/>
+    </radialGradient>
+    <linearGradient id="gloss" x1="0" y1="4" x2="0" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.42"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="4" x2="0" y2="252" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C9F7AE" stop-opacity="0.9"/><stop offset="0.5" stop-color="#2F9A22" stop-opacity="0.5"/><stop offset="1" stop-color="#16750F" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="dotG" cx="0.45" cy="0.3" r="0.8"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCEFD5"/></radialGradient>
+    <filter id="dot" x="-40%" y="-40%" width="180%" height="190%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/><feOffset dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.45"/></feComponentTransfer>
+      <feFlood flood-color="#0B5A08"/><feComposite operator="in" in2="SourceGraphic"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip"><circle cx="128" cy="128" r="124"/></clipPath>
+  </defs>
+  <circle cx="128" cy="128" r="124" fill="url(#fill)"/>
+  <g clip-path="url(#clip)">
+    <ellipse cx="128" cy="30" rx="150" ry="98" fill="url(#gloss)"/>
+    <circle cx="128" cy="128" r="124" fill="none" stroke="#000" stroke-opacity="0.07" stroke-width="5"/>
+    <circle cx="128" cy="128" r="123" fill="none" stroke="url(#rim)" stroke-width="2.5"/>
+  </g>
+  <g filter="url(#dot)" fill="url(#dotG)">
+    <circle cx="90" cy="128" r="21"/><circle cx="166" cy="128" r="21"/>
+  </g>
+  <g fill="#fff" opacity="0.7"><ellipse cx="86" cy="119" rx="8" ry="4.5"/><ellipse cx="162" cy="119" rx="8" ry="4.5"/></g>
+</svg>

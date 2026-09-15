@@ -1,0 +1,46 @@
+{
+  "pkg": "com.lomolanisgo.smartisanicons",
+  "label": "锤子图标包",
+  "references": [
+    {
+      "pkg": "com.smartisan.notes",
+      "why": "锤子便签的纸面+红铅笔拟物，参考其实物道具斜放在底板上的构图"
+    },
+    {
+      "pkg": "nl.nos.app",
+      "why": "已定稿的红色直角方块，参考其红色底板与轮廓明暗做法"
+    },
+    {
+      "pkg": "com.github.android",
+      "why": "已定稿的深色毛毡+虚线缝线底板"
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "name": "锤子压图标格",
+      "shape": "square",
+      "desc": "白色锤子标准底板上 2×2 彩色小图标，一把木柄红握把的钢锤斜压其上。直接表达“图标包+锤子”，信息最完整；小尺寸下图标格略杂。"
+    },
+    {
+      "id": "B",
+      "name": "毛毡工作台",
+      "shape": "square",
+      "desc": "深色毛毡+缝线底板（同 GitHub 定稿），大钢锤敲在一枚白色图标方块上。剪影最强、48px 最醒目；色调偏暗。"
+    },
+    {
+      "id": "C",
+      "name": "红底图标扇",
+      "shape": "square",
+      "desc": "锤子红底板，蓝/黄/白三张图标卡片呈扇形展开，前卡压印锤子。暗示“浏览图标图库”，最有品牌红色；锤子在卡内较小。"
+    },
+    {
+      "id": "D",
+      "name": "红色圆形 T 形锤子",
+      "shape": "circle",
+      "desc": "按用户提供的参考图（_ref-t-hammer.png）重绘：红色渐变球体 + 白色 T 形锤子，圆直径 248（= 方形 226 × 1.10）。已作为 App 图标（launcher.png）。",
+      "updated": true
+    }
+  ],
+  "selected": "D"
+}

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M15 15H241V241H15Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <linearGradient id="red" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0392E"/><stop offset="0.6" stop-color="#D91F14"/><stop offset="1" stop-color="#B3140B"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E6E6E6"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A9097"/><stop offset="0.5" stop-color="#5B6168"/><stop offset="1" stop-color="#3B4046"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A5642D"/><stop offset="0.45" stop-color="#E2AC6D"/><stop offset="1" stop-color="#94562A"/>
+    </linearGradient>
+    <filter id="ds" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#4A0400" flood-opacity="0.5"/>
+    </filter>
+    <filter id="emb" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="0.4" flood-color="#fff" flood-opacity="1"/>
+    </filter>
+    <g id="cardshape"><rect x="-58" y="-66" width="116" height="132" rx="12"/></g>
+  </defs>
+  <use href="#tile" fill="url(#red)"/>
+  <g clip-path="url(#clip)" fill="none">
+    <ellipse cx="128" cy="18" rx="170" ry="70" fill="#fff" opacity="0.12"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.12" stroke-width="5"/>
+    <use href="#tile" stroke="#fff" stroke-opacity="0.35" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#8E0E06" stroke-width="2"/>
+  </g>
+  <!-- fan of tiles pivoting at bottom -->
+  <g transform="translate(128 196)">
+    <g transform="rotate(-20) translate(0 -80)" filter="url(#ds)">
+      <use href="#cardshape" fill="#3C8FE3"/>
+    </g>
+    <g transform="rotate(20) translate(0 -80)" filter="url(#ds)">
+      <use href="#cardshape" fill="#F2A930"/>
+    </g>
+    <g transform="translate(0 -84)" filter="url(#ds)">
+      <use href="#cardshape" fill="url(#card)"/>
+    </g>
+    <g transform="translate(0 -84)">
+      <rect x="-57.5" y="-65.5" width="115" height="131" rx="11.5" fill="none" stroke="#fff" stroke-width="1"/>
+      <!-- embossed hammer glyph -->
+      <g transform="translate(6 0) rotate(-35) translate(2 4) scale(1.12)" filter="url(#emb)">
+        <rect x="-6" y="-18" width="12" height="70" rx="5" fill="url(#wood)"/>
+        <path d="M-40 -32 L-14 -40 H22 V-18 H-14 L-40 -26 Z" fill="url(#steel)"/>
+        <rect x="20" y="-44" width="16" height="30" rx="3" fill="url(#steel)"/>
+      </g>
+    </g>
+  </g>
+</svg>

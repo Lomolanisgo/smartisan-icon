@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><g transform="translate(128 128) scale(1.09735) translate(-128 -128)">
   <defs>
     <path id="sq" d="M15 15H241V241H15Z"/>
     <clipPath id="sqc"><use href="#sq"/></clipPath>
@@ -43,4 +43,4 @@
   <use href="#off" x="76" y="76"/><use href="#off" x="128" y="76"/><use href="#off" x="180" y="76"/>
   <use href="#on" x="76" y="128"/><use href="#on" x="128" y="128"/><use href="#on" x="180" y="128"/>
   <use href="#off" x="76" y="180"/><use href="#on" x="128" y="180"/><use href="#off" x="180" y="180"/>
-</svg>
+</g></svg>

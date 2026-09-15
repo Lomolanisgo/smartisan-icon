@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="9.062 9.062 237.876 237.876" width="256" height="256">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="9.062 9.062 237.876 237.876" width="256" height="256"><g transform="translate(128 128) scale(1.09735) translate(-128 -128)">
   <defs>
     <!-- Tile measured from iconpack/png/com.gotokeep.keep.png: edges x 3.00–253.00, y 23.00–233.00 (250×210, ratio 1.19),
          corner = circular arc r=10.1 (superellipse fit n=2.00, 0.014px rms), no outer shadow -->
@@ -32,4 +32,4 @@
     <path d="M150 72H176L154 184H128Z" fill="url(#w)" stroke="url(#w)"/>
     <path d="M194 88H218L202 168H178Z" fill="url(#w)" stroke="url(#w)"/>
   </g>
-</svg>
+</g></svg>

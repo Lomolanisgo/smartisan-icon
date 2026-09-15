@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <path id="tile" d="M15 15H241V241H15Z"/>
+    <clipPath id="clip"><use href="#tile"/></clipPath>
+    <linearGradient id="fill" x1="0" y1="15" x2="0" y2="241" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#43474C"/><stop offset="1" stop-color="#2B2E32"/>
+    </linearGradient>
+    <pattern id="felt" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#fff" opacity="0.025"/><rect x="2" y="2" width="2" height="2" fill="#000" opacity="0.06"/>
+    </pattern>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9C5E2A"/><stop offset="0.4" stop-color="#E7B478"/><stop offset="0.7" stop-color="#C98849"/><stop offset="1" stop-color="#8A5022"/>
+    </linearGradient>
+    <linearGradient id="grip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8E120B"/><stop offset="0.4" stop-color="#F0483C"/><stop offset="1" stop-color="#9A160D"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAFAFA"/><stop offset="0.45" stop-color="#C5CACF"/><stop offset="0.55" stop-color="#9DA3AA"/><stop offset="1" stop-color="#6D737A"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDEFF1"/><stop offset="0.5" stop-color="#AEB4BA"/><stop offset="1" stop-color="#5E646B"/>
+    </linearGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E4E4E4"/>
+    </linearGradient>
+    <filter id="hsh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="3" dy="7" stdDeviation="5" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="tsh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <use href="#tile" fill="url(#fill)"/>
+  <use href="#tile" fill="url(#felt)"/>
+  <g clip-path="url(#clip)" fill="none">
+    <ellipse cx="128" cy="10" rx="170" ry="60" fill="#fff" opacity="0.05"/>
+    <use href="#tile" stroke="#000" stroke-opacity="0.35" stroke-width="5"/>
+    <use href="#tile" stroke="#fff" stroke-opacity="0.18" stroke-width="2" transform="translate(0 1)"/>
+    <use href="#tile" stroke="#1B1D20" stroke-width="2"/>
+  </g>
+  <rect x="31" y="31" width="194" height="194" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 4" transform="translate(0 1)"/>
+  <rect x="31" y="31" width="194" height="194" fill="none" stroke="#C9CCD0" stroke-opacity="0.75" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <!-- white icon tile being struck -->
+  <g filter="url(#tsh)">
+    <rect x="44" y="132" width="84" height="84" rx="12" fill="url(#white)"/>
+  </g>
+  <rect x="44.5" y="132.5" width="83" height="83" rx="11.5" fill="none" stroke="#fff" stroke-width="1"/>
+  <rect x="60" y="148" width="52" height="52" rx="8" fill="none" stroke="#E8453C" stroke-width="7"/>
+  <!-- hammer -->
+  <g transform="translate(152 102) rotate(38) scale(0.78)" filter="url(#hsh)">
+    <rect x="-10" y="-30" width="20" height="140" rx="9" fill="url(#wood)"/>
+    <rect x="-12" y="58" width="24" height="54" rx="10" fill="url(#grip)"/>
+    <path d="M-12 70H12M-12 82H12M-12 94H12" stroke="#6E0C06" stroke-opacity="0.45" stroke-width="1.8"/>
+    <path d="M-72 -52 L-26 -68 H40 V-26 H-26 L-72 -40 Z" fill="url(#steel)" stroke="#4A4F55" stroke-width="1.2"/>
+    <rect x="36" y="-76" width="30" height="58" rx="5" fill="url(#face)" stroke="#44494F" stroke-width="1.2"/>
+    <rect x="-14" y="-28" width="28" height="11" rx="2.5" fill="url(#face)" stroke="#44494F" stroke-width="1"/>
+    <path d="M-24 -66 H38" stroke="#fff" stroke-width="2"/>
+  </g>
+</svg>

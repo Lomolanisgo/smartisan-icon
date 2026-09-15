@@ -1,0 +1,39 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>图标确认</title>
+<style>
+  body { margin: 0; padding: 24px; font: 14px system-ui, "Microsoft YaHei", sans-serif; background: #eef0f3; color: #222; }
+  h1 { font-size: 20px; margin: 0 0 16px; }
+  .row { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; background: #fff; border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; }
+  .name { width: 120px; font-weight: 600; }
+  figure { margin: 0; text-align: center; }
+  figcaption { color: #666; margin-top: 6px; }
+  .arrow { font-size: 28px; color: #999; }
+  .sizes { display: flex; gap: 12px; align-items: center; }
+  .dark { background: #2b2d31; padding: 10px; border-radius: 8px; display: flex; gap: 12px; align-items: center; }
+</style>
+<h1>待确认：左边是现在的图标，右边是新图标（还没有写入）</h1>
+
+<div class="row">
+  <div class="name">图标包 App 图标</div>
+  <figure><img src="../app-icon/opt-D.png" width="128"><figcaption>现在</figcaption></figure>
+  <div class="arrow">→</div>
+  <figure><img src="t-hammer-circle.png" width="128"><figcaption>新</figcaption></figure>
+  <div class="sizes"><img src="t-hammer-circle.png" width="48"><div class="dark"><img src="t-hammer-circle.png" width="48"></div></div>
+</div>
+
+<div class="row">
+  <div class="name">微信</div>
+  <figure><img src="../wechat/circle-C.png" width="128"><figcaption>现在</figcaption></figure>
+  <div class="arrow">→</div>
+  <figure><img src="wechat-circle.png" width="128"><figcaption>新</figcaption></figure>
+  <div class="sizes"><img src="wechat-circle.png" width="48"><div class="dark"><img src="wechat-circle.png" width="48"></div></div>
+</div>
+
+<div class="row">
+  <div class="name">Uber</div>
+  <figure><img src="../../png/com.ubercab.png" width="128" onerror="this.replaceWith('锤子原图')"><figcaption>现在</figcaption></figure>
+  <div class="arrow">→</div>
+  <figure><img src="uber-circle.png" width="128"><figcaption>新</figcaption></figure>
+  <div class="sizes"><img src="uber-circle.png" width="48"><div class="dark"><img src="uber-circle.png" width="48"></div></div>
+</div>

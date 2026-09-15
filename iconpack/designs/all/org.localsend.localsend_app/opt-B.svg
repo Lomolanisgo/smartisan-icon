@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="9.062 9.062 237.876 237.876">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="9.062 9.062 237.876 237.876"><g transform="translate(128 128) scale(1.09735) translate(-128 -128)">
   <defs>
     <path id="tile" d="M23 23H233V233H23Z"/>
     <clipPath id="tileClip"><use href="#tile"/></clipPath>
@@ -47,4 +47,4 @@
   <circle cx="128" cy="128" r="40" fill="#D9D9D9" filter="url(#ins)"/>
   <circle cx="128" cy="128" r="33" fill="url(#btn)" filter="url(#d)"/>
   <ellipse cx="119" cy="112" rx="15" ry="8" fill="#fff" opacity=".35"/>
-</svg>
+</g></svg>

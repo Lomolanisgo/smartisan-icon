@@ -1,0 +1,13 @@
+{
+  "pkg": "com.ubercab",
+  "label": "Uber",
+  "references": [
+    { "pkg": "com.ubercab", "why": "锤子图标包原图：白色圆盘 + 深灰 U 形标（2016 年旧 Logo），C 方案沿用" }
+  ],
+  "options": [
+    { "id": "circle-A", "name": "黑色釉面圆 + 白色字标", "shape": "circle", "desc": "现行官方配色：黑色釉面球体（直径 248），白色 Uber 字标带轻微投影。最接近现在的 Uber 图标，深色壁纸上存在感偏弱。" },
+    { "id": "circle-B", "name": "白色陶瓷圆 + 黑色字标", "shape": "circle", "desc": "沿用锤子原图的白色陶瓷材质，换成现行的黑色 Uber 字标并做轻微压印。拟物感强，浅色壁纸上略淡。" },
+    { "id": "circle-C", "name": "锤子原图重绘（U 形标）", "shape": "circle", "desc": "保留锤子原图的白色圆盘和深灰 U 形标，按新的圆形规格重绘成矢量。最有锤子味，但 U 形标是 Uber 旧 Logo。" },
+    { "id": "circle-D", "name": "原图标 + 圆形遮罩 + 立体", "shape": "circle", "desc": "不重绘：直接用 src-img/uber.png 原图标，圆形遮罩（直径 248，内容缩 0.8），再叠加釉面高光、暗角和边缘光（circle-D.svg，由 circle-D.ps1 合成）。" }
+  ]
+}

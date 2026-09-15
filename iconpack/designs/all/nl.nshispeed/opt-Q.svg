@@ -56,7 +56,7 @@
     <use href="#ns" fill="#FFC917" transform="translate(40 66.5) scale(.5)"/>
     <!-- route -->
     <g font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#0A2E6E">
-      <text x="32" y="150" font-size="19">EIN</text>
+      <text x="32" y="150" font-size="19">EHV</text>
       <text x="168" y="150" font-size="19" text-anchor="end">PAR</text>
     </g>
     <circle cx="84" cy="143.5" r="3" fill="#0A2E6E"/>

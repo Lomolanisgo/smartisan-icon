@@ -114,16 +114,24 @@ function resolveSource(pkg) {
   return { source: 'raw', file: path.join(rawDir, pkg, chosen), chosen }
 }
 
-// 图标包自身的图标：用锤子桌面图标，没有则取第一个
+// 图标包自身的图标：designs/app-icon/launcher.png（红色圆形 T 形锤子）；没有时退回锤子桌面图标或第一个
+const launcherIcon = path.join(root, 'iconpack', 'designs', 'app-icon', 'launcher.png')
+const hasLauncherIcon = await stat(launcherIcon).then(() => true, () => false)
 await copyFile(
-  resolveSource(pkgs.includes('com.smartisanos.launcher') ? 'com.smartisanos.launcher' : pkgs[0]).file,
+  hasLauncherIcon ? launcherIcon : resolveSource(pkgs.includes('com.smartisanos.launcher') ? 'com.smartisanos.launcher' : pkgs[0]).file,
   path.join(drawableDir, 'ic_launcher.png')
 )
 
 const filterItems = []
 const drawableItems = []
 const index = []
+const gallery = [] // assets/gallery.json：App 内图标浏览（GalleryActivity）使用
 let withActivity = 0
+
+// 应用名：手机上的应用 + 设计稿里的应用；其余锤子原图显示包名
+const labels = {}
+for (const a of await readJson(path.join(root, 'iconpack', 'designs', 'all', 'apps.json'), [])) labels[a.pkg] = a.label
+for (const a of await readJson(path.join(root, 'iconpack', 'phone-apps.json'), [])) if (a.label) labels[a.pkg] = a.label
 
 for (const pkg of pkgs) {
   const { source, file, chosen } = resolveSource(pkg)
@@ -131,6 +139,7 @@ for (const pkg of pkgs) {
   await copyFile(file, path.join(drawableDir, `${name}.png`))
   await copyFile(file, path.join(pngDir, `${pkg}.png`))
   drawableItems.push(`    <item drawable="${name}" />`)
+  gallery.push({ d: name, p: pkg, n: labels[pkg] ?? pkg, c: source === 'override' })
 
   const activities = [...(components.get(pkg) ?? [])]
   if (activities.length) {
@@ -162,7 +171,14 @@ for (const f of altIcons) {
   await copyFile(path.join(overrideIconsDir, f), path.join(drawableDir, `${name}.png`))
   await copyFile(path.join(overrideIconsDir, f), path.join(pngDir, f))
   drawableItems.push(`    <item drawable="${name}" />`)
+  const pkg = f.slice(0, f.indexOf('~'))
+  gallery.push({ d: name, p: pkg, n: labels[pkg] ?? pkg, c: true, a: true })
 }
+
+// 定制在前（默认图标、再备选），其余按名称
+const collator = new Intl.Collator('zh-Hans-CN')
+gallery.sort((x, y) => (y.c - x.c) || ((x.a ?? false) - (y.a ?? false)) || collator.compare(x.n, y.n))
+await writeFile(path.join(appDir, 'assets', 'gallery.json'), JSON.stringify(gallery))
 
 const appfilter = `<?xml version="1.0" encoding="utf-8"?>
 <resources>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs><filter id="ground" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="5"/></filter>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
+<filter id="drop" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.38"/></filter>
+<filter id="glyph" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.3" flood-color="#000" flood-opacity="0.42"/></filter><linearGradient id="wl" x1="0" y1="30" x2="0" y2="128" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFA88C"/><stop offset="1" stop-color="#FF8F6B"/></linearGradient><linearGradient id="wd" x1="0" y1="128" x2="0" y2="226" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#D4552F"/><stop offset="1" stop-color="#B33A1A"/></linearGradient></defs>
+<defs><linearGradient id="pieF" x1="0" y1="30" x2="0" y2="202.48000000000002" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F58B6A"/><stop offset="1" stop-color="#D9532C"/></linearGradient><linearGradient id="pieG" x1="0" y1="30" x2="0" y2="137.8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.34"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="pieC"><path d="M54 128A98 98 0 1 1 250 128A98 98 0 1 1 54 128Z"/></clipPath></defs>
+<path d="M54 128A98 98 0 1 1 250 128A98 98 0 1 1 54 128Z" transform="translate(0 11)" fill="#000" fill-opacity="0.33" filter="url(#ground)"/>
+<path d="M54 128A98 98 0 1 1 250 128A98 98 0 1 1 54 128Z" transform="translate(0 6)" fill="#7e301a"/>
+<path d="M54 128A98 98 0 1 1 250 128A98 98 0 1 1 54 128Z" transform="translate(0 3)" fill="#a94122"/>
+<path d="M54 128A98 98 0 1 1 250 128A98 98 0 1 1 54 128Z" fill="url(#pieF)"/>
+<g clip-path="url(#pieC)">
+<path d="M54 128A98 98 0 1 1 250 128A98 98 0 1 1 54 128Z" fill="none" stroke="#000" stroke-opacity="0.16" stroke-width="5" filter="url(#soft)"/>
+<path d="M54 128A98 98 0 1 1 250 128A98 98 0 1 1 54 128Z" transform="translate(0 1.2)" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="2" filter="url(#soft)"/>
+<rect x="54" y="30" width="196" height="107.80000000000001" fill="url(#pieG)"/>
+</g>
+<path d="M54 128A98 98 0 1 1 250 128A98 98 0 1 1 54 128Z" fill="none" stroke="#772e18" stroke-width="1" stroke-opacity="0.8"/>
+<g clip-path="url(#pieC)">
+<path d="M152 128L54 128A98 98 0 0 1 152 30Z" fill="url(#wl)"/><path d="M152 128L250 128A98 98 0 0 1 152 226Z" fill="url(#wd)"/>
+<path d="M152 128L54 128M152 128L152 30M152 128L250 128M152 128L152 226" stroke="#000" stroke-opacity="0.18" stroke-width="2"/>
+<path d="M152 128L54 128M152 128L152 30" stroke="#fff" stroke-opacity="0.35" stroke-width="1" transform="translate(0 -1)"/>
+<ellipse cx="152" cy="74.1" rx="93.1" ry="53.900000000000006" fill="#fff" fill-opacity="0.2"/>
+</g>
+<defs><linearGradient id="tileF" x1="0" y1="68" x2="0" y2="173.60000000000002" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F0704C"/><stop offset="1" stop-color="#B7472A"/></linearGradient><linearGradient id="tileG" x1="0" y1="68" x2="0" y2="134" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.34"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="tileC"><path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z"/></clipPath></defs>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" transform="translate(0 12)" fill="#000" fill-opacity="0.33" filter="url(#ground)"/>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" transform="translate(0 7)" fill="#6a2918"/>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" transform="translate(0 3.5)" fill="#8f3721"/>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" fill="url(#tileF)"/>
+<g clip-path="url(#tileC)">
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" fill="none" stroke="#000" stroke-opacity="0.16" stroke-width="5" filter="url(#soft)"/>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" transform="translate(0 1.2)" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="2" filter="url(#soft)"/>
+<rect x="16" y="68" width="120" height="66" fill="url(#tileG)"/>
+</g>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" fill="none" stroke="#652717" stroke-width="1" stroke-opacity="0.8"/><g filter="url(#glyph)"><text x="76" y="161.12" text-anchor="middle" font-family="Segoe UI, Segoe UI Bold, Arial, sans-serif" font-weight="700" font-size="92" fill="#FFFFFF">P</text></g>
+</svg>

@@ -26,8 +26,9 @@
   },
   "com.microsoft.office.outlook": {
     "sel": [
-      "S1",
-      "A"
+      "G",
+      "F",
+      "S1"
     ]
   },
   "com.tencent.weread": {
@@ -78,6 +79,7 @@
   },
   "notion.id": {
     "sel": [
+      "E",
       "C"
     ]
   },
@@ -88,8 +90,8 @@
   },
   "com.microsoft.todos": {
     "sel": [
-      "S1",
-      "A"
+      "G",
+      "S1"
     ]
   },
   "com.whatsapp.w4b": {
@@ -119,8 +121,9 @@
   },
   "com.microsoft.office.excel": {
     "sel": [
-      "S1",
-      "A"
+      "G",
+      "F",
+      "S1"
     ]
   },
   "com.samsung.android.calendar": {
@@ -303,6 +306,7 @@
   },
   "com.azure.authenticator": {
     "sel": [
+      "F",
       "A"
     ]
   },
@@ -341,6 +345,7 @@
   },
   "com.supportware.Buienradar": {
     "sel": [
+      "C",
       "A"
     ]
   },
@@ -561,6 +566,7 @@
   },
   "com.samsung.knox.securefolder": {
     "sel": [
+      "C",
       "A"
     ]
   },
@@ -625,11 +631,15 @@
   },
   "com.microsoft.office.word": {
     "sel": [
+      "G",
+      "F",
       "S1"
     ]
   },
   "com.microsoft.office.powerpoint": {
     "sel": [
+      "G",
+      "F",
       "S1"
     ]
   }

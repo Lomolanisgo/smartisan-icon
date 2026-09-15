@@ -41,6 +41,20 @@
       "shape": "square",
       "desc": "微软系列 S2：白色直角底板上一块带厚度的绿色立体键帽（参考锤子 WPS 字母块），中间白色 X。",
       "updated": true
+    },
+    {
+      "id": "F",
+      "name": "Fluent X 字块 + 四层绿色文档",
+      "shape": "free",
+      "desc": "Fluent（2019 版）官方构图，无底板：右侧四条由浅到深的绿色釉面色带叠成文档，左前方深绿立方铭牌白色 X。与 Word/PowerPoint/Outlook 的 F 方案同构图。",
+      "updated": true
+    },
+    {
+      "id": "G",
+      "name": "官方 Fluent 矢量 + 立体（无底板）",
+      "desc": "不重画：直接用官方 Fluent（2019 版）Excel 标志矢量，加地面投影、按原色压暗的 6px 厚度、内侧暗边、顶部釉面反光与上沿高光。",
+      "shape": "free",
+      "updated": true
     }
   ]
 }

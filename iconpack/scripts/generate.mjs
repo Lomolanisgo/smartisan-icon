@@ -175,6 +175,12 @@ for (const f of altIcons) {
   gallery.push({ d: name, p: pkg, n: labels[pkg] ?? pkg, c: true, a: true })
 }
 
+// 图标包自身：登记进 drawable 列表 / 图标浏览 / appfilter，桌面和选图标对话框才找得到它
+const selfPkg = 'com.lomolanisgo.smartisanicons'
+drawableItems.unshift('    <item drawable="ic_launcher" />')
+gallery.push({ d: 'ic_launcher', p: selfPkg, n: '锤子图标包', c: true })
+filterItems.push(`    <item component="ComponentInfo{${selfPkg}/${selfPkg}.GalleryActivity}" drawable="ic_launcher" />`)
+
 // 定制在前（默认图标、再备选），其余按名称
 const collator = new Intl.Collator('zh-Hans-CN')
 gallery.sort((x, y) => (y.c - x.c) || ((x.a ?? false) - (y.a ?? false)) || collator.compare(x.n, y.n))

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs><filter id="ground" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="5"/></filter>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
+<filter id="drop" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.38"/></filter>
+<filter id="glyph" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.3" flood-color="#000" flood-opacity="0.42"/></filter>
+<linearGradient id="paper" x1="0" y1="44" x2="0" y2="150" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E6ECF4"/></linearGradient>
+<linearGradient id="envF" x1="0" y1="108" x2="0" y2="230" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6FDBFF"/><stop offset="0.45" stop-color="#28A8EA"/><stop offset="1" stop-color="#0F7DD0"/></linearGradient>
+<linearGradient id="envLo" x1="0" y1="156" x2="0" y2="230" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#9CE7FF"/><stop offset="1" stop-color="#33AEEF"/></linearGradient>
+<clipPath id="envC"><path d="M90 108H238V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208Z"/></clipPath></defs>
+<defs><linearGradient id="backF" x1="0" y1="26" x2="0" y2="186" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1E6FD0"/><stop offset="1" stop-color="#0A2767"/></linearGradient><linearGradient id="backG" x1="0" y1="26" x2="0" y2="126" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.34"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="backC"><path d="M112 26H216A22 22 0 0 1 238 48V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208V48A22 22 0 0 1 112 26Z"/></clipPath></defs>
+<path d="M112 26H216A22 22 0 0 1 238 48V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208V48A22 22 0 0 1 112 26Z" transform="translate(0 11)" fill="#000" fill-opacity="0.33" filter="url(#ground)"/>
+<path d="M112 26H216A22 22 0 0 1 238 48V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208V48A22 22 0 0 1 112 26Z" transform="translate(0 6)" fill="#06173c"/>
+<path d="M112 26H216A22 22 0 0 1 238 48V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208V48A22 22 0 0 1 112 26Z" transform="translate(0 3)" fill="#081e50"/>
+<path d="M112 26H216A22 22 0 0 1 238 48V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208V48A22 22 0 0 1 112 26Z" fill="url(#backF)"/>
+<g clip-path="url(#backC)">
+<path d="M112 26H216A22 22 0 0 1 238 48V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208V48A22 22 0 0 1 112 26Z" fill="none" stroke="#000" stroke-opacity="0.16" stroke-width="5" filter="url(#soft)"/>
+<path d="M112 26H216A22 22 0 0 1 238 48V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208V48A22 22 0 0 1 112 26Z" transform="translate(0 1.2)" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="2" filter="url(#soft)"/>
+<rect x="90" y="26" width="148" height="100" fill="url(#backG)"/>
+</g>
+<path d="M112 26H216A22 22 0 0 1 238 48V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208V48A22 22 0 0 1 112 26Z" fill="none" stroke="#061539" stroke-width="1" stroke-opacity="0.8"/>
+<g filter="url(#drop)"><rect x="112" y="42" width="104" height="112" rx="5" fill="url(#paper)"/></g>
+<rect x="112.5" y="42.5" width="103" height="111" rx="4.5" fill="none" stroke="#fff" stroke-opacity="0.9" stroke-width="1"/>
+<rect x="128" y="58" width="52" height="8" rx="2" fill="#0F78D4"/><rect x="128" y="76" width="72" height="6" rx="2" fill="#C3CCD8"/><rect x="128" y="90" width="72" height="6" rx="2" fill="#C3CCD8"/><rect x="128" y="104" width="52" height="6" rx="2" fill="#C3CCD8"/>
+<path d="M90 108H238V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208Z" transform="translate(0 6)" fill="#0A4E9C"/>
+<path d="M90 108H238V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208Z" transform="translate(0 3)" fill="#0E63B8"/>
+<path d="M90 108H238V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208Z" fill="url(#envF)"/>
+<g clip-path="url(#envC)">
+<path d="M90 230L156 154Q164 146 172 154L238 230Z" fill="url(#envLo)"/>
+<path d="M90 108L164 176L238 108" fill="none" stroke="#fff" stroke-opacity="0.7" stroke-width="2"/>
+<path d="M90 108L164 176L238 108" fill="none" stroke="#0A5FB0" stroke-opacity="0.45" stroke-width="1.5" transform="translate(0 2.5)"/>
+<path d="M90 108H238V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208Z" fill="none" stroke="#000" stroke-opacity="0.16" stroke-width="5" filter="url(#soft)"/>
+<rect x="90" y="108" width="148" height="2" fill="#fff" fill-opacity="0.6"/>
+</g>
+<path d="M90 108H238V208A22 22 0 0 1 216 230H112A22 22 0 0 1 90 208Z" fill="none" stroke="#08488F" stroke-width="1" stroke-opacity="0.85"/>
+<defs><linearGradient id="tileF" x1="0" y1="68" x2="0" y2="173.60000000000002" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2F9BEA"/><stop offset="1" stop-color="#0C5DB5"/></linearGradient><linearGradient id="tileG" x1="0" y1="68" x2="0" y2="134" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.34"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="tileC"><path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z"/></clipPath></defs>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" transform="translate(0 12)" fill="#000" fill-opacity="0.33" filter="url(#ground)"/>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" transform="translate(0 7)" fill="#073669"/>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" transform="translate(0 3.5)" fill="#09498d"/>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" fill="url(#tileF)"/>
+<g clip-path="url(#tileC)">
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" fill="none" stroke="#000" stroke-opacity="0.16" stroke-width="5" filter="url(#soft)"/>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" transform="translate(0 1.2)" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="2" filter="url(#soft)"/>
+<rect x="16" y="68" width="120" height="66" fill="url(#tileG)"/>
+</g>
+<path d="M32 68H120A16 16 0 0 1 136 84V172A16 16 0 0 1 120 188H32A16 16 0 0 1 16 172V84A16 16 0 0 1 32 68Z" fill="none" stroke="#073364" stroke-width="1" stroke-opacity="0.8"/><g filter="url(#glyph)"><text x="76" y="161.12" text-anchor="middle" font-family="Segoe UI, Segoe UI Bold, Arial, sans-serif" font-weight="700" font-size="92" fill="#FFFFFF">O</text></g>
+</svg>

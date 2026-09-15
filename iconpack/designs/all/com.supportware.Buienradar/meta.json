@@ -2,11 +2,34 @@
   "pkg": "com.supportware.Buienradar",
   "label": "Buienradar",
   "references": [
-    { "pkg": "com.htc.Weather", "why": "圆形天气徽章造型" },
-    { "pkg": "sina.mobile.tianqitong", "why": "无底板的立体云朵天气图标" }
+    {
+      "pkg": "com.htc.Weather",
+      "why": "圆形天气徽章造型"
+    },
+    {
+      "pkg": "sina.mobile.tianqitong",
+      "why": "无底板的立体云朵天气图标"
+    }
   ],
   "options": [
-    { "id": "A", "name": "银边圆形徽章", "shape": "circle", "updated": true, "desc": "银色外圈加白色圆盘，中央是原图 Buienradar 标志（深蓝分割圆和浅蓝彗星，描摹矢量、等比例不变形），标志带柔和投影，顶部有玻璃高光。" },
-    { "id": "B", "name": "立体云朵雨滴", "shape": "free", "desc": "白色立体云叠在品牌深蓝云上，下方三道彗星形浅蓝雨滴呼应标志斜线；“雨量雷达”含义直观，品牌感弱一些。" }
+    {
+      "id": "A",
+      "name": "银边圆形徽章",
+      "shape": "circle",
+      "updated": true,
+      "desc": "银色外圈加白色圆盘，中央是原图 Buienradar 标志（深蓝分割圆和浅蓝彗星，描摹矢量、等比例不变形），标志带柔和投影，顶部有玻璃高光。"
+    },
+    {
+      "id": "B",
+      "name": "立体云朵雨滴",
+      "shape": "free",
+      "desc": "白色立体云叠在品牌深蓝云上，下方三道彗星形浅蓝雨滴呼应标志斜线；“雨量雷达”含义直观，品牌感弱一些。"
+    },
+    {
+      "id": "C",
+      "name": "只保留标志（白色勾边）",
+      "shape": "free",
+      "desc": "去掉银边白盘，只留官方标志：深蓝分割圆和浅蓝彗星外加白色勾边（带挤出厚度），标志本身薄薄一层厚度，上方玻璃高光、地面投影，整体约画布 82%×88%。"
+    }
   ]
 }

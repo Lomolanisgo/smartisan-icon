@@ -46,6 +46,20 @@
       "shape": "square",
       "desc": "微软系列 S2：白色直角底板上一块带厚度的天蓝立体键帽，中间白色 O。",
       "updated": true
+    },
+    {
+      "id": "F",
+      "name": "Fluent O 字块 + 信纸信封",
+      "shape": "free",
+      "desc": "Fluent（2019 版）官方构图，无底板：右侧深蓝背板上露出白色信纸，下半部是天蓝色釉面信封（带 V 形封口高光），左前方蓝色立方铭牌白色 O。",
+      "updated": true
+    },
+    {
+      "id": "G",
+      "name": "官方 Fluent 矢量 + 立体（无底板）",
+      "desc": "不重画：直接用官方 Fluent（2019 版）Outlook 标志矢量，加地面投影、按原色压暗的 6px 厚度、内侧暗边、顶部釉面反光与上沿高光。",
+      "shape": "free",
+      "updated": true
     }
   ]
 }

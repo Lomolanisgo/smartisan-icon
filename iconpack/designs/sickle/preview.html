@@ -1,0 +1,50 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>镰刀 logo 方案</title>
+<style>
+  body { margin: 0; padding: 24px; background: #f2f3f5; font: 14px "Microsoft YaHei", system-ui, sans-serif; color: #222 }
+  h1 { font-size: 18px; margin: 0 0 4px }
+  p.sub { margin: 0 0 20px; color: #666 }
+  .row { display: flex; gap: 20px; flex-wrap: wrap }
+  .card { background: #fff; border-radius: 10px; padding: 14px; box-shadow: 0 1px 4px #0002; width: 300px }
+  .big { background: #fff; border-radius: 8px; display: block; margin: 0 auto }
+  .sizes { display: flex; align-items: flex-end; gap: 14px; margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee }
+  .sizes img { display: block }
+  .dark { background: #2b2f33; border-radius: 8px; padding: 6px }
+  b { display: block; margin-top: 10px }
+  small { color: #666; line-height: 1.6 }
+  .ref { width: 200px }
+</style>
+<h1>镰刀 logo · 4 个方案</h1>
+<p class="sub">轮廓由参考照片 <code>_ref-sickle.jpg</code> 二值化后逐像素提取（crack following + 平滑），不是手绘重画。</p>
+<div class="row">
+  <div class="card">
+    <img class="big" src="opt-A.png" width="256" height="256">
+    <b>A · 异形立体镰刀（无底板）</b>
+    <small>钢刃 + 木柄拟物，锤子式顶光与投影，占满画布。</small>
+    <div class="sizes"><img src="opt-A.png" width="96" height="96"><img src="opt-A.png" width="48" height="48"><div class="dark"><img src="opt-A.png" width="48" height="48"></div></div>
+  </div>
+  <div class="card">
+    <img class="big" src="opt-B.png" width="256" height="256">
+    <b>B · 深色金属方底板</b>
+    <small>248 圆角方板 + 斜放镰刀，48px 下剪影最稳。</small>
+    <div class="sizes"><img src="opt-B.png" width="96" height="96"><img src="opt-B.png" width="48" height="48"><div class="dark"><img src="opt-B.png" width="48" height="48"></div></div>
+  </div>
+  <div class="card">
+    <img class="big" src="opt-C.png" width="256" height="256">
+    <b>C · 红圆 + 白镰刀</b>
+    <small>与锤子科技 logo（红圆白锤）同构，最像“品牌标志”。</small>
+    <div class="sizes"><img src="opt-C.png" width="96" height="96"><img src="opt-C.png" width="48" height="48"><div class="dark"><img src="opt-C.png" width="48" height="48"></div></div>
+  </div>
+  <div class="card">
+    <img class="big" src="opt-D.png" width="256" height="256">
+    <b>D · 单色扁平剪影</b>
+    <small>锤子红单色，无底板，用于单色/印刷场景。</small>
+    <div class="sizes"><img src="opt-D.png" width="96" height="96"><img src="opt-D.png" width="48" height="48"><div class="dark"><img src="opt-D.png" width="48" height="48"></div></div>
+  </div>
+  <div class="card">
+    <img class="big ref" src="_ref-sickle.jpg" width="200">
+    <b>参考照片</b>
+    <small>轮廓来源。</small>
+  </div>
+</div>

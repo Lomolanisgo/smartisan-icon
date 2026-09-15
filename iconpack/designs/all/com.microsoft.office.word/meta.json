@@ -2,12 +2,47 @@
   "pkg": "com.microsoft.office.word",
   "label": "Word",
   "references": [
-    { "pkg": "com.microsoft.office.excel", "why": "锤子原版 Excel：文档纸 + 左下角品牌字母铭牌的构图" },
-    { "pkg": "cn.wps.moffice", "why": "锤子版 WPS：立体字母方块，S2 系列的键帽造型参考" },
-    { "pkg": "com.smartisan.notes", "why": "锤子便签的纸张质感与投影" }
+    {
+      "pkg": "com.microsoft.office.excel",
+      "why": "锤子原版 Excel：文档纸 + 左下角品牌字母铭牌的构图"
+    },
+    {
+      "pkg": "cn.wps.moffice",
+      "why": "锤子版 WPS：立体字母方块，S2 系列的键帽造型参考"
+    },
+    {
+      "pkg": "com.smartisan.notes",
+      "why": "锤子便签的纸张质感与投影"
+    }
   ],
   "options": [
-    { "id": "S1", "name": "蓝底 + 文档纸 + W 铭牌", "shape": "square", "desc": "微软系列 S1：品牌蓝直角方块底板，右侧折角白纸（文字排版），左侧深蓝 W 铭牌压在纸上。五个应用铭牌位置/尺寸完全一致。", "updated": true },
-    { "id": "S2", "name": "白底 + 蓝色 W 键帽", "shape": "square", "desc": "微软系列 S2：白色直角底板上一块带厚度的蓝色立体键帽（参考锤子 WPS 字母块），中间白色 W。48px 下最醒目，但没有文档隐喻。", "updated": true }
+    {
+      "id": "S1",
+      "name": "蓝底 + 文档纸 + W 铭牌",
+      "shape": "square",
+      "desc": "微软系列 S1：品牌蓝直角方块底板，右侧折角白纸（文字排版），左侧深蓝 W 铭牌压在纸上。五个应用铭牌位置/尺寸完全一致。",
+      "updated": true
+    },
+    {
+      "id": "S2",
+      "name": "白底 + 蓝色 W 键帽",
+      "shape": "square",
+      "desc": "微软系列 S2：白色直角底板上一块带厚度的蓝色立体键帽（参考锤子 WPS 字母块），中间白色 W。48px 下最醒目，但没有文档隐喻。",
+      "updated": true
+    },
+    {
+      "id": "F",
+      "name": "Fluent W 字块 + 四层蓝色文档",
+      "shape": "free",
+      "desc": "Fluent（2019 版）官方构图，无底板：右侧四条由浅到深的蓝色釉面色带叠成文档（每条有厚度、像台阶），左前方深蓝立方铭牌白色 W。",
+      "updated": true
+    },
+    {
+      "id": "G",
+      "name": "官方 Fluent 矢量 + 立体（无底板）",
+      "desc": "不重画：直接用官方 Fluent（2019 版）Word 标志矢量，加地面投影、按原色压暗的 6px 厚度、内侧暗边、顶部釉面反光与上沿高光。",
+      "shape": "free",
+      "updated": true
+    }
   ]
 }

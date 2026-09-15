@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- 官方标志路径（源坐标）：深蓝分割圆 + 浅蓝彗星，合并包围盒约 x 127–307，y 121–305 -->
+    <path id="disc" d="M214.17 127.83L205.83 128.29L199.98 129.17L194.50 130.35L185.17 133.28L180.50 135.21L174.17 138.37L166.17 143.36L161.17 147.16L156.83 150.91L153.50 154.17L149.17 158.99L143.29 166.83L138.37 175.17L134.18 184.50L131.18 193.83L129.15 203.83L128.37 211.83L128.22 216.83L128.36 221.83L129.06 229.17L130.17 235.58L131.25 240.17L133.17 246.41L133.83 247.54L134.83 247.67L136.17 246.69L258.55 140.83L258.75 140.17L258.44 139.50L254.50 137.20L247.92 134.17L239.50 131.19L231.50 129.24L225.50 128.34L220.17 127.92ZM290.50 174.10L182.50 295.41L180.86 297.50L180.80 298.17L181.17 298.69L185.83 300.70L192.50 302.88L201.17 304.82L208.17 305.72L214.50 305.99L221.05 305.83L229.17 304.91L234.83 303.79L241.83 301.85L247.50 299.78L254.17 296.75L259.83 293.59L265.50 289.85L270.69 285.83L276.15 280.83L280.82 275.83L285.07 270.50L288.83 264.99L291.85 259.83L295.67 251.83L297.70 246.50L299.81 239.50L300.87 234.83L302.03 227.17L302.54 220.83L302.58 213.50L301.85 204.83L300.71 198.17L298.75 190.50L295.75 182.17L292.07 174.50L291.50 173.93Z"/>
+    <path id="comet" d="M307.17 120.81L305.50 121.81L301.17 125.36L135.50 266.71L133.17 269.62L131.34 273.17L130.31 276.83L130.04 280.17L130.30 283.50L131.31 287.17L133.19 290.83L135.61 293.83L138.17 295.98L141.50 297.86L144.83 298.93L148.83 299.32L152.83 298.91L156.10 297.83L159.50 295.88L161.90 293.83L301.53 128.50L306.20 122.83L307.09 121.50Z"/>
+    <clipPath id="discClip"><use href="#disc"/></clipPath>
+    <clipPath id="cometClip"><use href="#comet"/></clipPath>
+    <linearGradient id="navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B5BC4"/><stop offset="0.5" stop-color="#22409F"/><stop offset="1" stop-color="#0F2472"/>
+    </linearGradient>
+    <linearGradient id="navySide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0C1E5E"/><stop offset="1" stop-color="#071340"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A6DBFF"/><stop offset="0.5" stop-color="#7CC3F0"/><stop offset="1" stop-color="#4E9BD4"/>
+    </linearGradient>
+    <linearGradient id="lightSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A7FB8"/><stop offset="1" stop-color="#2B618F"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.6" stop-color="#F4F7FA"/><stop offset="1" stop-color="#DDE4EC"/>
+    </linearGradient>
+    <linearGradient id="whiteSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B4BFCC"/><stop offset="1" stop-color="#8F9CAB"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="innerBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  </defs>
+  <!-- 白色勾边 + 标志，约 212×216，居中略偏上给投影留位 -->
+  <g transform="translate(128 123) scale(1.13) translate(-217.3 -212.9)" stroke-linejoin="round">
+    <g transform="translate(0 11)" fill="#000" fill-opacity="0.35" stroke="#000" stroke-width="8" stroke-opacity="0.35" filter="url(#shadow)"><use href="#disc"/><use href="#comet"/></g>
+    <!-- 白色勾边：厚度（向下挤出）与正面 -->
+    <g transform="translate(0 7)" fill="url(#whiteSide)" stroke="url(#whiteSide)" stroke-width="8"><use href="#disc"/><use href="#comet"/></g>
+    <g transform="translate(0 3.5)" fill="#A9B5C3" stroke="#A9B5C3" stroke-width="8"><use href="#disc"/><use href="#comet"/></g>
+    <g fill="url(#white)" stroke="url(#white)" stroke-width="8"><use href="#disc"/><use href="#comet"/></g>
+    <use href="#disc" transform="translate(0 2.6)" fill="url(#navySide)"/>
+    <use href="#disc" fill="url(#navy)"/>
+    <g clip-path="url(#discClip)">
+      <use href="#disc" fill="none" stroke="#08153F" stroke-width="12" stroke-opacity="0.45" filter="url(#innerBlur)"/>
+      <use href="#disc" transform="translate(0 2.2)" fill="none" stroke="#7F9BE8" stroke-width="3" stroke-opacity="0.9" filter="url(#softBlur)"/>
+      <ellipse cx="200" cy="150" rx="70" ry="26" fill="url(#gloss)"/>
+      <ellipse cx="245" cy="200" rx="60" ry="22" fill="url(#gloss)" opacity="0.55"/>
+    </g>
+    <use href="#disc" fill="none" stroke="#0A1A50" stroke-width="0.9" stroke-opacity="0.7"/>
+    <use href="#comet" transform="translate(0 2.6)" fill="url(#lightSide)"/>
+    <use href="#comet" fill="url(#light)"/>
+    <g clip-path="url(#cometClip)">
+      <use href="#comet" fill="none" stroke="#2A6AA6" stroke-width="7" stroke-opacity="0.4" filter="url(#innerBlur)"/>
+      <use href="#comet" transform="translate(0 2)" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-opacity="0.9" filter="url(#softBlur)"/>
+    </g>
+    <use href="#comet" fill="none" stroke="#25578C" stroke-width="0.8" stroke-opacity="0.7"/>
+  </g>
+</svg>

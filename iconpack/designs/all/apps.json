@@ -42,6 +42,13 @@
     "secs": 19827
   },
   {
+    "pkg": "com.microsoft.skydrive",
+    "label": "OneDrive",
+    "iconFile": "com.microsoft.skydrive.svg",
+    "userInstalled": true,
+    "note": "锤子已有旧版图标，用户要求换成 Fluent 新版"
+  },
+  {
     "pkg": "com.tencent.weread",
     "label": "微信读书",
     "iconFile": "com.tencent.weread.svg",

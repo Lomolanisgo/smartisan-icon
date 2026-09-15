@@ -1,0 +1,30 @@
+{
+  "pkg": "com.microsoft.skydrive",
+  "label": "OneDrive",
+  "references": [
+    {
+      "pkg": "com.microsoft.skydrive",
+      "why": "锤子原版 OneDrive（旧版蓝白云标志），本次按 Fluent 新版云重绘"
+    },
+    {
+      "pkg": "com.microsoft.emmx",
+      "why": "已定稿的 Edge：微软家族的釉面质感"
+    }
+  ],
+  "options": [
+    {
+      "id": "F",
+      "name": "Fluent 四色云（无底板）",
+      "shape": "free",
+      "desc": "Fluent（2019 版）官方云形：由左至右深蓝、蓝、亮蓝、浅蓝四个色块拼成的釉面云，有厚度、顶部反光和地面投影。最忠实官方新标志。",
+      "updated": true
+    },
+    {
+      "id": "G",
+      "name": "单色渐变云（无底板）",
+      "shape": "free",
+      "desc": "同一云形，改为整体天蓝到深蓝的釉面渐变，不分色块。48px 下更干净，但少了 Fluent 的四色识别。",
+      "updated": true
+    }
+  ]
+}

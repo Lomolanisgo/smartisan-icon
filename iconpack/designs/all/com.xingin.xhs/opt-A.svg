@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- 官方“小红书”字标，描摹自手机图标 PNG（556 像素坐标，包围盒 x 142–413，y 229–326） -->
+    <path id="wm" fill-rule="evenodd" d="M251.2 229.1L249.5 230.5L236.4 259.5L235.0 263.8L235.3 267.5L237.5 269.9L241.2 271.1L247.8 271.3L248.7 272.2L241.1 290.2L239.9 293.5L239.7 296.5L240.3 298.2L241.8 299.8L245.8 301.3L265.8 301.4L267.0 300.5L272.7 287.2L271.5 286.4L263.2 286.3L262.2 285.8L261.8 284.5L274.5 254.8L273.2 254.1L260.2 254.1L258.4 252.8L258.4 251.5L267.6 230.8L267.6 229.5L266.2 229.1ZM346.2 229.1L345.0 229.8L344.8 234.5L344.2 235.6L333.8 236.0L333.0 236.5L332.8 237.5L332.9 253.2L334.2 254.0L343.2 254.0L344.5 254.7L344.6 268.8L342.8 269.8L328.2 269.8L326.9 270.5L326.6 272.2L326.7 285.8L327.1 287.5L328.5 287.9L343.2 287.9L344.7 288.8L345.2 325.8L346.5 326.3L360.8 326.3L362.7 325.5L362.9 289.5L363.2 288.5L364.5 288.0L389.2 288.0L391.5 288.3L393.8 289.5L394.9 290.8L395.7 293.5L395.8 306.8L395.0 309.5L392.5 310.9L379.2 311.0L378.3 311.5L378.4 312.5L383.7 324.8L384.8 326.1L398.2 326.3L402.8 325.4L406.8 323.5L409.2 321.5L411.8 318.2L412.8 315.8L413.7 311.5L413.6 285.8L412.7 281.2L410.9 277.5L406.9 273.5L404.5 272.1L399.5 270.3L393.8 269.8L392.9 269.2L392.6 255.2L391.8 250.2L389.7 245.2L385.1 240.2L381.5 238.1L375.8 236.3L363.5 235.7L362.8 234.5L362.7 230.2L361.8 229.2ZM177.8 230.4L177.2 231.1L177.0 232.5L176.8 308.5L176.2 310.2L175.2 310.9L166.2 311.3L165.3 312.2L171.0 325.5L172.8 326.5L183.8 326.0L188.8 323.8L191.4 321.5L193.0 318.8L194.5 314.2L194.9 311.2L194.7 231.5L194.2 230.6L192.8 230.2ZM281.5 236.1L280.7 236.5L280.4 237.5L280.5 253.3L281.8 254.1L290.5 254.2L291.3 254.5L291.7 255.5L291.7 307.2L291.2 308.1L290.2 308.3L277.2 308.4L275.5 308.8L269.4 321.5L268.0 325.8L269.8 326.5L327.2 326.2L327.8 324.2L327.8 310.5L327.3 308.8L325.8 308.4L311.8 308.3L310.7 307.8L310.4 306.8L310.4 255.2L311.5 254.1L320.2 254.0L321.5 253.5L321.6 236.8L320.9 236.2L319.5 236.0ZM402.5 236.1L398.5 238.3L396.2 241.9L395.7 244.8L395.7 251.8L396.5 253.7L404.8 253.9L407.5 253.4L411.2 251.1L413.2 247.5L413.6 243.2L412.8 240.8L411.4 238.8L407.5 236.2ZM147.5 254.2L146.9 254.8L146.6 256.8L143.9 292.2L142.5 297.5L149.2 312.8L151.1 316.8L151.8 317.2L154.6 313.8L156.8 309.6L160.9 296.8L161.9 290.2L164.6 255.2L164.2 254.4L162.8 254.0ZM207.8 254.1L207.0 255.2L207.1 258.5L210.2 294.5L212.2 302.8L214.3 308.5L217.3 314.5L218.8 316.6L219.8 317.2L220.8 316.3L229.1 297.5L227.7 290.8L224.9 255.2L224.5 254.3L223.5 254.0ZM363.5 254.2L372.2 254.1L374.5 255.4L374.9 258.5L374.5 269.6L364.8 270.0L363.1 269.5L362.7 255.8ZM237.5 307.4L229.7 324.2L231.2 325.7L234.5 326.3L257.5 326.1L265.2 309.5L264.8 308.6L263.8 308.4L246.8 308.3L238.5 307.2Z"/>
+    <clipPath id="wmClip"><use href="#wm"/></clipPath>
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.6" stop-color="#FBF5F5"/><stop offset="1" stop-color="#EBDCDD"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF5C70"/><stop offset="0.5" stop-color="#FF2442"/><stop offset="1" stop-color="#D8102C"/>
+    </linearGradient>
+    <linearGradient id="redSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B80E26"/><stop offset="1" stop-color="#8A0719"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-60%" width="140%" height="240%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="softBlur" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="1.4"/></filter>
+  </defs>
+  <!-- 字标宽约 240（含勾边），居中 -->
+  <g transform="translate(-108.3 -107.9) scale(0.85)" stroke-linejoin="round">
+    <use href="#wm" transform="translate(0 11)" stroke="#000" stroke-width="10" stroke-opacity="0.35" fill="#000" fill-opacity="0.35" filter="url(#shadow)"/>
+    <use href="#wm" transform="translate(0 7)" stroke="url(#redSide)" stroke-width="10" fill="url(#redSide)"/>
+    <use href="#wm" transform="translate(0 3.5)" stroke="#A80A22" stroke-width="10" fill="#A80A22"/>
+    <use href="#wm" stroke="url(#red)" stroke-width="10" fill="url(#red)"/>
+    <use href="#wm" transform="translate(0 2.4)" fill="#D9C4C6"/>
+    <use href="#wm" fill="url(#white)"/>
+    <g clip-path="url(#wmClip)">
+      <use href="#wm" transform="translate(0 1.8)" fill="none" stroke="#FFFFFF" stroke-width="2.4" filter="url(#softBlur)"/>
+      <rect x="140" y="226" width="280" height="40" fill="url(#gloss)"/>
+    </g>
+    <use href="#wm" fill="none" stroke="#B0132C" stroke-width="0.7" stroke-opacity="0.75"/>
+  </g>
+</svg>

@@ -40,7 +40,14 @@
       "shape": "circle",
       "desc": "按用户提供的参考图（_ref-t-hammer.png）重绘：红色渐变球体 + 白色 T 形锤子，圆直径 248（= 方形 226 × 1.10）。已作为 App 图标（launcher.png）。",
       "updated": true
+    },
+    {
+      "id": "E",
+      "name": "参考图直接抠图",
+      "shape": "circle",
+      "desc": "不重绘：直接使用用户提供的参考图 _ref-t-hammer.png（192×192），把白色背景按白色衬底反推透明度抠掉，保留原图的红色球体、白色锤子和投影。已作为 App 图标（launcher.png）。",
+      "updated": true
     }
   ],
-  "selected": "D"
+  "selected": "E"
 }
